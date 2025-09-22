@@ -10,14 +10,14 @@ At the moment, the Brain Orchestra is provided as a Max package. You'll need to:
 - get the latest release from Brain Orchestra package at the [release page](https://github.com/TheBrainOrchestra/TheBrainOrchestra/releases) 
   - (or if you are more confident : clone it or fork it from [this page](https://github.com/TheBrainOrchestra/TheBrainOrchestra));
 - put this package in your Max document folder (`home/Documents/Max xx/Packages`);
-- open `TheBrainOrchestra.maxpat`
+- open `TheBrainOrchestra.maxpat
 
 ## Media
 Samples of neural activity sonification are available on this [youtube playlist](https://www.youtube.com/playlist?list=PLLnRE_p6FfmhWEtfWqwcD_iQG91_XiQ6L
 ) 
 
 ## Credits
-The *Brain Orchestra* project was developed by Vincent Goudard and Sébastien Wolf (Institut de Biologie de l'ENS) by the french National Research Agency (ANR-19-CE38-0008).
+The *Brain Orchestra* project was developed by Vincent Goudard and Sébastien Wolf (Institut de Biologie de l'ENS).
 
 ## References
 
