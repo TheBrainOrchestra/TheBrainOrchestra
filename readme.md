@@ -3,6 +3,9 @@
 
 A software for the sonification of neural activity.
 
+![alt text](screenshot.png "Screenshot of the Brain Orchestra.")
+
+
 ## How to install
 At the moment, the Brain Orchestra is provided as a Max package. You'll need to:
 
