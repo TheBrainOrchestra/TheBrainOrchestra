@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 90.0, 118.0, 1194.0, 724.0 ],
+        "rect": [ 90.0, 118.0, 1186.0, 727.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -1015,7 +1015,6 @@
                     "annotation_name": "Pixel to neuron map",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "",
                     "id": "obj-48",
                     "maxclass": "live.text",
@@ -1664,7 +1663,6 @@
                     "annotation_name": "Load 2D movie",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "",
                     "id": "obj-40",
                     "maxclass": "live.text",
@@ -2320,7 +2318,6 @@
                     "hint": "",
                     "id": "obj-63",
                     "ignoreclick": 1,
-                    "linecount": 8,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -2337,7 +2334,6 @@
                             "parameter_type": 3
                         }
                     },
-                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasClassNames.coll\"",
                     "varname": "spikesfilepath[4]"
                 }
             },
@@ -2936,7 +2932,6 @@
                     "hint": "",
                     "id": "obj-58",
                     "ignoreclick": 1,
-                    "linecount": 8,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -2953,7 +2948,6 @@
                             "parameter_type": 3
                         }
                     },
-                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasMapping.jxf\"",
                     "varname": "spikesfilepath[2]"
                 }
             },
@@ -3552,7 +3546,6 @@
                     "hint": "",
                     "id": "obj-55",
                     "ignoreclick": 1,
-                    "linecount": 8,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -3569,7 +3562,6 @@
                             "parameter_type": 3
                         }
                     },
-                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neurons3Dcoords.jxf\"",
                     "varname": "spikesfilepath[1]"
                 }
             },
@@ -4206,7 +4198,6 @@
                         }
                     },
                     "tabmode": 0,
-                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neuronsSpikes.jxf\"",
                     "varname": "spikesfilepath",
                     "wordwrap": 0
                 }
@@ -38816,7 +38807,7 @@
                     "annotation_name": "Cluster/Atlas names",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasClassNames.coll",
+                    "hint": "",
                     "id": "obj-10",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -38850,7 +38841,8 @@
                     "annotation_name": "Load 3D coordinates",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neurons3Dcoords.jxf",
+                    "hidden": 1,
+                    "hint": "",
                     "id": "obj-9",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -38884,7 +38876,7 @@
                     "annotation_name": "Neuron to cluster mapping",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasMapping.jxf",
+                    "hint": "",
                     "id": "obj-42",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -38918,7 +38910,7 @@
                     "annotation_name": "Load Spikes",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neuronsSpikes.jxf",
+                    "hint": "",
                     "id": "obj-43",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -38986,6 +38978,8 @@
                         },
                         "valueof": {
                             "parameter_enum": [ "2D", "3D" ],
+                            "parameter_initial": [ 0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.tab",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
