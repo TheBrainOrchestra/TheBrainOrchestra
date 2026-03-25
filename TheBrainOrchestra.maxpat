@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 319.0, 229.0, 1186.0, 727.0 ],
+        "rect": [ 59.0, 210.0, 1186.0, 727.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -19,6 +19,17 @@
         "toolbars_unpinned_last_save": 15,
         "enablehscroll": 0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-127",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 469.0, 567.0, 100.0, 22.0 ],
+                    "text": "t 0"
+                }
+            },
             {
                 "box": {
                     "fontface": 0,
@@ -63,7 +74,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 434.0, 597.0, 35.0, 22.0 ],
+                    "patching_rect": [ 457.0, 593.0, 35.0, 22.0 ],
                     "text": "set 0"
                 }
             },
@@ -1419,7 +1430,6 @@
                     "annotation_name": "Pixel to neuron map",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "",
                     "id": "obj-48",
                     "maxclass": "live.text",
@@ -2068,7 +2078,6 @@
                     "annotation_name": "Load 2D movie",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "",
                     "id": "obj-40",
                     "maxclass": "live.text",
@@ -39254,6 +39263,7 @@
                     "annotation_name": "Load 3D coordinates",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neurons3Dcoords.jxf",
                     "id": "obj-9",
                     "maxclass": "live.text",
@@ -39451,6 +39461,12 @@
                 "patchline": {
                     "destination": [ "obj-105", 0 ],
                     "source": [ "obj-106", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-123", 0 ],
+                    "source": [ "obj-127", 0 ]
                 }
             },
             {
@@ -39748,6 +39764,13 @@
             {
                 "patchline": {
                     "destination": [ "obj-101", 0 ],
+                    "order": 1,
+                    "source": [ "obj-87", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-127", 0 ],
                     "order": 0,
                     "source": [ "obj-87", 0 ]
                 }
@@ -39755,7 +39778,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-91", 0 ],
-                    "order": 1,
+                    "order": 2,
                     "source": [ "obj-87", 0 ]
                 }
             },
@@ -40811,7 +40834,7 @@
                 },
                 "obj-12::obj-2::obj-8": {
                     "parameter_longname": "live.numbox[3]",
-                    "parameter_range": [ 1, 212 ]
+                    "parameter_range": [ 1, 149 ]
                 },
                 "obj-12::obj-2::obj-80": {
                     "parameter_longname": "live.text[5]"
