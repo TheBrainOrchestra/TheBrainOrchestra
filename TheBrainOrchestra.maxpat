@@ -320,7 +320,6 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
