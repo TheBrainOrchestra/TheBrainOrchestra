@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 126.0, 183.0, 1186.0, 727.0 ],
+        "rect": [ 319.0, 229.0, 1186.0, 727.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -19,6 +19,278 @@
         "toolbars_unpinned_last_save": 15,
         "enablehscroll": 0,
         "boxes": [
+            {
+                "box": {
+                    "fontface": 0,
+                    "fontname": "Lato",
+                    "fontsize": 13.914225,
+                    "id": "obj-123",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 9,
+                    "outlettype": [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
+                    "patching_rect": [ 679.0, 630.0, 103.0, 25.0 ],
+                    "text": "transport",
+                    "varname": "transport"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-105",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 598.0, 630.0, 63.0, 22.0 ],
+                    "text": "prepend 2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-106",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 598.0, 597.0, 37.0, 22.0 ],
+                    "text": "* 127"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-101",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 434.0, 597.0, 35.0, 22.0 ],
+                    "text": "set 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-99",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 407.0, 630.0, 63.0, 22.0 ],
+                    "text": "prepend 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-98",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "int", "int" ],
+                    "patching_rect": [ 517.0, 660.0, 67.0, 22.0 ],
+                    "text": "unpack 0 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-97",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 517.0, 630.0, 63.0, 22.0 ],
+                    "text": "prepend 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-96",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 517.0, 597.0, 37.0, 22.0 ],
+                    "text": "* 127"
+                }
+            },
+            {
+                "box": {
+                    "fontname": "Arial",
+                    "fontsize": 13.0,
+                    "id": "obj-94",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 0,
+                    "patching_rect": [ 517.0, 696.0, 148.0, 23.0 ],
+                    "text": "noteout \"from Max 2\" 15"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-91",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 407.0, 593.0, 35.0, 22.0 ],
+                    "text": "t 127"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "activebgoncolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 30.0,
+                    "hint": "",
+                    "id": "obj-87",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 406.0, 546.0, 39.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 14.0, 480.0, 26.0, 24.0 ],
+                    "rounded": 49.9,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_dial_needle"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[27]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "■",
+                    "texton": "■",
+                    "varname": "live.text[13]"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "activebgoncolor": [ 0.0, 0.980392156862745, 0.63921568627451, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 0.0, 0.980392156862745, 0.63921568627451, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 12.0,
+                    "hint": "",
+                    "id": "obj-82",
+                    "maxclass": "live.text",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 517.0, 546.0, 39.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 42.0, 480.0, 26.0, 24.0 ],
+                    "rounded": 49.9,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_play"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_play"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[26]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "►",
+                    "texton": "►",
+                    "varname": "live.text[12]"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "activebgoncolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 12.0,
+                    "hint": "",
+                    "id": "obj-81",
+                    "maxclass": "live.text",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 597.0, 541.0, 39.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 72.83334349999996, 480.0, 26.0, 24.0 ],
+                    "rounded": 49.9,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[25]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "o",
+                    "texton": "o",
+                    "varname": "live.text[1]"
+                }
+            },
             {
                 "box": {
                     "id": "obj-80",
@@ -39157,6 +39429,32 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-81", 0 ],
+                    "order": 0,
+                    "source": [ "obj-101", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-82", 0 ],
+                    "order": 1,
+                    "source": [ "obj-101", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-98", 0 ],
+                    "source": [ "obj-105", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-105", 0 ],
+                    "source": [ "obj-106", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-44", 0 ],
                     "source": [ "obj-22", 0 ]
                 }
@@ -39423,8 +39721,42 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-106", 0 ],
+                    "source": [ "obj-81", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-123", 0 ],
+                    "order": 0,
+                    "source": [ "obj-82", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-96", 0 ],
+                    "order": 1,
+                    "source": [ "obj-82", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-26", 0 ],
                     "source": [ "obj-83", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-101", 0 ],
+                    "order": 0,
+                    "source": [ "obj-87", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-91", 0 ],
+                    "order": 1,
+                    "source": [ "obj-87", 0 ]
                 }
             },
             {
@@ -39437,6 +39769,42 @@
                 "patchline": {
                     "destination": [ "obj-54", 0 ],
                     "source": [ "obj-9", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-99", 0 ],
+                    "source": [ "obj-91", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-97", 0 ],
+                    "source": [ "obj-96", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-98", 0 ],
+                    "source": [ "obj-97", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-94", 1 ],
+                    "source": [ "obj-98", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-94", 0 ],
+                    "source": [ "obj-98", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-98", 0 ],
+                    "source": [ "obj-99", 0 ]
                 }
             }
         ],
@@ -39815,7 +40183,10 @@
             "obj-65": [ "3D view[24]", "3D view", 0 ],
             "obj-68": [ "live.tab", "live.tab", 0 ],
             "obj-7": [ "3D view[11]", "3D view", 0 ],
+            "obj-81": [ "3D view[25]", "3D view", 0 ],
+            "obj-82": [ "3D view[26]", "3D view", 0 ],
             "obj-83": [ "Frame rhythmic unit[1]", "Frame rhythmic unit", 0 ],
+            "obj-87": [ "3D view[27]", "3D view", 0 ],
             "obj-9": [ "Load clusters CSV file[2]", "Load clusters", 0 ],
             "parameterbanks": {
                 "0": {
