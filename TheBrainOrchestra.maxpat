@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 91.0, 192.0, 1179.0, 726.0 ],
+        "rect": [ 195.0, 224.0, 1179.0, 726.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -21,11 +21,11 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-117",
+                    "id": "obj-104",
                     "maxclass": "newobj",
                     "numinlets": 3,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "numoutlets": 3,
+                    "outlettype": [ "bang", "", "" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
@@ -40,435 +40,437 @@
                         "boxes": [
                             {
                                 "box": {
-                                    "id": "obj-112",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
+                                    "id": "obj-73",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
                                     "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "patching_rect": [ 103.0, 100.0, 30.0, 22.0 ],
-                                    "text": "- 1"
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 50.0, 209.0, 24.0, 24.0 ]
                                 }
                             },
                             {
                                 "box": {
-                                    "id": "obj-111",
+                                    "id": "obj-71",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "patching_rect": [ 50.0, 100.0, 30.0, 22.0 ],
-                                    "text": "- 1"
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 97.0, 184.0, 34.0, 22.0 ],
+                                    "text": "sel 0"
                                 }
                             },
                             {
                                 "box": {
-                                    "id": "obj-108",
+                                    "fontface": 0,
+                                    "fontname": "Lato",
+                                    "fontsize": 10.435669,
+                                    "id": "obj-67",
                                     "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "patching_rect": [ 50.0, 224.0, 30.0, 22.0 ],
-                                    "text": "+ 0"
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "float" ],
+                                    "patching_rect": [ 97.0, 211.0, 34.0, 21.0 ],
+                                    "text": "t b 0."
                                 }
                             },
                             {
                                 "box": {
-                                    "id": "obj-107",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "patching_rect": [ 50.0, 187.0, 30.0, 22.0 ],
-                                    "text": "+ 0"
+                                    "fontface": 1,
+                                    "fontname": "Lato",
+                                    "fontsize": 10.435669,
+                                    "format": 6,
+                                    "id": "obj-70",
+                                    "maxclass": "flonum",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 121.75, 233.0, 67.0, 21.0 ],
+                                    "varname": "location"
                                 }
                             },
                             {
                                 "box": {
-                                    "id": "obj-103",
+                                    "id": "obj-61",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 101.0, 144.0, 30.0, 22.0 ],
-                                    "text": "* 4"
+                                    "patching_rect": [ 97.0, 153.0, 29.5, 22.0 ],
+                                    "text": "int"
                                 }
                             },
                             {
                                 "box": {
-                                    "id": "obj-102",
+                                    "id": "obj-53",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "patching_rect": [ 50.0, 144.0, 30.0, 22.0 ],
-                                    "text": "* 16"
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 237.0, 100.0, 34.0, 22.0 ],
+                                    "text": "sel 0"
                                 }
                             },
                             {
                                 "box": {
-                                    "comment": "",
-                                    "id": "obj-113",
-                                    "index": 1,
-                                    "maxclass": "inlet",
-                                    "numinlets": 0,
+                                    "id": "obj-127",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "bang" ],
+                                    "patching_rect": [ 108.0, 106.0, 32.0, 22.0 ],
+                                    "text": "t 0 b"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-105",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 50.0, 40.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 373.0, 207.0, 63.0, 22.0 ],
+                                    "text": "prepend 2"
                                 }
                             },
                             {
                                 "box": {
-                                    "comment": "",
-                                    "id": "obj-114",
-                                    "index": 3,
-                                    "maxclass": "inlet",
-                                    "numinlets": 0,
+                                    "id": "obj-106",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 373.0, 174.0, 37.0, 22.0 ],
+                                    "text": "* 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-101",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 210.0, 33.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 232.0, 170.0, 35.0, 22.0 ],
+                                    "text": "set 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-99",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 182.0, 207.0, 63.0, 22.0 ],
+                                    "text": "prepend 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-98",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "int" ],
+                                    "patching_rect": [ 292.0, 237.0, 67.0, 22.0 ],
+                                    "text": "unpack 0 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-97",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 292.0, 207.0, 63.0, 22.0 ],
+                                    "text": "prepend 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-96",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 292.0, 174.0, 37.0, 22.0 ],
+                                    "text": "* 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-94",
+                                    "maxclass": "newobj",
+                                    "numinlets": 3,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 292.0, 273.0, 148.0, 23.0 ],
+                                    "text": "noteout \"from Max 2\" 15"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-91",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 182.0, 170.0, 35.0, 22.0 ],
+                                    "text": "t 127"
                                 }
                             },
                             {
                                 "box": {
                                     "comment": "",
-                                    "id": "obj-115",
+                                    "id": "obj-78",
                                     "index": 2,
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 120.0, 40.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 184.5, 40.0, 30.0, 30.0 ]
                                 }
                             },
                             {
                                 "box": {
                                     "comment": "",
-                                    "id": "obj-116",
+                                    "id": "obj-79",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 108.0, 40.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-89",
+                                    "index": 3,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 373.0, 40.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-92",
                                     "index": 1,
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 50.0, 306.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 96.5, 356.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-102",
+                                    "index": 2,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 131.5, 356.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-103",
+                                    "index": 3,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 232.0, 356.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
                         "lines": [
                             {
                                 "patchline": {
-                                    "destination": [ "obj-107", 0 ],
-                                    "source": [ "obj-102", 0 ]
+                                    "destination": [ "obj-103", 0 ],
+                                    "source": [ "obj-101", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-107", 1 ],
-                                    "source": [ "obj-103", 0 ]
+                                    "destination": [ "obj-98", 0 ],
+                                    "source": [ "obj-105", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-108", 0 ],
-                                    "source": [ "obj-107", 0 ]
+                                    "destination": [ "obj-105", 0 ],
+                                    "source": [ "obj-106", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-116", 0 ],
-                                    "source": [ "obj-108", 0 ]
+                                    "destination": [ "obj-61", 0 ],
+                                    "source": [ "obj-127", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 1 ],
+                                    "order": 0,
+                                    "source": [ "obj-127", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-92", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-127", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-91", 0 ],
+                                    "source": [ "obj-53", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-71", 0 ],
+                                    "source": [ "obj-61", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-70", 0 ],
+                                    "source": [ "obj-67", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-92", 0 ],
+                                    "source": [ "obj-67", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-102", 0 ],
-                                    "source": [ "obj-111", 0 ]
+                                    "source": [ "obj-70", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-103", 0 ],
-                                    "source": [ "obj-112", 0 ]
+                                    "destination": [ "obj-67", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-71", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-111", 0 ],
-                                    "source": [ "obj-113", 0 ]
+                                    "destination": [ "obj-73", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-71", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-108", 1 ],
-                                    "source": [ "obj-114", 0 ]
+                                    "destination": [ "obj-53", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-78", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-112", 0 ],
-                                    "source": [ "obj-115", 0 ]
+                                    "destination": [ "obj-61", 1 ],
+                                    "order": 2,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-92", 0 ],
+                                    "order": 3,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-96", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-101", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-79", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-127", 0 ],
+                                    "order": 2,
+                                    "source": [ "obj-79", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-91", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-79", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-106", 0 ],
+                                    "source": [ "obj-89", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-99", 0 ],
+                                    "source": [ "obj-91", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-97", 0 ],
+                                    "source": [ "obj-96", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-98", 0 ],
+                                    "source": [ "obj-97", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-94", 1 ],
+                                    "source": [ "obj-98", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-94", 0 ],
+                                    "source": [ "obj-98", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-98", 0 ],
+                                    "source": [ "obj-99", 0 ]
                                 }
                             }
                         ]
                     },
-                    "patching_rect": [ 679.0, 709.0, 124.0, 22.0 ],
-                    "text": "p toframe"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-110",
-                    "maxclass": "number",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 679.0, 740.0, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-100",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "patching_rect": [ 784.0, 649.0, 35.0, 22.0 ],
-                    "text": "/ 120"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-95",
-                    "maxclass": "number",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 784.0, 675.0, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-93",
-                    "maxclass": "number",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 732.0, 675.0, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-90",
-                    "maxclass": "number",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 679.0, 675.0, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-84",
-                    "maxclass": "button",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 831.0, 591.0, 18.0, 18.0 ]
-                }
-            },
-            {
-                "box": {
-                    "fontface": 0,
-                    "fontname": "Lato",
-                    "fontsize": 11.595187,
-                    "id": "obj-86",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "patching_rect": [ 831.0, 567.0, 364.0, 22.0 ],
-                    "text": "metro 16n @quantize 16n @active 1 @autostart 1 @autostarttime 0."
-                }
-            },
-            {
-                "box": {
-                    "fontface": 0,
-                    "fontname": "Lato",
-                    "fontsize": 10.435669,
-                    "id": "obj-67",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "float" ],
-                    "patching_rect": [ 331.75, 664.0, 34.0, 21.0 ],
-                    "text": "t b 0."
-                }
-            },
-            {
-                "box": {
-                    "fontface": 1,
-                    "fontname": "Lato",
-                    "fontsize": 10.435669,
-                    "format": 6,
-                    "id": "obj-70",
-                    "maxclass": "flonum",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 346.75, 686.0, 67.0, 21.0 ],
-                    "varname": "location"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-61",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "patching_rect": [ 334.0, 631.5, 29.5, 22.0 ],
-                    "text": "int"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-53",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "" ],
-                    "patching_rect": [ 462.0, 553.0, 34.0, 22.0 ],
-                    "text": "sel 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-127",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "int", "bang" ],
-                    "patching_rect": [ 344.5, 587.0, 32.0, 22.0 ],
-                    "text": "t 0 b"
-                }
-            },
-            {
-                "box": {
-                    "fontface": 0,
-                    "fontname": "Lato",
-                    "fontsize": 13.914225,
-                    "id": "obj-123",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 9,
-                    "outlettype": [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
-                    "patching_rect": [ 679.0, 630.0, 103.0, 25.0 ],
-                    "text": "transport",
-                    "varname": "transport"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-105",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 598.0, 660.0, 63.0, 22.0 ],
-                    "text": "prepend 2"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-106",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "patching_rect": [ 598.0, 627.0, 37.0, 22.0 ],
-                    "text": "* 127"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-101",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 457.0, 623.0, 35.0, 22.0 ],
-                    "text": "set 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-99",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 407.0, 660.0, 63.0, 22.0 ],
-                    "text": "prepend 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-98",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "int", "int" ],
-                    "patching_rect": [ 517.0, 690.0, 67.0, 22.0 ],
-                    "text": "unpack 0 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-97",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 517.0, 660.0, 63.0, 22.0 ],
-                    "text": "prepend 1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-96",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "patching_rect": [ 517.0, 627.0, 37.0, 22.0 ],
-                    "text": "* 127"
-                }
-            },
-            {
-                "box": {
-                    "fontname": "Arial",
-                    "fontsize": 13.0,
-                    "id": "obj-94",
-                    "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 0,
-                    "patching_rect": [ 517.0, 726.0, 148.0, 23.0 ],
-                    "text": "noteout \"from Max 2\" 15"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-91",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "patching_rect": [ 407.0, 623.0, 35.0, 22.0 ],
-                    "text": "t 127"
+                    "patching_rect": [ 406.0, 595.0, 156.0, 22.0 ],
+                    "text": "p ctl-logics"
                 }
             },
             {
@@ -542,7 +544,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 517.0, 546.0, 39.0, 36.0 ],
+                    "patching_rect": [ 474.5, 546.0, 39.0, 36.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 41.166656500000045, 413.0, 26.0, 24.0 ],
                     "rounded": 49.9,
@@ -594,7 +596,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 597.0, 541.0, 39.0, 36.0 ],
+                    "patching_rect": [ 543.0, 546.0, 39.0, 36.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 71.16665650000004, 413.0, 26.0, 24.0 ],
                     "rounded": 49.9,
@@ -1755,6 +1757,7 @@
                     "annotation_name": "Pixel to neuron map",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-48",
                     "maxclass": "live.text",
@@ -2403,6 +2406,7 @@
                     "annotation_name": "Load 2D movie",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-40",
                     "maxclass": "live.text",
@@ -3058,6 +3062,7 @@
                     "hint": "",
                     "id": "obj-63",
                     "ignoreclick": 1,
+                    "linecount": 8,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -3074,6 +3079,7 @@
                             "parameter_type": 3
                         }
                     },
+                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasClassNames.coll\"",
                     "varname": "spikesfilepath[4]"
                 }
             },
@@ -3672,6 +3678,7 @@
                     "hint": "",
                     "id": "obj-58",
                     "ignoreclick": 1,
+                    "linecount": 8,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -3688,6 +3695,7 @@
                             "parameter_type": 3
                         }
                     },
+                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasMapping.jxf\"",
                     "varname": "spikesfilepath[2]"
                 }
             },
@@ -4286,6 +4294,7 @@
                     "hint": "",
                     "id": "obj-55",
                     "ignoreclick": 1,
+                    "linecount": 8,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -4302,6 +4311,7 @@
                             "parameter_type": 3
                         }
                     },
+                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neurons3Dcoords.jxf\"",
                     "varname": "spikesfilepath[1]"
                 }
             },
@@ -4938,6 +4948,7 @@
                         }
                     },
                     "tabmode": 0,
+                    "text": "\"Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neuronsSpikes.jxf\"",
                     "varname": "spikesfilepath",
                     "wordwrap": 0
                 }
@@ -6076,7 +6087,7 @@
                     "fontsize": 14.0,
                     "id": "obj-29",
                     "maxclass": "newobj",
-                    "numinlets": 0,
+                    "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "int", "int" ],
                     "patcher": {
@@ -6093,6 +6104,83 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-22",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 41.0, 158.0, 159.0, 22.0 ],
+                                    "text": "s /TBO/transport/currentTick"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-20",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 41.0, 129.0, 37.0, 22.0 ],
+                                    "text": "* 120"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-19",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 41.0, 89.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-12",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 41.0, 273.0, 72.0, 22.0 ],
+                                    "text": "prepend set"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 41.0, 61.0, 67.0, 22.0 ],
+                                    "text": "mousefilter"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 105.0, 300.0, 100.0, 22.0 ],
+                                    "text": "prepend max"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-4",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 41.0, 22.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
                                     "attr": "align",
                                     "fontface": 0,
                                     "fontname": "Verdana",
@@ -6103,7 +6191,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 189.0, 244.0, 142.0, 23.0 ],
+                                    "patching_rect": [ 198.0, 483.0, 142.0, 23.0 ],
                                     "text_width": 62.0
                                 }
                             },
@@ -6114,7 +6202,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 59.0, 233.0, 75.0, 22.0 ],
+                                    "patching_rect": [ 68.0, 472.0, 75.0, 22.0 ],
                                     "text": "prepend text"
                                 }
                             },
@@ -6126,7 +6214,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 77.0, 137.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 86.0, 376.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -6137,7 +6225,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 208.0, 109.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 217.0, 348.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -6147,7 +6235,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "bang", "int" ],
-                                    "patching_rect": [ 189.0, 151.0, 91.0, 22.0 ],
+                                    "patching_rect": [ 198.0, 390.0, 91.0, 22.0 ],
                                     "text": "t b i"
                                 }
                             },
@@ -6158,7 +6246,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 59.0, 186.0, 221.0, 22.0 ],
+                                    "patching_rect": [ 68.0, 425.0, 221.0, 22.0 ],
                                     "text": "combine 0 / 3000"
                                 }
                             },
@@ -6172,7 +6260,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
-                                    "patching_rect": [ 387.0, 98.0, 64.0, 23.0 ],
+                                    "patching_rect": [ 396.0, 337.0, 64.0, 23.0 ],
                                     "text": "loadbang"
                                 }
                             },
@@ -6184,7 +6272,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 354.0, 97.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 363.0, 336.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -6196,7 +6284,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 354.0, 124.0, 48.0, 23.0 ],
+                                    "patching_rect": [ 363.0, 363.0, 48.0, 23.0 ],
                                     "text": "fontlist"
                                 }
                             },
@@ -6209,7 +6297,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 354.0, 178.0, 74.0, 23.0 ],
+                                    "patching_rect": [ 363.0, 417.0, 74.0, 23.0 ],
                                     "text": "tosymbol"
                                 }
                             },
@@ -6222,7 +6310,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 354.0, 206.0, 85.0, 23.0 ],
+                                    "patching_rect": [ 363.0, 445.0, 85.0, 23.0 ],
                                     "text": "prepend font"
                                 }
                             },
@@ -6238,7 +6326,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "int", "", "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 354.0, 150.0, 139.0, 23.0 ]
+                                    "patching_rect": [ 363.0, 389.0, 139.0, 23.0 ]
                                 }
                             },
                             {
@@ -6249,7 +6337,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 59.0, 290.0, 482.0, 35.0 ],
+                                    "patching_rect": [ 68.0, 529.0, 482.0, 35.0 ],
                                     "text": "jit.gl.text ---BrainViz @position 0.1 -0.8 0. @mode 2d @color 0.7 0.7 0.7 1. @fontsize 12 @align 2 @fontname Menlo"
                                 }
                             },
@@ -6260,7 +6348,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 292.0, 46.0, 22.0, 22.0 ],
+                                    "patching_rect": [ 301.0, 285.0, 22.0, 22.0 ],
                                     "text": "t 0"
                                 }
                             },
@@ -6271,7 +6359,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 291.0, 17.0, 87.0, 22.0 ],
+                                    "patching_rect": [ 300.0, 256.0, 87.0, 22.0 ],
                                     "text": "r #0.closeclear"
                                 }
                             },
@@ -6282,7 +6370,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 32.0, 17.0, 88.0, 22.0 ],
+                                    "patching_rect": [ 41.0, 227.0, 88.0, 22.0 ],
                                     "text": "r ---frameIndex"
                                 }
                             },
@@ -6293,7 +6381,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 152.0, 17.0, 120.0, 22.0 ],
+                                    "patching_rect": [ 161.0, 256.0, 120.0, 22.0 ],
                                     "text": "r ---frameCount"
                                 }
                             },
@@ -6305,7 +6393,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 32.0, 94.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 41.0, 333.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -6316,7 +6404,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 152.0, 94.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 161.0, 333.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -6328,7 +6416,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 334.0, 260.0, 150.0, 22.0 ]
+                                    "patching_rect": [ 343.0, 499.0, 150.0, 22.0 ]
                                 }
                             }
                         ],
@@ -6349,8 +6437,14 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-19", 0 ],
+                                    "source": [ "obj-10", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-97", 0 ],
-                                    "midpoints": [ 423.5, 172.0, 363.5, 172.0 ],
+                                    "midpoints": [ 432.5, 411.0, 372.5, 411.0 ],
                                     "source": [ "obj-100", 1 ]
                                 }
                             },
@@ -6364,6 +6458,12 @@
                                 "patchline": {
                                     "destination": [ "obj-6", 0 ],
                                     "source": [ "obj-11", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-8", 0 ],
+                                    "source": [ "obj-12", 0 ]
                                 }
                             },
                             {
@@ -6399,6 +6499,18 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-20", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-20", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-3", 0 ],
                                     "source": [ "obj-21", 0 ]
                                 }
@@ -6418,6 +6530,13 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "order": 2,
+                                    "source": [ "obj-27", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-9", 0 ],
                                     "order": 1,
                                     "source": [ "obj-27", 0 ]
@@ -6431,21 +6550,33 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-10", 0 ],
+                                    "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-8", 0 ],
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-15", 0 ],
                                     "source": [ "obj-6", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-14", 0 ],
-                                    "order": 0,
+                                    "destination": [ "obj-12", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-7", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-8", 0 ],
-                                    "order": 1,
+                                    "destination": [ "obj-14", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-7", 0 ]
                                 }
                             },
@@ -6495,7 +6626,7 @@
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 743.0, 353.0, 41.0, 19.0 ],
+                    "patching_rect": [ 743.0, 357.0, 41.0, 19.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 64.0, 386.0, 43.66668699999991, 19.0 ],
                     "style": "default",
@@ -6510,7 +6641,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 725.0, 352.0, 19.0, 20.0 ],
+                    "patching_rect": [ 725.0, 356.0, 19.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 51.0, 387.0, 19.0, 20.0 ],
                     "text": "/",
@@ -6523,7 +6654,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 786.0, 354.0, 80.0, 20.0 ],
+                    "patching_rect": [ 786.0, 358.0, 80.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 369.0, 80.0, 20.0 ],
                     "text": "current frame",
@@ -6537,14 +6668,14 @@
                     "fontsize": 9.0,
                     "hint": "Current time frame",
                     "id": "obj-25",
-                    "ignoreclick": 1,
                     "maxclass": "number",
+                    "minimum": 0,
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 677.0, 353.0, 41.0, 19.0 ],
+                    "patching_rect": [ 677.0, 357.0, 41.0, 19.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 11.0, 386.0, 39.0, 19.0 ],
                     "style": "default",
@@ -6559,7 +6690,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 725.0, 277.0, 33.0, 20.0 ],
+                    "patching_rect": [ 635.0, 587.0, 33.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 42.0, 348.0, 28.0, 20.0 ],
                     "text": "unit",
@@ -6579,7 +6710,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 678.0, 277.0, 43.66668699999991, 18.0 ],
+                    "patching_rect": [ 588.0, 587.0, 43.66668699999991, 18.0 ],
                     "pictures": [ "16n.svg", "8n.svg", "4n.svg", "2n.svg", "1n.svg" ],
                     "presentation": 1,
                     "presentation_rect": [ 67.0, 348.0, 40.66668699999991, 18.0 ],
@@ -7245,7 +7376,7 @@
                                     "patching_rect": [ 251.0, 305.0, 670.0, 23.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 44.0, 438.0, 1500.0, 23.0 ],
-                                    "size": 4501.0
+                                    "size": 6000.0
                                 }
                             },
                             {
@@ -10105,7 +10236,7 @@
                     "fontsize": 14.0,
                     "id": "obj-26",
                     "maxclass": "newobj",
-                    "numinlets": 1,
+                    "numinlets": 3,
                     "numoutlets": 0,
                     "patcher": {
                         "fileversion": 1,
@@ -10121,13 +10252,37 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "comment": "",
+                                    "id": "obj-5",
+                                    "index": 2,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 104.0, 106.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-1",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 61.0, 106.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-4",
                                     "maxclass": "button",
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 122.0, 251.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 90.0, 284.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -10136,7 +10291,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 123.0, 286.0, 152.0, 22.0 ],
+                                    "patching_rect": [ 91.0, 319.0, 152.0, 22.0 ],
                                     "text": "s ---BrainViz/render/update"
                                 }
                             },
@@ -10157,7 +10312,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 165.0, 258.0, 90.0, 22.0 ],
+                                    "patching_rect": [ 133.0, 291.0, 90.0, 22.0 ],
                                     "text": "s ---frameIndex"
                                 }
                             },
@@ -10165,7 +10320,7 @@
                                 "box": {
                                     "comment": "",
                                     "id": "obj-2",
-                                    "index": 1,
+                                    "index": 3,
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -10177,7 +10332,7 @@
                                 "box": {
                                     "id": "obj-81",
                                     "maxclass": "newobj",
-                                    "numinlets": 2,
+                                    "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patcher": {
@@ -10190,8 +10345,64 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 422.0, 433.0, 756.0, 583.0 ],
+                                        "rect": [ 293.0, 246.0, 756.0, 583.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-20",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "int" ],
+                                                    "patching_rect": [ 369.75, 44.0, 29.5, 22.0 ],
+                                                    "text": "* 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-17",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 359.5, -50.0, 157.0, 22.0 ],
+                                                    "text": "r /TBO/transport/currentTick"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-11",
+                                                    "maxclass": "button",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 314.0, 53.0, 24.0, 24.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "number",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 359.5, -11.0, 50.0, 22.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-7",
+                                                    "index": 2,
+                                                    "maxclass": "inlet",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 502.0, 40.0, 30.0, 30.0 ]
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-5",
@@ -10199,7 +10410,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 161.0, 523.0, 91.0, 22.0 ],
+                                                    "patching_rect": [ 161.0, 447.0, 91.0, 22.0 ],
                                                     "text": "r ---frameCount"
                                                 }
                                             },
@@ -10210,7 +10421,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 523.0, 43.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 447.0, 43.0, 22.0 ],
                                                     "text": "% 100"
                                                 }
                                             },
@@ -10221,7 +10432,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 141.0, 571.0, 91.0, 22.0 ],
+                                                    "patching_rect": [ 141.0, 495.0, 91.0, 22.0 ],
                                                     "text": "r ---frameCount"
                                                 }
                                             },
@@ -10232,7 +10443,7 @@
                                                     "numinlets": 3,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 93.0, 595.0, 67.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 519.0, 67.0, 22.0 ],
                                                     "text": "clip 0 6000"
                                                 }
                                             },
@@ -10243,7 +10454,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 483.0, 539.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 407.0, 539.0, 22.0 ],
                                                     "text": "/ 1"
                                                 }
                                             },
@@ -10273,7 +10484,7 @@
                                                 "box": {
                                                     "comment": "",
                                                     "id": "obj-6",
-                                                    "index": 2,
+                                                    "index": 3,
                                                     "maxclass": "inlet",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -10321,7 +10532,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 445.0, 195.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 369.0, 195.0, 22.0 ],
                                                     "text": "+"
                                                 }
                                             },
@@ -10332,7 +10543,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 394.0, 29.5, 22.0 ],
+                                                    "patching_rect": [ 93.0, 345.0, 73.0, 22.0 ],
                                                     "text": "+"
                                                 }
                                             },
@@ -10365,7 +10576,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 269.0, 388.5, 35.0, 22.0 ],
+                                                    "patching_rect": [ 269.0, 339.0, 35.0, 22.0 ],
                                                     "text": "/ 120"
                                                 }
                                             },
@@ -10561,7 +10772,7 @@
                                                     "maxclass": "outlet",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 93.0, 619.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 93.0, 543.0, 30.0, 30.0 ]
                                                 }
                                             }
                                         ],
@@ -10586,7 +10797,21 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-43", 0 ],
+                                                    "source": [ "obj-11", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-16", 1 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-12", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-20", 1 ],
+                                                    "order": 1,
                                                     "source": [ "obj-12", 0 ]
                                                 }
                                             },
@@ -10610,8 +10835,20 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-9", 0 ],
+                                                    "source": [ "obj-17", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-50", 1 ],
                                                     "source": [ "obj-2", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-43", 1 ],
+                                                    "source": [ "obj-20", 0 ]
                                                 }
                                             },
                                             {
@@ -10720,6 +10957,12 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-43", 1 ],
+                                                    "source": [ "obj-7", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-50", 0 ],
                                                     "source": [ "obj-73", 0 ]
                                                 }
@@ -10735,13 +10978,27 @@
                                                     "destination": [ "obj-43", 0 ],
                                                     "source": [ "obj-78", 0 ]
                                                 }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-11", 0 ],
+                                                    "order": 1,
+                                                    "source": [ "obj-9", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-20", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-9", 0 ]
+                                                }
                                             }
                                         ],
                                         "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
                                         "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                                     },
-                                    "patching_rect": [ 165.0, 214.5, 66.0, 22.0 ],
+                                    "patching_rect": [ 90.0, 239.0, 271.0, 22.0 ],
                                     "saved_object_attributes": {
                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                         "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
@@ -10820,6 +11077,12 @@
                         "lines": [
                             {
                                 "patchline": {
+                                    "destination": [ "obj-81", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-83", 0 ],
                                     "source": [ "obj-2", 0 ]
                                 }
@@ -10834,6 +11097,12 @@
                                 "patchline": {
                                     "destination": [ "obj-13", 0 ],
                                     "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-81", 1 ],
+                                    "source": [ "obj-5", 0 ]
                                 }
                             },
                             {
@@ -10870,7 +11139,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-81", 1 ],
+                                    "destination": [ "obj-81", 2 ],
                                     "source": [ "obj-83", 0 ]
                                 }
                             }
@@ -10879,7 +11148,7 @@
                         "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
                     },
-                    "patching_rect": [ 678.0, 302.0, 106.0, 24.0 ],
+                    "patching_rect": [ 406.0, 645.0, 201.0, 24.0 ],
                     "saved_object_attributes": {
                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                         "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
@@ -20633,7 +20902,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 10000,
+                                                    "cols": 23743,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -30476,7 +30745,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 66,
+                                    "cols": 23743,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -30487,7 +30756,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 1119.0, 89.0, 199.0, 93.0 ],
-                                    "rows": 66
+                                    "rows": 182
                                 }
                             },
                             {
@@ -31509,7 +31778,7 @@
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
+                                                                                    "cols": 23743,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -31519,7 +31788,7 @@
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
                                                                                     "patching_rect": [ 309.0, 226.0, 200.0, 200.0 ],
-                                                                                    "rows": 66
+                                                                                    "rows": 182
                                                                                 }
                                                                             },
                                                                             {
@@ -32909,7 +33178,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 66,
+                                    "cols": 23743,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -32920,7 +33189,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 202.0, 84.0, 211.0, 74.0 ],
-                                    "rows": 4501
+                                    "rows": 6000
                                 }
                             },
                             {
@@ -32978,7 +33247,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 10000,
+                                    "cols": 23743,
                                     "colwidth": 100,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -34236,7 +34505,7 @@
                                         "boxes": [
                                             {
                                                 "box": {
-                                                    "cols": 1,
+                                                    "cols": 182,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -35408,7 +35677,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 1,
+                                                                    "cols": 182,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
                                                                     "fontsize": 12.0,
@@ -39910,7 +40179,7 @@
                     "annotation_name": "Cluster/Atlas names",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "",
+                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasClassNames.coll",
                     "id": "obj-10",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -39944,8 +40213,7 @@
                     "annotation_name": "Load 3D coordinates",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
-                    "hint": "",
+                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neurons3Dcoords.jxf",
                     "id": "obj-9",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -39979,7 +40247,7 @@
                     "annotation_name": "Neuron to cluster mapping",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "",
+                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_atlasMapping.jxf",
                     "id": "obj-42",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -40013,7 +40281,7 @@
                     "annotation_name": "Load Spikes",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hint": "",
+                    "hint": "Macintosh HD:/Users/vg/Documents/Max 8/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neuronsSpikes.jxf",
                     "id": "obj-43",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -40120,84 +40388,40 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-95", 0 ],
-                    "source": [ "obj-100", 0 ]
+                    "destination": [ "obj-26", 1 ],
+                    "source": [ "obj-104", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-104", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-81", 0 ],
                     "order": 0,
-                    "source": [ "obj-101", 0 ]
+                    "source": [ "obj-104", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-82", 0 ],
                     "order": 1,
-                    "source": [ "obj-101", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-98", 0 ],
-                    "source": [ "obj-105", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-105", 0 ],
-                    "source": [ "obj-106", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-110", 0 ],
-                    "source": [ "obj-117", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-100", 0 ],
-                    "source": [ "obj-123", 2 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-90", 0 ],
-                    "source": [ "obj-123", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-93", 0 ],
-                    "source": [ "obj-123", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-123", 0 ],
-                    "order": 0,
-                    "source": [ "obj-127", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-61", 0 ],
-                    "source": [ "obj-127", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-61", 1 ],
-                    "order": 1,
-                    "source": [ "obj-127", 0 ]
+                    "source": [ "obj-104", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-44", 0 ],
                     "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-29", 0 ],
+                    "source": [ "obj-25", 0 ]
                 }
             },
             {
@@ -40366,12 +40590,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-91", 0 ],
-                    "source": [ "obj-53", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-37", 1 ],
                     "source": [ "obj-54", 0 ]
                 }
@@ -40420,12 +40638,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-67", 0 ],
-                    "source": [ "obj-61", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-10", 0 ],
                     "source": [ "obj-62", 1 ]
                 }
@@ -40456,18 +40668,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-123", 0 ],
-                    "source": [ "obj-67", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-70", 0 ],
-                    "source": [ "obj-67", 1 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-33", 0 ],
                     "source": [ "obj-68", 0 ]
                 }
@@ -40480,86 +40680,31 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-123", 1 ],
-                    "source": [ "obj-70", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-60", 0 ],
                     "source": [ "obj-80", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-106", 0 ],
+                    "destination": [ "obj-104", 2 ],
                     "source": [ "obj-81", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-123", 0 ],
-                    "order": 0,
+                    "destination": [ "obj-104", 1 ],
                     "source": [ "obj-82", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-53", 0 ],
-                    "order": 2,
-                    "source": [ "obj-82", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-61", 1 ],
-                    "order": 3,
-                    "source": [ "obj-82", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-96", 0 ],
-                    "order": 1,
-                    "source": [ "obj-82", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-26", 0 ],
+                    "destination": [ "obj-26", 2 ],
                     "source": [ "obj-83", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-123", 0 ],
-                    "source": [ "obj-84", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-84", 0 ],
-                    "source": [ "obj-86", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-101", 0 ],
-                    "order": 0,
-                    "source": [ "obj-87", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-127", 0 ],
-                    "order": 2,
-                    "source": [ "obj-87", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-91", 0 ],
-                    "order": 1,
+                    "destination": [ "obj-104", 0 ],
                     "source": [ "obj-87", 0 ]
                 }
             },
@@ -40573,60 +40718,6 @@
                 "patchline": {
                     "destination": [ "obj-54", 0 ],
                     "source": [ "obj-9", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-117", 0 ],
-                    "source": [ "obj-90", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-99", 0 ],
-                    "source": [ "obj-91", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-117", 1 ],
-                    "source": [ "obj-93", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-117", 2 ],
-                    "source": [ "obj-95", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-97", 0 ],
-                    "source": [ "obj-96", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-98", 0 ],
-                    "source": [ "obj-97", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-94", 1 ],
-                    "source": [ "obj-98", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-94", 0 ],
-                    "source": [ "obj-98", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-98", 0 ],
-                    "source": [ "obj-99", 0 ]
                 }
             }
         ],
@@ -41047,7 +41138,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[35]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41119,7 +41210,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[80]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41191,7 +41282,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[74]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41263,7 +41354,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[67]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41335,7 +41426,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[63]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41407,7 +41498,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[59]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41479,7 +41570,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[53]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41548,7 +41639,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[15]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41623,7 +41714,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[18]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41638,7 +41729,7 @@
                 },
                 "obj-12::obj-2::obj-8": {
                     "parameter_longname": "live.numbox[3]",
-                    "parameter_range": [ 1, 256 ]
+                    "parameter_range": [ 1, 149 ]
                 },
                 "obj-12::obj-2::obj-80": {
                     "parameter_longname": "live.text[5]"
@@ -41696,7 +41787,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[88]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41768,7 +41859,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[85]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41840,7 +41931,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[12]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41913,7 +42004,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[20]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41986,7 +42077,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[48]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -42058,7 +42149,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[42]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -42130,7 +42221,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[38]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Cluster #1" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
