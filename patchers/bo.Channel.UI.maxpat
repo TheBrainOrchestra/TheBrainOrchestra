@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 188.0, 136.0, 1324.0, 718.0 ],
+        "rect": [ 176.0, 149.0, 1049.0, 492.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 4,
         "boxes": [
@@ -1508,8 +1508,84 @@
                                                                             "modernui": 1
                                                                         },
                                                                         "classnamespace": "box",
-                                                                        "rect": [ 227.0, 110.0, 1419.0, 842.0 ],
+                                                                        "rect": [ 83.0, 252.0, 1419.0, 842.0 ],
                                                                         "boxes": [
+                                                                            {
+                                                                                "box": {
+                                                                                    "bubble": 1,
+                                                                                    "bubblepoint": 0.49,
+                                                                                    "id": "obj-50",
+                                                                                    "maxclass": "comment",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 0,
+                                                                                    "patching_rect": [ 156.0, 318.5, 206.0, 24.0 ],
+                                                                                    "text": "subClusterIndex, neuronCellIndex"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "bubble": 1,
+                                                                                    "bubblepoint": 0.49,
+                                                                                    "id": "obj-48",
+                                                                                    "linecount": 2,
+                                                                                    "maxclass": "comment",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 0,
+                                                                                    "patching_rect": [ 231.0, 356.5, 84.0, 37.0 ],
+                                                                                    "text": "Cell index, cluster"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "id": "obj-45",
+                                                                                    "maxclass": "newobj",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 3,
+                                                                                    "outlettype": [ "jit_matrix", "jit_matrix", "" ],
+                                                                                    "patching_rect": [ 94.0, 407.0, 69.0, 22.0 ],
+                                                                                    "text": "jit.unpack 2"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "id": "obj-46",
+                                                                                    "maxclass": "newobj",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 2,
+                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                    "patching_rect": [ 94.0, 364.0, 132.0, 22.0 ],
+                                                                                    "text": "jit.bsort @planemode 1"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
+                                                                                    "fontface": 0,
+                                                                                    "fontname": "Arial",
+                                                                                    "fontsize": 12.0,
+                                                                                    "id": "obj-12",
+                                                                                    "maxclass": "jit.cellblock",
+                                                                                    "numinlets": 2,
+                                                                                    "numoutlets": 4,
+                                                                                    "outlettype": [ "list", "", "", "" ],
+                                                                                    "patching_rect": [ 782.0, 482.0, 977.0, 47.0 ],
+                                                                                    "rows": 1
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "bubble": 1,
+                                                                                    "bubblepoint": 0.49,
+                                                                                    "id": "obj-6",
+                                                                                    "linecount": 2,
+                                                                                    "maxclass": "comment",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 0,
+                                                                                    "patching_rect": [ 286.0, 453.5, 84.0, 37.0 ],
+                                                                                    "text": "Cell index, cluster"
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 "box": {
                                                                                     "id": "obj-32",
@@ -1518,7 +1594,7 @@
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "", "bang" ],
                                                                                     "parameter_enable": 0,
-                                                                                    "patching_rect": [ 370.5, 587.0, 50.0, 22.0 ]
+                                                                                    "patching_rect": [ 704.0, 605.0, 50.0, 22.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -1528,14 +1604,14 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "" ],
-                                                                                    "patching_rect": [ 370.5, 615.0, 55.0, 22.0 ],
+                                                                                    "patching_rect": [ 704.0, 633.0, 55.0, 22.0 ],
                                                                                     "text": "plane $1"
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
-                                                                                    "colwidth": 37,
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -1544,7 +1620,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 446.5, 598.0, 979.0, 84.0 ],
+                                                                                    "patching_rect": [ 782.0, 616.0, 977.0, 47.0 ],
                                                                                     "rows": 1
                                                                                 }
                                                                             },
@@ -1556,7 +1632,7 @@
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "", "bang" ],
                                                                                     "parameter_enable": 0,
-                                                                                    "patching_rect": [ 370.5, 464.0, 50.0, 22.0 ]
+                                                                                    "patching_rect": [ 704.0, 482.0, 50.0, 22.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -1566,14 +1642,14 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "" ],
-                                                                                    "patching_rect": [ 370.5, 492.0, 55.0, 22.0 ],
+                                                                                    "patching_rect": [ 704.0, 510.0, 55.0, 22.0 ],
                                                                                     "text": "plane $1"
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
-                                                                                    "colwidth": 37,
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -1582,7 +1658,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 446.5, 475.0, 979.0, 84.0 ],
+                                                                                    "patching_rect": [ 782.0, 540.0, 977.0, 47.0 ],
                                                                                     "rows": 1
                                                                                 }
                                                                             },
@@ -1594,7 +1670,7 @@
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "", "bang" ],
                                                                                     "parameter_enable": 0,
-                                                                                    "patching_rect": [ 369.0, 382.0, 50.0, 22.0 ]
+                                                                                    "patching_rect": [ 703.0, 400.0, 50.0, 22.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -1604,14 +1680,14 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "" ],
-                                                                                    "patching_rect": [ 369.0, 410.0, 55.0, 22.0 ],
+                                                                                    "patching_rect": [ 703.0, 428.0, 55.0, 22.0 ],
                                                                                     "text": "plane $1"
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
-                                                                                    "colwidth": 37,
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -1620,7 +1696,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 448.0, 393.0, 976.0, 38.0 ],
+                                                                                    "patching_rect": [ 782.0, 411.0, 976.0, 38.0 ],
                                                                                     "rows": 1
                                                                                 }
                                                                             },
@@ -1632,7 +1708,7 @@
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "", "bang" ],
                                                                                     "parameter_enable": 0,
-                                                                                    "patching_rect": [ 378.0, 247.0, 50.0, 22.0 ]
+                                                                                    "patching_rect": [ 712.0, 265.0, 50.0, 22.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -1642,14 +1718,14 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "" ],
-                                                                                    "patching_rect": [ 378.0, 275.0, 55.0, 22.0 ],
+                                                                                    "patching_rect": [ 712.0, 293.0, 55.0, 22.0 ],
                                                                                     "text": "plane $1"
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
-                                                                                    "colwidth": 37,
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -1658,7 +1734,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 448.0, 326.0, 976.0, 38.0 ],
+                                                                                    "patching_rect": [ 782.0, 344.0, 976.0, 38.0 ],
                                                                                     "rows": 1
                                                                                 }
                                                                             },
@@ -1692,8 +1768,8 @@
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
-                                                                                    "colwidth": 37,
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -1702,7 +1778,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 448.0, 253.0, 976.0, 38.0 ],
+                                                                                    "patching_rect": [ 782.0, 271.0, 976.0, 38.0 ],
                                                                                     "rows": 1
                                                                                 }
                                                                             },
@@ -1719,8 +1795,8 @@
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 66,
-                                                                                    "colwidth": 37,
+                                                                                    "cols": 12,
+                                                                                    "colwidth": 63,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -1729,23 +1805,8 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 448.0, 64.0, 976.0, 147.0 ],
-                                                                                    "rows": 4501
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "box": {
-                                                                                    "cols": 66,
-                                                                                    "fontface": 0,
-                                                                                    "fontname": "Arial",
-                                                                                    "fontsize": 12.0,
-                                                                                    "id": "obj-1",
-                                                                                    "maxclass": "jit.cellblock",
-                                                                                    "numinlets": 2,
-                                                                                    "numoutlets": 4,
-                                                                                    "outlettype": [ "list", "", "", "" ],
-                                                                                    "patching_rect": [ 130.0, 498.0, 200.0, 200.0 ],
-                                                                                    "rows": 1
+                                                                                    "patching_rect": [ 782.0, 82.0, 976.0, 147.0 ],
+                                                                                    "rows": 6000
                                                                                 }
                                                                             },
                                                                             {
@@ -1767,7 +1828,7 @@
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "bang" ],
                                                                                     "parameter_enable": 0,
-                                                                                    "patching_rect": [ 65.0, 331.0, 24.0, 24.0 ]
+                                                                                    "patching_rect": [ 65.0, 391.0, 24.0, 24.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -1830,7 +1891,7 @@
                                                                                                             "modernui": 1
                                                                                                         },
                                                                                                         "classnamespace": "box",
-                                                                                                        "rect": [ 59.0, 106.0, 425.0, 224.0 ],
+                                                                                                        "rect": [ 167.0, 429.0, 425.0, 224.0 ],
                                                                                                         "boxes": [
                                                                                                             {
                                                                                                                 "box": {
@@ -1949,27 +2010,25 @@
                                                                                             },
                                                                                             {
                                                                                                 "box": {
-                                                                                                    "comment": "",
+                                                                                                    "comment": "Spikes count for all frames (vector)",
                                                                                                     "id": "obj-32",
                                                                                                     "index": 1,
                                                                                                     "maxclass": "inlet",
                                                                                                     "numinlets": 0,
                                                                                                     "numoutlets": 1,
                                                                                                     "outlettype": [ "jit_matrix" ],
-                                                                                                    "patching_rect": [ 64.0, 57.0, 30.0, 30.0 ],
-                                                                                                    "varname": "u282013423"
+                                                                                                    "patching_rect": [ 64.0, 57.0, 30.0, 30.0 ]
                                                                                                 }
                                                                                             },
                                                                                             {
                                                                                                 "box": {
-                                                                                                    "comment": "",
+                                                                                                    "comment": "Spike count sorted, neuron index",
                                                                                                     "id": "obj-33",
                                                                                                     "index": 1,
                                                                                                     "maxclass": "outlet",
                                                                                                     "numinlets": 1,
                                                                                                     "numoutlets": 0,
-                                                                                                    "patching_rect": [ 64.0, 204.0, 30.0, 30.0 ],
-                                                                                                    "varname": "u658013422"
+                                                                                                    "patching_rect": [ 64.0, 204.0, 30.0, 30.0 ]
                                                                                                 }
                                                                                             }
                                                                                         ],
@@ -2022,7 +2081,7 @@
                                                                                             "modernui": 1
                                                                                         },
                                                                                         "classnamespace": "box",
-                                                                                        "rect": [ 59.0, 106.0, 294.0, 194.0 ],
+                                                                                        "rect": [ 59.0, 106.0, 512.0, 403.0 ],
                                                                                         "boxes": [
                                                                                             {
                                                                                                 "box": {
@@ -2038,12 +2097,11 @@
                                                                                             {
                                                                                                 "box": {
                                                                                                     "id": "obj-31",
-                                                                                                    "linecount": 2,
                                                                                                     "maxclass": "newobj",
                                                                                                     "numinlets": 1,
                                                                                                     "numoutlets": 1,
                                                                                                     "outlettype": [ "jit_matrix" ],
-                                                                                                    "patching_rect": [ 48.0, 69.99595959595959, 89.0, 22.0 ],
+                                                                                                    "patching_rect": [ 48.0, 69.99595959595959, 90.0, 22.0 ],
                                                                                                     "text": "bo.jit.char2long"
                                                                                                 }
                                                                                             },
@@ -2060,27 +2118,25 @@
                                                                                             },
                                                                                             {
                                                                                                 "box": {
-                                                                                                    "comment": "",
+                                                                                                    "comment": "Neuron spikes for this label",
                                                                                                     "id": "obj-28",
                                                                                                     "index": 1,
                                                                                                     "maxclass": "inlet",
                                                                                                     "numinlets": 0,
                                                                                                     "numoutlets": 1,
                                                                                                     "outlettype": [ "jit_matrix" ],
-                                                                                                    "patching_rect": [ 48.0, 34.0, 30.0, 30.0 ],
-                                                                                                    "varname": "u679012858"
+                                                                                                    "patching_rect": [ 48.0, 34.0, 30.0, 30.0 ]
                                                                                                 }
                                                                                             },
                                                                                             {
                                                                                                 "box": {
-                                                                                                    "comment": "",
+                                                                                                    "comment": "Sum of spikes for all frames",
                                                                                                     "id": "obj-29",
                                                                                                     "index": 1,
                                                                                                     "maxclass": "outlet",
                                                                                                     "numinlets": 1,
                                                                                                     "numoutlets": 0,
-                                                                                                    "patching_rect": [ 47.0, 130.54545454545456, 30.0, 30.0 ],
-                                                                                                    "varname": "u109012873"
+                                                                                                    "patching_rect": [ 47.0, 130.54545454545456, 30.0, 30.0 ]
                                                                                                 }
                                                                                             }
                                                                                         ],
@@ -2152,7 +2208,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "" ],
-                                                                                    "patching_rect": [ 360.0, 323.0, 55.0, 22.0 ],
+                                                                                    "patching_rect": [ 360.0, 287.0, 55.0, 22.0 ],
                                                                                     "text": "dim $1 1"
                                                                                 }
                                                                             },
@@ -2174,8 +2230,8 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 94.0, 332.0, 51.0, 22.0 ],
-                                                                                    "text": "jit.repos"
+                                                                                    "patching_rect": [ 94.0, 326.0, 56.0, 22.0 ],
+                                                                                    "text": "jit.pack 2"
                                                                                 }
                                                                             },
                                                                             {
@@ -2185,7 +2241,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 3,
                                                                                     "outlettype": [ "jit_matrix", "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 94.0, 263.0, 83.0, 22.0 ],
+                                                                                    "patching_rect": [ 94.0, 245.0, 93.0, 22.0 ],
                                                                                     "text": "jit.unpack 2"
                                                                                 }
                                                                             },
@@ -2210,7 +2266,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 94.0, 293.0, 194.0, 22.0 ],
+                                                                                    "patching_rect": [ 94.0, 287.0, 194.0, 22.0 ],
                                                                                     "text": "jit.expr @expr 1+in[1]*cell[0]/dim[0]"
                                                                                 }
                                                                             },
@@ -2225,7 +2281,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "", "" ],
-                                                                                    "patching_rect": [ 127.0, 447.0, 80.0, 35.0 ]
+                                                                                    "patching_rect": [ 127.0, 507.0, 80.0, 35.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -2246,7 +2302,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 94.0, 401.0, 188.0, 22.0 ],
+                                                                                    "patching_rect": [ 94.0, 461.0, 188.0, 22.0 ],
                                                                                     "text": "jit.matrix #0.SubClusters 1 long"
                                                                                 }
                                                                             },
@@ -2282,7 +2338,7 @@
                                                                                     "maxclass": "outlet",
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 0,
-                                                                                    "patching_rect": [ 94.0, 447.0, 30.0, 30.0 ]
+                                                                                    "patching_rect": [ 94.0, 507.0, 30.0, 30.0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -2294,7 +2350,7 @@
                                                                                     "numoutlets": 1,
                                                                                     "outlettype": [ "" ],
                                                                                     "parameter_enable": 0,
-                                                                                    "patching_rect": [ 448.0, 34.0, 150.0, 22.0 ]
+                                                                                    "patching_rect": [ 782.0, 52.0, 150.0, 22.0 ]
                                                                                 }
                                                                             }
                                                                         ],
@@ -2308,21 +2364,35 @@
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-11", 0 ],
-                                                                                    "order": 0,
-                                                                                    "source": [ "obj-14", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-2", 0 ],
                                                                                     "order": 2,
                                                                                     "source": [ "obj-14", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-8", 0 ],
+                                                                                    "destination": [ "obj-2", 0 ],
+                                                                                    "order": 4,
+                                                                                    "source": [ "obj-14", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-27", 0 ],
                                                                                     "order": 1,
+                                                                                    "source": [ "obj-14", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-35", 0 ],
+                                                                                    "order": 0,
+                                                                                    "source": [ "obj-14", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-8", 0 ],
+                                                                                    "order": 3,
                                                                                     "source": [ "obj-14", 0 ]
                                                                                 }
                                                                             },
@@ -2340,64 +2410,50 @@
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-1", 0 ],
-                                                                                    "order": 1,
-                                                                                    "source": [ "obj-19", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
                                                                                     "destination": [ "obj-31", 0 ],
-                                                                                    "order": 3,
-                                                                                    "source": [ "obj-19", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-35", 0 ],
-                                                                                    "order": 0,
+                                                                                    "order": 1,
                                                                                     "source": [ "obj-19", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-5", 0 ],
-                                                                                    "order": 2,
+                                                                                    "order": 0,
                                                                                     "source": [ "obj-19", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-11", 0 ],
-                                                                                    "order": 1,
-                                                                                    "source": [ "obj-2", 2 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-23", 0 ],
-                                                                                    "order": 0,
-                                                                                    "source": [ "obj-2", 2 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-27", 0 ],
-                                                                                    "order": 4,
-                                                                                    "source": [ "obj-2", 2 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-35", 0 ],
                                                                                     "order": 3,
                                                                                     "source": [ "obj-2", 2 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-8", 0 ],
+                                                                                    "destination": [ "obj-23", 0 ],
                                                                                     "order": 2,
+                                                                                    "source": [ "obj-2", 2 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-27", 0 ],
+                                                                                    "order": 1,
+                                                                                    "source": [ "obj-2", 2 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-35", 0 ],
+                                                                                    "order": 0,
+                                                                                    "source": [ "obj-2", 2 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-8", 0 ],
+                                                                                    "order": 4,
                                                                                     "source": [ "obj-2", 2 ]
                                                                                 }
                                                                             },
@@ -2458,13 +2514,6 @@
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-34", 0 ],
-                                                                                    "order": 1,
-                                                                                    "source": [ "obj-30", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-8", 0 ],
                                                                                     "order": 0,
                                                                                     "source": [ "obj-30", 0 ]
                                                                                 }
@@ -2472,7 +2521,7 @@
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-9", 0 ],
-                                                                                    "order": 2,
+                                                                                    "order": 1,
                                                                                     "source": [ "obj-30", 0 ]
                                                                                 }
                                                                             },
@@ -2491,43 +2540,33 @@
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-10", 0 ],
-                                                                                    "order": 3,
-                                                                                    "source": [ "obj-34", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-11", 0 ],
                                                                                     "order": 1,
-                                                                                    "source": [ "obj-34", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-23", 0 ],
-                                                                                    "order": 0,
                                                                                     "source": [ "obj-34", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-65", 0 ],
-                                                                                    "order": 2,
+                                                                                    "order": 0,
                                                                                     "source": [ "obj-34", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-19", 0 ],
-                                                                                    "order": 0,
                                                                                     "source": [ "obj-37", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-66", 0 ],
-                                                                                    "order": 1,
-                                                                                    "source": [ "obj-37", 0 ]
+                                                                                    "destination": [ "obj-19", 0 ],
+                                                                                    "source": [ "obj-45", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-45", 0 ],
+                                                                                    "source": [ "obj-46", 0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -2540,13 +2579,6 @@
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-166", 0 ],
                                                                                     "midpoints": [ 103.5, 141.5, 369.5, 141.5 ],
-                                                                                    "order": 1,
-                                                                                    "source": [ "obj-49", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-2", 0 ],
                                                                                     "order": 0,
                                                                                     "source": [ "obj-49", 0 ]
                                                                                 }
@@ -2554,14 +2586,14 @@
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-30", 0 ],
-                                                                                    "order": 2,
+                                                                                    "order": 1,
                                                                                     "source": [ "obj-49", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-52", 0 ],
-                                                                                    "order": 3,
+                                                                                    "order": 2,
                                                                                     "source": [ "obj-49", 0 ]
                                                                                 }
                                                                             },
@@ -2579,15 +2611,7 @@
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-19", 0 ],
-                                                                                    "order": 1,
-                                                                                    "source": [ "obj-66", 0 ]
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "patchline": {
-                                                                                    "destination": [ "obj-27", 0 ],
-                                                                                    "order": 0,
+                                                                                    "destination": [ "obj-46", 0 ],
                                                                                     "source": [ "obj-66", 0 ]
                                                                                 }
                                                                             },
@@ -2914,7 +2938,7 @@
                                         "boxes": [
                                             {
                                                 "box": {
-                                                    "cols": 66,
+                                                    "cols": 10000,
                                                     "colwidth": 26,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
@@ -2925,7 +2949,7 @@
                                                     "numoutlets": 4,
                                                     "outlettype": [ "list", "", "", "" ],
                                                     "patching_rect": [ 853.0, 254.5, 484.0, 111.0 ],
-                                                    "rows": 4501
+                                                    "rows": 6000
                                                 }
                                             },
                                             {
@@ -2955,7 +2979,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 66,
+                                                    "cols": 10000,
                                                     "colwidth": 26,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
@@ -3180,7 +3204,7 @@
                                             {
                                                 "box": {
                                                     "bgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
-                                                    "cols": 66,
+                                                    "cols": 12,
                                                     "colwidth": 26,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
@@ -3191,12 +3215,12 @@
                                                     "numoutlets": 4,
                                                     "outlettype": [ "list", "", "", "" ],
                                                     "patching_rect": [ 790.0, 646.0, 485.0, 334.0 ],
-                                                    "rows": 4501
+                                                    "rows": 6000
                                                 }
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 66,
+                                                    "cols": 10000,
                                                     "colwidth": 26,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
@@ -3212,7 +3236,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 66,
+                                                    "cols": 10000,
                                                     "colwidth": 26,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
@@ -3223,7 +3247,7 @@
                                                     "numoutlets": 4,
                                                     "outlettype": [ "list", "", "", "" ],
                                                     "patching_rect": [ 790.0, 523.0, 484.0, 111.0 ],
-                                                    "rows": 4501
+                                                    "rows": 6000
                                                 }
                                             },
                                             {
@@ -8248,7 +8272,7 @@
                                     "patching_rect": [ 311.0, 324.0, 670.0, 23.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 22.0, 432.0, 1474.0, 23.0 ],
-                                    "size": 4501.0
+                                    "size": 6000.0
                                 }
                             },
                             {
@@ -8371,7 +8395,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 439.0, 103.0, 69.0, 22.0 ],
-                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 4, 66, 1502, 527, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                     "text": "thispatcher"
                                 }
                             },
@@ -9797,7 +9821,7 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 310.0, 388.0, 1168.0, 560.0 ],
+                                                        "rect": [ 300.0, 351.0, 1168.0, 560.0 ],
                                                         "boxes": [
                                                             {
                                                                 "box": {
@@ -9900,7 +9924,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "" ],
-                                                                    "patching_rect": [ 82.0, 442.0, 80.0, 35.0 ]
+                                                                    "patching_rect": [ 82.0, 466.0, 80.0, 35.0 ]
                                                                 }
                                                             },
                                                             {
@@ -10202,7 +10226,7 @@
                                                                         "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                                                                     },
-                                                                    "patching_rect": [ 50.0, 357.0, 159.0, 24.0 ],
+                                                                    "patching_rect": [ 50.0, 381.0, 159.0, 24.0 ],
                                                                     "saved_object_attributes": {
                                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                                         "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
@@ -10254,8 +10278,8 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                    "patching_rect": [ 50.0, 329.0, 220.0, 22.0 ],
-                                                                    "text": "jit./"
+                                                                    "patching_rect": [ 50.0, 353.0, 220.0, 22.0 ],
+                                                                    "text": "jit./ @val 1."
                                                                 }
                                                             },
                                                             {
@@ -10358,7 +10382,7 @@
                                                                     "maxclass": "outlet",
                                                                     "numinlets": 1,
                                                                     "numoutlets": 0,
-                                                                    "patching_rect": [ 50.0, 442.0, 30.0, 30.0 ]
+                                                                    "patching_rect": [ 50.0, 466.0, 30.0, 30.0 ]
                                                                 }
                                                             }
                                                         ],
@@ -11467,7 +11491,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 311.0, 77.0, 100.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 710.0, 6.0, 156.0, 22.0 ]
+                                    "presentation_rect": [ 706.0, 7.0, 156.0, 22.0 ]
                                 }
                             },
                             {
@@ -15478,7 +15502,7 @@
                                     "bgfillcolor_type": "color",
                                     "fontsize": 9.0,
                                     "id": "obj-18",
-                                    "items": "1 Cluster #1",
+                                    "items": [ "1 Diencephalon -", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", ",", "13 Diencephalon - Dorsal Thalamus", ",", "14 Diencephalon - Eminentia Thalami", ",", "15 Diencephalon - Habenula", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", ",", "36 Diencephalon - Isl1 cluster 1", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster", ",", "40 Diencephalon - Medial vglut2 cluster", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1)", ",", "43 Diencephalon - Olig2 Band", ",", "44 Diencephalon - Olig2 Band 2", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", ",", "58 Diencephalon - Posterior Tuberculum", ",", "60 Diencephalon - Preoptic Area", ",", "64 Diencephalon - Pretectal Gad1b Cluster", ",", "65 Diencephalon - Pretectal dopaminergic cluster", ",", "66 Diencephalon - Pretectum", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster", ",", "76 Diencephalon - Ventral Thalamus", ",", "78 Ganglia - Eyes", ",", "85 Ganglia - Lateral Line Neuromast OC1", ",", "88 Ganglia - Lateral Line Neuromast SO3", ",", "90 Ganglia - Posterior Lateral Line Ganglia", ",", "94 Mesencephalon -", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", ",", "96 Mesencephalon - Medial Tectal Band", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", ",", "98 Mesencephalon - Oculomotor Nucleus nIII", ",", "99 Mesencephalon - Otpb Cluster", ",", "100 Mesencephalon - Oxtl Cluster Sparse", ",", "101 Mesencephalon - Ptf1a Cluster", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", ",", "106 Mesencephalon - Tectum Stratum Periventriculare", ",", "107 Mesencephalon - Tectum Neuropil", ",", "108 Mesencephalon - Tegmentum", ",", "109 Mesencephalon - Torus Longitudinalis", ",", "110 Mesencephalon - Torus Semicircularis", ",", "111 Mesencephalon - Vglut2 cluster 1", ",", "114 Rhombencephalon -", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", ",", "125 Rhombencephalon - Area Postrema", ",", "126 Rhombencephalon - CaD", ",", "127 Rhombencephalon - CaV", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", ",", "129 Rhombencephalon - Cerebellar Neuropil 1", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", ",", "131 Rhombencephalon - Cerebellum", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", ",", "133 Rhombencephalon - Corpus Cerebelli", ",", "134 Rhombencephalon - Eminentia Granularis", ",", "135 Rhombencephalon - Gad1b Cluster 1", ",", "137 Rhombencephalon - Gad1b Cluster 11", ",", "139 Rhombencephalon - Gad1b Cluster 13", ",", "140 Rhombencephalon - Gad1b Cluster 14", ",", "141 Rhombencephalon - Gad1b Cluster 15", ",", "142 Rhombencephalon - Gad1b Cluster 16", ",", "143 Rhombencephalon - Gad1b Cluster 17", ",", "144 Rhombencephalon - Gad1b Cluster 18", ",", "145 Rhombencephalon - Gad1b Cluster 19", ",", "146 Rhombencephalon - Gad1b Cluster 2", ",", "147 Rhombencephalon - Gad1b Cluster 20", ",", "149 Rhombencephalon - Gad1b Cluster 4", ",", "150 Rhombencephalon - Gad1b Cluster 5", ",", "151 Rhombencephalon - Gad1b Cluster 6", ",", "152 Rhombencephalon - Gad1b Cluster 7", ",", "155 Rhombencephalon - Gad1b Stripe 1", ",", "156 Rhombencephalon - Gad1b Stripe 2", ",", "157 Rhombencephalon - Gad1b Stripe 3", ",", "158 Rhombencephalon - Glyt2 Cluster 1", ",", "160 Rhombencephalon - Glyt2 Cluster 11", ",", "161 Rhombencephalon - Glyt2 Cluster 12", ",", "162 Rhombencephalon - Glyt2 Cluster 13", ",", "163 Rhombencephalon - Glyt2 Cluster 14", ",", "164 Rhombencephalon - Glyt2 Cluster 2", ",", "165 Rhombencephalon - Glyt2 Cluster 3", ",", "166 Rhombencephalon - Glyt2 Cluster 4", ",", "167 Rhombencephalon - Glyt2 Cluster 5", ",", "168 Rhombencephalon - Glyt2 Cluster 6", ",", "172 Rhombencephalon - Glyt2 Stripe 1", ",", "173 Rhombencephalon - Glyt2 Stripe 2", ",", "174 Rhombencephalon - Glyt2 Stripe 3", ",", "175 Rhombencephalon - Inferior Olive", ",", "177 Rhombencephalon - Isl1 Cluster 1", ",", "178 Rhombencephalon - Isl1 Cluster 2", ",", "179 Rhombencephalon - Isl1 Cluster 3", ",", "180 Rhombencephalon - Isl1 Stripe 1", ",", "182 Rhombencephalon - Lobus caudalis cerebelli", ",", "184 Rhombencephalon - Mauthner", ",", "186 Rhombencephalon - Medial Vestibular Nucleus", ",", "187 Rhombencephalon - MiD2", ",", "188 Rhombencephalon - MiD3", ",", "195 Rhombencephalon - Neuropil Region 2", ",", "196 Rhombencephalon - Neuropil Region 3", ",", "197 Rhombencephalon - Neuropil Region 4", ",", "198 Rhombencephalon - Neuropil Region 5", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV", ",", "202 Rhombencephalon - Olig2 Cluster", ",", "203 Rhombencephalon - Olig2 Stripe", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", ",", "207 Rhombencephalon - Otpb Cluster 3", ",", "208 Rhombencephalon - Otpb Cluster 4", ",", "209 Rhombencephalon - Otpb Cluster 5", ",", "210 Rhombencephalon - Otpb Cluster 6", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", ",", "214 Rhombencephalon - Ptf1a Cluster 1", ",", "215 Rhombencephalon - Ptf1a Stripe", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse", ",", "217 Rhombencephalon - Raphe - Inferior", ",", "219 Rhombencephalon - Rhombomere 1", ",", "220 Rhombencephalon - Rhombomere 2", ",", "221 Rhombencephalon - Rhombomere 3", ",", "222 Rhombencephalon - Rhombomere 4", ",", "223 Rhombencephalon - Rhombomere 5", ",", "224 Rhombencephalon - Rhombomere 6", ",", "225 Rhombencephalon - Rhombomere 7", ",", "233 Rhombencephalon - S1181t Cluster", ",", "234 Rhombencephalon - Small cluster of TH stained neurons", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", ",", "241 Rhombencephalon - Valvula Cerebelli", ",", "243 Rhombencephalon - Vglut2 Stripe 1", ",", "244 Rhombencephalon - Vglut2 Stripe 2", ",", "245 Rhombencephalon - Vglut2 Stripe 3", ",", "246 Rhombencephalon - Vglut2 Stripe 4", ",", "247 Rhombencephalon - Vglut2 cluster 1", ",", "248 Rhombencephalon - Vglut2 cluster 2", ",", "249 Rhombencephalon - Vglut2 cluster 3", ",", "250 Rhombencephalon - Vglut2 cluster 4", ",", "251 Rhombencephalon - Vmat2 Cluster 1", ",", "252 Rhombencephalon - Vmat2 Cluster 2", ",", "253 Rhombencephalon - Vmat2 Cluster 3", ",", "255 Rhombencephalon - Vmat2 Cluster 5", ",", "256 Rhombencephalon - Vmat2 Stripe1", ",", "257 Rhombencephalon - Vmat2 Stripe2", ",", "258 Rhombencephalon - Vmat2 Stripe3", ",", "259 Rhombencephalon - X Vagus motorneuron cluster", ",", "260 Spinal Cord", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", ",", "263 Spinal Cord - Gad1b Stripe 1", ",", "265 Spinal Cord - Glyt2 Stripe", ",", "266 Spinal Cord - Isl1 stripe - motorneurons", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", ",", "268 Spinal Cord - Neuropil Region", ",", "269 Spinal Cord - Olig2 Stripe", ",", "270 Spinal Cord - Vglut2 Stripe 1", ",", "271 Spinal Cord - Vglut2 Stripe 2", ",", "272 Spinal Cord - Vglut2 Stripe 3", ",", "273 Spinal Cord - Vmat2 Stripe1", ",", "275 Telencephalon -", ",", "277 Telencephalon - Isl1 cluster 1", ",", "279 Telencephalon - Olfactory Bulb", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", ",", "283 Telencephalon - Pallium", ",", "285 Telencephalon - S1181t Cluster", ",", "286 Telencephalon - Subpallial Gad1b cluster", ",", "287 Telencephalon - Subpallial Otpb Cluster 2", ",", "288 Telencephalon - Subpallial Otpb strip", ",", "290 Telencephalon - Subpallial dopaminergic cluster", ",", "291 Telencephalon - Subpallium", ",", "293 Telencephalon - Vglut2 rind", ",", "294 Telencephalon - Vmat2 cluster" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -17301,7 +17325,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[3]",
+                            "parameter_longname": "Chord sustain[16]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -17359,7 +17383,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 157.0, 183.0, 150.0, 20.0 ],
-                                    "text": "---.1.notes"
+                                    "text": "#1.#2.notes"
                                 }
                             },
                             {
@@ -18298,7 +18322,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-84",
-                                                    "linecount": 3,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -25005,7 +25028,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[17]",
+                            "parameter_longname": "Chord sustain[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -25136,7 +25159,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 88.0, 103.0, 117.0, 24.0 ],
-                                    "presentation_linecount": 4,
                                     "text": "index for map file",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -25171,7 +25193,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 660.0, 33.0, 291.0, 47.0 ],
-                                    "presentation_linecount": 6,
                                     "text": "synchronicity:\n- normalize each neuron activity based on their mean\n- multiply neuron J with all other neurons",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -25606,7 +25627,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[2]",
+                            "parameter_longname": "hold",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -25713,7 +25734,7 @@
                     "patching_rect": [ 35.0, 91.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 5.0, 86.0, 20.0 ],
-                    "text": "Channel 1",
+                    "text": "Channel #2",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -26250,6 +26271,40 @@
                 }
             }
         ],
+        "parameters": {
+            "obj-10": [ "Load clusters CSV file[4]", "Load clusters", 0 ],
+            "obj-12": [ "live.menu[5]", "live.menu", 0 ],
+            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
+            "obj-15": [ "3D view[1]", "3D view", 0 ],
+            "obj-20": [ "hold", "hold", 0 ],
+            "obj-22": [ "Timeline[1]", "Timeline", 0 ],
+            "obj-26": [ "Max polypressure output[3]", "maxpolypressure", 0 ],
+            "obj-29": [ "Max velocity output[3]", "maxvelocity", 0 ],
+            "obj-3": [ "live.menu[18]", "8439.clusterMenu", 0 ],
+            "obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
+            "obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
+            "obj-61": [ "velocity range[1]", "velocityRange", 0 ],
+            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
+            "obj-78": [ "1-MIDI-IN-Channel[1]", "1-MIDI-IN-Channel", 0 ],
+            "obj-79": [ "poly pressure range[1]", "polyPressureRange", 0 ],
+            "obj-8": [ "live.numbox[3]", "live.numbox", 0 ],
+            "obj-80": [ "live.text[5]", "live.text[3]", 0 ],
+            "obj-82": [ "1-MIDI-OUT-Channel[1]", "1-MIDI-OUT-Channel", 0 ],
+            "obj-89": [ "live.text[6]", "live.text[3]", 0 ],
+            "obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
+            "obj-91": [ "live.menu[4]", "live.menu", 0 ],
+            "obj-98": [ "live.menu[6]", "live.menu", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
+            "inherited_shortname": 1
+        },
+        "autosave": 0,
         "styles": [
             {
                 "name": "MP-M4L",
