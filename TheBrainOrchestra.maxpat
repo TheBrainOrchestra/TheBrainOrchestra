@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 121.0, 172.0, 1186.0, 727.0 ],
+        "rect": [ 202.0, 211.0, 1038.0, 642.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -6643,7 +6643,7 @@
                                     "patching_rect": [ 251.0, 305.0, 670.0, 23.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 44.0, 438.0, 1500.0, 23.0 ],
-                                    "size": 6000.0
+                                    "size": 4501.0
                                 }
                             },
                             {
@@ -6857,7 +6857,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 379.0, 103.0, 69.0, 22.0 ],
-                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 147, 1512, 613, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                     "text": "thispatcher"
                                 }
                             },
@@ -8061,7 +8061,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 59.0, 536.0, 640.0, 480.0 ],
+                                        "rect": [ 59.0, 468.0, 640.0, 480.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -8462,7 +8462,7 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 457.0, -726.0, 924.0, 692.0 ],
+                                                        "rect": [ 554.0, 257.0, 924.0, 692.0 ],
                                                         "boxes": [
                                                             {
                                                                 "box": {
@@ -18257,8 +18257,20 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 324.0, 161.0, 1154.0, 787.0 ],
+                        "rect": [ 193.0, 184.0, 1154.0, 764.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "attr": "blend_mode",
+                                    "id": "obj-19",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 394.0, 385.0, 150.0, 22.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "fontsize": 14.0,
@@ -18785,6 +18797,39 @@
                                         "classnamespace": "box",
                                         "rect": [ 589.0, 278.0, 889.0, 523.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "message",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 119.0, 318.0, 77.0, 22.0 ],
+                                                    "text": "setall 1 1 1 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-7",
+                                                    "maxclass": "button",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 54.0, 312.0, 24.0, 24.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-2",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 54.0, 346.0, 162.0, 22.0 ],
+                                                    "text": "jit.matrix 1 float32 23743 1"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-3",
@@ -19986,7 +20031,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 10000,
+                                                    "cols": 23743,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -20070,6 +20115,12 @@
                                                     "destination": [ "obj-38", 0 ],
                                                     "order": 2,
                                                     "source": [ "obj-115", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-213", 0 ],
+                                                    "source": [ "obj-2", 0 ]
                                                 }
                                             },
                                             {
@@ -20164,6 +20215,18 @@
                                                 "patchline": {
                                                     "destination": [ "obj-115", 0 ],
                                                     "source": [ "obj-64", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "source": [ "obj-7", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "source": [ "obj-9", 0 ]
                                                 }
                                             }
                                         ],
@@ -21083,6 +21146,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-114", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-147", 0 ],
                                     "order": 1,
                                     "source": [ "obj-2", 0 ]
@@ -21189,7 +21258,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 379.0, 100.0, 1099.0, 848.0 ],
+                        "rect": [ 685.0, 259.0, 793.0, 689.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -23747,6 +23816,18 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 298.0, 53.0, 150.0, 22.0 ]
                                 }
+                            },
+                            {
+                                "box": {
+                                    "attr": "erase_color",
+                                    "id": "obj-20",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 477.0, 221.0, 150.0, 22.0 ]
+                                }
                             }
                         ],
                         "lines": [
@@ -23820,6 +23901,12 @@
                                 "patchline": {
                                     "destination": [ "obj-56", 0 ],
                                     "source": [ "obj-18", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-90", 0 ],
+                                    "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
@@ -29787,7 +29874,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 10000,
+                                    "cols": 66,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -29798,7 +29885,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 1119.0, 89.0, 199.0, 93.0 ],
-                                    "rows": 182
+                                    "rows": 66
                                 }
                             },
                             {
@@ -30820,7 +30907,7 @@
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 10000,
+                                                                                    "cols": 66,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -30830,7 +30917,7 @@
                                                                                     "numoutlets": 4,
                                                                                     "outlettype": [ "list", "", "", "" ],
                                                                                     "patching_rect": [ 309.0, 226.0, 200.0, 200.0 ],
-                                                                                    "rows": 182
+                                                                                    "rows": 66
                                                                                 }
                                                                             },
                                                                             {
@@ -32220,7 +32307,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 10000,
+                                    "cols": 66,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -32231,7 +32318,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 202.0, 84.0, 211.0, 74.0 ],
-                                    "rows": 6000
+                                    "rows": 4501
                                 }
                             },
                             {
@@ -32289,7 +32376,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 10000,
+                                    "cols": 23743,
                                     "colwidth": 100,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -33547,7 +33634,7 @@
                                         "boxes": [
                                             {
                                                 "box": {
-                                                    "cols": 182,
+                                                    "cols": 66,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -34719,7 +34806,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 182,
+                                                                    "cols": 66,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
                                                                     "fontsize": 12.0,
@@ -35776,7 +35863,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 82.0, 488.0, 1396.0, 460.0 ],
+                        "rect": [ 582.0, 230.0, 1396.0, 460.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -36934,7 +37021,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 80.0, 126.0, 194.0, 24.0 ],
+                                    "patching_rect": [ 80.0, 126.0, 194.0, 40.0 ],
                                     "text": "bo.jit.gl.handlecam ---BrainViz"
                                 }
                             },
@@ -40240,7 +40327,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[35]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40312,7 +40399,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[80]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40384,7 +40471,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[74]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40456,7 +40543,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[67]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40528,7 +40615,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[63]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40600,7 +40687,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[59]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40672,7 +40759,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[53]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40741,7 +40828,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[15]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40811,7 +40898,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[18]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40826,7 +40913,7 @@
                 },
                 "obj-12::obj-2::obj-8": {
                     "parameter_longname": "live.numbox[3]",
-                    "parameter_range": [ 1, 149 ]
+                    "parameter_range": [ 1, 177 ]
                 },
                 "obj-12::obj-2::obj-80": {
                     "parameter_longname": "live.text[5]"
@@ -40884,7 +40971,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[88]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40956,7 +41043,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[85]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41028,7 +41115,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[12]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41043,7 +41130,7 @@
                 },
                 "obj-12::obj-5::obj-8": {
                     "parameter_longname": "live.numbox[5]",
-                    "parameter_range": [ 1, 256 ]
+                    "parameter_range": [ 1, 149 ]
                 },
                 "obj-12::obj-5::obj-80": {
                     "parameter_longname": "live.text[9]"
@@ -41101,7 +41188,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[20]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41174,7 +41261,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[48]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41246,7 +41333,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[42]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -41318,7 +41405,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[38]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left", "2 ARTR_Right" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
