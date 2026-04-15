@@ -12,7 +12,7 @@ function jit_matrix(name) {
     var N = m.dim[0]; // number of series
     var M = m.dim[1]; // samples per series
 
-    // --- Extract data correctly ---
+    // --- Extract data ---
     var data = [];
     for (var i = 0; i < N; i++) {
         data[i] = [];
@@ -21,16 +21,22 @@ function jit_matrix(name) {
         }
     }
 
+    // --- Normalize all series ---
+    var normData = [];
+    for (var i = 0; i < N; i++) {
+        normData[i] = normalize(data[i]);
+    }
+
     // --- Build full correlation feature space ---
     var points = [];
     for (var i = 0; i < N; i++) {
         points[i] = [];
         for (var j = 0; j < N; j++) {
-            points[i][j] = correlation(data[i], data[j]);
+            points[i][j] = correlation(normData[i], normData[j]);
         }
     }
 
-    // --- Run K-means ---
+    // --- Run deterministic K-means ---
     var labels = kmeans(points, K, maxIter);
 
     // --- Convert labels to start at 1 ---
@@ -43,9 +49,7 @@ function jit_matrix(name) {
     var sortedIndices = [];
     for (var c = 1; c <= K; c++) {
         for (var i = 0; i < labels.length; i++) {
-            if (labels[i] === c) {
-                sortedIndices.push(i);
-            }
+            if (labels[i] === c) sortedIndices.push(i);
         }
     }
 
@@ -66,27 +70,19 @@ function jit_matrix(name) {
 //    outlet(1, "jit_matrix", sortedMatrix.name);
 }
 
-// --- Correlation ---
+// --- Normalize series to mean=0, std=1 ---
+function normalize(series) {
+    var mu = mean(series);
+    var sigma = Math.sqrt(mean(series.map(x => (x - mu) ** 2)));
+    if (sigma < 1e-12) sigma = 1;
+    return series.map(x => (x - mu) / sigma);
+}
+
+// --- Correlation as dot product of normalized series ---
 function correlation(a, b) {
-    var n = a.length;
-    var meanA = mean(a);
-    var meanB = mean(b);
-
-    var num = 0;
-    var denA = 0;
-    var denB = 0;
-
-    for (var i = 0; i < n; i++) {
-        var da = a[i] - meanA;
-        var db = b[i] - meanB;
-        num += da * db;
-        denA += da * da;
-        denB += db * db;
-    }
-
-    var denom = Math.sqrt(denA * denB);
-    if (denom < 1e-12) return 0;
-    return num / denom;
+    var sum = 0;
+    for (var i = 0; i < a.length; i++) sum += a[i] * b[i];
+    return sum / a.length;
 }
 
 function mean(arr) {
@@ -102,9 +98,7 @@ function kmeans(points, k, maxIter) {
 
     // --- Deterministic initialization: first K points ---
     var centroids = [];
-    for (var i = 0; i < k; i++) {
-        centroids[i] = points[i].slice();
-    }
+    for (var i = 0; i < k; i++) centroids[i] = points[i].slice();
 
     var labels = new Array(N);
 
@@ -153,7 +147,7 @@ function kmeans(points, k, maxIter) {
     return labels;
 }
 
-// --- Distance ---
+// --- Euclidean distance ---
 function distance(a, b) {
     var sum = 0;
     for (var i = 0; i < a.length; i++) {
