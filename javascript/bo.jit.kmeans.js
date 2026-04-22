@@ -1,9 +1,11 @@
 inlets = 1;
-outlets = 2; // outlet 0 = labels, outlet 1 = sorted jit.matrix
+outlets = 2; // outlet 0 = labels, outlet 1 = sorted jit.matrix, outlet 2 = bounds matrix
 
 // Parameters
 var K = 3;
 var maxIter = 100;
+
+var enableDebugMatrix = 1;
 
 // --- Entry point ---
 function jit_matrix(name) {
@@ -53,21 +55,51 @@ function jit_matrix(name) {
         }
     }
 
-//    // --- Create a new JitterMatrix for output ---
-//    var sortedMatrix = new JitterMatrix();
-//    sortedMatrix.type = m.type;
-//    sortedMatrix.dim = [N, M];
-//    sortedMatrix.planecount = 1;
-//
-//    for (var i = 0; i < N; i++) {
-//        var srcIdx = sortedIndices[i];
-//        for (var j = 0; j < M; j++) {
-//            sortedMatrix.setcell2d(i, j, data[srcIdx][j]);
-//        }
-//    }
-//
-//    // --- Output the sorted matrix ---
-//    outlet(1, "jit_matrix", sortedMatrix.name);
+    // --- Create a new JitterMatrix for output ---
+    var sortedMatrix = new JitterMatrix();
+    sortedMatrix.type = m.type;
+    sortedMatrix.dim = [N, M];
+    sortedMatrix.planecount = 1;
+
+    for (var i = 0; i < N; i++) {
+        var srcIdx = sortedIndices[i];
+        // fill sorted Matrix
+        for (var j = 0; j < M; j++) {
+            sortedMatrix.setcell2d(i, j, data[srcIdx][j]);
+        }
+    }
+
+    // --- Output the sorted matrix ---
+    outlet(1, "sortedMatrix", "jit_matrix", sortedMatrix.name);
+
+    if (enableDebugMatrix){
+        var boundsMatrix = new JitterMatrix();
+        boundsMatrix.type = "float32";
+        boundsMatrix.dim = [N, M];
+        boundsMatrix.planecount = 1;
+        
+        var sortedLabels = labels.sort();
+        var PreviousLabel = sortedLabels[0];
+        for (var i = 0; i < N; i++) {
+            var srcIdx = sortedIndices[i];
+            // make a red line when changing cluster
+            var currentLabel = sortedLabels[i];
+            if (currentLabel != PreviousLabel) {
+                for (var j = 0; j < M; j++) {
+                    boundsMatrix.setcell2d(i, j, 1);
+                }    
+            }
+            else {
+                for (var j = 0; j < M; j++) {
+                    boundsMatrix.setcell2d(i, j, 0);
+                }
+            }
+            PreviousLabel = currentLabel;
+        }
+
+         outlet(1, "boundsMatrix", "jit_matrix", boundsMatrix.name);
+
+    }
 }
 
 // --- Normalize series to mean=0, std=1 ---
