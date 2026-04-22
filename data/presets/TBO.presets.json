@@ -1,5 +1,159 @@
 {
     "_metadata": {
         "package-version": 0.4
+    },
+    "majorTom": {
+        "channelRack": {
+            "preset-description": "undefined",
+            "ON": 1,
+            "preset-name": "none",
+            "channel.1": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "foo",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 1,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.2": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 1,
+                "hold": 0,
+                "polyphonic": 1,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.3": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.4": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.5": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.6": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.7": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.8": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.9": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.10": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.11": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.12": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.13": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.14": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.15": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            },
+            "channel.16": {
+                "preset-description": "undefined",
+                "ON": 1,
+                "preset-name": "none",
+                "legato": 0,
+                "hold": 0,
+                "polyphonic": 0,
+                "subcluster-method": "auto: divide"
+            }
+        },
+        "preset-description": "undefined",
+        "ON": 1,
+        "preset-name": "majorTom"
     }
 }
