@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 44.0, 71.0, 1180.0, 760.0 ],
+        "rect": [ 184.0, 160.0, 1180.0, 760.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -21,18 +21,7 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-26",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 613.0, 10.0, 79.0, 22.0 ],
-                    "text": "address TBO"
-                }
-            },
-            {
-                "box": {
-                    "args": [ "UID-TBO.Model.view" ],
+                    "args": [ "TBO" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -50,7 +39,7 @@
                     "patching_rect": [ 290.0, 5.5, 300.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 870.0, 7.5, 300.0, 24.0 ],
-                    "varname": "mvc.model.gui[2]",
+                    "varname": "mvc.model.gui",
                     "viewvisibility": 1
                 }
             },
@@ -70,7 +59,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 283.0, 373.0, 694.0, 534.0 ],
+                        "rect": [ 91.0, 364.0, 694.0, 534.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -150,7 +139,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 309.0, 147.0, 276.0, 22.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "address channel.1, parent ChannelRackModelUID"
                                 }
                             },
@@ -186,7 +174,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 455.0, 285.0, 107.0, 22.0 ],
-                                    "presentation_linecount": 5,
                                     "text": "preset saveas toto"
                                 }
                             },
@@ -266,7 +253,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 3,
                                     "outlettype": [ "", "int", "publicinit" ],
-                                    "patching_rect": [ 93.0, 427.0, 519.0, 35.0 ],
+                                    "patching_rect": [ 93.0, 427.0, 520.0, 35.0 ],
                                     "text": "mvc.parameter ChannelModelUID polyphonic @type bool @default 0 @description \"Polyphonic mode\""
                                 }
                             },
@@ -299,8 +286,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 47.0, 320.0, 380.0, 22.0 ],
-                                    "text": "mvc.model ChannelModelUID ChannelRackModelUID channel.{1..16}",
+                                    "patching_rect": [ 47.0, 320.0, 464.0, 22.0 ],
+                                    "text": "mvc.model ChannelModelUID ChannelRackModelUID channel.{1..16} @type channel",
                                     "varname": "mvc.model"
                                 }
                             },
@@ -311,8 +298,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 37.0, 37.0, 296.0, 22.0 ],
-                                    "text": "mvc.model ChannelRackModelUID TBO channelRack"
+                                    "patching_rect": [ 37.0, 37.0, 407.0, 22.0 ],
+                                    "text": "mvc.model ChannelRackModelUID TBO channelRack @type channelRack"
                                 }
                             }
                         ],
@@ -441,7 +428,7 @@
             },
             {
                 "box": {
-                    "color": [ 0.438625166187593, 0.438625058064006, 0.438625086318427, 1.0 ],
+                    "color": [ 1.0, 0.4, 0.0, 1.0 ],
                     "fontsize": 18.0,
                     "id": "obj-66",
                     "maxclass": "newobj",
@@ -21350,12 +21337,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-24", 1 ],
-                    "source": [ "obj-26", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-36", 0 ],
                     "source": [ "obj-27", 0 ]
                 }
@@ -21993,7 +21974,6 @@
             "obj-12::obj-9::obj-97": [ "live.menu[16]", "live.menu", 0 ],
             "obj-12::obj-9::obj-98": [ "live.menu[39]", "live.menu", 0 ],
             "obj-18::obj-24::obj-8::obj-7": [ "live.toggle[19]", "live.toggle", 0 ],
-            "obj-18::obj-2::obj-24::obj-25::obj-61::obj-20.1::obj-12::obj-8::obj-7": [ "live.toggle[18]", "live.toggle", 0 ],
             "obj-18::obj-30::obj-8::obj-7": [ "live.toggle[20]", "live.toggle", 0 ],
             "obj-18::obj-32::obj-8::obj-7": [ "live.toggle[21]", "live.toggle", 0 ],
             "obj-20::obj-26::obj-83": [ "Frame rhythmic unit", "Frame rhythmic unit", 0 ],
@@ -23240,9 +23220,6 @@
                 },
                 "obj-18::obj-24::obj-8::obj-7": {
                     "parameter_longname": "live.toggle[19]"
-                },
-                "obj-18::obj-2::obj-24::obj-25::obj-61::obj-20.1::obj-12::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[18]"
                 },
                 "obj-18::obj-30::obj-8::obj-7": {
                     "parameter_longname": "live.toggle[20]"
