@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 3,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 90.0, 118.0, 1186.0, 727.0 ],
+        "rect": [ 123.0, 163.0, 1179.0, 726.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -21,62 +21,848 @@
         "boxes": [
             {
                 "box": {
-                    "fontsize": 14.0,
+                    "id": "obj-70",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 851.0, 536.0, 30.0, 22.0 ],
+                    "text": "GUI"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-66",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 770.0, 564.0, 100.0, 22.0 ],
+                    "text": "mvc.device /TBO"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-61",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "bang", "" ],
+                    "patching_rect": [ 479.0, 508.0, 41.0, 22.0 ],
+                    "text": "sel 32"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-53",
                     "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
+                    "numinlets": 0,
+                    "numoutlets": 4,
+                    "outlettype": [ "int", "int", "int", "int" ],
+                    "patching_rect": [ 479.0, 478.0, 50.5, 22.0 ],
+                    "text": "key"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-104",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 3,
+                    "outlettype": [ "bang", "", "" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 200.0, 264.0, 277.0, 266.0 ],
+                        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
                         "boxes": [
                             {
                                 "box": {
-                                    "fontsize": 18.0,
-                                    "id": "obj-30",
-                                    "maxclass": "newobj",
+                                    "id": "obj-73",
+                                    "maxclass": "button",
                                     "numinlets": 1,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 52.0, 157.0, 91.0, 29.0 ],
-                                    "text": "bo.TCP.IO"
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 50.0, 209.0, 24.0, 24.0 ]
                                 }
                             },
                             {
                                 "box": {
-                                    "fontsize": 18.0,
-                                    "id": "obj-29",
+                                    "id": "obj-71",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 97.0, 184.0, 34.0, 22.0 ],
+                                    "text": "sel 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontface": 0,
+                                    "fontname": "Lato",
+                                    "fontsize": 10.435669,
+                                    "id": "obj-67",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "float" ],
+                                    "patching_rect": [ 97.0, 211.0, 34.0, 21.0 ],
+                                    "text": "t b 0."
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontface": 1,
+                                    "fontname": "Lato",
+                                    "fontsize": 10.435669,
+                                    "format": 6,
+                                    "id": "obj-70",
+                                    "maxclass": "flonum",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 121.75, 233.0, 67.0, 21.0 ],
+                                    "varname": "location"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-61",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 97.0, 153.0, 29.5, 22.0 ],
+                                    "text": "int"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-53",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 237.0, 100.0, 34.0, 22.0 ],
+                                    "text": "sel 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-127",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "bang" ],
+                                    "patching_rect": [ 108.0, 106.0, 32.0, 22.0 ],
+                                    "text": "t 0 b"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-105",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 373.0, 207.0, 63.0, 22.0 ],
+                                    "text": "prepend 2"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-106",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 373.0, 174.0, 37.0, 22.0 ],
+                                    "text": "* 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-101",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 232.0, 170.0, 35.0, 22.0 ],
+                                    "text": "set 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-99",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 182.0, 207.0, 63.0, 22.0 ],
+                                    "text": "prepend 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-98",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "int" ],
+                                    "patching_rect": [ 292.0, 237.0, 67.0, 22.0 ],
+                                    "text": "unpack 0 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-97",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 292.0, 207.0, 63.0, 22.0 ],
+                                    "text": "prepend 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-96",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 292.0, 174.0, 37.0, 22.0 ],
+                                    "text": "* 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-94",
+                                    "maxclass": "newobj",
+                                    "numinlets": 3,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 52.0, 118.0, 93.0, 29.0 ],
-                                    "text": "bo.UDP.IO"
+                                    "patching_rect": [ 292.0, 273.0, 148.0, 23.0 ],
+                                    "text": "noteout \"from Max 2\" 15"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-91",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 182.0, 170.0, 35.0, 22.0 ],
+                                    "text": "t 127"
                                 }
                             },
                             {
                                 "box": {
                                     "comment": "",
-                                    "id": "obj-2",
+                                    "id": "obj-78",
+                                    "index": 2,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 184.5, 40.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-79",
                                     "index": 1,
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 52.0, 66.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 108.0, 40.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-89",
+                                    "index": 3,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 373.0, 40.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-92",
+                                    "index": 1,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 96.5, 356.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-102",
+                                    "index": 2,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 131.5, 356.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-103",
+                                    "index": 3,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 232.0, 356.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
-                        "lines": []
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-103", 0 ],
+                                    "source": [ "obj-101", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-98", 0 ],
+                                    "source": [ "obj-105", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-105", 0 ],
+                                    "source": [ "obj-106", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 0 ],
+                                    "source": [ "obj-127", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 1 ],
+                                    "order": 0,
+                                    "source": [ "obj-127", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-92", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-127", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-91", 0 ],
+                                    "source": [ "obj-53", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-71", 0 ],
+                                    "source": [ "obj-61", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-70", 0 ],
+                                    "source": [ "obj-67", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-92", 0 ],
+                                    "source": [ "obj-67", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-102", 0 ],
+                                    "source": [ "obj-70", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-67", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-71", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-73", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-71", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-53", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 1 ],
+                                    "order": 2,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-92", 0 ],
+                                    "order": 3,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-96", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-101", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-79", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-127", 0 ],
+                                    "order": 2,
+                                    "source": [ "obj-79", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-91", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-79", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-106", 0 ],
+                                    "source": [ "obj-89", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-99", 0 ],
+                                    "source": [ "obj-91", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-97", 0 ],
+                                    "source": [ "obj-96", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-98", 0 ],
+                                    "source": [ "obj-97", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-94", 1 ],
+                                    "source": [ "obj-98", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-94", 0 ],
+                                    "source": [ "obj-98", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-98", 0 ],
+                                    "source": [ "obj-99", 0 ]
+                                }
+                            }
+                        ]
                     },
-                    "patching_rect": [ 363.5, 398.0, 92.0, 24.0 ],
-                    "text": "p NETWORK"
+                    "patching_rect": [ 406.0, 595.0, 156.0, 22.0 ],
+                    "text": "p ctl-logics"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "activebgoncolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 30.0,
+                    "hint": "",
+                    "id": "obj-87",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 406.0, 546.0, 39.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 13.166656500000045, 413.0, 26.0, 24.0 ],
+                    "rounded": 49.9,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_dial_needle"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[27]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "■",
+                    "texton": "■",
+                    "varname": "live.text[13]"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "activebgoncolor": [ 0.0, 0.980392156862745, 0.63921568627451, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 0.0, 0.980392156862745, 0.63921568627451, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 14.0,
+                    "hint": "",
+                    "id": "obj-82",
+                    "maxclass": "live.text",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 474.5, 546.0, 39.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 41.166656500000045, 413.0, 26.0, 24.0 ],
+                    "rounded": 49.9,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_play"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_play"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[26]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "►",
+                    "texton": "►",
+                    "varname": "live.text[12]"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.53926766494125, 0.539267534772943, 0.539267568788001, 1.0 ],
+                    "activebgoncolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 22.0,
+                    "hint": "",
+                    "id": "obj-81",
+                    "maxclass": "live.text",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 543.0, 546.0, 39.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 71.16665650000004, 413.0, 26.0, 24.0 ],
+                    "rounded": 49.9,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_zombie"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[25]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "●",
+                    "texton": "●",
+                    "varname": "live.text[1]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-80",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "dispose" ],
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 1,
+                            "revision": 4,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "box",
+                        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-76",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "dispose" ],
+                                    "patching_rect": [ 50.0, 157.5, 57.0, 22.0 ],
+                                    "text": "t dispose"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-73",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 111.33334349999996, 159.5, 58.0, 22.0 ],
+                                    "text": "loadbang"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-70",
+                                    "linecount": 3,
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "bang", "bang" ],
+                                    "patching_rect": [ 50.0, 100.0, 103.0, 49.0 ],
+                                    "text": "dialog Quit The Brain Orchestra? @mode 2"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 11.595187,
+                                    "id": "obj-61",
+                                    "linecount": 2,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 111.33334349999996, 189.0, 125.0, 34.0 ],
+                                    "text": "window flags noclose, window exec"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-78",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 40.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-79",
+                                    "index": 1,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 49.166687000000024, 279.5, 30.0, 30.0 ]
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-79", 0 ],
+                                    "source": [ "obj-61", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-76", 0 ],
+                                    "source": [ "obj-70", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 0 ],
+                                    "source": [ "obj-73", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-79", 0 ],
+                                    "source": [ "obj-76", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-70", 0 ],
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 357.0, 468.5, 66.0, 22.0 ],
+                    "text": "p anticlose"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "activebgoncolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "activetextcolor": [ 0.089792420291703, 0.089792385133236, 0.089792394259233, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 1.0, 0.490196078431373, 0.262745098039216, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 12.0,
+                    "hint": "",
+                    "id": "obj-65",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 357.0, 421.5, 59.0, 44.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 13.0, 476.0, 103.0, 24.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_alert"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[24]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "QUIT",
+                    "texton": "QUIT",
+                    "varname": "live.text[11]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-60",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 357.0, 498.5, 100.0, 22.0 ],
+                    "save": [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+                    "text": "thispatcher"
                 }
             },
             {
@@ -130,7 +916,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -330,7 +1116,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -407,7 +1193,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -437,7 +1223,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -456,7 +1242,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -795,7 +1581,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1055,7 +1841,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1085,7 +1871,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1104,7 +1890,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -1443,7 +2229,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1735,7 +2521,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1765,7 +2551,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1784,7 +2570,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -2123,7 +2909,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -2349,7 +3135,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2379,7 +3165,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -2398,7 +3184,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -2737,7 +3523,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -2963,7 +3749,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2993,7 +3779,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -3012,7 +3798,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -3351,7 +4137,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -3577,7 +4363,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3607,7 +4393,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -3626,7 +4412,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -3965,7 +4751,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4213,7 +4999,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4310,7 +5096,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4490,7 +5276,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 154.0, 106.0, 73.2285714285714, 22.0 ],
+                    "patching_rect": [ 154.0, 61.0, 73.2285714285714, 22.0 ],
                     "text": "p views"
                 }
             },
@@ -4508,7 +5294,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 208.0, 87.0, 27.0, 18.0 ],
+                    "patching_rect": [ 208.0, 42.0, 27.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 11.0, 283.0, 30.33331300000009, 16.0 ],
                     "saved_attribute_attributes": {
@@ -4541,7 +5327,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -5137,7 +5923,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 181.0, 87.0, 27.0, 18.0 ],
+                    "patching_rect": [ 181.0, 42.0, 27.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 77.0, 283.0, 30.33331300000009, 16.0 ],
                     "saved_attribute_attributes": {
@@ -5172,7 +5958,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 154.0, 87.0, 27.0, 18.0 ],
+                    "patching_rect": [ 154.0, 42.0, 27.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 46.0, 283.0, 27.33331300000009, 16.0 ],
                     "saved_attribute_attributes": {
@@ -5205,7 +5991,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -5305,7 +6091,7 @@
                         "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
                     },
-                    "patching_rect": [ 522.0, 295.0, 77.0, 22.0 ],
+                    "patching_rect": [ 512.0, 274.0, 77.0, 22.0 ],
                     "saved_object_attributes": {
                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                         "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
@@ -5323,7 +6109,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 149.0, 133.0, 85.0, 20.0 ],
+                    "patching_rect": [ 149.0, 88.0, 85.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 18.0, 329.0, 85.0, 20.0 ],
                     "text": "TRANSPORT",
@@ -5336,7 +6122,7 @@
                     "fontsize": 14.0,
                     "id": "obj-29",
                     "maxclass": "newobj",
-                    "numinlets": 0,
+                    "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "int", "int" ],
                     "patcher": {
@@ -5344,13 +6130,252 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 106.0, 342.0, 122.0 ],
+                        "rect": [ 551.0, 470.0, 563.0, 346.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-22",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 41.0, 158.0, 159.0, 22.0 ],
+                                    "text": "s /TBO/transport/currentTick"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-20",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 41.0, 129.0, 37.0, 22.0 ],
+                                    "text": "* 120"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-19",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 41.0, 89.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-12",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 41.0, 273.0, 72.0, 22.0 ],
+                                    "text": "prepend set"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 41.0, 61.0, 67.0, 22.0 ],
+                                    "text": "mousefilter"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 105.0, 300.0, 100.0, 22.0 ],
+                                    "text": "prepend max"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-4",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 41.0, 22.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "align",
+                                    "fontface": 0,
+                                    "fontname": "Verdana",
+                                    "fontsize": 12.0,
+                                    "id": "obj-70",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 198.0, 483.0, 142.0, 23.0 ],
+                                    "text_width": 62.0
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-15",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 68.0, 472.0, 75.0, 22.0 ],
+                                    "text": "prepend text"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-14",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 86.0, 376.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-13",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 217.0, 348.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-11",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "int" ],
+                                    "patching_rect": [ 198.0, 390.0, 91.0, 22.0 ],
+                                    "text": "t b i"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-6",
+                                    "maxclass": "newobj",
+                                    "numinlets": 3,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 68.0, 425.0, 221.0, 22.0 ],
+                                    "text": "combine 0 / 3000"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "hidden": 1,
+                                    "id": "obj-16",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 396.0, 337.0, 64.0, 23.0 ],
+                                    "text": "loadbang"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-21",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 363.0, 336.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 363.0, 363.0, 48.0, 23.0 ],
+                                    "text": "fontlist"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-97",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 363.0, 417.0, 74.0, 23.0 ],
+                                    "text": "tosymbol"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-99",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 363.0, 445.0, 85.0, 23.0 ],
+                                    "text": "prepend font"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontface": 0,
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-100",
+                                    "items": [ "Abel", ",", "Ableton Sans", ",", "Ableton Sans Regular Italic", ",", "Ableton Sans ExtraLight", ",", "Ableton Sans ExtraLight Italic", ",", "Ableton Sans Light", ",", "Ableton Sans Light Italic", ",", "Ableton Sans Medium", ",", "Ableton Sans Medium Italic", ",", "Ableton Sans Bold", ",", "Ableton Sans Bold Italic", ",", "Ableton Sans Bold", ",", "Ableton Sans Light", ",", "Ableton Sans Medium", ",", "Ableton Sans Small", ",", "Ableton Sans Small Regular Italic", ",", "Ableton Sans Small Bold", ",", "Ableton Sans Small Bold Italic", ",", "Academy Engraved LET Plain", ",", "Al Bayan Plain", ",", "Al Bayan Bold", ",", "Al Nile", ",", "Al Nile Bold", ",", "Al Tarikh", ",", "American Typewriter", ",", "American Typewriter Light", ",", "American Typewriter Semibold", ",", "American Typewriter Bold", ",", "American Typewriter Condensed", ",", "American Typewriter Condensed Light", ",", "American Typewriter Condensed Bold", ",", "Andale Mono", ",", "Anime Ace 2.0 BB", ",", "Anime Ace 2.0 BB Italic", ",", "Anonymous Pro", ",", "Anonymous Pro Italic", ",", "Anonymous Pro Bold", ",", "Anonymous Pro Bold Italic", ",", "Antiquarian", ",", "Antiquarian", ",", "Apple Braille Outline 6 Dot", ",", "Apple Braille Outline 8 Dot", ",", "Apple Braille Pinpoint 6 Dot", ",", "Apple Braille Pinpoint 8 Dot", ",", "Apple Braille", ",", "Apple Chancery Chancery", ",", "Apple Color Emoji", ",", "Apple SD Gothic Neo", ",", "Apple SD Gothic Neo Thin", ",", "Apple SD Gothic Neo UltraLight", ",", "Apple SD Gothic Neo Light", ",", "Apple SD Gothic Neo Medium", ",", "Apple SD Gothic Neo SemiBold", ",", "Apple SD Gothic Neo Bold", ",", "Apple SD Gothic Neo ExtraBold", ",", "Apple SD Gothic Neo Heavy", ",", "Apple Symbols", ",", "AppleGothic", ",", "AppleMyungjo", ",", "Arial", ",", "Arial Italic", ",", "Arial Bold", ",", "Arial Bold Italic", ",", "Arial Black", ",", "Arial Hebrew", ",", "Arial Hebrew Light", ",", "Arial Hebrew Bold", ",", "Arial Hebrew Scholar", ",", "Arial Hebrew Scholar Light", ",", "Arial Hebrew Scholar Bold", ",", "Arial Narrow", ",", "Arial Narrow Italic", ",", "Arial Narrow Bold", ",", "Arial Narrow Bold Italic", ",", "Arial Rounded MT Bold", ",", "Arial Unicode MS", ",", "Autography", ",", "Avenir Book", ",", "Avenir Roman", ",", "Avenir Book Oblique", ",", "Avenir Oblique", ",", "Avenir Light", ",", "Avenir Light Oblique", ",", "Avenir Medium", ",", "Avenir Medium Oblique", ",", "Avenir Heavy", ",", "Avenir Heavy Oblique", ",", "Avenir Black", ",", "Avenir Black Oblique", ",", "Avenir Next", ",", "Avenir Next Italic", ",", "Avenir Next Ultra Light", ",", "Avenir Next Ultra Light Italic", ",", "Avenir Next Medium", ",", "Avenir Next Medium Italic", ",", "Avenir Next Demi Bold", ",", "Avenir Next Demi Bold Italic", ",", "Avenir Next Bold", ",", "Avenir Next Bold Italic", ",", "Avenir Next Heavy", ",", "Avenir Next Heavy Italic", ",", "Avenir Next Condensed", ",", "Avenir Next Condensed Italic", ",", "Avenir Next Condensed Ultra Light", ",", "Avenir Next Condensed Ultra Light Italic", ",", "Avenir Next Condensed Medium", ",", "Avenir Next Condensed Medium Italic", ",", "Avenir Next Condensed Demi Bold", ",", "Avenir Next Condensed Demi Bold Italic", ",", "Avenir Next Condensed Bold", ",", "Avenir Next Condensed Bold Italic", ",", "Avenir Next Condensed Heavy", ",", "Avenir Next Condensed Heavy Italic", ",", "Ayuthaya", ",", "Baghdad", ",", "Bangla MN", ",", "Bangla MN Bold", ",", "Bangla Sangam MN", ",", "Bangla Sangam MN Bold", ",", "Baskerville", ",", "Baskerville Italic", ",", "Baskerville SemiBold", ",", "Baskerville SemiBold Italic", ",", "Baskerville Bold", ",", "Baskerville Bold Italic", ",", "Beirut", ",", "Big Caslon Medium", ",", "Blade Runner Movie Font", ",", "Bodoni 72 Book", ",", "Bodoni 72 Book Italic", ",", "Bodoni 72 Bold", ",", "Bodoni 72 Oldstyle Book", ",", "Bodoni 72 Oldstyle Book Italic", ",", "Bodoni 72 Oldstyle Bold", ",", "Bodoni 72 Smallcaps Book", ",", "Bodoni Ornaments", ",", "Bradley Hand Bold", ",", "Brittany Signature", ",", "Brush Script MT Italic", ",", "Calibri", ",", "Chalkboard", ",", "Chalkboard Bold", ",", "Chalkboard SE", ",", "Chalkboard SE Light", ",", "Chalkboard SE Bold", ",", "Chalkduster", ",", "Charter Roman", ",", "Charter Italic", ",", "Charter Bold", ",", "Charter Bold Italic", ",", "Charter Black", ",", "Charter Black Italic", ",", "Cochin", ",", "Cochin Italic", ",", "Cochin Bold", ",", "Cochin Bold Italic", ",", "CochinArchaic", ",", "Comfortaa", ",", "Comfortaa Light", ",", "Comfortaa Bold", ",", "Comic Sans MS", ",", "Comic Sans MS Bold", ",", "Copperplate", ",", "Copperplate Light", ",", "Copperplate Bold", ",", "Corsiva Hebrew", ",", "Corsiva Hebrew Bold", ",", "Courier New", ",", "Courier New Italic", ",", "Courier New Bold", ",", "Courier New Bold Italic", ",", "Cowboy Movie", ",", "Damascus", ",", "Damascus Light", ",", "Damascus Medium", ",", "Damascus Semi Bold", ",", "Damascus Bold", ",", "DecoType Naskh", ",", "Devanagari MT", ",", "Devanagari MT Bold", ",", "Devanagari Sangam MN", ",", "Devanagari Sangam MN Bold", ",", "Dexterous", ",", "DFLiHeiHK W3", ",", "DFLiHeiHK W5", ",", "DFLiHeiHK W7", ",", "Didot", ",", "Didot Italic", ",", "Didot Bold", ",", "DIN Alternate Bold", ",", "DIN Condensed Bold", ",", "Diwan Kufi", ",", "Diwan Thuluth", ",", "Ed Wood Movies", ",", "Euphemia UCAS", ",", "Euphemia UCAS Italic", ",", "Euphemia UCAS Bold", ",", "Farah", ",", "Farisi", ",", "Fifties Movies", ",", "Font Awesome 5 Brands", ",", "Font Awesome 5 Free", ",", "Font Awesome 5 Free Solid", ",", "Franklin Gothic Book", ",", "Franklin Gothic Book Italic", ",", "Futura Medium", ",", "Futura Medium Italic", ",", "Futura Bold", ",", "Futura Condensed Medium", ",", "Futura Condensed ExtraBold", ",", "Futura (Light)", ",", "Galvji", ",", "Galvji Oblique", ",", "Galvji Bold", ",", "Galvji Bold Oblique", ",", "GB18030 Bitmap", ",", "Geeza Pro", ",", "Geeza Pro Bold", ",", "Geneva", ",", "Geogrotesque", ",", "Geogrotesque SemiBold", ",", "Georgia", ",", "Georgia Italic", ",", "Georgia Bold", ",", "Georgia Bold Italic", ",", "Gill Sans", ",", "Gill Sans Italic", ",", "Gill Sans Light", ",", "Gill Sans Light Italic", ",", "Gill Sans SemiBold", ",", "Gill Sans SemiBold Italic", ",", "Gill Sans Bold", ",", "Gill Sans Bold Italic", ",", "Gill Sans UltraBold", ",", "Grantha Sangam MN", ",", "Grantha Sangam MN Bold", ",", "Gujarati MT", ",", "Gujarati MT Bold", ",", "Gujarati Sangam MN", ",", "Gujarati Sangam MN Bold", ",", "Gurmukhi MN", ",", "Gurmukhi MN Bold", ",", "Gurmukhi MT", ",", "Gurmukhi Sangam MN", ",", "Gurmukhi Sangam MN Bold", ",", "Heiti SC Light", ",", "Heiti SC Medium", ",", "Heiti TC Light", ",", "Heiti TC Medium", ",", "Helvetica", ",", "Helvetica Oblique", ",", "Helvetica Light", ",", "Helvetica Light Oblique", ",", "Helvetica Bold", ",", "Helvetica Bold Oblique", ",", "Helvetica Black Condensed", ",", "Helvetica Neue", ",", "Helvetica Neue Italic", ",", "Helvetica Neue UltraLight", ",", "Helvetica Neue UltraLight Italic", ",", "Helvetica Neue Thin", ",", "Helvetica Neue Thin Italic", ",", "Helvetica Neue Light", ",", "Helvetica Neue Light Italic", ",", "Helvetica Neue Medium", ",", "Helvetica Neue Medium Italic", ",", "Helvetica Neue Bold", ",", "Helvetica Neue Bold Italic", ",", "Helvetica Neue Condensed Bold", ",", "Helvetica Neue Condensed Black", ",", "Herculanum", ",", "Hiragino Maru Gothic ProN W4", ",", "Hiragino Mincho ProN W3", ",", "Hiragino Mincho ProN W6", ",", "Hiragino Sans W0", ",", "Hiragino Sans W1", ",", "Hiragino Sans W2", ",", "Hiragino Sans W3", ",", "Hiragino Sans W4", ",", "Hiragino Sans W5", ",", "Hiragino Sans W6", ",", "Hiragino Sans W7", ",", "Hiragino Sans W8", ",", "Hiragino Sans W9", ",", "Hiragino Sans GB W3", ",", "Hiragino Sans GB W6", ",", "Hoefler Text", ",", "Hoefler Text Ornaments", ",", "Hoefler Text Italic", ",", "Hoefler Text Black", ",", "Hoefler Text Black Italic", ",", "Icons iconic", ",", "Icons iconic", ",", "Impact", ",", "InaiMathi", ",", "InaiMathi Bold", ",", "ISOCP", ",", "ITF Devanagari Book", ",", "ITF Devanagari Light", ",", "ITF Devanagari Medium", ",", "ITF Devanagari Demi", ",", "ITF Devanagari Bold", ",", "ITF Devanagari Marathi Book", ",", "ITF Devanagari Marathi Light", ",", "ITF Devanagari Marathi Medium", ",", "ITF Devanagari Marathi Demi", ",", "ITF Devanagari Marathi Bold", ",", "JI-Forage", ",", "Kailasa", ",", "Kailasa Bold", ",", "Kannada MN", ",", "Kannada MN Bold", ",", "Kannada Sangam MN", ",", "Kannada Sangam MN Bold", ",", "Kefa", ",", "Kefa Bold", ",", "Khmer MN", ",", "Khmer MN Bold", ",", "Khmer Sangam MN", ",", "Kohinoor Bangla", ",", "Kohinoor Bangla Light", ",", "Kohinoor Bangla Medium", ",", "Kohinoor Bangla Semibold", ",", "Kohinoor Bangla Bold", ",", "Kohinoor Devanagari", ",", "Kohinoor Devanagari Light", ",", "Kohinoor Devanagari Medium", ",", "Kohinoor Devanagari Semibold", ",", "Kohinoor Devanagari Bold", ",", "Kohinoor Gujarati", ",", "Kohinoor Gujarati Light", ",", "Kohinoor Gujarati Medium", ",", "Kohinoor Gujarati Semibold", ",", "Kohinoor Gujarati Bold", ",", "Kohinoor Telugu", ",", "Kohinoor Telugu Light", ",", "Kohinoor Telugu Medium", ",", "Kohinoor Telugu Semibold", ",", "Kohinoor Telugu Bold", ",", "Kokonor", ",", "Krungthep", ",", "KufiStandardGK", ",", "Lao MN", ",", "Lao MN Bold", ",", "Lao Sangam MN", ",", "Lato", ",", "Lato Italic", ",", "Lato Hairline", ",", "Lato Hairline Italic", ",", "Lato Thin", ",", "Lato Thin Italic", ",", "Lato Light", ",", "Lato Light Italic", ",", "Lato Medium", ",", "Lato Medium Italic", ",", "Lato Semibold", ",", "Lato Semibold Italic", ",", "Lato Bold", ",", "Lato Bold Italic", ",", "Lato Heavy", ",", "Lato Heavy Italic", ",", "Lato Black", ",", "Lato Black Italic", ",", "Lobster 1.4", ",", "Lucida Grande", ",", "Lucida Grande Bold", ",", "Luminari", ",", "Malayalam MN", ",", "Malayalam MN Bold", ",", "Malayalam Sangam MN", ",", "Malayalam Sangam MN Bold", ",", "Marker Felt Thin", ",", "Marker Felt Wide", ",", "Material Design Icons", ",", "Menlo", ",", "Menlo Italic", ",", "Menlo Bold", ",", "Menlo Bold Italic", ",", "Microsoft Sans Serif", ",", "MingLiU", ",", "MingLiU_HKSCS", ",", "Mishafi", ",", "Mishafi Gold", ",", "Monaco", ",", "Monster Scream", ",", "Movie Monster", ",", "Movie Monster 3D", ",", "Movie Monster 3D Italic", ",", "Movie Monster Condensed", ",", "Movie Monster Condensed Italic", ",", "Movie Monster Expanded", ",", "Movie Monster Expanded Italic", ",", "Movie Monster Gradient", ",", "Movie Monster Gradient Italic", ",", "Movie Monster Italic", ",", "Movie Monster Leftalic", ",", "Movie Monster Rotalic", ",", "Movie Monster Rotalic 2", ",", "Movie Monster Rotated", ",", "Movie Monster Rotated 2", ",", "Movie Monster Semi-Italic", ",", "Movie Monster Semi-Leftalic", ",", "Movie Monster Spaced", ",", "Movie Monster Spaced Italic", ",", "Movie Monster Staggered", ",", "Movie Monster Staggered Italic", ",", "Movie Monster Super-Italic", ",", "Movie Monster Super-Leftalic", ",", "Movie Monster Wavy", ",", "Movie Monster Wavy 2", ",", "Movie Monster Wavy 2 Italic", ",", "Movie Monster Wavy Italic", ",", "Movie Monster Wide", ",", "Movie Monster Wide Italic", ",", "Movie Star", ",", "Movie Title AH", ",", "Mshtakan", ",", "Mshtakan Oblique", ",", "Mshtakan Bold", ",", "Mshtakan BoldOblique", ",", "Mukta Mahee", ",", "Mukta Mahee ExtraLight", ",", "Mukta Mahee Light", ",", "Mukta Mahee Medium", ",", "Mukta Mahee SemiBold", ",", "Mukta Mahee Bold", ",", "Mukta Mahee ExtraBold", ",", "Muna", ",", "Muna Bold", ",", "Muna Black", ",", "Myanmar MN", ",", "Myanmar MN Bold", ",", "Myanmar Sangam MN", ",", "Myanmar Sangam MN Bold", ",", "Nadeem", ",", "New Peninim MT", ",", "New Peninim MT Inclined", ",", "New Peninim MT Bold", ",", "New Peninim MT Bold Inclined", ",", "Nicolas Italic", ",", "NicolasCocTReg", ",", "Noir Medium", ",", "Noir Noir Regular", ",", "Noteworthy Light", ",", "Noteworthy Bold", ",", "Noto Nastaliq Urdu", ",", "Noto Nastaliq Urdu Bold", ",", "Noto Sans Batak", ",", "Noto Sans Kannada", ",", "Noto Sans Kannada ExtraLight", ",", "Noto Sans Kannada Thin", ",", "Noto Sans Kannada Light", ",", "Noto Sans Kannada Medium", ",", "Noto Sans Kannada SemiBold", ",", "Noto Sans Kannada Bold", ",", "Noto Sans Kannada ExtraBold", ",", "Noto Sans Kannada Black", ",", "Noto Sans Myanmar", ",", "Noto Sans Myanmar ExtraLight", ",", "Noto Sans Myanmar Thin", ",", "Noto Sans Myanmar Light", ",", "Noto Sans Myanmar Medium", ",", "Noto Sans Myanmar SemiBold", ",", "Noto Sans Myanmar Bold", ",", "Noto Sans Myanmar ExtraBold", ",", "Noto Sans Myanmar Black", ",", "Noto Sans NKo", ",", "Noto Sans Oriya", ",", "Noto Sans Oriya Bold", ",", "Noto Sans Syriac", ",", "Noto Sans Syriac Thin", ",", "Noto Sans Syriac ExtraLight", ",", "Noto Sans Syriac Light", ",", "Noto Sans Syriac Medium", ",", "Noto Sans Syriac SemiBold", ",", "Noto Sans Syriac Bold", ",", "Noto Sans Syriac ExtraBold", ",", "Noto Sans Syriac Black", ",", "Noto Sans Tagalog", ",", "Noto Serif Myanmar", ",", "Noto Serif Myanmar ExtraLight", ",", "Noto Serif Myanmar Thin", ",", "Noto Serif Myanmar Light", ",", "Noto Serif Myanmar Medium", ",", "Noto Serif Myanmar SemiBold", ",", "Noto Serif Myanmar Bold", ",", "Noto Serif Myanmar ExtraBold", ",", "Noto Serif Myanmar Black", ",", "November for bach", ",", "November for bach", ",", "omextras Medium", ",", "omextras Medium", ",", "omheads Medium", ",", "omheads Medium", ",", "omicron Medium", ",", "omicron Medium", ",", "omsign Medium", ",", "omsign Medium", ",", "Optima", ",", "Optima Italic", ",", "Optima Bold", ",", "Optima Bold Italic", ",", "Optima ExtraBlack", ",", "Oriya MN", ",", "Oriya MN Bold", ",", "Oriya Sangam MN", ",", "Oriya Sangam MN Bold", ",", "Palatino", ",", "Palatino Italic", ",", "Palatino Bold", ",", "Palatino Bold Italic", ",", "Papyrus", ",", "Papyrus Condensed", ",", "Party LET Plain", ",", "Phosphate Inline", ",", "Phosphate Solid", ",", "PingFang HK", ",", "PingFang HK Ultralight", ",", "PingFang HK Thin", ",", "PingFang HK Light", ",", "PingFang HK Medium", ",", "PingFang HK Semibold", ",", "PingFang MO", ",", "PingFang MO Ultralight", ",", "PingFang MO Thin", ",", "PingFang MO Light", ",", "PingFang MO Medium", ",", "PingFang MO Semibold", ",", "PingFang SC", ",", "PingFang SC Ultralight", ",", "PingFang SC Thin", ",", "PingFang SC Light", ",", "PingFang SC Medium", ",", "PingFang SC Semibold", ",", "PingFang TC", ",", "PingFang TC Ultralight", ",", "PingFang TC Thin", ",", "PingFang TC Light", ",", "PingFang TC Medium", ",", "PingFang TC Semibold", ",", "Pixeled", ",", "Plantagenet Cherokee", ",", "Play", ",", "Play Bold", ",", "PMingLiU", ",", "PT Mono", ",", "PT Mono Bold", ",", "PT Sans", ",", "PT Sans Italic", ",", "PT Sans Bold", ",", "PT Sans Bold Italic", ",", "PT Sans Caption", ",", "PT Sans Caption Bold", ",", "PT Sans Narrow", ",", "PT Sans Narrow Bold", ",", "PT Serif", ",", "PT Serif Italic", ",", "PT Serif Bold", ",", "PT Serif Bold Italic", ",", "PT Serif Caption", ",", "PT Serif Caption Italic", ",", "Raanana", ",", "Raanana Bold", ",", "Raleway", ",", "Raleway Italic", ",", "Raleway Thin", ",", "Raleway ExtraLight", ",", "Raleway ExtraLight Italic", ",", "Raleway Thin Italic", ",", "Raleway Light", ",", "Raleway Light Italic", ",", "Raleway Medium", ",", "Raleway Medium Italic", ",", "Raleway SemiBold", ",", "Raleway SemiBold Italic", ",", "Raleway Bold", ",", "Raleway Bold Italic", ",", "Raleway ExtraBold", ",", "Raleway ExtraBold Italic", ",", "Raleway Black", ",", "Raleway Black Italic", ",", "Roblox Black Outline", ",", "Roblox Black Outline", ",", "Roblox Black Round", ",", "Roblox Black Round", ",", "Roblox Black Shadow", ",", "Roblox Black Shadow", ",", "Roblox Font", ",", "Roblox Font", ",", "Roblox Font Light", ",", "Roblox Font Light", ",", "Roblox Font Bold", ",", "Roblox Font Bold", ",", "Roblox Font Black", ",", "Roblox Font Black", ",", "Roboto Black", ",", "Roboto", ",", "Roboto Black Italic", ",", "Roboto Italic", ",", "Roboto Thin", ",", "Roboto Thin Italic", ",", "Roboto Light", ",", "Roboto Light Italic", ",", "Roboto Medium", ",", "Roboto Medium Italic", ",", "Roboto Bold", ",", "Roboto Bold Italic", ",", "Roboto Condensed", ",", "Roboto Condensed Italic", ",", "Roboto Bold Condensed", ",", "Roboto Bold Condensed Italic", ",", "Rockwell", ",", "Rockwell Italic", ",", "Rockwell Bold", ",", "Rockwell Bold Italic", ",", "Sana", ",", "Sathu", ",", "Savoye LET Plain", ",", "SF Mono", ",", "SF Mono Regular Italic", ",", "SF Mono Light", ",", "SF Mono Light Italic", ",", "SF Mono Medium", ",", "SF Mono Medium Italic", ",", "SF Mono Semibold", ",", "SF Mono Semibold Italic", ",", "SF Mono Bold", ",", "SF Mono Bold Italic", ",", "SF Mono Heavy", ",", "SF Mono Heavy Italic", ",", "Shree Devanagari 714", ",", "Shree Devanagari 714 Italic", ",", "Shree Devanagari 714 Bold", ",", "Shree Devanagari 714 Bold Italic", ",", "SignPainter HouseScript", ",", "SignPainter HouseScript Semibold", ",", "Silom", ",", "Sinhala MN", ",", "Sinhala MN Bold", ",", "Sinhala Sangam MN", ",", "Sinhala Sangam MN Bold", ",", "Skia", ",", "Skia Light", ",", "Skia Bold", ",", "Skia Black", ",", "Skia Extended", ",", "Skia Light Extended", ",", "Skia Black Extended", ",", "Skia Condensed", ",", "Skia Light Condensed", ",", "Skia Black Condensed", ",", "Snell Roundhand", ",", "Snell Roundhand Bold", ",", "Snell Roundhand Black", ",", "Songti SC", ",", "Songti SC Light", ",", "Songti SC Bold", ",", "Songti SC Black", ",", "Songti TC", ",", "Songti TC Light", ",", "Songti TC Bold", ",", "Space Age", ",", "Speculum", ",", "Speculum Outline", ",", "STIX Two Math", ",", "STIX Two Text", ",", "STIX Two Text Italic", ",", "STIX Two Text Medium", ",", "STIX Two Text Medium Italic", ",", "STIX Two Text SemiBold", ",", "STIX Two Text SemiBold Italic", ",", "STIX Two Text Bold", ",", "STIX Two Text Bold Italic", ",", "STSong", ",", "Sukhumvit Set Text", ",", "Sukhumvit Set Light", ",", "Sukhumvit Set Medium", ",", "Sukhumvit Set Semi Bold", ",", "Sukhumvit Set Bold", ",", "Sukhumvit Set Thin", ",", "Symbol", ",", "Tahoma", ",", "Tahoma Bold", ",", "Tamil MN", ",", "Tamil MN Bold", ",", "Tamil Sangam MN", ",", "Tamil Sangam MN Bold", ",", "TeamViewer10 Medium", ",", "Telugu MN", ",", "Telugu MN Bold", ",", "Telugu Sangam MN", ",", "Telugu Sangam MN Bold", ",", "THE SPAGHETTI MOVIE", ",", "Thonburi", ",", "Thonburi Light", ",", "Thonburi Bold", ",", "Times New Roman", ",", "Times New Roman Italic", ",", "Times New Roman Bold", ",", "Times New Roman Bold Italic", ",", "Trattatello", ",", "Trebuchet MS", ",", "Trebuchet MS Italic", ",", "Trebuchet MS Bold", ",", "Trebuchet MS Bold Italic", ",", "TT Modernoir Trial", ",", "TT Modernoir Trial Light", ",", "TT Modernoir Trial Medium", ",", "TT Modernoir Trial DemiBold", ",", "TT Modernoir Trial Bold", ",", "Univers Medium", ",", "Univers Extended", ",", "Univers ExtendedObl", ",", "Univers BoldExt", ",", "Univers BoldExtObl", ",", "Univers BlackExt", ",", "Univers BlackExtObl", ",", "Univers ExtraBlackExt", ",", "Univers ExtraBlackExtObl", ",", "Univers CondensedOblique", ",", "Univers CondensedLight", ",", "Univers CondensedLightOblique", ",", "Univers CondensedBold", ",", "Univers CondensedBoldOblique", ",", "Verdana", ",", "Verdana Italic", ",", "Verdana Bold", ",", "Verdana Bold Italic", ",", "Volvo Sans Pro Light", ",", "Volvo Sans Pro Medium", ",", "Volvo Sans Pro Bold", ",", "VolvoBroad", ",", "VolvoSerif", ",", "Waseem", ",", "Waseem Light", ",", "Webdings", ",", "Wingdings", ",", "Wingdings 2", ",", "Wingdings 3", ",", "Y14.5M-2009 2009", ",", "Zapf Dingbats", ",", "Zapfino" ],
+                                    "maxclass": "umenu",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "int", "", "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 363.0, 389.0, 139.0, 23.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "linecount": 2,
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 68.0, 529.0, 482.0, 35.0 ],
+                                    "text": "jit.gl.text ---BrainViz @position 0.1 -0.8 0. @mode 2d @color 0.7 0.7 0.7 1. @fontsize 12 @align 2 @fontname Menlo"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-1",
@@ -5358,7 +6383,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 190.0, 95.0, 22.0, 22.0 ],
+                                    "patching_rect": [ 301.0, 285.0, 22.0, 22.0 ],
                                     "text": "t 0"
                                 }
                             },
@@ -5369,7 +6394,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 189.0, 66.0, 87.0, 22.0 ],
+                                    "patching_rect": [ 300.0, 256.0, 87.0, 22.0 ],
                                     "text": "r #0.closeclear"
                                 }
                             },
@@ -5380,7 +6405,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 32.0, 17.0, 88.0, 22.0 ],
+                                    "patching_rect": [ 41.0, 227.0, 88.0, 22.0 ],
                                     "text": "r ---frameIndex"
                                 }
                             },
@@ -5391,7 +6416,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 152.0, 17.0, 120.0, 22.0 ],
+                                    "patching_rect": [ 161.0, 256.0, 120.0, 22.0 ],
                                     "text": "r ---frameCount"
                                 }
                             },
@@ -5403,7 +6428,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 32.0, 41.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 41.0, 333.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -5414,7 +6439,19 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 152.0, 41.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 161.0, 333.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "fontname",
+                                    "id": "obj-17",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 343.0, 499.0, 150.0, 22.0 ]
                                 }
                             }
                         ],
@@ -5435,20 +6472,165 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-19", 0 ],
+                                    "source": [ "obj-10", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-97", 0 ],
+                                    "midpoints": [ 432.5, 411.0, 372.5, 411.0 ],
+                                    "source": [ "obj-100", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-6", 2 ],
+                                    "source": [ "obj-11", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-6", 0 ],
+                                    "source": [ "obj-11", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-8", 0 ],
+                                    "source": [ "obj-12", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-11", 0 ],
+                                    "source": [ "obj-13", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-6", 0 ],
+                                    "source": [ "obj-14", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-15", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-21", 0 ],
+                                    "hidden": 1,
+                                    "source": [ "obj-16", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-17", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-20", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-20", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-3", 0 ],
+                                    "source": [ "obj-21", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-1", 0 ],
                                     "source": [ "obj-23", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-9", 0 ],
+                                    "destination": [ "obj-11", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-27", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "order": 2,
+                                    "source": [ "obj-27", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-27", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-100", 0 ],
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-10", 0 ],
+                                    "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-8", 0 ],
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-15", 0 ],
+                                    "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-12", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-7", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-14", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-7", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-70", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-99", 0 ],
+                                    "source": [ "obj-97", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-99", 0 ]
                                 }
                             }
                         ],
@@ -5479,7 +6661,7 @@
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 743.0, 353.0, 41.0, 19.0 ],
+                    "patching_rect": [ 743.0, 357.0, 41.0, 19.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 64.0, 386.0, 43.66668699999991, 19.0 ],
                     "style": "default",
@@ -5494,7 +6676,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 725.0, 352.0, 19.0, 20.0 ],
+                    "patching_rect": [ 725.0, 356.0, 19.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 51.0, 387.0, 19.0, 20.0 ],
                     "text": "/",
@@ -5507,7 +6689,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 786.0, 354.0, 80.0, 20.0 ],
+                    "patching_rect": [ 786.0, 358.0, 80.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 369.0, 80.0, 20.0 ],
                     "text": "current frame",
@@ -5521,14 +6703,15 @@
                     "fontsize": 9.0,
                     "hint": "Current time frame",
                     "id": "obj-25",
-                    "ignoreclick": 1,
                     "maxclass": "number",
+                    "maximum": 6000,
+                    "minimum": 0,
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 677.0, 353.0, 41.0, 19.0 ],
+                    "patching_rect": [ 677.0, 357.0, 41.0, 19.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 11.0, 386.0, 39.0, 19.0 ],
                     "style": "default",
@@ -5543,7 +6726,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 725.0, 277.0, 33.0, 20.0 ],
+                    "patching_rect": [ 635.0, 587.0, 33.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 42.0, 348.0, 28.0, 20.0 ],
                     "text": "unit",
@@ -5563,7 +6746,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 678.0, 277.0, 43.66668699999991, 18.0 ],
+                    "patching_rect": [ 588.0, 587.0, 43.66668699999991, 18.0 ],
                     "pictures": [ "16n.svg", "8n.svg", "4n.svg", "2n.svg", "1n.svg" ],
                     "presentation": 1,
                     "presentation_rect": [ 67.0, 348.0, 40.66668699999991, 18.0 ],
@@ -5589,7 +6772,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 522.0, 315.0, 51.0, 22.0 ],
+                    "patching_rect": [ 512.0, 294.0, 51.0, 22.0 ],
                     "text": "pcontrol"
                 }
             },
@@ -5600,18 +6783,19 @@
                     "id": "obj-85",
                     "maxclass": "newobj",
                     "numinlets": 1,
-                    "numoutlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 147.0, 1512.0, 466.0 ],
+                        "rect": [ 0.0, 264.0, 1512.0, 492.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "lefttoolbarpinned": 2,
@@ -5622,6 +6806,53 @@
                         "enablehscroll": 0,
                         "enablevscroll": 0,
                         "boxes": [
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-22",
+                                    "index": 1,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 59.0, 435.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-21",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 59.0, 405.0, 67.0, 22.0 ],
+                                    "text": "zl.reg set 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-16",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 59.0, 377.0, 63.0, 22.0 ],
+                                    "text": "closebang"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial Bold",
+                                    "id": "obj-13",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 14.0, 9.0, 153.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 14.0, 9.0, 153.0, 20.0 ],
+                                    "text": "WHOLE DATASET",
+                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-14",
@@ -5648,7 +6879,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 935.0, 271.5, 53.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 3.0, 439.0, 38.0, 22.0 ],
+                                    "presentation_rect": [ 3.0, 469.0, 38.0, 22.0 ],
                                     "triangle": 0
                                 }
                             },
@@ -5664,7 +6895,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -5738,7 +6969,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -6228,7 +7459,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 251.0, 305.0, 670.0, 23.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 44.0, 438.0, 1500.0, 23.0 ],
+                                    "presentation_rect": [ 44.0, 468.0, 1454.0, 23.0 ],
                                     "size": 6000.0
                                 }
                             },
@@ -6244,7 +7475,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -6431,7 +7662,7 @@
                                     "outlettype": [ "jit_matrix", "" ],
                                     "patching_rect": [ 55.0, 258.0, 21.0, 96.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 4.0, 5.0, 35.0, 428.0 ],
+                                    "presentation_rect": [ 4.0, 35.0, 35.0, 428.0 ],
                                     "sync": 1
                                 }
                             },
@@ -6459,7 +7690,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 379.0, 48.0, 24.0, 24.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 22.0, 74.0, 24.0, 24.0 ],
+                                    "presentation_rect": [ 22.0, 104.0, 24.0, 24.0 ],
                                     "prototypename": "Lato9"
                                 }
                             },
@@ -6473,7 +7704,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 379.0, 26.0, 40.0, 20.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 59.0, 71.0, 40.0, 20.0 ],
+                                    "presentation_rect": [ 59.0, 101.0, 40.0, 20.0 ],
                                     "text": "View",
                                     "textcolor": [ 0.968627, 0.968627, 0.968627, 1.0 ]
                                 }
@@ -6490,7 +7721,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 425.0, 48.0, 24.0, 24.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 22.0, 47.0, 24.0, 24.0 ],
+                                    "presentation_rect": [ 22.0, 77.0, 24.0, 24.0 ],
                                     "prototypename": "Lato9"
                                 }
                             },
@@ -6504,7 +7735,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 423.0, 26.0, 58.0, 20.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 59.0, 50.0, 58.0, 20.0 ],
+                                    "presentation_rect": [ 59.0, 80.0, 58.0, 20.0 ],
                                     "text": "NoFloat",
                                     "textcolor": [ 0.968627, 0.968627, 0.968627, 1.0 ]
                                 }
@@ -6521,7 +7752,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -7642,12 +8873,12 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 59.0, 536.0, 640.0, 480.0 ],
+                                        "rect": [ 328.0, 608.0, 640.0, 480.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -7661,7 +8892,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -7956,7 +9187,7 @@
                                                         "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                                                     },
-                                                    "patching_rect": [ 152.0, 229.0, 217.0, 22.0 ],
+                                                    "patching_rect": [ 244.0, 247.0, 217.0, 22.0 ],
                                                     "saved_object_attributes": {
                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                         "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
@@ -7972,7 +9203,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 248.0, 63.0, 54.0, 22.0 ],
+                                                    "patching_rect": [ 364.0, 54.0, 54.0, 22.0 ],
                                                     "text": "qlim 100"
                                                 }
                                             },
@@ -7983,7 +9214,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 181.0, 57.0, 54.0, 22.0 ],
+                                                    "patching_rect": [ 297.0, 48.0, 54.0, 22.0 ],
                                                     "text": "deferlow"
                                                 }
                                             },
@@ -7994,7 +9225,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 135.0, 71.0, 29.5, 22.0 ],
+                                                    "patching_rect": [ 251.0, 62.0, 29.5, 22.0 ],
                                                     "text": "+ 1"
                                                 }
                                             },
@@ -8005,7 +9236,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 135.0, 95.0, 52.0, 22.0 ],
+                                                    "patching_rect": [ 251.0, 86.0, 52.0, 22.0 ],
                                                     "text": "gate 2 1"
                                                 }
                                             },
@@ -8016,19 +9247,8 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 248.0, 28.0, 121.0, 22.0 ],
+                                                    "patching_rect": [ 364.0, 19.0, 121.0, 22.0 ],
                                                     "text": "r #0.timeline.range"
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "id": "obj-53",
-                                                    "maxclass": "newobj",
-                                                    "numinlets": 3,
-                                                    "numoutlets": 3,
-                                                    "outlettype": [ "bang", "bang", "" ],
-                                                    "patching_rect": [ 50.0, 100.0, 44.0, 22.0 ],
-                                                    "text": "sel 0 1"
                                                 }
                                             },
                                             {
@@ -8043,13 +9263,46 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 457.0, -726.0, 924.0, 692.0 ],
+                                                        "rect": [ 554.0, 256.0, 924.0, 692.0 ],
                                                         "boxes": [
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-12",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 2,
+                                                                    "numoutlets": 1,
+                                                                    "outlettype": [ "int" ],
+                                                                    "patching_rect": [ 166.0, 46.0, 100.0, 22.0 ],
+                                                                    "text": "+ 1"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-10",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 1,
+                                                                    "numoutlets": 2,
+                                                                    "outlettype": [ "bang", "int" ],
+                                                                    "patching_rect": [ 52.0, 59.0, 100.0, 22.0 ],
+                                                                    "text": "t b i"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-3",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 2,
+                                                                    "numoutlets": 2,
+                                                                    "outlettype": [ "", "" ],
+                                                                    "patching_rect": [ 46.0, 128.0, 72.0, 22.0 ],
+                                                                    "text": "gate 2 1"
+                                                                }
+                                                            },
                                                             {
                                                                 "box": {
                                                                     "id": "obj-68",
@@ -8058,7 +9311,7 @@
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "bang" ],
                                                                     "parameter_enable": 0,
-                                                                    "patching_rect": [ 76.0, 56.0, 24.0, 24.0 ]
+                                                                    "patching_rect": [ 84.0, 15.0, 24.0, 24.0 ]
                                                                 }
                                                             },
                                                             {
@@ -8069,7 +9322,7 @@
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "bang" ],
                                                                     "parameter_enable": 0,
-                                                                    "patching_rect": [ 174.0, 144.0, 24.0, 24.0 ]
+                                                                    "patching_rect": [ 174.0, 239.0, 24.0, 24.0 ]
                                                                 }
                                                             },
                                                             {
@@ -8079,7 +9332,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "" ],
-                                                                    "patching_rect": [ 46.0, 182.0, 38.0, 22.0 ],
+                                                                    "patching_rect": [ 46.0, 277.0, 38.0, 22.0 ],
                                                                     "text": "zl.reg"
                                                                 }
                                                             },
@@ -8090,7 +9343,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 203.0, 117.0, 54.0, 22.0 ],
+                                                                    "patching_rect": [ 203.0, 212.0, 54.0, 22.0 ],
                                                                     "text": "qlim 100"
                                                                 }
                                                             },
@@ -8112,7 +9365,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 275.0, 218.0, 75.0, 22.0 ],
+                                                                    "patching_rect": [ 275.0, 313.0, 75.0, 22.0 ],
                                                                     "text": "prepend dim"
                                                                 }
                                                             },
@@ -8123,7 +9376,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 203.0, 218.0, 64.0, 22.0 ],
+                                                                    "patching_rect": [ 203.0, 313.0, 64.0, 22.0 ],
                                                                     "text": "offset $1 0"
                                                                 }
                                                             },
@@ -8134,7 +9387,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 275.0, 194.0, 71.0, 22.0 ],
+                                                                    "patching_rect": [ 275.0, 289.0, 71.0, 22.0 ],
                                                                     "text": "pak 0 0"
                                                                 }
                                                             },
@@ -8146,7 +9399,7 @@
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "bang" ],
                                                                     "parameter_enable": 0,
-                                                                    "patching_rect": [ 327.0, 169.0, 50.0, 22.0 ]
+                                                                    "patching_rect": [ 327.0, 264.0, 50.0, 22.0 ]
                                                                 }
                                                             },
                                                             {
@@ -8156,7 +9409,7 @@
                                                                     "numinlets": 0,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 327.0, 145.0, 97.0, 22.0 ],
+                                                                    "patching_rect": [ 327.0, 240.0, 97.0, 22.0 ],
                                                                     "text": "r ---neuronCount"
                                                                 }
                                                             },
@@ -8169,7 +9422,7 @@
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "bang" ],
                                                                     "parameter_enable": 0,
-                                                                    "patching_rect": [ 275.0, 169.0, 50.0, 22.0 ]
+                                                                    "patching_rect": [ 275.0, 264.0, 50.0, 22.0 ]
                                                                 }
                                                             },
                                                             {
@@ -8179,7 +9432,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "float" ],
-                                                                    "patching_rect": [ 275.0, 145.0, 29.5, 22.0 ],
+                                                                    "patching_rect": [ 275.0, 240.0, 29.5, 22.0 ],
                                                                     "text": "!- 0."
                                                                 }
                                                             },
@@ -8190,7 +9443,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                    "patching_rect": [ 46.0, 267.0, 109.0, 22.0 ],
+                                                                    "patching_rect": [ 46.0, 362.0, 109.0, 22.0 ],
                                                                     "text": "jit.submatrix 1 char"
                                                                 }
                                                             },
@@ -8201,7 +9454,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                    "patching_rect": [ 46.0, 140.0, 73.0, 22.0 ],
+                                                                    "patching_rect": [ 46.0, 235.0, 73.0, 22.0 ],
                                                                     "text": "jit.transpose"
                                                                 }
                                                             },
@@ -8212,7 +9465,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                    "patching_rect": [ 46.0, 116.0, 72.0, 22.0 ],
+                                                                    "patching_rect": [ 46.0, 174.0, 72.0, 22.0 ],
                                                                     "text": "jit.!= @val 0"
                                                                 }
                                                             },
@@ -8223,7 +9476,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                    "patching_rect": [ 46.0, 93.0, 148.0, 22.0 ],
+                                                                    "patching_rect": [ 50.0, 93.0, 148.0, 22.0 ],
                                                                     "text": "jit.matrix ---neuronsSpikes"
                                                                 }
                                                             },
@@ -8235,8 +9488,8 @@
                                                                     "maxclass": "inlet",
                                                                     "numinlets": 0,
                                                                     "numoutlets": 1,
-                                                                    "outlettype": [ "bang" ],
-                                                                    "patching_rect": [ 46.0, 58.0, 30.0, 30.0 ]
+                                                                    "outlettype": [ "int" ],
+                                                                    "patching_rect": [ 54.0, 17.0, 30.0, 30.0 ]
                                                                 }
                                                             },
                                                             {
@@ -8247,7 +9500,7 @@
                                                                     "maxclass": "outlet",
                                                                     "numinlets": 1,
                                                                     "numoutlets": 0,
-                                                                    "patching_rect": [ 46.0, 303.0, 30.0, 30.0 ]
+                                                                    "patching_rect": [ 46.0, 398.0, 30.0, 30.0 ]
                                                                 }
                                                             }
                                                         ],
@@ -8260,8 +9513,26 @@
                                                             },
                                                             {
                                                                 "patchline": {
+                                                                    "destination": [ "obj-12", 0 ],
+                                                                    "source": [ "obj-10", 1 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-44", 0 ],
+                                                                    "source": [ "obj-10", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
                                                                     "destination": [ "obj-20", 0 ],
                                                                     "source": [ "obj-11", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-3", 0 ],
+                                                                    "source": [ "obj-12", 0 ]
                                                                 }
                                                             },
                                                             {
@@ -8290,6 +9561,18 @@
                                                             },
                                                             {
                                                                 "patchline": {
+                                                                    "destination": [ "obj-1", 0 ],
+                                                                    "source": [ "obj-3", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-2", 0 ],
+                                                                    "source": [ "obj-3", 1 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
                                                                     "destination": [ "obj-32", 1 ],
                                                                     "source": [ "obj-30", 0 ]
                                                                 }
@@ -8314,13 +9597,13 @@
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-1", 0 ],
+                                                                    "destination": [ "obj-3", 1 ],
                                                                     "source": [ "obj-44", 0 ]
                                                                 }
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-44", 0 ],
+                                                                    "destination": [ "obj-10", 0 ],
                                                                     "source": [ "obj-49", 0 ]
                                                                 }
                                                             },
@@ -8385,17 +9668,6 @@
                                             },
                                             {
                                                 "box": {
-                                                    "id": "obj-48",
-                                                    "maxclass": "button",
-                                                    "numinlets": 1,
-                                                    "numoutlets": 1,
-                                                    "outlettype": [ "bang" ],
-                                                    "parameter_enable": 0,
-                                                    "patching_rect": [ 50.0, 134.0, 24.0, 24.0 ]
-                                                }
-                                            },
-                                            {
-                                                "box": {
                                                     "id": "obj-42",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
@@ -8406,7 +9678,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -8719,7 +9991,7 @@
                                                         "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                                                     },
-                                                    "patching_rect": [ 82.0, 167.0, 115.0, 22.0 ],
+                                                    "patching_rect": [ 295.0, 191.0, 115.0, 22.0 ],
                                                     "saved_object_attributes": {
                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                         "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
@@ -8736,7 +10008,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "bang" ],
                                                     "parameter_enable": 0,
-                                                    "patching_rect": [ 82.0, 134.0, 24.0, 24.0 ]
+                                                    "patching_rect": [ 295.0, 158.0, 24.0, 24.0 ]
                                                 }
                                             },
                                             {
@@ -8759,7 +10031,7 @@
                                                     "maxclass": "outlet",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 55.0, 273.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 50.0, 247.0, 30.0, 30.0 ]
                                                 }
                                             }
                                         ],
@@ -8774,12 +10046,6 @@
                                                 "patchline": {
                                                     "destination": [ "obj-39", 0 ],
                                                     "source": [ "obj-2", 1 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-48", 0 ],
-                                                    "source": [ "obj-2", 0 ]
                                                 }
                                             },
                                             {
@@ -8802,12 +10068,6 @@
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-51", 0 ],
-                                                    "source": [ "obj-48", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
                                                     "destination": [ "obj-1", 0 ],
                                                     "source": [ "obj-5", 0 ]
                                                 }
@@ -8820,18 +10080,6 @@
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-39", 0 ],
-                                                    "source": [ "obj-53", 1 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-48", 0 ],
-                                                    "source": [ "obj-53", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
                                                     "destination": [ "obj-4", 0 ],
                                                     "order": 0,
                                                     "source": [ "obj-54", 0 ]
@@ -8839,7 +10087,7 @@
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-53", 0 ],
+                                                    "destination": [ "obj-51", 0 ],
                                                     "order": 1,
                                                     "source": [ "obj-54", 0 ]
                                                 }
@@ -8863,13 +10111,15 @@
                                     "allowdrag": 0,
                                     "hint": "choose what data to display",
                                     "id": "obj-52",
-                                    "items": "spikes",
+                                    "items": [ "spikes (ON)", ",", "spikes (values)" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "int", "", "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 251.0, 77.0, 100.0, 22.0 ]
+                                    "patching_rect": [ 251.0, 77.0, 100.0, 22.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 590.0, 6.0, 112.0, 22.0 ]
                                 }
                             },
                             {
@@ -8898,7 +10148,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 500.0, 106.5, 404.0, 28.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 44.0, 4.0, 1500.0, 431.0 ],
+                                    "presentation_rect": [ 44.0, 34.0, 1454.0, 431.0 ],
                                     "setminmax": [ 0.0, 1.0 ],
                                     "slidercolor": [ 1.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -8913,7 +10163,7 @@
                                     "outlettype": [ "jit_matrix", "" ],
                                     "patching_rect": [ 251.0, 149.0, 661.0, 146.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 44.0, 4.0, 1500.0, 431.0 ],
+                                    "presentation_rect": [ 44.0, 34.0, 1454.0, 431.0 ],
                                     "srcrect": [ 0, 0, 0, 0 ],
                                     "sync": 1
                                 }
@@ -8952,6 +10202,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-16", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-14", 0 ],
                                     "source": [ "obj-17", 0 ]
                                 }
@@ -8972,6 +10228,12 @@
                                 "patchline": {
                                     "destination": [ "obj-24", 0 ],
                                     "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-21", 0 ]
                                 }
                             },
                             {
@@ -9074,7 +10336,7 @@
                         "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                     },
-                    "patching_rect": [ 522.0, 337.0, 151.0, 22.0 ],
+                    "patching_rect": [ 512.0, 316.0, 151.0, 22.0 ],
                     "saved_object_attributes": {
                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                         "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
@@ -9089,14 +10351,14 @@
                     "fontsize": 14.0,
                     "id": "obj-26",
                     "maxclass": "newobj",
-                    "numinlets": 1,
+                    "numinlets": 3,
                     "numoutlets": 0,
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -9105,13 +10367,37 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "comment": "",
+                                    "id": "obj-5",
+                                    "index": 2,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 104.0, 106.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-1",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 61.0, 106.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-4",
                                     "maxclass": "button",
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 122.0, 251.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 90.0, 284.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -9120,7 +10406,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 123.0, 286.0, 152.0, 22.0 ],
+                                    "patching_rect": [ 91.0, 319.0, 152.0, 22.0 ],
                                     "text": "s ---BrainViz/render/update"
                                 }
                             },
@@ -9141,7 +10427,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 165.0, 258.0, 90.0, 22.0 ],
+                                    "patching_rect": [ 133.0, 291.0, 90.0, 22.0 ],
                                     "text": "s ---frameIndex"
                                 }
                             },
@@ -9149,7 +10435,7 @@
                                 "box": {
                                     "comment": "",
                                     "id": "obj-2",
-                                    "index": 1,
+                                    "index": 3,
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -9161,7 +10447,7 @@
                                 "box": {
                                     "id": "obj-81",
                                     "maxclass": "newobj",
-                                    "numinlets": 2,
+                                    "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patcher": {
@@ -9169,13 +10455,69 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 422.0, 433.0, 756.0, 583.0 ],
+                                        "rect": [ 293.0, 246.0, 756.0, 583.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-20",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "int" ],
+                                                    "patching_rect": [ 369.75, 44.0, 29.5, 22.0 ],
+                                                    "text": "* 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-17",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 359.5, -50.0, 157.0, 22.0 ],
+                                                    "text": "r /TBO/transport/currentTick"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-11",
+                                                    "maxclass": "button",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 314.0, 53.0, 24.0, 24.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "number",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 359.5, -11.0, 50.0, 22.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-7",
+                                                    "index": 2,
+                                                    "maxclass": "inlet",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 502.0, 40.0, 30.0, 30.0 ]
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-5",
@@ -9183,7 +10525,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 161.0, 523.0, 91.0, 22.0 ],
+                                                    "patching_rect": [ 161.0, 447.0, 91.0, 22.0 ],
                                                     "text": "r ---frameCount"
                                                 }
                                             },
@@ -9194,7 +10536,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 523.0, 43.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 447.0, 43.0, 22.0 ],
                                                     "text": "% 100"
                                                 }
                                             },
@@ -9205,7 +10547,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 141.0, 571.0, 91.0, 22.0 ],
+                                                    "patching_rect": [ 141.0, 495.0, 91.0, 22.0 ],
                                                     "text": "r ---frameCount"
                                                 }
                                             },
@@ -9216,7 +10558,7 @@
                                                     "numinlets": 3,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 93.0, 595.0, 67.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 519.0, 67.0, 22.0 ],
                                                     "text": "clip 0 6000"
                                                 }
                                             },
@@ -9227,7 +10569,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 483.0, 539.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 407.0, 539.0, 22.0 ],
                                                     "text": "/ 1"
                                                 }
                                             },
@@ -9257,7 +10599,7 @@
                                                 "box": {
                                                     "comment": "",
                                                     "id": "obj-6",
-                                                    "index": 2,
+                                                    "index": 3,
                                                     "maxclass": "inlet",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -9305,7 +10647,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 445.0, 195.0, 22.0 ],
+                                                    "patching_rect": [ 93.0, 369.0, 195.0, 22.0 ],
                                                     "text": "+"
                                                 }
                                             },
@@ -9316,7 +10658,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 93.0, 394.0, 29.5, 22.0 ],
+                                                    "patching_rect": [ 93.0, 345.0, 73.0, 22.0 ],
                                                     "text": "+"
                                                 }
                                             },
@@ -9349,7 +10691,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "int" ],
-                                                    "patching_rect": [ 269.0, 388.5, 35.0, 22.0 ],
+                                                    "patching_rect": [ 269.0, 339.0, 35.0, 22.0 ],
                                                     "text": "/ 120"
                                                 }
                                             },
@@ -9545,7 +10887,7 @@
                                                     "maxclass": "outlet",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 93.0, 619.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 93.0, 543.0, 30.0, 30.0 ]
                                                 }
                                             }
                                         ],
@@ -9570,7 +10912,21 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-43", 0 ],
+                                                    "source": [ "obj-11", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-16", 1 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-12", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-20", 1 ],
+                                                    "order": 1,
                                                     "source": [ "obj-12", 0 ]
                                                 }
                                             },
@@ -9594,8 +10950,20 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-9", 0 ],
+                                                    "source": [ "obj-17", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-50", 1 ],
                                                     "source": [ "obj-2", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-43", 1 ],
+                                                    "source": [ "obj-20", 0 ]
                                                 }
                                             },
                                             {
@@ -9704,6 +11072,12 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-43", 1 ],
+                                                    "source": [ "obj-7", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-50", 0 ],
                                                     "source": [ "obj-73", 0 ]
                                                 }
@@ -9719,13 +11093,27 @@
                                                     "destination": [ "obj-43", 0 ],
                                                     "source": [ "obj-78", 0 ]
                                                 }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-11", 0 ],
+                                                    "order": 1,
+                                                    "source": [ "obj-9", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-20", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-9", 0 ]
+                                                }
                                             }
                                         ],
                                         "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
                                         "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                                     },
-                                    "patching_rect": [ 165.0, 214.5, 66.0, 22.0 ],
+                                    "patching_rect": [ 90.0, 239.0, 271.0, 22.0 ],
                                     "saved_object_attributes": {
                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                         "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
@@ -9804,6 +11192,12 @@
                         "lines": [
                             {
                                 "patchline": {
+                                    "destination": [ "obj-81", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-83", 0 ],
                                     "source": [ "obj-2", 0 ]
                                 }
@@ -9818,6 +11212,12 @@
                                 "patchline": {
                                     "destination": [ "obj-13", 0 ],
                                     "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-81", 1 ],
+                                    "source": [ "obj-5", 0 ]
                                 }
                             },
                             {
@@ -9854,7 +11254,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-81", 1 ],
+                                    "destination": [ "obj-81", 2 ],
                                     "source": [ "obj-83", 0 ]
                                 }
                             }
@@ -9863,7 +11263,7 @@
                         "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
                     },
-                    "patching_rect": [ 678.0, 302.0, 106.0, 24.0 ],
+                    "patching_rect": [ 406.0, 645.0, 201.0, 24.0 ],
                     "saved_object_attributes": {
                         "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
                         "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
@@ -9886,7 +11286,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 522.0, 277.0, 70.0, 18.0 ],
+                    "patching_rect": [ 512.0, 256.0, 70.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 11.0, 302.0, 96.66668699999991, 18.0 ],
                     "remapsvgcolors": 1,
@@ -9915,7 +11315,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 147.0, 47.0, 66.0, 20.0 ],
+                    "patching_rect": [ 146.5, 2.0, 66.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 26.0, 242.0, 69.0, 20.0 ],
                     "text": "DATA-VIZ",
@@ -9968,7 +11368,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -9999,7 +11399,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -10153,7 +11553,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -10365,7 +11765,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -10631,7 +12031,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -10749,7 +12149,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -10858,7 +12258,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -10878,7 +12278,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -10919,7 +12319,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -10960,7 +12360,7 @@
                                                                                                         "appversion": {
                                                                                                             "major": 9,
                                                                                                             "minor": 1,
-                                                                                                            "revision": 3,
+                                                                                                            "revision": 4,
                                                                                                             "architecture": "x64",
                                                                                                             "modernui": 1
                                                                                                         },
@@ -11458,7 +12858,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -11626,7 +13026,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -11943,7 +13343,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -11973,7 +13373,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -12423,7 +13823,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -12763,7 +14163,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -13368,7 +14768,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -13718,7 +15118,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -13860,7 +15260,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -13879,7 +15279,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -14127,7 +15527,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -14191,7 +15591,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -14521,7 +15921,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -14635,7 +16035,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -14939,7 +16339,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -15139,7 +16539,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -15669,7 +17069,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -15825,7 +17225,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -15855,7 +17255,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -15999,7 +17399,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -16125,7 +17525,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -16405,7 +17805,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -16603,7 +18003,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -17042,7 +18442,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -17358,7 +18758,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -17421,7 +18821,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -17793,7 +19193,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -17838,13 +19238,25 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 324.0, 161.0, 1154.0, 787.0 ],
+                        "rect": [ 193.0, 184.0, 1154.0, 764.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "attr": "blend_mode",
+                                    "id": "obj-19",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 394.0, 385.0, 150.0, 22.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "fontsize": 14.0,
@@ -17858,7 +19270,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -18364,13 +19776,46 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
                                         "rect": [ 589.0, 278.0, 889.0, 523.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "message",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 119.0, 318.0, 77.0, 22.0 ],
+                                                    "text": "setall 1 1 1 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-7",
+                                                    "maxclass": "button",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 54.0, 312.0, 24.0, 24.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-2",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 54.0, 346.0, 162.0, 22.0 ],
+                                                    "text": "jit.matrix 1 float32 23743 1"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-3",
@@ -18405,7 +19850,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -18531,7 +19976,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -18829,7 +20274,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -18848,7 +20293,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -19194,7 +20639,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -19382,7 +20827,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -19572,7 +21017,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 23743,
+                                                    "cols": 10000,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -19656,6 +21101,12 @@
                                                     "destination": [ "obj-38", 0 ],
                                                     "order": 2,
                                                     "source": [ "obj-115", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-213", 0 ],
+                                                    "source": [ "obj-2", 0 ]
                                                 }
                                             },
                                             {
@@ -19751,6 +21202,18 @@
                                                     "destination": [ "obj-115", 0 ],
                                                     "source": [ "obj-64", 0 ]
                                                 }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "source": [ "obj-7", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "source": [ "obj-9", 0 ]
+                                                }
                                             }
                                         ],
                                         "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ],
@@ -19779,7 +21242,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -20669,6 +22132,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-114", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-147", 0 ],
                                     "order": 1,
                                     "source": [ "obj-2", 0 ]
@@ -20770,12 +22239,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 379.0, 100.0, 1099.0, 848.0 ],
+                        "rect": [ 685.0, 259.0, 793.0, 689.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -21039,7 +22508,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -21313,7 +22782,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -21420,7 +22889,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -21438,7 +22907,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -21666,7 +23135,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -21912,7 +23381,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -21931,7 +23400,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -22047,7 +23516,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -22412,7 +23881,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -23333,6 +24802,18 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 298.0, 53.0, 150.0, 22.0 ]
                                 }
+                            },
+                            {
+                                "box": {
+                                    "attr": "erase_color",
+                                    "id": "obj-20",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 477.0, 221.0, 150.0, 22.0 ]
+                                }
                             }
                         ],
                         "lines": [
@@ -23406,6 +24887,12 @@
                                 "patchline": {
                                     "destination": [ "obj-56", 0 ],
                                     "source": [ "obj-18", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-90", 0 ],
+                                    "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
@@ -23570,7 +25057,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -24010,13 +25497,195 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 34.0, 346.0, 1444.0, 263.0 ],
+                        "rect": [ 34.0, 346.0, 1444.0, 514.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "fontsize": 14.0,
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patcher": {
+                                        "fileversion": 1,
+                                        "appversion": {
+                                            "major": 9,
+                                            "minor": 1,
+                                            "revision": 4,
+                                            "architecture": "x64",
+                                            "modernui": 1
+                                        },
+                                        "classnamespace": "box",
+                                        "rect": [ 201.0, 520.0, 777.0, 428.0 ],
+                                        "boxes": [
+                                            {
+                                                "box": {
+                                                    "fontface": 0,
+                                                    "fontname": "Arial",
+                                                    "fontsize": 12.0,
+                                                    "id": "obj-10",
+                                                    "maxclass": "jit.fpsgui",
+                                                    "mode": 4,
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "" ],
+                                                    "patching_rect": [ 70.0, 291.0, 80.0, 35.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 56.0, 248.0, 277.0, 22.0 ],
+                                                    "text": "jit.matrix ---neuronCountPerLabel 1 long @adapt 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-8",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "jit_matrix" ],
+                                                    "patching_rect": [ 56.0, 184.0, 90.0, 22.0 ],
+                                                    "text": "bo.jit.char2long"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-6",
+                                                    "maxclass": "button",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "bang" ],
+                                                    "parameter_enable": 0,
+                                                    "patching_rect": [ 56.0, 115.0, 24.0, 24.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "cols": 1,
+                                                    "fontface": 0,
+                                                    "fontname": "Arial",
+                                                    "fontsize": 12.0,
+                                                    "id": "obj-4",
+                                                    "maxclass": "jit.cellblock",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 4,
+                                                    "outlettype": [ "list", "", "", "" ],
+                                                    "patching_rect": [ 56.0, 338.0, 94.0, 230.0 ],
+                                                    "rows": 182
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-26",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 56.0, 217.0, 145.0, 22.0 ],
+                                                    "text": "jit.dimop @op + @step -1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-49",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 56.0, 150.0, 181.0, 22.0 ],
+                                                    "text": "jit.matrix ---neurons2AtlasLabels"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-2",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 56.0, 89.0, 181.0, 22.0 ],
+                                                    "text": "r ---neurons2AtlasLabels.loaded"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-1",
+                                                    "index": 1,
+                                                    "maxclass": "inlet",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 50.0, 42.0, 30.0, 30.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-41",
+                                                    "maxclass": "comment",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 82.0, 41.0, 220.0, 20.0 ],
+                                                    "text": "atlas color : various colormap strategies"
+                                                }
+                                            }
+                                        ],
+                                        "lines": [
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "source": [ "obj-2", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-9", 0 ],
+                                                    "source": [ "obj-26", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-8", 0 ],
+                                                    "source": [ "obj-49", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-49", 0 ],
+                                                    "source": [ "obj-6", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-26", 0 ],
+                                                    "source": [ "obj-8", 0 ]
+                                                }
+                                            }
+                                        ],
+                                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ],
+                                        "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
+                                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
+                                    },
+                                    "patching_rect": [ 22.0, 469.0, 228.0, 24.0 ],
+                                    "saved_object_attributes": {
+                                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
+                                        "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
+                                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+                                    },
+                                    "text": "p \"compute neuron-count per label\""
+                                }
+                            },
                             {
                                 "box": {
                                     "comment": "",
@@ -24111,7 +25780,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -24131,7 +25800,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -24353,7 +26022,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -24644,7 +26313,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -24663,7 +26332,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -24770,7 +26439,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -24921,7 +26590,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -25196,7 +26865,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -25735,7 +27404,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -26047,7 +27716,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -26148,7 +27817,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -26320,7 +27989,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -26560,7 +28229,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -26861,7 +28530,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -27062,7 +28731,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -27750,7 +29419,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -27869,7 +29538,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -27943,7 +29612,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -27962,7 +29631,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -27981,7 +29650,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -28125,7 +29794,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -28307,7 +29976,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -28654,7 +30323,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -28863,7 +30532,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -29373,7 +31042,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 23743,
+                                    "cols": 10000,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -29400,7 +31069,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -29473,7 +31142,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -29536,7 +31205,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -29675,7 +31344,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -30385,7 +32054,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -30406,7 +32075,7 @@
                                                                             },
                                                                             {
                                                                                 "box": {
-                                                                                    "cols": 23743,
+                                                                                    "cols": 10000,
                                                                                     "fontface": 0,
                                                                                     "fontname": "Arial",
                                                                                     "fontsize": 12.0,
@@ -31155,7 +32824,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -31529,7 +33198,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -31806,7 +33475,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 23743,
+                                    "cols": 10000,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -31875,7 +33544,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 23743,
+                                    "cols": 10000,
                                     "colwidth": 100,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -31902,7 +33571,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -32046,7 +33715,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -32279,7 +33948,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -32583,12 +34252,12 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 132.0, 481.0, 687.0, 354.0 ],
+                                        "rect": [ 34.0, 87.0, 1612.0, 929.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -32602,24 +34271,13 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 577.0, 309.0, 238.0, 293.0 ],
+                                                        "rect": [ 577.0, 309.0, 640.0, 480.0 ],
                                                         "boxes": [
-                                                            {
-                                                                "box": {
-                                                                    "id": "obj-2",
-                                                                    "maxclass": "button",
-                                                                    "numinlets": 1,
-                                                                    "numoutlets": 1,
-                                                                    "outlettype": [ "bang" ],
-                                                                    "parameter_enable": 0,
-                                                                    "patching_rect": [ 49.0, 180.0, 24.0, 24.0 ]
-                                                                }
-                                                            },
                                                             {
                                                                 "box": {
                                                                     "comment": "",
@@ -32628,7 +34286,18 @@
                                                                     "maxclass": "outlet",
                                                                     "numinlets": 1,
                                                                     "numoutlets": 0,
-                                                                    "patching_rect": [ 50.0, 210.0, 30.0, 30.0 ]
+                                                                    "patching_rect": [ 81.0, 209.0, 30.0, 30.0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-2",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 1,
+                                                                    "numoutlets": 2,
+                                                                    "outlettype": [ "bang", "bang" ],
+                                                                    "patching_rect": [ 50.0, 180.0, 50.0, 22.0 ],
+                                                                    "text": "t b b"
                                                                 }
                                                             },
                                                             {
@@ -32681,7 +34350,7 @@
                                                             {
                                                                 "patchline": {
                                                                     "destination": [ "obj-3", 0 ],
-                                                                    "source": [ "obj-2", 0 ]
+                                                                    "source": [ "obj-2", 1 ]
                                                                 }
                                                             },
                                                             {
@@ -32730,7 +34399,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "bang" ],
                                                     "parameter_enable": 0,
-                                                    "patching_rect": [ 80.0, 156.0, 24.0, 24.0 ]
+                                                    "patching_rect": [ 64.0, 174.0, 24.0, 24.0 ]
                                                 }
                                             },
                                             {
@@ -32757,12 +34426,12 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 578.0, 419.0, 329.0, 290.0 ],
+                                                        "rect": [ 536.0, 476.0, 640.0, 480.0 ],
                                                         "boxes": [
                                                             {
                                                                 "box": {
@@ -32770,7 +34439,7 @@
                                                                     "maxclass": "newobj",
                                                                     "numinlets": 1,
                                                                     "numoutlets": 0,
-                                                                    "patching_rect": [ 107.0, 155.0, 157.0, 22.0 ],
+                                                                    "patching_rect": [ 106.5, 166.5, 157.0, 22.0 ],
                                                                     "text": "s ---neurons3Dcoords.offset"
                                                                 }
                                                             },
@@ -32781,7 +34450,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "" ],
-                                                                    "patching_rect": [ 50.0, 88.0, 65.0, 22.0 ],
+                                                                    "patching_rect": [ 50.0, 100.0, 65.0, 22.0 ],
                                                                     "text": "t l l"
                                                                 }
                                                             },
@@ -32794,7 +34463,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                    "patching_rect": [ 50.0, 154.0, 29.5, 23.0 ],
+                                                                    "patching_rect": [ 50.0, 166.0, 29.5, 23.0 ],
                                                                     "text": "jit.-"
                                                                 }
                                                             },
@@ -32805,7 +34474,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 4,
                                                                     "outlettype": [ "", "", "", "" ],
-                                                                    "patching_rect": [ 96.0, 117.0, 50.5, 22.0 ],
+                                                                    "patching_rect": [ 96.0, 129.0, 50.5, 22.0 ],
                                                                     "text": "jit.3m"
                                                                 }
                                                             },
@@ -32829,7 +34498,7 @@
                                                                     "maxclass": "outlet",
                                                                     "numinlets": 1,
                                                                     "numoutlets": 0,
-                                                                    "patching_rect": [ 50.0, 191.0, 30.0, 30.0 ]
+                                                                    "patching_rect": [ 50.0, 203.0, 30.0, 30.0 ]
                                                                 }
                                                             }
                                                         ],
@@ -32970,7 +34639,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "bang" ],
                                                     "parameter_enable": 0,
-                                                    "patching_rect": [ 80.0, 65.0, 24.0, 24.0 ]
+                                                    "patching_rect": [ 84.0, 129.0, 24.0, 24.0 ]
                                                 }
                                             },
                                             {
@@ -32993,7 +34662,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 110.0, 59.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 110.0, 40.0, 30.0, 30.0 ]
                                                 }
                                             }
                                         ],
@@ -33124,7 +34793,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -33281,7 +34950,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -33300,7 +34969,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -33933,7 +35602,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -34183,7 +35852,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -34202,7 +35871,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -35061,7 +36730,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -35357,12 +37026,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 82.0, 488.0, 1396.0, 460.0 ],
+                        "rect": [ 582.0, 230.0, 1396.0, 460.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -35376,7 +37045,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -35505,7 +37174,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -35535,7 +37204,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -35883,7 +37552,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -36520,7 +38189,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 80.0, 126.0, 194.0, 24.0 ],
+                                    "patching_rect": [ 80.0, 126.0, 194.0, 40.0 ],
                                     "text": "bo.jit.gl.handlecam ---BrainViz"
                                 }
                             },
@@ -36557,7 +38226,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -36634,7 +38303,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -36676,7 +38345,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -36965,7 +38634,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -36984,7 +38653,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -37126,7 +38795,7 @@
                                                                                         "appversion": {
                                                                                             "major": 9,
                                                                                             "minor": 1,
-                                                                                            "revision": 3,
+                                                                                            "revision": 4,
                                                                                             "architecture": "x64",
                                                                                             "modernui": 1
                                                                                         },
@@ -37333,7 +39002,7 @@
                                                                         "appversion": {
                                                                             "major": 9,
                                                                             "minor": 1,
-                                                                            "revision": 3,
+                                                                            "revision": 4,
                                                                             "architecture": "x64",
                                                                             "modernui": 1
                                                                         },
@@ -37794,7 +39463,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 3,
+                                                            "revision": 4,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -38556,7 +40225,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -38753,7 +40422,7 @@
                     "maxclass": "live.line",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 139.0, 52.0, 5.0, 151.71428571428572 ],
+                    "patching_rect": [ 139.0, 7.0, 5.0, 151.71428571428572 ],
                     "presentation": 1,
                     "presentation_rect": [ 128.0, 3.0, 5.0, 331.0 ]
                 }
@@ -38765,7 +40434,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 41.0, 157.0, 55.0, 20.0 ],
+                    "patching_rect": [ 41.0, 112.0, 55.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 35.0, 181.0, 55.0, 20.0 ],
                     "text": "clusters",
@@ -38779,7 +40448,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 41.0, 67.0, 56.0, 20.0 ],
+                    "patching_rect": [ 41.0, 22.0, 56.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 39.0, 83.0, 56.0, 20.0 ],
                     "text": "neurons",
@@ -38794,7 +40463,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 25.0, 47.0, 111.0, 20.0 ],
+                    "patching_rect": [ 25.0, 2.0, 111.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 26.0, 64.0, 73.0, 20.0 ],
                     "text": "DATASETS",
@@ -38978,8 +40647,6 @@
                         },
                         "valueof": {
                             "parameter_enum": [ "2D", "3D" ],
-                            "parameter_initial": [ 0 ],
-                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.tab",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
@@ -39019,8 +40686,40 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-26", 1 ],
+                    "source": [ "obj-104", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-104", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-81", 0 ],
+                    "order": 0,
+                    "source": [ "obj-104", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-82", 0 ],
+                    "order": 1,
+                    "source": [ "obj-104", 2 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-44", 0 ],
                     "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-29", 0 ],
+                    "source": [ "obj-25", 0 ]
                 }
             },
             {
@@ -39189,6 +40888,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-61", 0 ],
+                    "source": [ "obj-53", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-37", 1 ],
                     "source": [ "obj-54", 0 ]
                 }
@@ -39237,6 +40942,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-82", 0 ],
+                    "source": [ "obj-61", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-10", 0 ],
                     "source": [ "obj-62", 1 ]
                 }
@@ -39261,6 +40972,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-80", 0 ],
+                    "source": [ "obj-65", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-33", 0 ],
                     "source": [ "obj-68", 0 ]
                 }
@@ -39273,8 +40990,45 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-26", 0 ],
+                    "destination": [ "obj-66", 1 ],
+                    "source": [ "obj-70", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-60", 0 ],
+                    "source": [ "obj-80", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-104", 2 ],
+                    "source": [ "obj-81", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-104", 1 ],
+                    "source": [ "obj-82", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 2 ],
                     "source": [ "obj-83", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-22", 0 ],
+                    "midpoints": [ 521.5, 339.0, 498.0, 339.0, 498.0, 252.0, 521.5, 252.0 ],
+                    "source": [ "obj-85", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-104", 0 ],
+                    "source": [ "obj-87", 0 ]
                 }
             },
             {
@@ -39313,7 +41067,8 @@
             "obj-12::obj-10::obj-89": [ "live.text[11]", "live.text[3]", 0 ],
             "obj-12::obj-10::obj-9": [ "live.toggle[5]", "live.toggle", 0 ],
             "obj-12::obj-10::obj-91": [ "live.menu[33]", "live.menu", 0 ],
-            "obj-12::obj-10::obj-98": [ "live.menu[22]", "live.menu", 0 ],
+            "obj-12::obj-10::obj-97": [ "live.menu[14]", "live.menu", 0 ],
+            "obj-12::obj-10::obj-98": [ "live.menu[23]", "live.menu", 0 ],
             "obj-12::obj-11::obj-10": [ "Load clusters CSV file[18]", "Load clusters", 0 ],
             "obj-12::obj-11::obj-12": [ "live.menu[77]", "live.menu", 0 ],
             "obj-12::obj-11::obj-13": [ "Chord sustain[45]", "chordSustain", 0 ],
@@ -39335,6 +41090,7 @@
             "obj-12::obj-11::obj-89": [ "live.text[30]", "live.text[3]", 0 ],
             "obj-12::obj-11::obj-9": [ "live.toggle[14]", "live.toggle", 0 ],
             "obj-12::obj-11::obj-91": [ "live.menu[79]", "live.menu", 0 ],
+            "obj-12::obj-11::obj-97": [ "live.menu[76]", "live.menu", 0 ],
             "obj-12::obj-11::obj-98": [ "live.menu[78]", "live.menu", 0 ],
             "obj-12::obj-12::obj-10": [ "Load clusters CSV file[17]", "Load clusters", 0 ],
             "obj-12::obj-12::obj-12": [ "live.menu[73]", "live.menu", 0 ],
@@ -39356,7 +41112,8 @@
             "obj-12::obj-12::obj-82": [ "1-MIDI-OUT-Channel[12]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-12::obj-89": [ "live.text[27]", "live.text[3]", 0 ],
             "obj-12::obj-12::obj-9": [ "live.toggle[13]", "live.toggle", 0 ],
-            "obj-12::obj-12::obj-91": [ "live.menu[72]", "live.menu", 0 ],
+            "obj-12::obj-12::obj-91": [ "live.menu[56]", "live.menu", 0 ],
+            "obj-12::obj-12::obj-97": [ "live.menu[72]", "live.menu", 0 ],
             "obj-12::obj-12::obj-98": [ "live.menu[75]", "live.menu", 0 ],
             "obj-12::obj-13::obj-10": [ "Load clusters CSV file[16]", "Load clusters", 0 ],
             "obj-12::obj-13::obj-12": [ "live.menu[69]", "live.menu", 0 ],
@@ -39378,7 +41135,8 @@
             "obj-12::obj-13::obj-82": [ "1-MIDI-OUT-Channel[11]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-13::obj-89": [ "live.text[26]", "live.text[3]", 0 ],
             "obj-12::obj-13::obj-9": [ "live.toggle[12]", "live.toggle", 0 ],
-            "obj-12::obj-13::obj-91": [ "live.menu[68]", "live.menu", 0 ],
+            "obj-12::obj-13::obj-91": [ "live.menu[71]", "live.menu", 0 ],
+            "obj-12::obj-13::obj-97": [ "live.menu[68]", "live.menu", 0 ],
             "obj-12::obj-13::obj-98": [ "live.menu[70]", "live.menu", 0 ],
             "obj-12::obj-14::obj-10": [ "Load clusters CSV file[15]", "Load clusters", 0 ],
             "obj-12::obj-14::obj-12": [ "live.menu[64]", "live.menu", 0 ],
@@ -39401,6 +41159,7 @@
             "obj-12::obj-14::obj-89": [ "live.text[23]", "live.text[3]", 0 ],
             "obj-12::obj-14::obj-9": [ "live.toggle[11]", "live.toggle", 0 ],
             "obj-12::obj-14::obj-91": [ "live.menu[65]", "live.menu", 0 ],
+            "obj-12::obj-14::obj-97": [ "live.menu[92]", "live.menu", 0 ],
             "obj-12::obj-14::obj-98": [ "live.menu[62]", "live.menu", 0 ],
             "obj-12::obj-15::obj-10": [ "Load clusters CSV file[14]", "Load clusters", 0 ],
             "obj-12::obj-15::obj-12": [ "live.menu[58]", "live.menu", 0 ],
@@ -39422,7 +41181,8 @@
             "obj-12::obj-15::obj-82": [ "1-MIDI-OUT-Channel[9]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-15::obj-89": [ "live.text[22]", "live.text[3]", 0 ],
             "obj-12::obj-15::obj-9": [ "live.toggle[10]", "live.toggle", 0 ],
-            "obj-12::obj-15::obj-91": [ "live.menu[60]", "live.menu", 0 ],
+            "obj-12::obj-15::obj-91": [ "live.menu[61]", "live.menu", 0 ],
+            "obj-12::obj-15::obj-97": [ "live.menu[60]", "live.menu", 0 ],
             "obj-12::obj-15::obj-98": [ "live.menu[57]", "live.menu", 0 ],
             "obj-12::obj-16::obj-10": [ "Load clusters CSV file[13]", "Load clusters", 0 ],
             "obj-12::obj-16::obj-12": [ "live.menu[52]", "live.menu", 0 ],
@@ -39445,6 +41205,7 @@
             "obj-12::obj-16::obj-89": [ "live.text[20]", "live.text[3]", 0 ],
             "obj-12::obj-16::obj-9": [ "live.toggle[9]", "live.toggle", 0 ],
             "obj-12::obj-16::obj-91": [ "live.menu[54]", "live.menu", 0 ],
+            "obj-12::obj-16::obj-97": [ "live.menu[24]", "live.menu", 0 ],
             "obj-12::obj-16::obj-98": [ "live.menu[55]", "live.menu", 0 ],
             "obj-12::obj-1::obj-10": [ "Load clusters CSV file[5]", "Load clusters", 0 ],
             "obj-12::obj-1::obj-12": [ "live.menu[2]", "live.menu", 0 ],
@@ -39467,6 +41228,7 @@
             "obj-12::obj-1::obj-89": [ "live.text[2]", "live.text[3]", 0 ],
             "obj-12::obj-1::obj-9": [ "live.toggle[1]", "live.toggle", 0 ],
             "obj-12::obj-1::obj-91": [ "live.menu[17]", "live.menu", 0 ],
+            "obj-12::obj-1::obj-97": [ "live.menu[91]", "live.menu", 0 ],
             "obj-12::obj-1::obj-98": [ "live.menu", "live.menu", 0 ],
             "obj-12::obj-2::obj-10": [ "Load clusters CSV file[4]", "Load clusters", 0 ],
             "obj-12::obj-2::obj-12": [ "live.menu[5]", "live.menu", 0 ],
@@ -39476,7 +41238,7 @@
             "obj-12::obj-2::obj-22": [ "Timeline[1]", "Timeline", 0 ],
             "obj-12::obj-2::obj-26": [ "Max polypressure output[3]", "maxpolypressure", 0 ],
             "obj-12::obj-2::obj-29": [ "Max velocity output[3]", "maxvelocity", 0 ],
-            "obj-12::obj-2::obj-3": [ "live.menu[18]", "8439.clusterMenu", 0 ],
+            "obj-12::obj-2::obj-3": [ "live.menu[19]", "8439.clusterMenu", 0 ],
             "obj-12::obj-2::obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-2::obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
             "obj-12::obj-2::obj-61": [ "velocity range[1]", "velocityRange", 0 ],
@@ -39489,6 +41251,7 @@
             "obj-12::obj-2::obj-89": [ "live.text[6]", "live.text[3]", 0 ],
             "obj-12::obj-2::obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
             "obj-12::obj-2::obj-91": [ "live.menu[4]", "live.menu", 0 ],
+            "obj-12::obj-2::obj-97": [ "live.menu[18]", "live.menu", 0 ],
             "obj-12::obj-2::obj-98": [ "live.menu[6]", "live.menu", 0 ],
             "obj-12::obj-3::obj-10": [ "Load clusters CSV file[20]", "Load clusters", 0 ],
             "obj-12::obj-3::obj-12": [ "live.menu[87]", "live.menu", 0 ],
@@ -39511,6 +41274,7 @@
             "obj-12::obj-3::obj-89": [ "live.text[33]", "live.text[3]", 0 ],
             "obj-12::obj-3::obj-9": [ "live.toggle[16]", "live.toggle", 0 ],
             "obj-12::obj-3::obj-91": [ "live.menu[90]", "live.menu", 0 ],
+            "obj-12::obj-3::obj-97": [ "live.menu[94]", "live.menu", 0 ],
             "obj-12::obj-3::obj-98": [ "live.menu[89]", "live.menu", 0 ],
             "obj-12::obj-4::obj-10": [ "Load clusters CSV file[19]", "Load clusters", 0 ],
             "obj-12::obj-4::obj-12": [ "live.menu[84]", "live.menu", 0 ],
@@ -39533,6 +41297,7 @@
             "obj-12::obj-4::obj-89": [ "live.text[31]", "live.text[3]", 0 ],
             "obj-12::obj-4::obj-9": [ "live.toggle[15]", "live.toggle", 0 ],
             "obj-12::obj-4::obj-91": [ "live.menu[83]", "live.menu", 0 ],
+            "obj-12::obj-4::obj-97": [ "live.menu[93]", "live.menu", 0 ],
             "obj-12::obj-4::obj-98": [ "live.menu[82]", "live.menu", 0 ],
             "obj-12::obj-5::obj-10": [ "Load clusters CSV file[7]", "Load clusters", 0 ],
             "obj-12::obj-5::obj-12": [ "live.menu[10]", "live.menu", 0 ],
@@ -39555,6 +41320,7 @@
             "obj-12::obj-5::obj-89": [ "live.text[10]", "live.text[3]", 0 ],
             "obj-12::obj-5::obj-9": [ "live.toggle[4]", "live.toggle", 0 ],
             "obj-12::obj-5::obj-91": [ "live.menu[11]", "live.menu", 0 ],
+            "obj-12::obj-5::obj-97": [ "live.menu[22]", "live.menu", 0 ],
             "obj-12::obj-5::obj-98": [ "live.menu[13]", "live.menu", 0 ],
             "obj-12::obj-6::obj-10": [ "Load clusters CSV file[6]", "Load clusters", 0 ],
             "obj-12::obj-6::obj-12": [ "live.menu[7]", "live.menu", 0 ],
@@ -39577,6 +41343,7 @@
             "obj-12::obj-6::obj-89": [ "live.text[8]", "live.text[3]", 0 ],
             "obj-12::obj-6::obj-9": [ "live.toggle[3]", "live.toggle", 0 ],
             "obj-12::obj-6::obj-91": [ "live.menu[21]", "live.menu", 0 ],
+            "obj-12::obj-6::obj-97": [ "live.menu[9]", "live.menu", 0 ],
             "obj-12::obj-6::obj-98": [ "live.menu[8]", "live.menu", 0 ],
             "obj-12::obj-7::obj-10": [ "Load clusters CSV file[11]", "Load clusters", 0 ],
             "obj-12::obj-7::obj-12": [ "live.menu[49]", "live.menu", 0 ],
@@ -39599,6 +41366,7 @@
             "obj-12::obj-7::obj-89": [ "live.text[17]", "live.text[3]", 0 ],
             "obj-12::obj-7::obj-9": [ "live.toggle[8]", "live.toggle", 0 ],
             "obj-12::obj-7::obj-91": [ "live.menu[47]", "live.menu", 0 ],
+            "obj-12::obj-7::obj-97": [ "live.menu[46]", "live.menu", 0 ],
             "obj-12::obj-7::obj-98": [ "live.menu[50]", "live.menu", 0 ],
             "obj-12::obj-8::obj-10": [ "Load clusters CSV file[10]", "Load clusters", 0 ],
             "obj-12::obj-8::obj-12": [ "live.menu[44]", "live.menu", 0 ],
@@ -39621,6 +41389,7 @@
             "obj-12::obj-8::obj-89": [ "live.text[16]", "live.text[3]", 0 ],
             "obj-12::obj-8::obj-9": [ "live.toggle[7]", "live.toggle", 0 ],
             "obj-12::obj-8::obj-91": [ "live.menu[45]", "live.menu", 0 ],
+            "obj-12::obj-8::obj-97": [ "live.menu[41]", "live.menu", 0 ],
             "obj-12::obj-8::obj-98": [ "live.menu[43]", "live.menu", 0 ],
             "obj-12::obj-9::obj-10": [ "Load clusters CSV file[9]", "Load clusters", 0 ],
             "obj-12::obj-9::obj-12": [ "live.menu[40]", "live.menu", 0 ],
@@ -39643,6 +41412,7 @@
             "obj-12::obj-9::obj-89": [ "live.text[14]", "live.text[3]", 0 ],
             "obj-12::obj-9::obj-9": [ "live.toggle[6]", "live.toggle", 0 ],
             "obj-12::obj-9::obj-91": [ "live.menu[37]", "live.menu", 0 ],
+            "obj-12::obj-9::obj-97": [ "live.menu[16]", "live.menu", 0 ],
             "obj-12::obj-9::obj-98": [ "live.menu[39]", "live.menu", 0 ],
             "obj-21::obj-2": [ "live.gain~[1]", "live.gain~[1]", 0 ],
             "obj-22": [ "Timeline", "Timeline", 0 ],
@@ -39662,9 +41432,13 @@
             "obj-55": [ "spike matrix filepath[1]", "spikesfilepath", 0 ],
             "obj-58": [ "spike matrix filepath[2]", "spikesfilepath", 0 ],
             "obj-63": [ "spike matrix filepath[4]", "spikesfilepath", 0 ],
+            "obj-65": [ "3D view[24]", "3D view", 0 ],
             "obj-68": [ "live.tab", "live.tab", 0 ],
             "obj-7": [ "3D view[11]", "3D view", 0 ],
+            "obj-81": [ "3D view[25]", "3D view", 0 ],
+            "obj-82": [ "3D view[26]", "3D view", 0 ],
             "obj-83": [ "Frame rhythmic unit[1]", "Frame rhythmic unit", 0 ],
+            "obj-87": [ "3D view[27]", "3D view", 0 ],
             "obj-9": [ "Load clusters CSV file[2]", "Load clusters", 0 ],
             "parameterbanks": {
                 "0": {
@@ -39703,7 +41477,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[35]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39735,15 +41509,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[33]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
+                "obj-12::obj-10::obj-97": {
+                    "parameter_longname": "live.menu[14]"
+                },
                 "obj-12::obj-10::obj-98": {
                     "parameter_invisible": 0,
-                    "parameter_longname": "live.menu[22]",
+                    "parameter_longname": "live.menu[23]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39775,7 +41552,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[80]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39807,15 +41584,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[79]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-11::obj-97": {
+                    "parameter_longname": "live.menu[76]"
                 },
                 "obj-12::obj-11::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[78]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39847,7 +41627,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[74]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39877,17 +41657,20 @@
                 },
                 "obj-12::obj-12::obj-91": {
                     "parameter_invisible": 0,
-                    "parameter_longname": "live.menu[72]",
+                    "parameter_longname": "live.menu[56]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-12::obj-97": {
+                    "parameter_longname": "live.menu[72]"
                 },
                 "obj-12::obj-12::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[75]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39919,7 +41702,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[67]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39949,17 +41732,20 @@
                 },
                 "obj-12::obj-13::obj-91": {
                     "parameter_invisible": 0,
-                    "parameter_longname": "live.menu[68]",
+                    "parameter_longname": "live.menu[71]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-13::obj-97": {
+                    "parameter_longname": "live.menu[68]"
                 },
                 "obj-12::obj-13::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[70]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -39991,7 +41777,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[63]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40023,15 +41809,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[65]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-14::obj-97": {
+                    "parameter_longname": "live.menu[92]"
                 },
                 "obj-12::obj-14::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[62]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40063,7 +41852,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[59]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40093,17 +41882,20 @@
                 },
                 "obj-12::obj-15::obj-91": {
                     "parameter_invisible": 0,
-                    "parameter_longname": "live.menu[60]",
+                    "parameter_longname": "live.menu[61]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-15::obj-97": {
+                    "parameter_longname": "live.menu[60]"
                 },
                 "obj-12::obj-15::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[57]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40135,7 +41927,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[53]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40167,15 +41959,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[54]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-16::obj-97": {
+                    "parameter_longname": "live.menu[24]"
                 },
                 "obj-12::obj-16::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[55]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40204,7 +41999,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[15]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40216,7 +42011,7 @@
                 },
                 "obj-12::obj-1::obj-8": {
                     "parameter_longname": "live.numbox[2]",
-                    "parameter_range": [ 1, 177 ]
+                    "parameter_range": [ 1, 66 ]
                 },
                 "obj-12::obj-1::obj-80": {
                     "parameter_longname": "live.text[4]"
@@ -40234,7 +42029,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[17]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40242,7 +42037,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40250,7 +42045,12 @@
                     "parameter_longname": "Load clusters CSV file[4]"
                 },
                 "obj-12::obj-2::obj-12": {
-                    "parameter_longname": "live.menu[5]"
+                    "parameter_invisible": 0,
+                    "parameter_longname": "live.menu[5]",
+                    "parameter_modmode": 0,
+                    "parameter_range": [ "auto: divide", "auto: sort-activity", "map-file" ],
+                    "parameter_type": 2,
+                    "parameter_unitstyle": 10
                 },
                 "obj-12::obj-2::obj-13": {
                     "parameter_longname": "Chord sustain[17]"
@@ -40272,9 +42072,9 @@
                 },
                 "obj-12::obj-2::obj-3": {
                     "parameter_invisible": 0,
-                    "parameter_longname": "live.menu[18]",
+                    "parameter_longname": "live.menu[19]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40289,7 +42089,7 @@
                 },
                 "obj-12::obj-2::obj-8": {
                     "parameter_longname": "live.numbox[3]",
-                    "parameter_range": [ 1, 212 ]
+                    "parameter_range": [ 1, 149 ]
                 },
                 "obj-12::obj-2::obj-80": {
                     "parameter_longname": "live.text[5]"
@@ -40307,7 +42107,15 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[4]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_type": 2,
+                    "parameter_unitstyle": 10
+                },
+                "obj-12::obj-2::obj-97": {
+                    "parameter_invisible": 0,
+                    "parameter_longname": "live.menu[18]",
+                    "parameter_modmode": 0,
+                    "parameter_range": [ "subcluster", "cluster", "none" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40315,7 +42123,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[6]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40347,7 +42155,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[88]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40379,15 +42187,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[90]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-3::obj-97": {
+                    "parameter_longname": "live.menu[94]"
                 },
                 "obj-12::obj-3::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[89]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40419,7 +42230,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[85]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40451,15 +42262,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[83]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-4::obj-97": {
+                    "parameter_longname": "live.menu[93]"
                 },
                 "obj-12::obj-4::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[82]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40491,7 +42305,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[12]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40506,7 +42320,7 @@
                 },
                 "obj-12::obj-5::obj-8": {
                     "parameter_longname": "live.numbox[5]",
-                    "parameter_range": [ 1, 256 ]
+                    "parameter_range": [ 1, 149 ]
                 },
                 "obj-12::obj-5::obj-80": {
                     "parameter_longname": "live.text[9]"
@@ -40524,15 +42338,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[11]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-5::obj-97": {
+                    "parameter_longname": "live.menu[22]"
                 },
                 "obj-12::obj-5::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[13]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40564,7 +42381,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[20]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40597,15 +42414,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[21]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-6::obj-97": {
+                    "parameter_longname": "live.menu[9]"
                 },
                 "obj-12::obj-6::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[8]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40637,7 +42457,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[48]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40669,15 +42489,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[47]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-7::obj-97": {
+                    "parameter_longname": "live.menu[46]"
                 },
                 "obj-12::obj-7::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[50]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40709,7 +42532,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[42]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40741,15 +42564,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[45]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-8::obj-97": {
+                    "parameter_longname": "live.menu[41]"
                 },
                 "obj-12::obj-8::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[43]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40781,7 +42607,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[38]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "No Cluster", "1 Diencephalon -", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons", "13 Diencephalon - Dorsal Thalamus", "14 Diencephalon - Eminentia Thalami", "15 Diencephalon - Habenula", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2", "36 Diencephalon - Isl1 cluster 1", "39 Diencephalon - Left Habenula Vglut2 Cluster", "40 Diencephalon - Medial vglut2 cluster", "41 Diencephalon - Migrated Area of the Pretectum (M1)", "43 Diencephalon - Olig2 Band", "44 Diencephalon - Olig2 Band 2", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area", "58 Diencephalon - Posterior Tuberculum", "60 Diencephalon - Preoptic Area", "64 Diencephalon - Pretectal Gad1b Cluster", "65 Diencephalon - Pretectal dopaminergic cluster", "66 Diencephalon - Pretectum", "70 Diencephalon - Retinal Arborization Field 4 (AF4)", "71 Diencephalon - Retinal Arborization Field 5 (AF5)", "73 Diencephalon - Right Habenula Vglut2 Cluster", "76 Diencephalon - Ventral Thalamus", "78 Ganglia - Eyes", "85 Ganglia - Lateral Line Neuromast OC1", "88 Ganglia - Lateral Line Neuromast SO3", "90 Ganglia - Posterior Lateral Line Ganglia", "94 Mesencephalon -", "95 Mesencephalon - Isl1 cluster of the mesencephalic region", "96 Mesencephalon - Medial Tectal Band", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle)", "98 Mesencephalon - Oculomotor Nucleus nIII", "99 Mesencephalon - Otpb Cluster", "100 Mesencephalon - Oxtl Cluster Sparse", "101 Mesencephalon - Ptf1a Cluster", "102 Mesencephalon - Retinal Arborization Field 7 (AF7)", "103 Mesencephalon - Retinal Arborization Field 8 (AF8)", "104 Mesencephalon - Retinal Arborization Field 9 (AF9)", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster", "106 Mesencephalon - Tectum Stratum Periventriculare", "107 Mesencephalon - Tectum Neuropil", "108 Mesencephalon - Tegmentum", "109 Mesencephalon - Torus Longitudinalis", "110 Mesencephalon - Torus Semicircularis", "111 Mesencephalon - Vglut2 cluster 1", "114 Rhombencephalon -", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons", "125 Rhombencephalon - Area Postrema", "126 Rhombencephalon - CaD", "127 Rhombencephalon - CaV", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills", "129 Rhombencephalon - Cerebellar Neuropil 1", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas", "131 Rhombencephalon - Cerebellum", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas", "133 Rhombencephalon - Corpus Cerebelli", "134 Rhombencephalon - Eminentia Granularis", "135 Rhombencephalon - Gad1b Cluster 1", "137 Rhombencephalon - Gad1b Cluster 11", "139 Rhombencephalon - Gad1b Cluster 13", "140 Rhombencephalon - Gad1b Cluster 14", "141 Rhombencephalon - Gad1b Cluster 15", "142 Rhombencephalon - Gad1b Cluster 16", "143 Rhombencephalon - Gad1b Cluster 17", "144 Rhombencephalon - Gad1b Cluster 18", "145 Rhombencephalon - Gad1b Cluster 19", "146 Rhombencephalon - Gad1b Cluster 2", "147 Rhombencephalon - Gad1b Cluster 20", "149 Rhombencephalon - Gad1b Cluster 4", "150 Rhombencephalon - Gad1b Cluster 5", "151 Rhombencephalon - Gad1b Cluster 6", "152 Rhombencephalon - Gad1b Cluster 7", "155 Rhombencephalon - Gad1b Stripe 1", "156 Rhombencephalon - Gad1b Stripe 2", "157 Rhombencephalon - Gad1b Stripe 3", "158 Rhombencephalon - Glyt2 Cluster 1", "160 Rhombencephalon - Glyt2 Cluster 11", "161 Rhombencephalon - Glyt2 Cluster 12", "162 Rhombencephalon - Glyt2 Cluster 13", "163 Rhombencephalon - Glyt2 Cluster 14", "164 Rhombencephalon - Glyt2 Cluster 2", "165 Rhombencephalon - Glyt2 Cluster 3", "166 Rhombencephalon - Glyt2 Cluster 4", "167 Rhombencephalon - Glyt2 Cluster 5", "168 Rhombencephalon - Glyt2 Cluster 6", "172 Rhombencephalon - Glyt2 Stripe 1", "173 Rhombencephalon - Glyt2 Stripe 2", "174 Rhombencephalon - Glyt2 Stripe 3", "175 Rhombencephalon - Inferior Olive", "177 Rhombencephalon - Isl1 Cluster 1", "178 Rhombencephalon - Isl1 Cluster 2", "179 Rhombencephalon - Isl1 Cluster 3", "180 Rhombencephalon - Isl1 Stripe 1", "182 Rhombencephalon - Lobus caudalis cerebelli", "184 Rhombencephalon - Mauthner", "186 Rhombencephalon - Medial Vestibular Nucleus", "187 Rhombencephalon - MiD2", "188 Rhombencephalon - MiD3", "195 Rhombencephalon - Neuropil Region 2", "196 Rhombencephalon - Neuropil Region 3", "197 Rhombencephalon - Neuropil Region 4", "198 Rhombencephalon - Neuropil Region 5", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas", "201 Rhombencephalon - Oculomotor Nucleus nIV", "202 Rhombencephalon - Olig2 Cluster", "203 Rhombencephalon - Olig2 Stripe", "204 Rhombencephalon - Olig2 enriched areas in cerebellum", "207 Rhombencephalon - Otpb Cluster 3", "208 Rhombencephalon - Otpb Cluster 4", "209 Rhombencephalon - Otpb Cluster 5", "210 Rhombencephalon - Otpb Cluster 6", "211 Rhombencephalon - Oxtl Cluster 1 Sparse", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap", "214 Rhombencephalon - Ptf1a Cluster 1", "215 Rhombencephalon - Ptf1a Stripe", "216 Rhombencephalon - Qrfp neuron cluster sparse", "217 Rhombencephalon - Raphe - Inferior", "219 Rhombencephalon - Rhombomere 1", "220 Rhombencephalon - Rhombomere 2", "221 Rhombencephalon - Rhombomere 3", "222 Rhombencephalon - Rhombomere 4", "223 Rhombencephalon - Rhombomere 5", "224 Rhombencephalon - Rhombomere 6", "225 Rhombencephalon - Rhombomere 7", "233 Rhombencephalon - S1181t Cluster", "234 Rhombencephalon - Small cluster of TH stained neurons", "235 Rhombencephalon - Spinal Backfill Vestibular Population", "238 Rhombencephalon - Tangential Vestibular Nucleus", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons", "241 Rhombencephalon - Valvula Cerebelli", "243 Rhombencephalon - Vglut2 Stripe 1", "244 Rhombencephalon - Vglut2 Stripe 2", "245 Rhombencephalon - Vglut2 Stripe 3", "246 Rhombencephalon - Vglut2 Stripe 4", "247 Rhombencephalon - Vglut2 cluster 1", "248 Rhombencephalon - Vglut2 cluster 2", "249 Rhombencephalon - Vglut2 cluster 3", "250 Rhombencephalon - Vglut2 cluster 4", "251 Rhombencephalon - Vmat2 Cluster 1", "252 Rhombencephalon - Vmat2 Cluster 2", "253 Rhombencephalon - Vmat2 Cluster 3", "255 Rhombencephalon - Vmat2 Cluster 5", "256 Rhombencephalon - Vmat2 Stripe1", "257 Rhombencephalon - Vmat2 Stripe2", "258 Rhombencephalon - Vmat2 Stripe3", "259 Rhombencephalon - X Vagus motorneuron cluster", "260 Spinal Cord", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe", "262 Spinal Cord - Dorsal Sparse Isl1 cluster", "263 Spinal Cord - Gad1b Stripe 1", "265 Spinal Cord - Glyt2 Stripe", "266 Spinal Cord - Isl1 stripe - motorneurons", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills", "268 Spinal Cord - Neuropil Region", "269 Spinal Cord - Olig2 Stripe", "270 Spinal Cord - Vglut2 Stripe 1", "271 Spinal Cord - Vglut2 Stripe 2", "272 Spinal Cord - Vglut2 Stripe 3", "273 Spinal Cord - Vmat2 Stripe1", "275 Telencephalon -", "277 Telencephalon - Isl1 cluster 1", "279 Telencephalon - Olfactory Bulb", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas", "283 Telencephalon - Pallium", "285 Telencephalon - S1181t Cluster", "286 Telencephalon - Subpallial Gad1b cluster", "287 Telencephalon - Subpallial Otpb Cluster 2", "288 Telencephalon - Subpallial Otpb strip", "290 Telencephalon - Subpallial dopaminergic cluster", "291 Telencephalon - Subpallium", "293 Telencephalon - Vglut2 rind", "294 Telencephalon - Vmat2 cluster" ],
+                    "parameter_range": [ "Empty menu", "Empty menu" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -40814,15 +42640,18 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[37]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Sampler", "from Max 1", "from Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
+                },
+                "obj-12::obj-9::obj-97": {
+                    "parameter_longname": "live.menu[16]"
                 },
                 "obj-12::obj-9::obj-98": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[39]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "to Max 1", "to Max 2" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 }
