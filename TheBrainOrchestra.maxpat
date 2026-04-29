@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 101.0, 101.0, 1180.0, 760.0 ],
+        "rect": [ 138.0, 153.0, 1180.0, 760.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -755,7 +755,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 709.0, -489.0, 420.0, 215.0 ],
+                        "rect": [ 334.0, 375.0, 420.0, 215.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -925,17 +925,9 @@
                                     "source": [ "obj-5", 0 ]
                                 }
                             }
-                        ],
-                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ],
-                        "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
+                        ]
                     },
                     "patching_rect": [ 44.375, 465.0, 76.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                        "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
-                    },
                     "text": "p map-mode"
                 }
             },
@@ -945,6 +937,7 @@
                     "annotation_name": "Pixel to neuron map",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-48",
                     "maxclass": "live.text",
@@ -979,6 +972,7 @@
                     "annotation_name": "Load 2D movie",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-40",
                     "maxclass": "live.text",
@@ -2239,8 +2233,8 @@
                             "parameter_type": 2
                         }
                     },
-                    "text": "3D view",
-                    "texton": "3D view",
+                    "text": "Show",
+                    "texton": "Show",
                     "varname": "live.text[4]"
                 }
             },
@@ -4351,8 +4345,23 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 141.0, 166.0, 592.0, 377.0 ],
+                                                        "rect": [ 141.0, 166.0, 879.0, 537.0 ],
                                                         "boxes": [
+                                                            {
+                                                                "box": {
+                                                                    "cols": 182,
+                                                                    "fontface": 0,
+                                                                    "fontname": "Arial",
+                                                                    "fontsize": 12.0,
+                                                                    "id": "obj-6",
+                                                                    "maxclass": "jit.cellblock",
+                                                                    "numinlets": 2,
+                                                                    "numoutlets": 4,
+                                                                    "outlettype": [ "list", "", "", "" ],
+                                                                    "patching_rect": [ 279.0, 224.0, 200.0, 200.0 ],
+                                                                    "rows": 1
+                                                                }
+                                                            },
                                                             {
                                                                 "box": {
                                                                     "comment": "",
@@ -4393,7 +4402,8 @@
                                                                             "modernui": 1
                                                                         },
                                                                         "classnamespace": "box",
-                                                                        "rect": [ 677.0, 478.0, 507.0, 385.0 ],
+                                                                        "rect": [ 779.0, 309.0, 507.0, 385.0 ],
+                                                                        "visible": 1,
                                                                         "boxes": [
                                                                             {
                                                                                 "box": {
@@ -4682,7 +4692,7 @@
                                                                             "modernui": 1
                                                                         },
                                                                         "classnamespace": "box",
-                                                                        "rect": [ 881.0, 609.0, 650.0, 317.0 ],
+                                                                        "rect": [ 828.0, 609.0, 650.0, 317.0 ],
                                                                         "boxes": [
                                                                             {
                                                                                 "box": {
@@ -5159,7 +5169,7 @@
                                                                     "fontsize": 12.0,
                                                                     "id": "obj-2",
                                                                     "maxclass": "jit.fpsgui",
-                                                                    "mode": 3,
+                                                                    "mode": 4,
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "" ],
@@ -5183,21 +5193,28 @@
                                                             {
                                                                 "patchline": {
                                                                     "destination": [ "obj-1", 0 ],
-                                                                    "order": 0,
-                                                                    "source": [ "obj-12", 0 ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "patchline": {
-                                                                    "destination": [ "obj-4", 0 ],
                                                                     "order": 1,
                                                                     "source": [ "obj-12", 0 ]
                                                                 }
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-5", 0 ],
+                                                                    "destination": [ "obj-4", 0 ],
                                                                     "order": 2,
+                                                                    "source": [ "obj-12", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-5", 0 ],
+                                                                    "order": 3,
+                                                                    "source": [ "obj-12", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-6", 0 ],
+                                                                    "order": 0,
                                                                     "source": [ "obj-12", 0 ]
                                                                 }
                                                             },
@@ -5511,7 +5528,7 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "jit.gen",
-                                                        "rect": [ 370.0, 267.0, 711.0, 702.0 ],
+                                                        "rect": [ 370.0, 246.0, 711.0, 702.0 ],
                                                         "boxes": [
                                                             {
                                                                 "box": {
@@ -6362,7 +6379,6 @@
                     "annotation_name": "Load 3D coordinates",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "Macintosh HD:/Users/vg/Documents/Max 9/Packages/neurosound/DATASETS/T26_fish2_full/T26_fish2_neurons3Dcoords.jxf",
                     "id": "obj-9",
                     "maxclass": "live.text",
@@ -6857,7 +6873,7 @@
             "obj-12::obj-12::obj-71": [ "Chord sustain[40]", "chordSustain", 0 ],
             "obj-12::obj-12::obj-78": [ "1-MIDI-IN-Channel[12]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-12::obj-79": [ "poly pressure range[12]", "polyPressureRange", 0 ],
-            "obj-12::obj-12::obj-8": [ "live.numbox[14]", "live.numbox", 0 ],
+            "obj-12::obj-12::obj-8": [ "live.numbox[21]", "live.numbox", 0 ],
             "obj-12::obj-12::obj-80": [ "live.text[28]", "live.text[3]", 0 ],
             "obj-12::obj-12::obj-82": [ "1-MIDI-OUT-Channel[12]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-12::obj-89": [ "live.text[27]", "live.text[3]", 0 ],
@@ -6972,7 +6988,7 @@
             "obj-12::obj-1::obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
             "obj-12::obj-1::obj-78": [ "1-MIDI-IN-Channel", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-1::obj-79": [ "poly pressure range", "polyPressureRange", 0 ],
-            "obj-12::obj-1::obj-8": [ "live.numbox[2]", "live.numbox", 0 ],
+            "obj-12::obj-1::obj-8": [ "live.numbox[33]", "live.numbox", 0 ],
             "obj-12::obj-1::obj-80": [ "live.text[4]", "live.text[3]", 0 ],
             "obj-12::obj-1::obj-82": [ "1-MIDI-OUT-Channel", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-1::obj-89": [ "live.text[2]", "live.text[3]", 0 ],
@@ -7018,7 +7034,7 @@
             "obj-12::obj-3::obj-71": [ "Chord sustain[49]", "chordSustain", 0 ],
             "obj-12::obj-3::obj-78": [ "1-MIDI-IN-Channel[15]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-3::obj-79": [ "poly pressure range[15]", "polyPressureRange", 0 ],
-            "obj-12::obj-3::obj-8": [ "live.numbox[17]", "live.numbox", 0 ],
+            "obj-12::obj-3::obj-8": [ "live.numbox[18]", "live.numbox", 0 ],
             "obj-12::obj-3::obj-80": [ "live.text[34]", "live.text[3]", 0 ],
             "obj-12::obj-3::obj-82": [ "1-MIDI-OUT-Channel[15]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-3::obj-89": [ "live.text[33]", "live.text[3]", 0 ],
@@ -7417,7 +7433,7 @@
                     "parameter_longname": "1-MIDI-IN-Channel[12]"
                 },
                 "obj-12::obj-12::obj-8": {
-                    "parameter_longname": "live.numbox[14]"
+                    "parameter_longname": "live.numbox[21]"
                 },
                 "obj-12::obj-12::obj-80": {
                     "parameter_longname": "live.text[28]"
@@ -7786,8 +7802,7 @@
                     "parameter_longname": "1-MIDI-IN-Channel"
                 },
                 "obj-12::obj-1::obj-8": {
-                    "parameter_longname": "live.numbox[2]",
-                    "parameter_range": [ 1, 66 ]
+                    "parameter_longname": "live.numbox[33]"
                 },
                 "obj-12::obj-1::obj-80": {
                     "parameter_longname": "live.text[4]"
@@ -7948,7 +7963,7 @@
                     "parameter_longname": "1-MIDI-IN-Channel[15]"
                 },
                 "obj-12::obj-3::obj-8": {
-                    "parameter_longname": "live.numbox[17]"
+                    "parameter_longname": "live.numbox[18]"
                 },
                 "obj-12::obj-3::obj-80": {
                     "parameter_longname": "live.text[34]"
