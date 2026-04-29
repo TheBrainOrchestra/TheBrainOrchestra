@@ -24,15 +24,15 @@
                 "box": {
                     "fontsize": 12.0,
                     "id": "obj-4",
-                    "linecount": 4,
+                    "linecount": 5,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 36.0, 70.0, 355.0, 60.0 ],
+                    "patching_rect": [ 36.0, 70.0, 355.0, 74.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 4,
-                    "presentation_rect": [ 36.0, 71.0, 510.0, 60.0 ],
-                    "text": "Keyboard shortcuts:\n\n         s : sort the atlas labels based on cluster position\nshift+s : sort the atlas labels alphabetically"
+                    "presentation_linecount": 5,
+                    "presentation_rect": [ 36.0, 71.0, 510.0, 74.0 ],
+                    "text": "Keyboard shortcuts:\n\n     esc : fullscreen data visualization window\n         s : sort the atlas labels based on cluster position\nshift+s : sort the atlas labels alphabetically"
                 }
             },
             {
