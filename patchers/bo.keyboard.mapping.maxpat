@@ -9,8 +9,85 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
+        "rect": [ 59.0, 119.0, 729.0, 524.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 244.0, 403.0, 43.0, 20.0 ],
+                    "presentation_linecount": 2,
+                    "text": "Space"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-29",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 338.0, 371.0, 29.0, 20.0 ],
+                    "text": "Esc"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-19",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 309.0, 369.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 309.0, 400.0, 147.0, 22.0 ],
+                    "text": "sw /TBO/render/fullscreen"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-15",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 221.0, 401.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 221.0, 432.0, 131.0, 22.0 ],
+                    "text": "sw /TBO/transport/play"
+                }
+            },
+            {
+                "box": {
+                    "comment": "",
+                    "id": "obj-1",
+                    "index": 1,
+                    "maxclass": "inlet",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 46.0, 31.0, 30.0, 30.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-37",
@@ -151,7 +228,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 95.0, 358.0, 107.0, 22.0 ],
+                    "patching_rect": [ 46.0, 388.0, 107.0, 22.0 ],
                     "text": "p only-if-render-on"
                 }
             },
@@ -161,7 +238,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 172.0, 403.0, 19.0, 20.0 ],
+                    "patching_rect": [ 123.0, 433.0, 19.0, 20.0 ],
                     "text": "S"
                 }
             },
@@ -171,7 +248,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 121.0, 401.0, 19.0, 20.0 ],
+                    "patching_rect": [ 72.0, 431.0, 19.0, 20.0 ],
                     "text": "s"
                 }
             },
@@ -183,7 +260,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 144.0, 399.0, 24.0, 24.0 ]
+                    "patching_rect": [ 95.0, 429.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -194,7 +271,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 95.0, 399.0, 24.0, 24.0 ]
+                    "patching_rect": [ 46.0, 429.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -207,7 +284,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 258.0, 349.0, 17.0 ],
+                    "patching_rect": [ 217.0, 258.0, 349.0, 17.0 ],
                     "style": "helpfile_label",
                     "text": "Mac OS control key -- reported with \"alt\" on Windows"
                 }
@@ -222,7 +299,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 242.0, 418.00000000000006, 17.0 ],
+                    "patching_rect": [ 217.0, 242.0, 418.00000000000006, 17.0 ],
                     "style": "helpfile_label",
                     "text": "Mac OS option key -- Only reported with \"cmd\" or \"ctrl\" on Windows "
                 }
@@ -237,7 +314,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 226.0, 83.0, 17.0 ],
+                    "patching_rect": [ 217.0, 226.0, 83.0, 17.0 ],
                     "style": "helpfile_label",
                     "text": "caps lock"
                 }
@@ -252,7 +329,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 210.0, 77.0, 17.0 ],
+                    "patching_rect": [ 217.0, 210.0, 77.0, 17.0 ],
                     "style": "helpfile_label",
                     "text": "shift key"
                 }
@@ -267,7 +344,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 194.0, 355.0, 17.0 ],
+                    "patching_rect": [ 217.0, 194.0, 355.0, 17.0 ],
                     "style": "helpfile_label",
                     "text": "Mac OS command key -- reported with \"alt\" on Windows"
                 }
@@ -282,7 +359,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 176.0, 476.0, 17.0 ],
+                    "patching_rect": [ 217.0, 176.0, 476.0, 17.0 ],
                     "style": "helpfile_label",
                     "text": "1 for key events on Windows, 0 if a mouse button is down, always 0 on Mac"
                 }
@@ -296,7 +373,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 239.0, 139.0, 38.0, 23.0 ],
+                    "patching_rect": [ 190.0, 139.0, 38.0, 23.0 ],
                     "text": ">> 7"
                 }
             },
@@ -311,9 +388,9 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 239.0, 176.0, 19.0, 98.0 ],
+                    "patching_rect": [ 190.0, 176.0, 19.0, 98.0 ],
                     "size": 6,
-                    "values": [ 0, 1, 1, 0, 0, 0 ]
+                    "values": [ 0, 1, 0, 0, 0, 0 ]
                 }
             },
             {
@@ -322,7 +399,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 51.0, 57.0, 309.0, 20.0 ],
+                    "patching_rect": [ 101.0, 57.0, 309.0, 20.0 ],
                     "text": "define keyboard mapping to the Brain Orchestra function"
                 }
             },
@@ -333,7 +410,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 51.0, 25.0, 221.0, 27.0 ],
+                    "patching_rect": [ 101.0, 25.0, 221.0, 27.0 ],
                     "text": "bo.keyboard.mapping"
                 }
             },
@@ -345,7 +422,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 95.0, 159.0, 50.0, 22.0 ]
+                    "patching_rect": [ 46.0, 159.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -354,7 +431,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 95.0, 465.0, 190.0, 22.0 ],
+                    "patching_rect": [ 46.0, 495.0, 190.0, 22.0 ],
                     "text": "s /TBO/dataviz/labels/sort/position"
                 }
             },
@@ -364,7 +441,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 144.0, 436.0, 221.0, 22.0 ],
+                    "patching_rect": [ 95.0, 466.0, 221.0, 22.0 ],
                     "text": "s /TBO/dataviz/labels/sort/alphabetically"
                 }
             },
@@ -375,7 +452,7 @@
                     "numinlets": 0,
                     "numoutlets": 4,
                     "outlettype": [ "int", "int", "int", "int" ],
-                    "patching_rect": [ 95.0, 107.0, 235.0, 22.0 ],
+                    "patching_rect": [ 46.0, 107.0, 235.0, 22.0 ],
                     "text": "key"
                 }
             },
@@ -383,11 +460,11 @@
                 "box": {
                     "id": "obj-31",
                     "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 3,
-                    "outlettype": [ "bang", "bang", "" ],
-                    "patching_rect": [ 95.0, 322.0, 195.0, 22.0 ],
-                    "text": "sel 115 83"
+                    "numinlets": 5,
+                    "numoutlets": 5,
+                    "outlettype": [ "bang", "bang", "bang", "bang", "" ],
+                    "patching_rect": [ 45.0, 311.0, 371.0, 22.0 ],
+                    "text": "sel 115 83 32 27"
                 }
             }
         ],
@@ -406,8 +483,26 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-18", 0 ],
                     "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-19", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "source": [ "obj-20", 0 ]
                 }
             },
             {
@@ -426,6 +521,18 @@
                 "patchline": {
                     "destination": [ "obj-31", 0 ],
                     "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "source": [ "obj-31", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "source": [ "obj-31", 3 ]
                 }
             },
             {
@@ -450,6 +557,12 @@
                 "patchline": {
                     "destination": [ "obj-14", 0 ],
                     "source": [ "obj-37", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "source": [ "obj-4", 0 ]
                 }
             }
         ]
