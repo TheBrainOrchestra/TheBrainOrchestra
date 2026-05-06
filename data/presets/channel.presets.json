@@ -1,5 +1,14 @@
 {
     "_metadata": {
         "package-version": 0.4
+    },
+    "foo": {
+        "subcluster-method": "auto: divide",
+        "polyphonic": 1,
+        "hold": 1,
+        "legato": 0,
+        "preset-name": "foo",
+        "ON": 1,
+        "preset-description": "undefined"
     }
 }
