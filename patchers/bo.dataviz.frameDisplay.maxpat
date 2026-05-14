@@ -18,8 +18,8 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 33.0, 130.0, 88.0, 22.0 ],
-                    "text": "r ---frameIndex"
+                    "patching_rect": [ 33.0, 54.0, 158.0, 22.0 ],
+                    "text": "r /TBO/transport/frameIndex"
                 }
             },
             {
@@ -307,7 +307,6 @@
                     "source": [ "obj-99", 0 ]
                 }
             }
-        ],
-        "autosave": 0
+        ]
     }
 }
