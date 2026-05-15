@@ -286,7 +286,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 59.0, 119.0, 406.0, 401.0 ],
+                                        "rect": [ 59.0, 119.0, 604.0, 508.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -295,7 +295,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 171.0, 60.0, 151.0, 22.0 ],
+                                                    "patching_rect": [ 171.0, 107.0, 151.0, 22.0 ],
                                                     "text": "sw /TBO/render/FSmonitor"
                                                 }
                                             },
@@ -306,7 +306,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 62.0, 341.0, 236.0, 22.0 ],
+                                                    "patching_rect": [ 62.0, 414.0, 236.0, 22.0 ],
                                                     "text": "border 0, windowposition $1 $2, size $3 $4"
                                                 }
                                             },
@@ -319,7 +319,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "bang" ],
-                                                    "patching_rect": [ 62.0, 52.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 62.0, 103.0, 30.0, 30.0 ]
                                                 }
                                             },
                                             {
@@ -329,7 +329,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 62.0, 312.0, 106.0, 22.0 ],
+                                                    "patching_rect": [ 62.0, 385.0, 106.0, 22.0 ],
                                                     "text": "zl.reg"
                                                 }
                                             },
@@ -341,7 +341,7 @@
                                                     "maxclass": "outlet",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 62.0, 371.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 62.0, 444.0, 30.0, 30.0 ]
                                                 }
                                             },
                                             {
@@ -351,7 +351,7 @@
                                                     "numinlets": 4,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 149.0, 285.0, 127.0, 22.0 ],
+                                                    "patching_rect": [ 149.0, 345.0, 127.0, 22.0 ],
                                                     "text": "pack 1512 0 1280 720"
                                                 }
                                             },
@@ -362,7 +362,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 221.0, 257.0, 77.0, 22.0 ],
+                                                    "patching_rect": [ 221.0, 317.0, 77.0, 22.0 ],
                                                     "text": "vexpr $i2-$i1"
                                                 }
                                             },
@@ -373,7 +373,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 149.0, 214.0, 149.0, 22.0 ],
+                                                    "patching_rect": [ 149.0, 274.0, 149.0, 22.0 ],
                                                     "text": "zl.slice 2"
                                                 }
                                             },
@@ -384,7 +384,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 113.0, 186.0, 55.0, 22.0 ],
+                                                    "patching_rect": [ 113.0, 246.0, 55.0, 22.0 ],
                                                     "text": "zl.slice 1"
                                                 }
                                             },
@@ -395,7 +395,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 113.0, 159.0, 75.0, 22.0 ],
+                                                    "patching_rect": [ 113.0, 210.0, 75.0, 22.0 ],
                                                     "text": "route coords"
                                                 }
                                             },
@@ -406,7 +406,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 113.0, 103.0, 92.0, 22.0 ],
+                                                    "patching_rect": [ 113.0, 150.0, 92.0, 22.0 ],
                                                     "text": "prepend coords"
                                                 }
                                             },
@@ -418,18 +418,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "bang" ],
                                                     "parameter_enable": 0,
-                                                    "patching_rect": [ 113.0, 60.0, 50.0, 22.0 ]
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "id": "obj-35",
-                                                    "maxclass": "newobj",
-                                                    "numinlets": 1,
-                                                    "numoutlets": 1,
-                                                    "outlettype": [ "" ],
-                                                    "patching_rect": [ 113.0, 9.0, 70.0, 22.0 ],
-                                                    "text": "loadmess 1"
+                                                    "patching_rect": [ 113.0, 107.0, 50.0, 22.0 ]
                                                 }
                                             },
                                             {
@@ -439,7 +428,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 113.0, 131.0, 64.0, 22.0 ],
+                                                    "patching_rect": [ 113.0, 182.0, 64.0, 22.0 ],
                                                     "text": "jit.displays"
                                                 }
                                             }
@@ -461,12 +450,6 @@
                                                 "patchline": {
                                                     "destination": [ "obj-38", 0 ],
                                                     "source": [ "obj-27", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-36", 0 ],
-                                                    "source": [ "obj-35", 0 ]
                                                 }
                                             },
                                             {
@@ -1321,8 +1304,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_matrix", "bang", "" ],
-                    "patching_rect": [ 159.0, 371.0, 490.0, 22.0 ],
-                    "text": "jit.world ---BrainViz @fps 0.1 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0"
+                    "patching_rect": [ 159.0, 371.0, 572.0, 22.0 ],
+                    "text": "jit.world ---BrainViz @fps 0.1 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0"
                 }
             },
             {
