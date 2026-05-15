@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 43.0, 117.0, 1179.0, 760.0 ],
+        "rect": [ -66.0, -852.0, 1185.0, 760.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -259,8 +259,375 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 91.0, 364.0, 694.0, 534.0 ],
+                        "rect": [ 617.0, 102.0, 824.0, 759.0 ],
+                        "visible": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-49",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 99.0, 741.0, 597.0, 22.0 ],
+                                    "text": "mvc.parameter ChannelModelUID subcluster-count @type integer @default 1 @description Subcluster-count"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-48",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 249.0, 692.0, 150.0, 20.0 ],
+                                    "text": "/subcluster-count"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-47",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 342.0, 1079.0, 26.0, 22.0 ],
+                                    "text": "t -1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 12.0,
+                                    "id": "obj-55",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "patching_rect": [ 255.0, 1055.0, 107.0, 22.0 ],
+                                    "text": "bo.kslider2pitchlist"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-45",
+                                    "maxclass": "kslider",
+                                    "mode": 1,
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 255.0, 997.0, 336.0, 53.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontface": 0,
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-36",
+                                    "items": [ "Réseau Session 1", ",", "to Max 1", ",", "to Max 2" ],
+                                    "labelclick": 1,
+                                    "maxclass": "umenu",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "int", "", "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ -1.0, 1178.0, 97.0, 23.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontface": 0,
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-8",
+                                    "items": [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
+                                    "labelclick": 1,
+                                    "maxclass": "umenu",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "int", "", "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ -2.0, 1236.0, 100.0, 23.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-44",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 88.0, 1085.0, 576.0, 22.0 ],
+                                    "text": "mvc.parameter ChannelModelUID MIDI-notes @type list @default -1 @description \"MIDI notes\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-40",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 89.0, 1037.0, 100.0, 22.0 ],
+                                    "text": "pack 0 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-41",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "int" ],
+                                    "patching_rect": [ 88.0, 982.0, 100.0, 22.0 ],
+                                    "text": "unpack 0 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 0.214569518193424, 0.214569460199173, 0.214569475372783, 1.0 ],
+                                    "fgcolor": [ 0.569847917882419, 0.696305670064156, 0.902714598070707, 1.0 ],
+                                    "id": "obj-42",
+                                    "maxclass": "rslider",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "parameter_enable": 1,
+                                    "patching_rect": [ 88.0, 1009.0, 100.0, 18.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 90.0, 1014.0, 114.0, 15.0 ],
+                                    "saved_attribute_attributes": {
+                                        "bgcolor": {
+                                            "expression": "themecolor.live_control_bg"
+                                        },
+                                        "fgcolor": {
+                                            "expression": "themecolor.live_value_arc"
+                                        },
+                                        "valueof": {
+                                            "parameter_initial": [ 0, 127 ],
+                                            "parameter_initial_enable": 1,
+                                            "parameter_invisible": 1,
+                                            "parameter_longname": "velocity range[17]",
+                                            "parameter_modmode": 0,
+                                            "parameter_shortname": "velocityRange",
+                                            "parameter_type": 3
+                                        }
+                                    },
+                                    "varname": "rslider[1]"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-43",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 88.0, 952.0, 576.0, 22.0 ],
+                                    "text": "mvc.parameter ChannelModelUID pressure-range @type list @default 0 127 @description \"Pressre range\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-39",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 97.0, 906.0, 100.0, 22.0 ],
+                                    "text": "pack 0 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-38",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "int", "int" ],
+                                    "patching_rect": [ 96.0, 851.0, 100.0, 22.0 ],
+                                    "text": "unpack 0 127"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 0.214569518193424, 0.214569460199173, 0.214569475372783, 1.0 ],
+                                    "fgcolor": [ 0.569847917882419, 0.696305670064156, 0.902714598070707, 1.0 ],
+                                    "id": "obj-61",
+                                    "maxclass": "rslider",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "parameter_enable": 1,
+                                    "patching_rect": [ 96.0, 878.0, 100.0, 18.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 808.0, 26.0, 114.0, 15.0 ],
+                                    "saved_attribute_attributes": {
+                                        "bgcolor": {
+                                            "expression": "themecolor.live_control_bg"
+                                        },
+                                        "fgcolor": {
+                                            "expression": "themecolor.live_value_arc"
+                                        },
+                                        "valueof": {
+                                            "parameter_initial": [ 0, 127 ],
+                                            "parameter_initial_enable": 1,
+                                            "parameter_invisible": 1,
+                                            "parameter_longname": "velocity range[16]",
+                                            "parameter_modmode": 0,
+                                            "parameter_shortname": "velocityRange",
+                                            "parameter_type": 3
+                                        }
+                                    },
+                                    "varname": "rslider"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-35",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 96.0, 821.0, 570.0, 22.0 ],
+                                    "text": "mvc.parameter ChannelModelUID velocity-range @type list @default 0 127 @description \"Velocity range\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-34",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 96.0, 677.0, 100.0, 22.0 ],
+                                    "text": "prepend symbol"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-33",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 65.0, 1268.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-26",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 65.0, 1208.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-20",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 124.0, 1268.0, 577.0, 22.0 ],
+                                    "text": "mvc.parameter MIDIsettings output_channel @type integer @default 0 @description \"MIDI output channel\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-21",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 124.0, 1242.0, 554.0, 22.0 ],
+                                    "text": "mvc.parameter MIDIsettings output_device @type string @default 0 @description \"MIDI output device\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-19",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 124.0, 1204.0, 562.0, 22.0 ],
+                                    "text": "mvc.parameter MIDIsettings input_channel @type integer @default 0 @description \"MIDI input channel\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-18",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 124.0, 1178.0, 540.0, 22.0 ],
+                                    "text": "mvc.parameter MIDIsettings input_device @type string @default 0 @description \"MIDI input device\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-17",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 442.0, 5.0, 30.0, 22.0 ],
+                                    "text": "GUI"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-15",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 97.0, 1145.0, 416.0, 22.0 ],
+                                    "text": "mvc.model MIDIsettings ChannelModelUID MIDIsettings @type MIDIsettings",
+                                    "varname": "mvc.model[1]"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
+                                    "maxclass": "toggle",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 63.0, 442.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-14",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 9,
+                                    "outlettype": [ "mvc.parameter", "ChannelModelUID", "/neurons/show", "@type", "bool", "@default", "int", "@description", "Show neurons" ],
+                                    "patching_rect": [ 96.0, 443.0, 566.0, 22.0 ],
+                                    "text": "t mvc.parameter ChannelModelUID /neurons/show @type bool @default 0 @description \"Show neurons\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "linecount": 2,
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 96.0, 384.0, 485.0, 35.0 ],
+                                    "text": "mvc.parameter ChannelModelUID clustername @type string @default \"No Cluster\" @description \"Cluster name\""
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-31",
@@ -397,7 +764,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "int", "", "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 47.0, 479.0, 128.0, 22.0 ]
+                                    "patching_rect": [ 43.0, 608.0, 128.0, 22.0 ]
                                 }
                             },
                             {
@@ -408,7 +775,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 60.0, 426.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 63.0, 555.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -419,7 +786,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 60.0, 363.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 63.0, 492.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -430,30 +797,29 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 60.0, 391.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 63.0, 520.0, 24.0, 24.0 ]
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-6",
-                                    "linecount": 3,
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 3,
-                                    "outlettype": [ "", "int", "publicinit" ],
-                                    "patching_rect": [ 101.0, 507.0, 519.0, 49.0 ],
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 97.0, 636.0, 539.0, 35.0 ],
                                     "text": "mvc.parameter ChannelModelUID subcluster-method @type symbol @default \"auto: divide\" @description \"Subclustering method \" @options \"auto: divide\" \"auto: sort activity\" k-means map-file"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-5",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 3,
-                                    "outlettype": [ "", "int", "publicinit" ],
-                                    "patching_rect": [ 93.0, 427.0, 520.0, 35.0 ],
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 96.0, 556.0, 554.0, 22.0 ],
                                     "text": "mvc.parameter ChannelModelUID polyphonic @type bool @default 0 @description \"Polyphonic mode\""
                                 }
                             },
@@ -463,8 +829,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 3,
-                                    "outlettype": [ "", "int", "publicinit" ],
-                                    "patching_rect": [ 93.0, 364.0, 485.0, 22.0 ],
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 96.0, 493.0, 485.0, 22.0 ],
                                     "text": "mvc.parameter ChannelModelUID hold @type bool @default 0 @description \"Hold mode\""
                                 }
                             },
@@ -474,8 +840,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 3,
-                                    "outlettype": [ "", "int", "publicinit" ],
-                                    "patching_rect": [ 93.0, 392.0, 507.0, 22.0 ],
+                                    "outlettype": [ "", "int", "" ],
+                                    "patching_rect": [ 96.0, 521.0, 507.0, 22.0 ],
                                     "text": "mvc.parameter ChannelModelUID legato @type bool @default 0 @description \"Legato mode\""
                                 }
                             },
@@ -499,11 +865,18 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 37.0, 37.0, 407.0, 22.0 ],
-                                    "text": "mvc.model ChannelRackModelUID TBO channelRack @type channelRack"
+                                    "text": "mvc.model ChannelRackModelUID TBO channelRack @type channelRack",
+                                    "varname": "mvc.model[2]"
                                 }
                             }
                         ],
                         "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-14", 0 ],
+                                    "source": [ "obj-10", 0 ]
+                                }
+                            },
                             {
                                 "patchline": {
                                     "destination": [ "obj-3", 0 ],
@@ -530,6 +903,24 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-1", 1 ],
+                                    "source": [ "obj-17", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-26", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-33", 0 ],
+                                    "source": [ "obj-20", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-2", 1 ],
                                     "source": [ "obj-22", 0 ]
                                 }
@@ -538,6 +929,12 @@
                                 "patchline": {
                                     "destination": [ "obj-2", 1 ],
                                     "source": [ "obj-23", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-19", 0 ],
+                                    "source": [ "obj-26", 0 ]
                                 }
                             },
                             {
@@ -566,14 +963,150 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-20", 0 ],
+                                    "source": [ "obj-33", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-16", 0 ],
+                                    "midpoints": [ 105.5, 704.6875, 30.0, 704.6875, 30.0, 604.0, 52.5, 604.0 ],
+                                    "source": [ "obj-34", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-38", 0 ],
+                                    "source": [ "obj-35", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-18", 0 ],
+                                    "source": [ "obj-36", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 1 ],
+                                    "source": [ "obj-38", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-61", 0 ],
+                                    "source": [ "obj-38", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-35", 0 ],
+                                    "midpoints": [ 106.5, 931.0, 81.0, 931.0, 81.0, 817.0, 105.5, 817.0 ],
+                                    "source": [ "obj-39", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-12", 0 ],
                                     "source": [ "obj-4", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-43", 0 ],
+                                    "midpoints": [ 98.5, 1062.0, 73.0, 1062.0, 73.0, 948.0, 97.5, 948.0 ],
+                                    "source": [ "obj-40", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-42", 1 ],
+                                    "source": [ "obj-41", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-42", 0 ],
+                                    "source": [ "obj-41", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-40", 1 ],
+                                    "source": [ "obj-42", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-40", 0 ],
+                                    "source": [ "obj-42", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-41", 0 ],
+                                    "source": [ "obj-43", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-55", 1 ],
+                                    "source": [ "obj-45", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-55", 0 ],
+                                    "source": [ "obj-45", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-44", 0 ],
+                                    "source": [ "obj-47", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-13", 0 ],
                                     "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-44", 0 ],
+                                    "source": [ "obj-55", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-47", 0 ],
+                                    "source": [ "obj-55", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-34", 0 ],
+                                    "midpoints": [ 106.5, 688.0 ],
+                                    "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-39", 1 ],
+                                    "source": [ "obj-61", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-39", 0 ],
+                                    "source": [ "obj-61", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-8", 1 ]
                                 }
                             }
                         ]
@@ -631,13 +1164,12 @@
                     "color": [ 1.0, 0.4, 0.0, 1.0 ],
                     "fontsize": 18.0,
                     "id": "obj-66",
-                    "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 728.0, 400.0, 140.0, 49.0 ],
-                    "text": "mvc.device /TBO",
+                    "patching_rect": [ 728.0, 400.0, 140.0, 29.0 ],
+                    "text": "mvc.device TBO",
                     "varname": "mvc.device"
                 }
             },
@@ -952,6 +1484,7 @@
                     "annotation_name": "Pixel to neuron map",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-48",
                     "maxclass": "live.text",
@@ -986,6 +1519,7 @@
                     "annotation_name": "Load 2D movie",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-40",
                     "maxclass": "live.text",
@@ -3114,8 +3648,20 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 82.0, 230.0, 934.0, 521.0 ],
+                        "rect": [ 630.0, 244.0, 934.0, 521.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "linecount": 2,
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 434.0, 313.0, 157.0, 35.0 ],
+                                    "text": "jit.anim.drive @ui_listen 1 @speed 0.01 @ease 2"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-36",
@@ -4537,7 +5083,7 @@
                                                         "boxes": [
                                                             {
                                                                 "box": {
-                                                                    "cols": 182,
+                                                                    "cols": 2,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
                                                                     "fontsize": 12.0,
@@ -6309,6 +6855,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-89", 0 ],
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-10", 0 ],
                                     "source": [ "obj-6", 0 ]
                                 }
@@ -6506,7 +7058,6 @@
                     "annotation_name": "Load 3D coordinates",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "",
                     "id": "obj-9",
                     "maxclass": "live.text",
@@ -6953,8 +7504,6 @@
             "obj-12::obj-10::obj-15": [ "3D view[4]", "3D view", 0 ],
             "obj-12::obj-10::obj-20": [ "Chord sustain[10]", "hold", 0 ],
             "obj-12::obj-10::obj-22": [ "Timeline[9]", "Timeline", 0 ],
-            "obj-12::obj-10::obj-26": [ "Max polypressure output[6]", "maxpolypressure", 0 ],
-            "obj-12::obj-10::obj-29": [ "Max velocity output[6]", "maxvelocity", 0 ],
             "obj-12::obj-10::obj-3": [ "live.menu[35]", "8439.clusterMenu", 0 ],
             "obj-12::obj-10::obj-45": [ "ClustersNotes[9]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-10::obj-54": [ "SubClusterColormode[4]", "SubClusterColormode", 0 ],
@@ -6976,8 +7525,6 @@
             "obj-12::obj-11::obj-15": [ "3D view[20]", "3D view", 0 ],
             "obj-12::obj-11::obj-20": [ "Chord sustain[44]", "hold", 0 ],
             "obj-12::obj-11::obj-22": [ "Timeline[16]", "Timeline", 0 ],
-            "obj-12::obj-11::obj-26": [ "Max polypressure output[15]", "maxpolypressure", 0 ],
-            "obj-12::obj-11::obj-29": [ "Max velocity output[15]", "maxvelocity", 0 ],
             "obj-12::obj-11::obj-3": [ "live.menu[80]", "8439.clusterMenu", 0 ],
             "obj-12::obj-11::obj-45": [ "ClustersNotes[15]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-11::obj-54": [ "SubClusterColormode[13]", "SubClusterColormode", 0 ],
@@ -6999,8 +7546,6 @@
             "obj-12::obj-12::obj-15": [ "3D view[19]", "3D view", 0 ],
             "obj-12::obj-12::obj-20": [ "Chord sustain[42]", "hold", 0 ],
             "obj-12::obj-12::obj-22": [ "Timeline[15]", "Timeline", 0 ],
-            "obj-12::obj-12::obj-26": [ "Max polypressure output[14]", "maxpolypressure", 0 ],
-            "obj-12::obj-12::obj-29": [ "Max velocity output[14]", "maxvelocity", 0 ],
             "obj-12::obj-12::obj-3": [ "live.menu[74]", "8439.clusterMenu", 0 ],
             "obj-12::obj-12::obj-45": [ "ClustersNotes[14]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-12::obj-54": [ "SubClusterColormode[12]", "SubClusterColormode", 0 ],
@@ -7010,7 +7555,7 @@
             "obj-12::obj-12::obj-79": [ "poly pressure range[12]", "polyPressureRange", 0 ],
             "obj-12::obj-12::obj-8": [ "live.numbox[21]", "live.numbox", 0 ],
             "obj-12::obj-12::obj-80": [ "live.text[28]", "live.text[3]", 0 ],
-            "obj-12::obj-12::obj-82": [ "1-MIDI-OUT-Channel[12]", "1-MIDI-OUT-Channel", 0 ],
+            "obj-12::obj-12::obj-82": [ "1-MIDI-OUT-Channel[16]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-12::obj-89": [ "live.text[27]", "live.text[3]", 0 ],
             "obj-12::obj-12::obj-9": [ "live.toggle[13]", "live.toggle", 0 ],
             "obj-12::obj-12::obj-91": [ "live.menu[56]", "live.menu", 0 ],
@@ -7022,8 +7567,6 @@
             "obj-12::obj-13::obj-15": [ "3D view[18]", "3D view", 0 ],
             "obj-12::obj-13::obj-20": [ "Chord sustain[39]", "hold", 0 ],
             "obj-12::obj-13::obj-22": [ "Timeline[14]", "Timeline", 0 ],
-            "obj-12::obj-13::obj-26": [ "Max polypressure output[13]", "maxpolypressure", 0 ],
-            "obj-12::obj-13::obj-29": [ "Max velocity output[13]", "maxvelocity", 0 ],
             "obj-12::obj-13::obj-3": [ "live.menu[67]", "8439.clusterMenu", 0 ],
             "obj-12::obj-13::obj-45": [ "ClustersNotes[13]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-13::obj-54": [ "SubClusterColormode[11]", "SubClusterColormode", 0 ],
@@ -7045,8 +7588,6 @@
             "obj-12::obj-14::obj-15": [ "3D view[17]", "3D view", 0 ],
             "obj-12::obj-14::obj-20": [ "Chord sustain[34]", "hold", 0 ],
             "obj-12::obj-14::obj-22": [ "Timeline[13]", "Timeline", 0 ],
-            "obj-12::obj-14::obj-26": [ "Max polypressure output[12]", "maxpolypressure", 0 ],
-            "obj-12::obj-14::obj-29": [ "Max velocity output[12]", "maxvelocity", 0 ],
             "obj-12::obj-14::obj-3": [ "live.menu[63]", "8439.clusterMenu", 0 ],
             "obj-12::obj-14::obj-45": [ "ClustersNotes[12]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-14::obj-54": [ "SubClusterColormode[10]", "SubClusterColormode", 0 ],
@@ -7068,8 +7609,6 @@
             "obj-12::obj-15::obj-15": [ "3D view[16]", "3D view", 0 ],
             "obj-12::obj-15::obj-20": [ "Chord sustain[33]", "hold", 0 ],
             "obj-12::obj-15::obj-22": [ "Timeline[12]", "Timeline", 0 ],
-            "obj-12::obj-15::obj-26": [ "Max polypressure output[11]", "maxpolypressure", 0 ],
-            "obj-12::obj-15::obj-29": [ "Max velocity output[11]", "maxvelocity", 0 ],
             "obj-12::obj-15::obj-3": [ "live.menu[59]", "8439.clusterMenu", 0 ],
             "obj-12::obj-15::obj-45": [ "ClustersNotes[11]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-15::obj-54": [ "SubClusterColormode[9]", "SubClusterColormode", 0 ],
@@ -7091,8 +7630,6 @@
             "obj-12::obj-16::obj-15": [ "3D view[15]", "3D view", 0 ],
             "obj-12::obj-16::obj-20": [ "Chord sustain[30]", "hold", 0 ],
             "obj-12::obj-16::obj-22": [ "Timeline[11]", "Timeline", 0 ],
-            "obj-12::obj-16::obj-26": [ "Max polypressure output[10]", "maxpolypressure", 0 ],
-            "obj-12::obj-16::obj-29": [ "Max velocity output[10]", "maxvelocity", 0 ],
             "obj-12::obj-16::obj-3": [ "live.menu[53]", "8439.clusterMenu", 0 ],
             "obj-12::obj-16::obj-45": [ "ClustersNotes[6]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-16::obj-54": [ "SubClusterColormode[8]", "SubClusterColormode", 0 ],
@@ -7114,8 +7651,6 @@
             "obj-12::obj-1::obj-15": [ "3D view[7]", "3D view", 0 ],
             "obj-12::obj-1::obj-20": [ "Chord sustain", "hold", 0 ],
             "obj-12::obj-1::obj-22": [ "Timeline[7]", "Timeline", 0 ],
-            "obj-12::obj-1::obj-26": [ "Max polypressure output[2]", "maxpolypressure", 0 ],
-            "obj-12::obj-1::obj-29": [ "Max velocity output[2]", "maxvelocity", 0 ],
             "obj-12::obj-1::obj-3": [ "live.menu[15]", "8439.clusterMenu", 0 ],
             "obj-12::obj-1::obj-45": [ "ClustersNotes[8]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-1::obj-54": [ "SubClusterColormode", "SubClusterColormode", 0 ],
@@ -7137,8 +7672,6 @@
             "obj-12::obj-2::obj-15": [ "3D view[1]", "3D view", 0 ],
             "obj-12::obj-2::obj-20": [ "Chord sustain[2]", "hold", 0 ],
             "obj-12::obj-2::obj-22": [ "Timeline[1]", "Timeline", 0 ],
-            "obj-12::obj-2::obj-26": [ "Max polypressure output[3]", "maxpolypressure", 0 ],
-            "obj-12::obj-2::obj-29": [ "Max velocity output[3]", "maxvelocity", 0 ],
             "obj-12::obj-2::obj-3": [ "live.menu[19]", "8439.clusterMenu", 0 ],
             "obj-12::obj-2::obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-2::obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
@@ -7160,8 +7693,6 @@
             "obj-12::obj-3::obj-15": [ "3D view[22]", "3D view", 0 ],
             "obj-12::obj-3::obj-20": [ "Chord sustain[50]", "hold", 0 ],
             "obj-12::obj-3::obj-22": [ "Timeline[18]", "Timeline", 0 ],
-            "obj-12::obj-3::obj-26": [ "Max polypressure output[17]", "maxpolypressure", 0 ],
-            "obj-12::obj-3::obj-29": [ "Max velocity output[17]", "maxvelocity", 0 ],
             "obj-12::obj-3::obj-3": [ "live.menu[88]", "8439.clusterMenu", 0 ],
             "obj-12::obj-3::obj-45": [ "ClustersNotes[17]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-3::obj-54": [ "SubClusterColormode[15]", "SubClusterColormode", 0 ],
@@ -7183,8 +7714,6 @@
             "obj-12::obj-4::obj-15": [ "3D view[21]", "3D view", 0 ],
             "obj-12::obj-4::obj-20": [ "Chord sustain[48]", "hold", 0 ],
             "obj-12::obj-4::obj-22": [ "Timeline[17]", "Timeline", 0 ],
-            "obj-12::obj-4::obj-26": [ "Max polypressure output[16]", "maxpolypressure", 0 ],
-            "obj-12::obj-4::obj-29": [ "Max velocity output[16]", "maxvelocity", 0 ],
             "obj-12::obj-4::obj-3": [ "live.menu[85]", "8439.clusterMenu", 0 ],
             "obj-12::obj-4::obj-45": [ "ClustersNotes[16]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-4::obj-54": [ "SubClusterColormode[14]", "SubClusterColormode", 0 ],
@@ -7206,8 +7735,6 @@
             "obj-12::obj-5::obj-15": [ "3D view[3]", "3D view", 0 ],
             "obj-12::obj-5::obj-20": [ "Chord sustain[9]", "hold", 0 ],
             "obj-12::obj-5::obj-22": [ "Timeline[8]", "Timeline", 0 ],
-            "obj-12::obj-5::obj-26": [ "Max polypressure output[5]", "maxpolypressure", 0 ],
-            "obj-12::obj-5::obj-29": [ "Max velocity output[5]", "maxvelocity", 0 ],
             "obj-12::obj-5::obj-3": [ "live.menu[12]", "8439.clusterMenu", 0 ],
             "obj-12::obj-5::obj-45": [ "ClustersNotes[3]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-5::obj-54": [ "SubClusterColormode[3]", "SubClusterColormode", 0 ],
@@ -7229,8 +7756,6 @@
             "obj-12::obj-6::obj-15": [ "3D view[2]", "3D view", 0 ],
             "obj-12::obj-6::obj-20": [ "Chord sustain[4]", "hold", 0 ],
             "obj-12::obj-6::obj-22": [ "Timeline[2]", "Timeline", 0 ],
-            "obj-12::obj-6::obj-26": [ "Max polypressure output[4]", "maxpolypressure", 0 ],
-            "obj-12::obj-6::obj-29": [ "Max velocity output[4]", "maxvelocity", 0 ],
             "obj-12::obj-6::obj-3": [ "live.menu[20]", "8439.clusterMenu", 0 ],
             "obj-12::obj-6::obj-45": [ "ClustersNotes[2]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-6::obj-54": [ "SubClusterColormode[2]", "SubClusterColormode", 0 ],
@@ -7252,8 +7777,6 @@
             "obj-12::obj-7::obj-15": [ "3D view[14]", "3D view", 0 ],
             "obj-12::obj-7::obj-20": [ "Chord sustain[25]", "hold", 0 ],
             "obj-12::obj-7::obj-22": [ "Timeline[10]", "Timeline", 0 ],
-            "obj-12::obj-7::obj-26": [ "Max polypressure output[9]", "maxpolypressure", 0 ],
-            "obj-12::obj-7::obj-29": [ "Max velocity output[9]", "maxvelocity", 0 ],
             "obj-12::obj-7::obj-3": [ "live.menu[48]", "8439.clusterMenu", 0 ],
             "obj-12::obj-7::obj-45": [ "ClustersNotes[5]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-7::obj-54": [ "SubClusterColormode[7]", "SubClusterColormode", 0 ],
@@ -7275,8 +7798,6 @@
             "obj-12::obj-8::obj-15": [ "3D view[13]", "3D view", 0 ],
             "obj-12::obj-8::obj-20": [ "Chord sustain[24]", "hold", 0 ],
             "obj-12::obj-8::obj-22": [ "Timeline[4]", "Timeline", 0 ],
-            "obj-12::obj-8::obj-26": [ "Max polypressure output[8]", "maxpolypressure", 0 ],
-            "obj-12::obj-8::obj-29": [ "Max velocity output[8]", "maxvelocity", 0 ],
             "obj-12::obj-8::obj-3": [ "live.menu[42]", "8439.clusterMenu", 0 ],
             "obj-12::obj-8::obj-45": [ "ClustersNotes[4]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-8::obj-54": [ "SubClusterColormode[6]", "SubClusterColormode", 0 ],
@@ -7298,8 +7819,6 @@
             "obj-12::obj-9::obj-15": [ "3D view[12]", "3D view", 0 ],
             "obj-12::obj-9::obj-20": [ "Chord sustain[19]", "hold", 0 ],
             "obj-12::obj-9::obj-22": [ "Timeline[3]", "Timeline", 0 ],
-            "obj-12::obj-9::obj-26": [ "Max polypressure output[7]", "maxpolypressure", 0 ],
-            "obj-12::obj-9::obj-29": [ "Max velocity output[7]", "maxvelocity", 0 ],
             "obj-12::obj-9::obj-3": [ "live.menu[38]", "8439.clusterMenu", 0 ],
             "obj-12::obj-9::obj-45": [ "ClustersNotes[10]", "ClustersNotes[6]", 0 ],
             "obj-12::obj-9::obj-54": [ "SubClusterColormode[5]", "SubClusterColormode", 0 ],
@@ -7318,6 +7837,8 @@
             "obj-18::obj-24::obj-8::obj-7": [ "live.toggle[19]", "live.toggle", 0 ],
             "obj-18::obj-30::obj-8::obj-7": [ "live.toggle[20]", "live.toggle", 0 ],
             "obj-18::obj-32::obj-8::obj-7": [ "live.toggle[21]", "live.toggle", 0 ],
+            "obj-18::obj-42": [ "velocity range[17]", "velocityRange", 0 ],
+            "obj-18::obj-61": [ "velocity range[16]", "velocityRange", 0 ],
             "obj-20::obj-10": [ "live.numbox", "live.numbox", 0 ],
             "obj-20::obj-26::obj-83": [ "Frame rhythmic unit", "Frame rhythmic unit", 0 ],
             "obj-20::obj-83": [ "Frame rhythmic unit[1]", "Frame rhythmic unit", 0 ],
@@ -7395,17 +7916,11 @@
                 "obj-12::obj-10::obj-22": {
                     "parameter_longname": "Timeline[9]"
                 },
-                "obj-12::obj-10::obj-26": {
-                    "parameter_longname": "Max polypressure output[6]"
-                },
-                "obj-12::obj-10::obj-29": {
-                    "parameter_longname": "Max velocity output[6]"
-                },
                 "obj-12::obj-10::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[35]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7437,7 +7952,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[33]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7448,7 +7963,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[23]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7470,17 +7985,11 @@
                 "obj-12::obj-11::obj-22": {
                     "parameter_longname": "Timeline[16]"
                 },
-                "obj-12::obj-11::obj-26": {
-                    "parameter_longname": "Max polypressure output[15]"
-                },
-                "obj-12::obj-11::obj-29": {
-                    "parameter_longname": "Max velocity output[15]"
-                },
                 "obj-12::obj-11::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[80]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7512,7 +8021,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[79]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7523,7 +8032,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[78]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7545,17 +8054,11 @@
                 "obj-12::obj-12::obj-22": {
                     "parameter_longname": "Timeline[15]"
                 },
-                "obj-12::obj-12::obj-26": {
-                    "parameter_longname": "Max polypressure output[14]"
-                },
-                "obj-12::obj-12::obj-29": {
-                    "parameter_longname": "Max velocity output[14]"
-                },
                 "obj-12::obj-12::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[74]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7575,7 +8078,13 @@
                     "parameter_longname": "live.text[28]"
                 },
                 "obj-12::obj-12::obj-82": {
-                    "parameter_longname": "1-MIDI-OUT-Channel[12]"
+                    "parameter_invisible": 0,
+                    "parameter_longname": "1-MIDI-OUT-Channel[16]",
+                    "parameter_modmode": 0,
+                    "parameter_range": [ "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16", "MPE" ],
+                    "parameter_shortname": "1-MIDI-OUT-Channel",
+                    "parameter_type": 2,
+                    "parameter_unitstyle": 10
                 },
                 "obj-12::obj-12::obj-89": {
                     "parameter_longname": "live.text[27]"
@@ -7587,7 +8096,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[56]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7598,7 +8107,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[75]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7620,17 +8129,11 @@
                 "obj-12::obj-13::obj-22": {
                     "parameter_longname": "Timeline[14]"
                 },
-                "obj-12::obj-13::obj-26": {
-                    "parameter_longname": "Max polypressure output[13]"
-                },
-                "obj-12::obj-13::obj-29": {
-                    "parameter_longname": "Max velocity output[13]"
-                },
                 "obj-12::obj-13::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[67]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7662,7 +8165,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[71]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7673,7 +8176,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[70]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7695,17 +8198,11 @@
                 "obj-12::obj-14::obj-22": {
                     "parameter_longname": "Timeline[13]"
                 },
-                "obj-12::obj-14::obj-26": {
-                    "parameter_longname": "Max polypressure output[12]"
-                },
-                "obj-12::obj-14::obj-29": {
-                    "parameter_longname": "Max velocity output[12]"
-                },
                 "obj-12::obj-14::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[63]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7737,7 +8234,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[65]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7748,7 +8245,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[62]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7770,17 +8267,11 @@
                 "obj-12::obj-15::obj-22": {
                     "parameter_longname": "Timeline[12]"
                 },
-                "obj-12::obj-15::obj-26": {
-                    "parameter_longname": "Max polypressure output[11]"
-                },
-                "obj-12::obj-15::obj-29": {
-                    "parameter_longname": "Max velocity output[11]"
-                },
                 "obj-12::obj-15::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[59]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7812,7 +8303,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[61]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7823,7 +8314,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[57]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7845,17 +8336,11 @@
                 "obj-12::obj-16::obj-22": {
                     "parameter_longname": "Timeline[11]"
                 },
-                "obj-12::obj-16::obj-26": {
-                    "parameter_longname": "Max polypressure output[10]"
-                },
-                "obj-12::obj-16::obj-29": {
-                    "parameter_longname": "Max velocity output[10]"
-                },
                 "obj-12::obj-16::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[53]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7887,7 +8372,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[54]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7898,7 +8383,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[55]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7917,17 +8402,11 @@
                 "obj-12::obj-1::obj-22": {
                     "parameter_longname": "Timeline[7]"
                 },
-                "obj-12::obj-1::obj-26": {
-                    "parameter_longname": "Max polypressure output[2]"
-                },
-                "obj-12::obj-1::obj-29": {
-                    "parameter_longname": "Max velocity output[2]"
-                },
                 "obj-12::obj-1::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[15]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7939,7 +8418,7 @@
                 },
                 "obj-12::obj-1::obj-8": {
                     "parameter_longname": "live.numbox[33]",
-                    "parameter_range": [ 1, 256 ]
+                    "parameter_range": [ 0, 1 ]
                 },
                 "obj-12::obj-1::obj-80": {
                     "parameter_longname": "live.text[4]"
@@ -7957,7 +8436,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[17]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7968,7 +8447,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7995,17 +8474,11 @@
                 "obj-12::obj-2::obj-22": {
                     "parameter_longname": "Timeline[1]"
                 },
-                "obj-12::obj-2::obj-26": {
-                    "parameter_longname": "Max polypressure output[3]"
-                },
-                "obj-12::obj-2::obj-29": {
-                    "parameter_longname": "Max velocity output[3]"
-                },
                 "obj-12::obj-2::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[19]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8020,7 +8493,7 @@
                 },
                 "obj-12::obj-2::obj-8": {
                     "parameter_longname": "live.numbox[3]",
-                    "parameter_range": [ 1, 149 ]
+                    "parameter_range": [ 1, 177 ]
                 },
                 "obj-12::obj-2::obj-80": {
                     "parameter_longname": "live.text[5]"
@@ -8038,7 +8511,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[4]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8054,7 +8527,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[6]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8076,17 +8549,11 @@
                 "obj-12::obj-3::obj-22": {
                     "parameter_longname": "Timeline[18]"
                 },
-                "obj-12::obj-3::obj-26": {
-                    "parameter_longname": "Max polypressure output[17]"
-                },
-                "obj-12::obj-3::obj-29": {
-                    "parameter_longname": "Max velocity output[17]"
-                },
                 "obj-12::obj-3::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[88]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8118,7 +8585,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[90]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8129,7 +8596,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[89]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8151,17 +8618,11 @@
                 "obj-12::obj-4::obj-22": {
                     "parameter_longname": "Timeline[17]"
                 },
-                "obj-12::obj-4::obj-26": {
-                    "parameter_longname": "Max polypressure output[16]"
-                },
-                "obj-12::obj-4::obj-29": {
-                    "parameter_longname": "Max velocity output[16]"
-                },
                 "obj-12::obj-4::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[85]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8193,7 +8654,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[83]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8204,7 +8665,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[82]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8226,17 +8687,11 @@
                 "obj-12::obj-5::obj-22": {
                     "parameter_longname": "Timeline[8]"
                 },
-                "obj-12::obj-5::obj-26": {
-                    "parameter_longname": "Max polypressure output[5]"
-                },
-                "obj-12::obj-5::obj-29": {
-                    "parameter_longname": "Max velocity output[5]"
-                },
                 "obj-12::obj-5::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[12]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8269,7 +8724,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[11]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8280,7 +8735,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[13]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8302,17 +8757,11 @@
                 "obj-12::obj-6::obj-22": {
                     "parameter_longname": "Timeline[2]"
                 },
-                "obj-12::obj-6::obj-26": {
-                    "parameter_longname": "Max polypressure output[4]"
-                },
-                "obj-12::obj-6::obj-29": {
-                    "parameter_longname": "Max velocity output[4]"
-                },
                 "obj-12::obj-6::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[20]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8345,7 +8794,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[21]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8356,7 +8805,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[8]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8378,17 +8827,11 @@
                 "obj-12::obj-7::obj-22": {
                     "parameter_longname": "Timeline[10]"
                 },
-                "obj-12::obj-7::obj-26": {
-                    "parameter_longname": "Max polypressure output[9]"
-                },
-                "obj-12::obj-7::obj-29": {
-                    "parameter_longname": "Max velocity output[9]"
-                },
                 "obj-12::obj-7::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[48]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8420,7 +8863,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[47]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8431,7 +8874,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[50]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8453,17 +8896,11 @@
                 "obj-12::obj-8::obj-22": {
                     "parameter_longname": "Timeline[4]"
                 },
-                "obj-12::obj-8::obj-26": {
-                    "parameter_longname": "Max polypressure output[8]"
-                },
-                "obj-12::obj-8::obj-29": {
-                    "parameter_longname": "Max velocity output[8]"
-                },
                 "obj-12::obj-8::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[42]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8495,7 +8932,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[45]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8506,7 +8943,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[43]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8528,17 +8965,11 @@
                 "obj-12::obj-9::obj-22": {
                     "parameter_longname": "Timeline[3]"
                 },
-                "obj-12::obj-9::obj-26": {
-                    "parameter_longname": "Max polypressure output[7]"
-                },
-                "obj-12::obj-9::obj-29": {
-                    "parameter_longname": "Max velocity output[7]"
-                },
                 "obj-12::obj-9::obj-3": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[38]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 ARTR_Left [size: 1747]", "2 ARTR_Right [size: 284]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8571,7 +9002,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[37]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8582,7 +9013,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[39]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
