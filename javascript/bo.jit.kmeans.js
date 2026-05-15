@@ -13,6 +13,11 @@ function jit_matrix(name) {
 
     var N = m.dim[0]; // number of series
     var M = m.dim[1]; // samples per series
+    
+    if ((M <= 1)||(N <= 1)){
+        outlet(1, 'warning', 'Invalid matrix. k-means cannot be computed.');
+        return;
+    }
 
     // --- Extract data ---
     var data = [];
