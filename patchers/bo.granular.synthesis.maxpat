@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 778.0, -949.0, 882.0, 699.0 ],
+        "rect": [ 774.0, -949.0, 882.0, 699.0 ],
         "boxes": [
             {
                 "box": {
@@ -74,7 +74,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 238.0, 906.0, 50.0, 22.0 ],
+                    "patching_rect": [ 283.0, 895.0, 50.0, 22.0 ],
                     "text": "GUI"
                 }
             },
@@ -86,7 +86,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "mvc.mc.cascade~", "eq", "myFunkyMcCascade" ],
-                    "patching_rect": [ 46.0, 942.0, 237.0, 35.0 ],
+                    "patching_rect": [ 46.0, 921.0, 237.0, 35.0 ],
                     "text": "t mvc.mc.cascade~ eq myFunkyMcCascade",
                     "varname": "mvc.mc.cascade~"
                 }
@@ -9222,12 +9222,6 @@
                 "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "source": [ "obj-161", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-98", 0 ],
-                    "source": [ "obj-164", 0 ]
                 }
             },
             {
