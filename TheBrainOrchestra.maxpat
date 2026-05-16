@@ -9,9 +9,8 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 256.0, 132.0, 1185.0, 760.0 ],
+        "rect": [ 346.0, 104.0, 1185.0, 760.0 ],
         "openinpresentation": 1,
-        "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
         "toptoolbarpinned": 2,
         "righttoolbarpinned": 2,
@@ -19,6 +18,15 @@
         "toolbars_unpinned_last_save": 15,
         "enablehscroll": 0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-47",
+                    "maxclass": "ezdac~",
+                    "numinlets": 2,
+                    "numoutlets": 0,
+                    "patching_rect": [ 895.0, 427.0, 45.0, 45.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-46",
@@ -335,7 +343,7 @@
                     "numinlets": 0,
                     "numoutlets": 0,
                     "offset": [ 0.0, 0.0 ],
-                    "patching_rect": [ 287.0, 2.0, 443.0, 32.0 ],
+                    "patching_rect": [ 287.0, 2.0, 568.0, 26.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 301.0, 5.0, 552.0, 27.0 ],
                     "viewvisibility": 1
@@ -2842,7 +2850,6 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 180.0, 272.0, 934.0, 521.0 ],
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
