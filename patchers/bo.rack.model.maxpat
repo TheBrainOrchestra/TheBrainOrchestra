@@ -13,23 +13,13 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-25",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 103.0, 428.0, 100.0, 22.0 ],
-                    "text": "print"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-9",
                     "maxclass": "newobj",
                     "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 97.0, 396.0, 100.0, 22.0 ],
-                    "text": "pack s 0"
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "" ],
+                    "patching_rect": [ 98.0, 777.0, 659.0, 22.0 ],
+                    "text": "mvc.parameter ChannelModelUID subcluster-mapfile @type string @default None @description \"Subcluster map file path\""
                 }
             },
             {
@@ -875,26 +865,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-9", 1 ],
-                    "source": [ "obj-7", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-9", 0 ],
-                    "source": [ "obj-7", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-21", 0 ],
                     "source": [ "obj-8", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-25", 0 ],
-                    "source": [ "obj-9", 0 ]
                 }
             }
         ]
