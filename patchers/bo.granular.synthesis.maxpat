@@ -9,8 +9,34 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 774.0, -949.0, 882.0, 699.0 ],
+        "rect": [ 134.0, 172.0, 882.0, 699.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-79",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 611.0, 477.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "depthbuffer": 1,
+                    "doublebuffer": 1,
+                    "fsaa": 0,
+                    "id": "obj-38",
+                    "maxclass": "jit.pwindow",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "jit_matrix", "" ],
+                    "patching_rect": [ 480.0, 610.0, 162.5, 21.0 ],
+                    "stereo": 0,
+                    "sync": 1
+                }
+            },
             {
                 "box": {
                     "format": 6,
@@ -2545,17 +2571,9 @@
                                     "source": [ "obj-9", 0 ]
                                 }
                             }
-                        ],
-                        "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
-                        "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
-                        "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
+                        ]
                     },
                     "patching_rect": [ 689.0, 234.0, 150.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
-                        "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
-                        "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
-                    },
                     "text": "p \"read Spike at index\""
                 }
             },
@@ -2926,7 +2944,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 842.0, 645.0, 66.0, 23.0 ],
-                    "text": "10"
+                    "text": "48"
                 }
             },
             {
@@ -9214,6 +9232,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-68", 0 ],
+                    "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "source": [ "obj-160", 0 ]
                 }
@@ -9393,6 +9417,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-30", 0 ],
+                    "order": 0,
+                    "source": [ "obj-32", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-38", 0 ],
+                    "order": 1,
                     "source": [ "obj-32", 0 ]
                 }
             },
@@ -9737,6 +9769,12 @@
                 "patchline": {
                     "destination": [ "obj-101", 0 ],
                     "source": [ "obj-78", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-66", 0 ],
+                    "source": [ "obj-79", 0 ]
                 }
             },
             {
