@@ -579,8 +579,8 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 96.0, 556.0, 554.0, 22.0 ],
-                    "text": "mvc.parameter ChannelModelUID polyphonic @type bool @default 0 @description \"Polyphonic mode\""
+                    "patching_rect": [ 96.0, 556.0, 569.0, 22.0 ],
+                    "text": "mvc.parameter ChannelModelUID monophonic @type bool @default 0 @description \"Monophonic mode\""
                 }
             },
             {
