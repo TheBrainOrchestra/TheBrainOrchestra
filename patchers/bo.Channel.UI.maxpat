@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 110.0, 206.0, 1231.0, 705.0 ],
+        "rect": [ 45.0, 546.0, 1231.0, 705.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 4,
         "boxes": [
@@ -330,7 +330,7 @@
                                             "parameter_enum": [ "off", "on" ],
                                             "parameter_initial": [ 1 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.text[7]",
+                                            "parameter_longname": "live.text[6]",
                                             "parameter_mmax": 1,
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "live.text",
@@ -416,7 +416,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 0 ],
                                             "parameter_invisible": 1,
-                                            "parameter_longname": "live.step[3]",
+                                            "parameter_longname": "live.step[2]",
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "live.step",
                                             "parameter_type": 3
@@ -666,7 +666,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 157.0, 183.0, 150.0, 20.0 ],
-                                    "text": "#1.#2.notes"
+                                    "text": "---.2.notes"
                                 }
                             },
                             {
@@ -1958,6 +1958,7 @@
                             {
                                 "box": {
                                     "id": "obj-84",
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5062,6 +5063,7 @@
                             {
                                 "box": {
                                     "id": "obj-70",
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5490,7 +5492,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "subcluster", "cluster", "none" ],
-                            "parameter_longname": "live.menu[18]",
+                            "parameter_longname": "live.menu[91]",
                             "parameter_mmax": 2,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -10277,7 +10279,7 @@
                             "parameter_initial": [ 0, 127 ],
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
-                            "parameter_longname": "poly pressure range[1]",
+                            "parameter_longname": "poly pressure range",
                             "parameter_modmode": 0,
                             "parameter_shortname": "polyPressureRange",
                             "parameter_type": 3
@@ -10310,7 +10312,7 @@
                             "parameter_initial": [ 0, 127 ],
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
-                            "parameter_longname": "velocity range[1]",
+                            "parameter_longname": "velocity range",
                             "parameter_modmode": 0,
                             "parameter_shortname": "velocityRange",
                             "parameter_type": 3
@@ -10992,10 +10994,10 @@
                                                     "id": "obj-12",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
-                                                    "numoutlets": 2,
-                                                    "outlettype": [ "jit_matrix", "" ],
-                                                    "patching_rect": [ 217.0, 295.0, 47.0, 22.0 ],
-                                                    "text": "jit.bsort"
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 217.0, 295.0, 149.0, 22.0 ],
+                                                    "text": "bo.jit.qsort @planemode 0"
                                                 }
                                             },
                                             {
@@ -11798,7 +11800,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 154.0, 343.0, 925.0, 483.0 ],
+                                        "rect": [ -9.0, 547.0, 925.0, 483.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -13975,7 +13977,7 @@
                                                                                     "maxclass": "comment",
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 0,
-                                                                                    "patching_rect": [ 231.0, 356.5, 85.0, 37.0 ],
+                                                                                    "patching_rect": [ 286.0, 353.0, 85.0, 37.0 ],
                                                                                     "text": "Cell index, cluster"
                                                                                 }
                                                                             },
@@ -13995,10 +13997,10 @@
                                                                                     "id": "obj-46",
                                                                                     "maxclass": "newobj",
                                                                                     "numinlets": 1,
-                                                                                    "numoutlets": 2,
-                                                                                    "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 94.0, 364.0, 132.0, 22.0 ],
-                                                                                    "text": "jit.bsort @planemode 1"
+                                                                                    "numoutlets": 1,
+                                                                                    "outlettype": [ "" ],
+                                                                                    "patching_rect": [ 94.0, 364.0, 149.0, 22.0 ],
+                                                                                    "text": "bo.jit.qsort @planemode 1"
                                                                                 }
                                                                             },
                                                                             {
@@ -14293,8 +14295,18 @@
                                                                                             "modernui": 1
                                                                                         },
                                                                                         "classnamespace": "box",
-                                                                                        "rect": [ 59.0, 106.0, 528.0, 282.0 ],
+                                                                                        "rect": [ 266.0, 183.0, 466.0, 333.0 ],
                                                                                         "boxes": [
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-55",
+                                                                                                    "maxclass": "comment",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 0,
+                                                                                                    "patching_rect": [ 222.0, 122.0, 150.0, 20.0 ],
+                                                                                                    "text": "replacement for slow bsort"
+                                                                                                }
+                                                                                            },
                                                                                             {
                                                                                                 "box": {
                                                                                                     "bubble": 1,
@@ -14437,7 +14449,7 @@
                                                                                                             }
                                                                                                         ]
                                                                                                     },
-                                                                                                    "patching_rect": [ 64.0, 103.0, 105.0, 22.0 ],
+                                                                                                    "patching_rect": [ 64.0, 80.0, 105.0, 22.0 ],
                                                                                                     "text": "p add-index-plane"
                                                                                                 }
                                                                                             },
@@ -14446,10 +14458,10 @@
                                                                                                     "id": "obj-46",
                                                                                                     "maxclass": "newobj",
                                                                                                     "numinlets": 1,
-                                                                                                    "numoutlets": 2,
-                                                                                                    "outlettype": [ "jit_matrix", "" ],
-                                                                                                    "patching_rect": [ 64.0, 134.0, 132.0, 22.0 ],
-                                                                                                    "text": "jit.bsort @planemode 0"
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "" ],
+                                                                                                    "patching_rect": [ 64.0, 118.0, 149.0, 22.0 ],
+                                                                                                    "text": "bo.jit.qsort @planemode 0"
                                                                                                 }
                                                                                             },
                                                                                             {
@@ -14461,7 +14473,7 @@
                                                                                                     "numinlets": 0,
                                                                                                     "numoutlets": 1,
                                                                                                     "outlettype": [ "jit_matrix" ],
-                                                                                                    "patching_rect": [ 64.0, 57.0, 30.0, 30.0 ]
+                                                                                                    "patching_rect": [ 64.0, 34.0, 30.0, 30.0 ]
                                                                                                 }
                                                                                             },
                                                                                             {
@@ -15901,7 +15913,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 10000,
+                                                                    "cols": 23743,
                                                                     "colwidth": 18,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
@@ -15912,7 +15924,7 @@
                                                                     "numoutlets": 4,
                                                                     "outlettype": [ "list", "", "", "" ],
                                                                     "patching_rect": [ 367.0, 211.0, 280.0, 112.0 ],
-                                                                    "rows": 2
+                                                                    "rows": 182
                                                                 }
                                                             },
                                                             {
@@ -17883,7 +17895,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.text[5]",
+                            "parameter_longname": "live.text[4]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[3]",
@@ -17920,7 +17932,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16", "MPE" ],
-                            "parameter_longname": "1-MIDI-OUT-Channel[1]",
+                            "parameter_longname": "1-MIDI-OUT-Channel",
                             "parameter_mmax": 16,
                             "parameter_modmode": 0,
                             "parameter_shortname": "1-MIDI-OUT-Channel",
@@ -17948,7 +17960,7 @@
                             "parameter_enum": [ "All Channels", "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16" ],
                             "parameter_initial": [ 0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "1-MIDI-IN-Channel[1]",
+                            "parameter_longname": "1-MIDI-IN-Channel",
                             "parameter_mmax": 16,
                             "parameter_modmode": 0,
                             "parameter_shortname": "1-MIDI-IN-Channel",
@@ -19348,7 +19360,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "SubClusterColormode[1]",
+                            "parameter_longname": "SubClusterColormode",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "SubClusterColormode",
@@ -19883,7 +19895,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Empty menu", "Empty menu" ],
-                            "parameter_longname": "live.menu[19]",
+                            "parameter_longname": "live.menu[15]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "8439.clusterMenu",
@@ -22903,9 +22915,9 @@
                     "presentation_rect": [ 957.0, 49.0, 84.0160789899528, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
-                            "parameter_longname": "live.menu[6]",
-                            "parameter_mmax": 6,
+                            "parameter_enum": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                            "parameter_longname": "live.menu",
+                            "parameter_mmax": 5,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
                             "parameter_type": 2
@@ -22929,9 +22941,9 @@
                     "presentation_rect": [ 957.0, 21.0, 84.18212632089853, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
-                            "parameter_longname": "live.menu[4]",
-                            "parameter_mmax": 4,
+                            "parameter_enum": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
+                            "parameter_longname": "live.menu[17]",
+                            "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
                             "parameter_type": 2
@@ -26801,6 +26813,7 @@
                             {
                                 "box": {
                                     "id": "obj-30",
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -30025,6 +30038,7 @@
                                             {
                                                 "box": {
                                                     "id": "obj-154",
+                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -30058,6 +30072,7 @@
                                             {
                                                 "box": {
                                                     "id": "obj-80",
+                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -31063,6 +31078,7 @@
                             {
                                 "box": {
                                     "id": "obj-82",
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -32972,7 +32988,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "Timeline[1]",
+                            "parameter_longname": "Timeline[7]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Timeline",
@@ -33006,7 +33022,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "3D view[1]",
+                            "parameter_longname": "3D view[7]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "3D view",
@@ -33140,7 +33156,7 @@
                             "parameter_enum": [ "off", "on" ],
                             "parameter_initial": [ 1 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.toggle[2]",
+                            "parameter_longname": "live.toggle[1]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.toggle",
@@ -33617,7 +33633,7 @@
                             "parameter_enum": [ "auto: divide", "auto: sort-activity", "k-means", "map-file" ],
                             "parameter_initial": [ 0.0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.menu[5]",
+                            "parameter_longname": "live.menu[2]",
                             "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -33647,7 +33663,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "hold",
+                            "parameter_longname": "Chord sustain",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -33678,7 +33694,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.text[8]",
+                            "parameter_longname": "live.text[2]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[3]",
@@ -33705,7 +33721,7 @@
                         "valueof": {
                             "parameter_initial": [ 1.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[3]",
+                            "parameter_longname": "live.numbox[33]",
                             "parameter_mmax": 256.0,
                             "parameter_mmin": 1.0,
                             "parameter_modmode": 4,
@@ -33728,7 +33744,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel #2",
+                    "text": "Channel 2",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -33754,7 +33770,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "Load clusters CSV file[4]",
+                            "parameter_longname": "Load clusters CSV file[5]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Load clusters",
@@ -33788,7 +33804,7 @@
                         },
                         "valueof": {
                             "parameter_invisible": 1,
-                            "parameter_longname": "ClustersNotes[1]",
+                            "parameter_longname": "ClustersNotes[8]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "ClustersNotes[6]",
                             "parameter_type": 3
@@ -34409,42 +34425,6 @@
                 }
             }
         ],
-        "parameters": {
-            "obj-10": [ "Load clusters CSV file[4]", "Load clusters", 0 ],
-            "obj-12": [ "live.menu[5]", "live.menu", 0 ],
-            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
-            "obj-130::obj-25": [ "live.step[3]", "live.step", 0 ],
-            "obj-130::obj-56": [ "live.text[7]", "live.text", 0 ],
-            "obj-15": [ "3D view[1]", "3D view", 0 ],
-            "obj-20": [ "hold", "hold", 0 ],
-            "obj-22": [ "Timeline[1]", "Timeline", 0 ],
-            "obj-3": [ "live.menu[19]", "8439.clusterMenu", 0 ],
-            "obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
-            "obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
-            "obj-57": [ "RemoveMapFile", "RemoveMapFile", 0 ],
-            "obj-61": [ "velocity range[1]", "velocityRange", 0 ],
-            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
-            "obj-78": [ "1-MIDI-IN-Channel[1]", "1-MIDI-IN-Channel", 0 ],
-            "obj-79": [ "poly pressure range[1]", "polyPressureRange", 0 ],
-            "obj-8": [ "live.numbox[3]", "live.numbox", 0 ],
-            "obj-80": [ "live.text[5]", "live.text[3]", 0 ],
-            "obj-82": [ "1-MIDI-OUT-Channel[1]", "1-MIDI-OUT-Channel", 0 ],
-            "obj-89": [ "live.text[8]", "live.text[3]", 0 ],
-            "obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
-            "obj-91": [ "live.menu[4]", "live.menu", 0 ],
-            "obj-97": [ "live.menu[18]", "live.menu", 0 ],
-            "obj-98": [ "live.menu[6]", "live.menu", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
-            "inherited_shortname": 1
-        },
-        "autosave": 0,
         "styles": [
             {
                 "name": "MP-M4L",
