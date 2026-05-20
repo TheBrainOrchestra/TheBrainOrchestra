@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 281.0, 162.0, 530.0, 313.0 ],
+        "rect": [ 259.0, 482.0, 919.0, 437.0 ],
         "boxes": [
             {
                 "box": {
@@ -17,7 +17,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 399.0, 243.0, 42.0, 22.0 ],
+                    "patching_rect": [ 429.0, 243.0, 42.0, 22.0 ],
                     "saved_object_attributes": {
                         "attr_comment": "",
                         "c": ""
@@ -34,7 +34,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 284.0, 57.0, 134.0, 35.0 ],
-                    "text": "routepass grainSize factor"
+                    "text": "routepass grainSize shrinkfactor"
                 }
             },
             {
@@ -143,7 +143,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 46.0, 182.0, 372.0, 49.0 ],
+                    "patching_rect": [ 46.0, 182.0, 402.0, 49.0 ],
                     "text": "gen~ @gen bo.granular-synth.gendsp @active_grains #1.active_grains @src #1.src @speed #1.speed @gainL #1.gainL @gainR #1.gainR @win #1.win"
                 }
             }
