@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 346.0, 104.0, 1185.0, 760.0 ],
+        "rect": [ 97.0, 179.0, 1185.0, 760.0 ],
         "openinpresentation": 1,
         "lefttoolbarpinned": 2,
         "toptoolbarpinned": 2,
@@ -24,7 +24,9 @@
                     "maxclass": "ezdac~",
                     "numinlets": 2,
                     "numoutlets": 0,
-                    "patching_rect": [ 895.0, 427.0, 45.0, 45.0 ]
+                    "patching_rect": [ 895.0, 427.0, 45.0, 45.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 43.5, 589.0, 45.0, 45.0 ]
                 }
             },
             {
@@ -7484,21 +7486,7 @@
             "obj-5": [ "3D view", "3D view", 0 ],
             "obj-52::obj-4": [ "live.gain~", "live.gain~", 0 ],
             "obj-53::obj-11": [ "mc.live.gain~", "mc.live.gain~", 0 ],
-            "obj-53::obj-55::obj-154": [ "Abl.Compressor", "Abl.Compressor", 0 ],
-            "obj-53::obj-55::obj-167": [ "ModOutB", "ModOutB", -1 ],
-            "obj-53::obj-55::obj-45": [ "ModInALed", "ModInALed", 0 ],
-            "obj-53::obj-55::obj-47": [ "ModInBLed", "ModInBLed", 0 ],
-            "obj-53::obj-55::obj-49": [ "ModInA", "ModInA", -1 ],
-            "obj-53::obj-55::obj-50": [ "ModInB", "ModInB", -1 ],
-            "obj-53::obj-55::obj-52": [ "ModOutA", "ModOutA", -1 ],
-            "obj-53::obj-55::obj-59": [ "ModOutALed", "ModOutALed", 0 ],
-            "obj-53::obj-55::obj-6": [ "Rel", "Rel", 0 ],
-            "obj-53::obj-55::obj-60": [ "ModOutBLed", "ModOutBLed", 0 ],
-            "obj-53::obj-55::obj-8": [ "Thresh", "Thresh", 0 ],
-            "obj-53::obj-55::obj-81": [ "Att", "Att", 0 ],
-            "obj-53::obj-55::obj-82": [ "Gain", "Gain", 0 ],
-            "obj-53::obj-55::obj-9": [ "Ratio", "Ratio", 0 ],
-            "obj-53::obj-55::obj-99": [ "Active", "Active", 0 ],
+            "obj-53::obj-130": [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
             "obj-53::obj-90::obj-154": [ "Abl.Compressor[1]", "Abl.Compressor", 0 ],
             "obj-53::obj-90::obj-167": [ "ModOutB[1]", "ModOutB", -1 ],
             "obj-53::obj-90::obj-45": [ "ModInALed[1]", "ModInALed", 0 ],
@@ -7587,7 +7575,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[33]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7598,7 +7586,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[23]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7662,7 +7650,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[79]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7673,7 +7661,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[78]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7743,7 +7731,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[56]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7754,7 +7742,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[75]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7818,7 +7806,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[71]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7829,7 +7817,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[70]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7893,7 +7881,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[65]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7904,7 +7892,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[62]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7968,7 +7956,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[61]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -7979,7 +7967,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[57]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8043,7 +8031,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[54]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8054,7 +8042,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[55]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8110,7 +8098,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[17]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8121,7 +8109,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8191,7 +8179,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[4]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8207,7 +8195,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[6]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8271,7 +8259,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[90]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8282,7 +8270,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[89]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8346,7 +8334,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[83]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8357,7 +8345,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[82]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8422,7 +8410,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[11]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8433,7 +8421,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[13]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8498,7 +8486,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[21]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8509,7 +8497,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[8]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8573,7 +8561,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[47]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8584,7 +8572,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[50]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8648,7 +8636,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[45]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8659,7 +8647,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[43]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8724,7 +8712,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[37]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8735,7 +8723,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[39]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -8766,6 +8754,9 @@
                 },
                 "obj-24::obj-8::obj-7": {
                     "parameter_longname": "live.toggle[22]"
+                },
+                "obj-53::obj-130": {
+                    "parameter_longname": "mc.live.gain~[1]"
                 },
                 "obj-53::obj-90::obj-154": {
                     "parameter_longname": "Abl.Compressor[1]"
