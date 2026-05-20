@@ -20,7 +20,7 @@ Samples of neural activity sonification are available on this [youtube playlist]
 ) 
 
 ## Credits
-The *Brain Orchestra* project was developed by Vincent Goudard and Sébastien Wolf (Institut de Biologie de l'ENS).
+The *Brain Orchestra* project is developed by Vincent Goudard and Sébastien Wolf (Institut de Biologie de l'ENS).
 
 ## References
 
