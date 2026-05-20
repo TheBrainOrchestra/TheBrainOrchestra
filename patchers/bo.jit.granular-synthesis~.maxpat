@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 96.0, 481.0, 754.0, 391.0 ],
+        "rect": [ 344.0, 300.0, 799.0, 363.0 ],
         "boxes": [
             {
                 "box": {
@@ -179,7 +179,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
                     "patching_rect": [ 243.0, 73.0, 199.0, 35.0 ],
-                    "text": "routepass grainSize durationFactor polyphony"
+                    "text": "routepass grainSize shrinkfactor polyphony"
                 }
             },
             {
@@ -210,7 +210,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 0.0, 1000.0, 755.2 ],
+                        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -309,7 +309,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 243.0, 453.0, 30.0, 30.0 ]
+                    "patching_rect": [ 243.0, 309.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -319,18 +319,19 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 243.0, 411.0, 325.0, 22.0 ],
+                    "patching_rect": [ 243.0, 280.0, 199.0, 22.0 ],
                     "text": "mc.pack~ 2"
                 }
             },
             {
                 "box": {
                     "id": "obj-16",
+                    "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 243.0, 372.0, 325.0, 22.0 ],
+                    "patching_rect": [ 243.0, 217.0, 199.0, 35.0 ],
                     "text": "poly~ bo.granular-synth.p 12 @parallel 1 @args #1",
                     "varname": "poly~_AA"
                 }
