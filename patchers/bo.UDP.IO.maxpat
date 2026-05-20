@@ -594,6 +594,16 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-46",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 234.0, 86.0, 123.0, 22.0 ],
+                                    "text": "s TBO.param.forward"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-7",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
@@ -722,6 +732,14 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-10", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-22", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-46", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-22", 0 ]
                                 }
                             },
