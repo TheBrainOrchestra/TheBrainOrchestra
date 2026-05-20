@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 216.0, 296.0, 1007.0, 461.0 ],
+        "rect": [ 206.0, 400.0, 1007.0, 462.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -55,7 +55,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 324.0, 469.0, 209.0, 22.0 ],
-                    "text": "s #0./TBO/transport/frameIndex/set"
+                    "text": "s #0./TBO/transport/frame/set"
                 }
             },
             {
@@ -90,7 +90,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 621.0, 245.0, 190.0, 21.0 ],
-                    "text": "s #0./TBO/transport/frameIndex/set"
+                    "text": "s #0./TBO/transport/frame/set"
                 }
             },
             {
@@ -202,8 +202,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 307.0, 432.0, 169.0, 22.0 ],
-                    "text": "sw /TBO/transport/frameIndex"
+                    "patching_rect": [ 307.0, 432.0, 139.0, 22.0 ],
+                    "text": "sw /TBO/transport/frame"
                 }
             },
             {
@@ -1961,7 +1961,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 876.0, 450.0, 209.0, 22.0 ],
-                                    "text": "r #0./TBO/transport/frameIndex/set"
+                                    "text": "r #0./TBO/transport/frame/set"
                                 }
                             },
                             {
@@ -3718,7 +3718,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 302.0, 173.0, 209.0, 22.0 ],
-                                    "text": "s #0./TBO/transport/frameIndex/set"
+                                    "text": "s #0./TBO/transport/frame/set"
                                 }
                             },
                             {
@@ -3728,8 +3728,8 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 252.0, 216.0, 169.0, 22.0 ],
-                                    "text": "r /TBO/transport/frameIndex"
+                                    "patching_rect": [ 252.0, 216.0, 129.0, 22.0 ],
+                                    "text": "r /TBO/transport/frame"
                                 }
                             },
                             {
@@ -4811,7 +4811,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 532.0, 227.0, 207.0, 22.0 ],
-                                    "text": "r #0./TBO/transport/frameIndex/set"
+                                    "text": "r #0./TBO/transport/frame/set"
                                 }
                             },
                             {
