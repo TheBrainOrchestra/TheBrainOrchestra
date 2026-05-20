@@ -3,16 +3,56 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 2,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 151.0, 323.0, 608.0, 291.0 ],
+        "rect": [ -52.0, -406.0, 608.0, 291.0 ],
         "openinpresentation": 1,
         "default_fontsize": 10.0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-13",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 408.0, 115.0, 89.0, 18.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 409.0, 113.0, 89.0, 18.0 ],
+                    "text": "Pitch randomness",
+                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-127",
+                    "maxclass": "flonum",
+                    "maximum": 24.0,
+                    "minimum": 0.0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 356.0, 114.0, 50.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 356.0, 114.0, 50.0, 20.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-128",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 356.0, 143.0, 159.0, 20.0 ],
+                    "text": "sw ns.Granular.randomPitch"
+                }
+            },
             {
                 "box": {
                     "id": "obj-12",
@@ -30,12 +70,11 @@
             {
                 "box": {
                     "id": "obj-9",
-                    "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 358.0, 370.5, 86.0, 31.0 ],
+                    "patching_rect": [ 286.0, 328.0, 92.0, 20.0 ],
                     "text": "sw granular/chord"
                 }
             },
@@ -46,7 +85,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 358.0, 336.5, 100.0, 20.0 ],
+                    "patching_rect": [ 286.0, 294.0, 525.0, 20.0 ],
                     "text": "pack 0 0"
                 }
             },
@@ -165,8 +204,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 2,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -550,6 +589,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-128", 0 ],
+                    "source": [ "obj-127", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-127", 0 ],
+                    "source": [ "obj-128", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-7", 0 ],
                     "source": [ "obj-2", 0 ]
                 }
@@ -635,7 +686,6 @@
                     "source": [ "obj-9", 0 ]
                 }
             }
-        ],
-        "bgcolor": [ 0.8470587134361267, 0.8470587134361267, 0.8470587134361267, 1.0 ]
+        ]
     }
 }
