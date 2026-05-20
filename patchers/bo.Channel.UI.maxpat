@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 93.0, 216.0, 1231.0, 705.0 ],
+        "rect": [ 177.0, 229.0, 1231.0, 705.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 4,
         "boxes": [
@@ -64,7 +64,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "RemoveMapFile",
+                            "parameter_longname": "RemoveMapFile[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "RemoveMapFile",
@@ -330,7 +330,7 @@
                                             "parameter_enum": [ "off", "on" ],
                                             "parameter_initial": [ 1 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.text[6]",
+                                            "parameter_longname": "live.text[7]",
                                             "parameter_mmax": 1,
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "live.text",
@@ -416,7 +416,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 0 ],
                                             "parameter_invisible": 1,
-                                            "parameter_longname": "live.step[2]",
+                                            "parameter_longname": "live.step[3]",
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "live.step",
                                             "parameter_type": 3
@@ -666,7 +666,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 157.0, 183.0, 150.0, 20.0 ],
-                                    "text": "#1.#2.notes"
+                                    "text": "---.1.notes"
                                 }
                             },
                             {
@@ -1958,6 +1958,7 @@
                             {
                                 "box": {
                                     "id": "obj-84",
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5062,6 +5063,7 @@
                             {
                                 "box": {
                                     "id": "obj-70",
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5490,7 +5492,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "subcluster", "cluster", "none" ],
-                            "parameter_longname": "live.menu[91]",
+                            "parameter_longname": "live.menu[18]",
                             "parameter_mmax": 2,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -5694,7 +5696,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 0.0, 135.0, 1498.0, 435.0 ],
+                                        "rect": [ 0.0, 346.0, 1500.0, 461.0 ],
                                         "openinpresentation": 1,
                                         "toolbarvisible": 0,
                                         "lefttoolbarpinned": 2,
@@ -5958,8 +5960,7 @@
                                                     "numoutlets": 0,
                                                     "patching_rect": [ 1039.0, 219.0, 136.0, 22.0 ],
                                                     "presentation": 1,
-                                                    "presentation_rect": [ 4.0, 7.0, 99.0, 22.0 ],
-                                                    "text": "Channel #2:"
+                                                    "presentation_rect": [ 4.0, 7.0, 99.0, 22.0 ]
                                                 }
                                             },
                                             {
@@ -6395,7 +6396,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
                                                     "patching_rect": [ 439.0, 103.0, 69.0, 22.0 ],
-                                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 346, 1500, 807, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                                     "text": "thispatcher"
                                                 }
                                             },
@@ -7599,7 +7600,7 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 478.0, 583.0, 583.0, 267.0 ],
+                                                        "rect": [ 95.0, 569.0, 583.0, 267.0 ],
                                                         "boxes": [
                                                             {
                                                                 "box": {
@@ -8931,8 +8932,884 @@
                                                                             "modernui": 1
                                                                         },
                                                                         "classnamespace": "box",
-                                                                        "rect": [ 112.0, 608.0, 923.0, 340.0 ],
+                                                                        "rect": [ 240.0, 214.0, 998.0, 572.0 ],
                                                                         "boxes": [
+                                                                            {
+                                                                                "box": {
+                                                                                    "id": "obj-57",
+                                                                                    "maxclass": "newobj",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 1,
+                                                                                    "outlettype": [ "jit_matrix" ],
+                                                                                    "patcher": {
+                                                                                        "fileversion": 1,
+                                                                                        "appversion": {
+                                                                                            "major": 9,
+                                                                                            "minor": 2,
+                                                                                            "revision": 0,
+                                                                                            "architecture": "x64",
+                                                                                            "modernui": 1
+                                                                                        },
+                                                                                        "classnamespace": "box",
+                                                                                        "rect": [ 59.0, 119.0, 712.0, 622.0 ],
+                                                                                        "boxes": [
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-54",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 0,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "" ],
+                                                                                                    "patching_rect": [ 220.0, 349.0, 153.0, 22.0 ],
+                                                                                                    "text": "r ---frameCount"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-52",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 2,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "" ],
+                                                                                                    "patching_rect": [ 165.0, 410.0, 100.0, 22.0 ],
+                                                                                                    "text": "qlim 0"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-51",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 3,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "" ],
+                                                                                                    "patching_rect": [ 165.0, 382.0, 71.0, 22.0 ],
+                                                                                                    "text": "pak dim 1 1"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-48",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 0,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "" ],
+                                                                                                    "patching_rect": [ 165.0, 325.0, 153.0, 22.0 ],
+                                                                                                    "text": "r #0.clusterNeuronCount"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-47",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "bang", "" ],
+                                                                                                    "patching_rect": [ 106.0, 78.0, 372.5, 22.0 ],
+                                                                                                    "text": "t b l"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-46",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "bang", "int" ],
+                                                                                                    "patching_rect": [ 459.5, 346.032470703125, 79.0, 22.0 ],
+                                                                                                    "text": "t b i"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-45",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 4,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                    "patching_rect": [ 459.5, 320.032470703125, 89.0, 22.0 ],
+                                                                                                    "text": "jit.pack 4"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-37",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "jit_matrix" ],
+                                                                                                    "patcher": {
+                                                                                                        "fileversion": 1,
+                                                                                                        "appversion": {
+                                                                                                            "major": 9,
+                                                                                                            "minor": 2,
+                                                                                                            "revision": 0,
+                                                                                                            "architecture": "x64",
+                                                                                                            "modernui": 1
+                                                                                                        },
+                                                                                                        "classnamespace": "box",
+                                                                                                        "rect": [ 392.0, -726.0, 500.0, 380.0 ],
+                                                                                                        "boxes": [
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "fontname": "Arial",
+                                                                                                                    "fontsize": 13.0,
+                                                                                                                    "id": "obj-1",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "", "" ],
+                                                                                                                    "patching_rect": [ 130.0, 178.0, 64.0, 23.0 ],
+                                                                                                                    "text": "zl.change"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "fontname": "Arial",
+                                                                                                                    "fontsize": 13.0,
+                                                                                                                    "id": "obj-49",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "", "" ],
+                                                                                                                    "patching_rect": [ 83.0, 148.0, 66.0, 23.0 ],
+                                                                                                                    "text": "route type"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "fontname": "Arial",
+                                                                                                                    "fontsize": 13.0,
+                                                                                                                    "id": "obj-48",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 1,
+                                                                                                                    "outlettype": [ "" ],
+                                                                                                                    "patching_rect": [ 83.0, 117.0, 78.0, 23.0 ],
+                                                                                                                    "text": "jit.matrixinfo"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-45",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 50.0, 223.0, 186.0, 22.0 ],
+                                                                                                                    "text": "jit.matrix @type float32 @adapt 0"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "comment": "",
+                                                                                                                    "id": "obj-50",
+                                                                                                                    "index": 1,
+                                                                                                                    "maxclass": "inlet",
+                                                                                                                    "numinlets": 0,
+                                                                                                                    "numoutlets": 1,
+                                                                                                                    "outlettype": [ "" ],
+                                                                                                                    "patching_rect": [ 50.0, 58.0, 30.0, 30.0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "comment": "",
+                                                                                                                    "id": "obj-51",
+                                                                                                                    "index": 1,
+                                                                                                                    "maxclass": "outlet",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 0,
+                                                                                                                    "patching_rect": [ 50.0, 282.0, 30.0, 30.0 ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "lines": [
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-45", 0 ],
+                                                                                                                    "source": [ "obj-1", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-51", 0 ],
+                                                                                                                    "source": [ "obj-45", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-49", 0 ],
+                                                                                                                    "source": [ "obj-48", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-1", 0 ],
+                                                                                                                    "source": [ "obj-49", 1 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-45", 0 ],
+                                                                                                                    "order": 1,
+                                                                                                                    "source": [ "obj-50", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-48", 0 ],
+                                                                                                                    "order": 0,
+                                                                                                                    "source": [ "obj-50", 0 ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    },
+                                                                                                    "patching_rect": [ 459.5, 273.0, 103.0, 22.0 ],
+                                                                                                    "text": "p char2float"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-29",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 2,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                    "patching_rect": [ 106.5, 486.0, 372.0, 22.0 ],
+                                                                                                    "text": "jit.*"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-28",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                    "patching_rect": [ 106.0, 450.0, 295.0, 22.0 ],
+                                                                                                    "text": "jit.matrix 4 float32 @dim 41 6000 @adapt 0 @interp 1"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "fontface": 0,
+                                                                                                    "fontname": "Arial",
+                                                                                                    "fontsize": 12.0,
+                                                                                                    "id": "obj-23",
+                                                                                                    "maxclass": "jit.fpsgui",
+                                                                                                    "mode": 4,
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "", "" ],
+                                                                                                    "patching_rect": [ 173.0, 247.532470703125, 80.0, 35.0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-22",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "jit_matrix" ],
+                                                                                                    "patching_rect": [ 106.0, 177.532470703125, 89.0, 22.0 ],
+                                                                                                    "text": "bo.jit.long2float"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "depthbuffer": 1,
+                                                                                                    "doublebuffer": 1,
+                                                                                                    "fsaa": 0,
+                                                                                                    "id": "obj-16",
+                                                                                                    "maxclass": "jit.pwindow",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                    "patching_rect": [ 155.0, 289.532470703125, 213.0, 31.0 ],
+                                                                                                    "stereo": 0,
+                                                                                                    "sync": 1
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "fontface": 0,
+                                                                                                    "fontname": "Arial",
+                                                                                                    "fontsize": 12.0,
+                                                                                                    "id": "obj-15",
+                                                                                                    "maxclass": "jit.fpsgui",
+                                                                                                    "mode": 3,
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "", "" ],
+                                                                                                    "patching_rect": [ 320.0, 160.532470703125, 80.0, 35.0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-14",
+                                                                                                    "maxclass": "button",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "bang" ],
+                                                                                                    "parameter_enable": 0,
+                                                                                                    "patching_rect": [ 106.0, 108.532470703125, 24.0, 24.0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "fontsize": 14.0,
+                                                                                                    "id": "obj-86",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "jit_matrix" ],
+                                                                                                    "patcher": {
+                                                                                                        "fileversion": 1,
+                                                                                                        "appversion": {
+                                                                                                            "major": 9,
+                                                                                                            "minor": 2,
+                                                                                                            "revision": 0,
+                                                                                                            "architecture": "x64",
+                                                                                                            "modernui": 1
+                                                                                                        },
+                                                                                                        "classnamespace": "box",
+                                                                                                        "rect": [ 134.0, 172.0, 870.0, 514.0 ],
+                                                                                                        "boxes": [
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-5",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 446.0, 115.0, 93.0, 22.0 ],
+                                                                                                                    "text": "jit.> @val 0"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-4",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 184.0, 160.0, 100.0, 22.0 ],
+                                                                                                                    "text": "jit.- @val 1"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "cols": 41,
+                                                                                                                    "fontface": 0,
+                                                                                                                    "fontname": "Arial",
+                                                                                                                    "fontsize": 12.0,
+                                                                                                                    "id": "obj-3",
+                                                                                                                    "maxclass": "jit.cellblock",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 4,
+                                                                                                                    "outlettype": [ "list", "", "", "" ],
+                                                                                                                    "patching_rect": [ 323.0, 319.0, 200.0, 200.0 ],
+                                                                                                                    "rows": 1
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "fontface": 0,
+                                                                                                                    "fontname": "Arial",
+                                                                                                                    "fontsize": 12.0,
+                                                                                                                    "id": "obj-1",
+                                                                                                                    "maxclass": "jit.fpsgui",
+                                                                                                                    "mode": 3,
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "", "" ],
+                                                                                                                    "patching_rect": [ 208.0, 285.0, 80.0, 35.0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-12",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 0,
+                                                                                                                    "numoutlets": 1,
+                                                                                                                    "outlettype": [ "" ],
+                                                                                                                    "patching_rect": [ 224.0, 72.0, 133.0, 22.0 ],
+                                                                                                                    "text": "r #0.subclusterCount"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-15",
+                                                                                                                    "maxclass": "number",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "", "bang" ],
+                                                                                                                    "parameter_enable": 0,
+                                                                                                                    "patching_rect": [ 224.0, 95.0, 50.0, 22.0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-11",
+                                                                                                                    "maxclass": "comment",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 0,
+                                                                                                                    "patching_rect": [ 545.0, 141.0, 150.0, 20.0 ],
+                                                                                                                    "text": "curve to enhance "
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-9",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 446.0, 141.0, 93.0, 22.0 ],
+                                                                                                                    "text": "jit.pow @val 0.5"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-14",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 184.0, 195.0, 65.0, 22.0 ],
+                                                                                                                    "text": "jit./ @val 5"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-62",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "", "" ],
+                                                                                                                    "patching_rect": [ 85.0, 104.0, 29.5, 22.0 ],
+                                                                                                                    "text": "t l l"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-61",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 446.0, 169.0, 76.0, 22.0 ],
+                                                                                                                    "text": "jit.* @val 0.8"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-44",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 2,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 85.0, 169.0, 93.0, 22.0 ],
+                                                                                                                    "text": "jit.expr @expr 1"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-45",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 4,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 85.0, 242.0, 315.99999999999994, 22.0 ],
+                                                                                                                    "text": "jit.pack 4"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-34",
+                                                                                                                    "maxclass": "comment",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 0,
+                                                                                                                    "patching_rect": [ 99.0, 321.0, 43.0, 20.0 ],
+                                                                                                                    "text": "ARGB"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-35",
+                                                                                                                    "maxclass": "comment",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 0,
+                                                                                                                    "patching_rect": [ 99.0, 276.0, 40.0, 20.0 ],
+                                                                                                                    "text": "AHSL"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "id": "obj-36",
+                                                                                                                    "maxclass": "newobj",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 2,
+                                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                                    "patching_rect": [ 85.0, 297.0, 60.0, 22.0 ],
+                                                                                                                    "text": "jit.hsl2rgb"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "comment": "",
+                                                                                                                    "id": "obj-83",
+                                                                                                                    "index": 1,
+                                                                                                                    "maxclass": "inlet",
+                                                                                                                    "numinlets": 0,
+                                                                                                                    "numoutlets": 1,
+                                                                                                                    "outlettype": [ "jit_matrix" ],
+                                                                                                                    "patching_rect": [ 85.0, 68.0, 30.0, 30.0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "box": {
+                                                                                                                    "comment": "",
+                                                                                                                    "id": "obj-85",
+                                                                                                                    "index": 1,
+                                                                                                                    "maxclass": "outlet",
+                                                                                                                    "numinlets": 1,
+                                                                                                                    "numoutlets": 0,
+                                                                                                                    "patching_rect": [ 85.0, 355.0, 30.0, 30.0 ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "lines": [
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-15", 0 ],
+                                                                                                                    "source": [ "obj-12", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-45", 1 ],
+                                                                                                                    "source": [ "obj-14", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-14", 1 ],
+                                                                                                                    "source": [ "obj-15", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-85", 0 ],
+                                                                                                                    "source": [ "obj-36", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-14", 0 ],
+                                                                                                                    "source": [ "obj-4", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-45", 2 ],
+                                                                                                                    "order": 0,
+                                                                                                                    "source": [ "obj-44", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-45", 0 ],
+                                                                                                                    "order": 1,
+                                                                                                                    "source": [ "obj-44", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-36", 0 ],
+                                                                                                                    "source": [ "obj-45", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-9", 0 ],
+                                                                                                                    "source": [ "obj-5", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-45", 3 ],
+                                                                                                                    "source": [ "obj-61", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-1", 0 ],
+                                                                                                                    "order": 2,
+                                                                                                                    "source": [ "obj-62", 1 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-3", 0 ],
+                                                                                                                    "order": 1,
+                                                                                                                    "source": [ "obj-62", 1 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-4", 0 ],
+                                                                                                                    "order": 3,
+                                                                                                                    "source": [ "obj-62", 1 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-44", 0 ],
+                                                                                                                    "source": [ "obj-62", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-5", 0 ],
+                                                                                                                    "order": 0,
+                                                                                                                    "source": [ "obj-62", 1 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-62", 0 ],
+                                                                                                                    "source": [ "obj-83", 0 ]
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "patchline": {
+                                                                                                                    "destination": [ "obj-61", 0 ],
+                                                                                                                    "source": [ "obj-9", 0 ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
+                                                                                                        "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
+                                                                                                        "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
+                                                                                                    },
+                                                                                                    "patching_rect": [ 106.0, 213.532470703125, 159.0, 24.0 ],
+                                                                                                    "saved_object_attributes": {
+                                                                                                        "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
+                                                                                                        "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
+                                                                                                        "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
+                                                                                                    },
+                                                                                                    "text": "p \"map to cluster colors\""
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "id": "obj-12",
+                                                                                                    "maxclass": "newobj",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 2,
+                                                                                                    "outlettype": [ "jit_matrix", "" ],
+                                                                                                    "patching_rect": [ 106.0, 138.532470703125, 152.0, 22.0 ],
+                                                                                                    "text": "jit.matrix #0.SubClusters"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "comment": "",
+                                                                                                    "id": "obj-55",
+                                                                                                    "index": 1,
+                                                                                                    "maxclass": "inlet",
+                                                                                                    "numinlets": 0,
+                                                                                                    "numoutlets": 1,
+                                                                                                    "outlettype": [ "" ],
+                                                                                                    "patching_rect": [ 106.0, 25.0, 30.0, 30.0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "box": {
+                                                                                                    "comment": "",
+                                                                                                    "id": "obj-56",
+                                                                                                    "index": 1,
+                                                                                                    "maxclass": "outlet",
+                                                                                                    "numinlets": 1,
+                                                                                                    "numoutlets": 0,
+                                                                                                    "patching_rect": [ 106.5, 519.0, 30.0, 30.0 ]
+                                                                                                }
+                                                                                            }
+                                                                                        ],
+                                                                                        "lines": [
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-15", 0 ],
+                                                                                                    "order": 0,
+                                                                                                    "source": [ "obj-12", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-22", 0 ],
+                                                                                                    "order": 1,
+                                                                                                    "source": [ "obj-12", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-12", 0 ],
+                                                                                                    "source": [ "obj-14", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-86", 0 ],
+                                                                                                    "source": [ "obj-22", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-29", 0 ],
+                                                                                                    "source": [ "obj-28", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-56", 0 ],
+                                                                                                    "source": [ "obj-29", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-45", 3 ],
+                                                                                                    "order": 0,
+                                                                                                    "source": [ "obj-37", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-45", 2 ],
+                                                                                                    "order": 1,
+                                                                                                    "source": [ "obj-37", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-45", 1 ],
+                                                                                                    "order": 2,
+                                                                                                    "source": [ "obj-37", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-45", 0 ],
+                                                                                                    "order": 3,
+                                                                                                    "source": [ "obj-37", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-46", 0 ],
+                                                                                                    "source": [ "obj-45", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-29", 1 ],
+                                                                                                    "source": [ "obj-46", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-14", 0 ],
+                                                                                                    "source": [ "obj-47", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-37", 0 ],
+                                                                                                    "source": [ "obj-47", 1 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-51", 0 ],
+                                                                                                    "source": [ "obj-48", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-52", 0 ],
+                                                                                                    "source": [ "obj-51", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-28", 0 ],
+                                                                                                    "source": [ "obj-52", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-51", 2 ],
+                                                                                                    "source": [ "obj-54", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-47", 0 ],
+                                                                                                    "source": [ "obj-55", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-16", 0 ],
+                                                                                                    "order": 1,
+                                                                                                    "source": [ "obj-86", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-23", 0 ],
+                                                                                                    "order": 0,
+                                                                                                    "source": [ "obj-86", 0 ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "patchline": {
+                                                                                                    "destination": [ "obj-28", 0 ],
+                                                                                                    "order": 2,
+                                                                                                    "source": [ "obj-86", 0 ]
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    "patching_rect": [ 71.0, 244.0, 110.0, 22.0 ],
+                                                                                    "text": "p subcluster-color?"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "id": "obj-25",
+                                                                                    "maxclass": "newobj",
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 1,
+                                                                                    "outlettype": [ "" ],
+                                                                                    "patching_rect": [ 49.0, 201.0, 100.0, 22.0 ],
+                                                                                    "text": "t l"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "box": {
+                                                                                    "fontface": 0,
+                                                                                    "fontname": "Arial",
+                                                                                    "fontsize": 12.0,
+                                                                                    "id": "obj-21",
+                                                                                    "maxclass": "jit.fpsgui",
+                                                                                    "mode": 3,
+                                                                                    "numinlets": 1,
+                                                                                    "numoutlets": 2,
+                                                                                    "outlettype": [ "", "" ],
+                                                                                    "patching_rect": [ 167.0, 149.0, 80.0, 35.0 ]
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 "box": {
                                                                                     "id": "obj-7",
@@ -8940,7 +9817,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 135.0, 143.0, 73.0, 22.0 ],
+                                                                                    "patching_rect": [ 134.0, 153.0, 73.0, 22.0 ],
                                                                                     "text": "jit.normalize"
                                                                                 }
                                                                             },
@@ -8951,7 +9828,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "bang", "int" ],
-                                                                                    "patching_rect": [ 42.0, 36.0, 100.0, 22.0 ],
+                                                                                    "patching_rect": [ 42.0, 36.0, 79.0, 22.0 ],
                                                                                     "text": "t b i"
                                                                                 }
                                                                             },
@@ -8962,7 +9839,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 3,
                                                                                     "outlettype": [ "", "", "" ],
-                                                                                    "patching_rect": [ 50.0, 111.0, 100.0, 22.0 ],
+                                                                                    "patching_rect": [ 49.0, 121.0, 100.0, 22.0 ],
                                                                                     "text": "gate 3 1"
                                                                                 }
                                                                             },
@@ -8984,7 +9861,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "", "" ],
-                                                                                    "patching_rect": [ 50.0, 230.0, 38.0, 22.0 ],
+                                                                                    "patching_rect": [ 49.0, 334.0, 38.0, 22.0 ],
                                                                                     "text": "zl.reg"
                                                                                 }
                                                                             },
@@ -9095,7 +9972,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 50.0, 271.0, 137.0, 22.0 ],
+                                                                                    "patching_rect": [ 49.0, 375.0, 137.0, 22.0 ],
                                                                                     "text": "jit.submatrix @offset 0 1"
                                                                                 }
                                                                             },
@@ -9118,7 +9995,7 @@
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 50.0, 189.0, 73.0, 22.0 ],
+                                                                                    "patching_rect": [ 49.0, 293.0, 73.0, 22.0 ],
                                                                                     "text": "jit.transpose"
                                                                                 }
                                                                             },
@@ -9129,7 +10006,7 @@
                                                                                     "numinlets": 2,
                                                                                     "numoutlets": 2,
                                                                                     "outlettype": [ "jit_matrix", "" ],
-                                                                                    "patching_rect": [ 50.0, 143.0, 72.0, 22.0 ],
+                                                                                    "patching_rect": [ 49.0, 153.0, 72.0, 22.0 ],
                                                                                     "text": "jit.!= @val 0"
                                                                                 }
                                                                             },
@@ -9164,14 +10041,14 @@
                                                                                     "maxclass": "outlet",
                                                                                     "numinlets": 1,
                                                                                     "numoutlets": 0,
-                                                                                    "patching_rect": [ 50.0, 319.0, 30.0, 30.0 ]
+                                                                                    "patching_rect": [ 49.0, 423.0, 30.0, 30.0 ]
                                                                                 }
                                                                             }
                                                                         ],
                                                                         "lines": [
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-2", 0 ],
+                                                                                    "destination": [ "obj-25", 0 ],
                                                                                     "source": [ "obj-1", 0 ]
                                                                                 }
                                                                             },
@@ -9209,6 +10086,12 @@
                                                                                 "patchline": {
                                                                                     "destination": [ "obj-32", 0 ],
                                                                                     "source": [ "obj-20", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
+                                                                                    "destination": [ "obj-2", 0 ],
+                                                                                    "source": [ "obj-25", 0 ]
                                                                                 }
                                                                             },
                                                                             {
@@ -9270,7 +10153,15 @@
                                                                             },
                                                                             {
                                                                                 "patchline": {
+                                                                                    "destination": [ "obj-21", 0 ],
+                                                                                    "order": 0,
+                                                                                    "source": [ "obj-44", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
                                                                                     "destination": [ "obj-5", 1 ],
+                                                                                    "order": 1,
                                                                                     "source": [ "obj-44", 0 ]
                                                                                 }
                                                                             },
@@ -9288,7 +10179,7 @@
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-2", 0 ],
+                                                                                    "destination": [ "obj-25", 0 ],
                                                                                     "source": [ "obj-5", 1 ]
                                                                                 }
                                                                             },
@@ -9300,14 +10191,20 @@
                                                                             },
                                                                             {
                                                                                 "patchline": {
+                                                                                    "destination": [ "obj-2", 0 ],
+                                                                                    "source": [ "obj-57", 0 ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "patchline": {
                                                                                     "destination": [ "obj-44", 0 ],
                                                                                     "source": [ "obj-6", 0 ]
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "patchline": {
-                                                                                    "destination": [ "obj-2", 0 ],
-                                                                                    "midpoints": [ 144.5, 177.97265625, 59.5, 177.97265625 ],
+                                                                                    "destination": [ "obj-25", 0 ],
+                                                                                    "midpoints": [ 143.5, 195.640625, 58.5, 195.640625 ],
                                                                                     "source": [ "obj-7", 0 ]
                                                                                 }
                                                                             },
@@ -9325,13 +10222,11 @@
                                                                             }
                                                                         ],
                                                                         "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
-                                                                        "bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ]
                                                                     },
                                                                     "patching_rect": [ 50.0, 191.0, 181.0, 22.0 ],
                                                                     "saved_object_attributes": {
                                                                         "editing_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
-                                                                        "locked_bgcolor": [ 0.56078431372549, 0.56078431372549, 0.56078431372549, 1.0 ],
                                                                         "patchlinecolor": [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
                                                                     },
                                                                     "text": "p view spikes score"
@@ -10278,7 +11173,7 @@
                             "parameter_initial": [ 0, 127 ],
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
-                            "parameter_longname": "poly pressure range",
+                            "parameter_longname": "poly pressure range[1]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "polyPressureRange",
                             "parameter_type": 3
@@ -10311,7 +11206,7 @@
                             "parameter_initial": [ 0, 127 ],
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
-                            "parameter_longname": "velocity range",
+                            "parameter_longname": "velocity range[1]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "velocityRange",
                             "parameter_type": 3
@@ -10370,7 +11265,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 356.0, 376.0, 712.0, 409.0 ],
+                        "rect": [ 180.0, 441.0, 712.0, 409.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -11799,7 +12694,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ -9.0, 547.0, 925.0, 483.0 ],
+                                        "rect": [ 34.0, 464.0, 925.0, 484.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -11991,7 +12886,7 @@
                                                                             "modernui": 1
                                                                         },
                                                                         "classnamespace": "box",
-                                                                        "rect": [ 360.0, 402.0, 495.0, 522.0 ],
+                                                                        "rect": [ 359.0, 402.0, 495.0, 522.0 ],
                                                                         "boxes": [
                                                                             {
                                                                                 "box": {
@@ -15912,7 +16807,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 10000,
+                                                                    "cols": 23743,
                                                                     "colwidth": 18,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
@@ -15923,7 +16818,7 @@
                                                                     "numoutlets": 4,
                                                                     "outlettype": [ "list", "", "", "" ],
                                                                     "patching_rect": [ 367.0, 211.0, 280.0, 112.0 ],
-                                                                    "rows": 182
+                                                                    "rows": 185
                                                                 }
                                                             },
                                                             {
@@ -17894,7 +18789,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.text[4]",
+                            "parameter_longname": "live.text[5]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[3]",
@@ -17931,7 +18826,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16", "MPE" ],
-                            "parameter_longname": "1-MIDI-OUT-Channel",
+                            "parameter_longname": "1-MIDI-OUT-Channel[1]",
                             "parameter_mmax": 16,
                             "parameter_modmode": 0,
                             "parameter_shortname": "1-MIDI-OUT-Channel",
@@ -17959,7 +18854,7 @@
                             "parameter_enum": [ "All Channels", "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16" ],
                             "parameter_initial": [ 0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "1-MIDI-IN-Channel",
+                            "parameter_longname": "1-MIDI-IN-Channel[1]",
                             "parameter_mmax": 16,
                             "parameter_modmode": 0,
                             "parameter_shortname": "1-MIDI-IN-Channel",
@@ -19359,7 +20254,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "SubClusterColormode",
+                            "parameter_longname": "SubClusterColormode[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "SubClusterColormode",
@@ -19881,6 +20776,7 @@
                     "annotation_name": "Cluster name",
                     "fontname": "Ableton Sans Medium Regular",
                     "id": "obj-3",
+                    "ignoreclick": 1,
                     "maxclass": "live.menu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -19892,9 +20788,9 @@
                     "presentation_rect": [ 205.0, 7.0, 527.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "No Cluster", "1 Diencephalon - [size: 1747]", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", "13 Diencephalon - Dorsal Thalamus [size: 297]", "14 Diencephalon - Eminentia Thalami [size: 4]", "15 Diencephalon - Habenula [size: 149]", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", "36 Diencephalon - Isl1 cluster 1 [size: 1]", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", "40 Diencephalon - Medial vglut2 cluster [size: 37]", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", "43 Diencephalon - Olig2 Band [size: 308]", "44 Diencephalon - Olig2 Band 2 [size: 140]", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", "58 Diencephalon - Posterior Tuberculum [size: 86]", "60 Diencephalon - Preoptic Area [size: 32]", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", "66 Diencephalon - Pretectum [size: 419]", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", "76 Diencephalon - Ventral Thalamus [size: 370]", "78 Ganglia - Eyes [size: 12]", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", "94 Mesencephalon - [size: 6799]", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", "96 Mesencephalon - Medial Tectal Band [size: 780]", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", "99 Mesencephalon - Otpb Cluster [size: 103]", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", "101 Mesencephalon - Ptf1a Cluster [size: 42]", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", "107 Mesencephalon - Tectum Neuropil [size: 212]", "108 Mesencephalon - Tegmentum [size: 2111]", "109 Mesencephalon - Torus Longitudinalis [size: 9]", "110 Mesencephalon - Torus Semicircularis [size: 212]", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", "114 Rhombencephalon - [size: 12906]", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", "125 Rhombencephalon - Area Postrema [size: 12]", "126 Rhombencephalon - CaD [size: 5]", "127 Rhombencephalon - CaV [size: 2]", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", "131 Rhombencephalon - Cerebellum [size: 2952]", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", "134 Rhombencephalon - Eminentia Granularis [size: 205]", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", "175 Rhombencephalon - Inferior Olive [size: 55]", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", "184 Rhombencephalon - Mauthner [size: 2]", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", "187 Rhombencephalon - MiD2 [size: 1]", "188 Rhombencephalon - MiD3 [size: 16]", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", "202 Rhombencephalon - Olig2 Cluster [size: 20]", "203 Rhombencephalon - Olig2 Stripe [size: 61]", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", "217 Rhombencephalon - Raphe - Inferior [size: 5]", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", "221 Rhombencephalon - Rhombomere 3 [size: 577]", "222 Rhombencephalon - Rhombomere 4 [size: 364]", "223 Rhombencephalon - Rhombomere 5 [size: 381]", "224 Rhombencephalon - Rhombomere 6 [size: 970]", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", "233 Rhombencephalon - S1181t Cluster [size: 379]", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", "260 Spinal Cord [size: 338]", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", "265 Spinal Cord - Glyt2 Stripe [size: 132]", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", "268 Spinal Cord - Neuropil Region [size: 24]", "269 Spinal Cord - Olig2 Stripe [size: 18]", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", "275 Telencephalon - [size: 690]", "277 Telencephalon - Isl1 cluster 1 [size: 3]", "279 Telencephalon - Olfactory Bulb [size: 38]", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", "283 Telencephalon - Pallium [size: 490]", "285 Telencephalon - S1181t Cluster [size: 9]", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", "288 Telencephalon - Subpallial Otpb strip [size: 29]", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", "291 Telencephalon - Subpallium [size: 98]", "293 Telencephalon - Vglut2 rind [size: 181]", "294 Telencephalon - Vmat2 cluster [size: 30]", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]" ],
-                            "parameter_longname": "live.menu[15]",
-                            "parameter_mmax": 184,
+                            "parameter_enum": [ "Empty menu", "Empty menu" ],
+                            "parameter_longname": "live.menu[19]",
+                            "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "8439.clusterMenu",
                             "parameter_type": 2
@@ -22914,7 +23810,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
-                            "parameter_longname": "live.menu",
+                            "parameter_longname": "live.menu[6]",
                             "parameter_mmax": 5,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -22940,7 +23836,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
-                            "parameter_longname": "live.menu[17]",
+                            "parameter_longname": "live.menu[4]",
                             "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -23473,7 +24369,7 @@
                                     "bgfillcolor_type": "color",
                                     "fontsize": 9.0,
                                     "id": "obj-18",
-                                    "items": [ "1 Diencephalon - [size: 1747]", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", ",", "13 Diencephalon - Dorsal Thalamus [size: 297]", ",", "14 Diencephalon - Eminentia Thalami [size: 4]", ",", "15 Diencephalon - Habenula [size: 149]", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", ",", "36 Diencephalon - Isl1 cluster 1 [size: 1]", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", ",", "40 Diencephalon - Medial vglut2 cluster [size: 37]", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", ",", "43 Diencephalon - Olig2 Band [size: 308]", ",", "44 Diencephalon - Olig2 Band 2 [size: 140]", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", ",", "58 Diencephalon - Posterior Tuberculum [size: 86]", ",", "60 Diencephalon - Preoptic Area [size: 32]", ",", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", ",", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", ",", "66 Diencephalon - Pretectum [size: 419]", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", ",", "76 Diencephalon - Ventral Thalamus [size: 370]", ",", "78 Ganglia - Eyes [size: 12]", ",", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", ",", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", ",", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", ",", "94 Mesencephalon - [size: 6799]", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", ",", "96 Mesencephalon - Medial Tectal Band [size: 780]", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", ",", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", ",", "99 Mesencephalon - Otpb Cluster [size: 103]", ",", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", ",", "101 Mesencephalon - Ptf1a Cluster [size: 42]", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", ",", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", ",", "107 Mesencephalon - Tectum Neuropil [size: 212]", ",", "108 Mesencephalon - Tegmentum [size: 2111]", ",", "109 Mesencephalon - Torus Longitudinalis [size: 9]", ",", "110 Mesencephalon - Torus Semicircularis [size: 212]", ",", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", ",", "114 Rhombencephalon - [size: 12906]", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", ",", "125 Rhombencephalon - Area Postrema [size: 12]", ",", "126 Rhombencephalon - CaD [size: 5]", ",", "127 Rhombencephalon - CaV [size: 2]", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", ",", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", ",", "131 Rhombencephalon - Cerebellum [size: 2952]", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", ",", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", ",", "134 Rhombencephalon - Eminentia Granularis [size: 205]", ",", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", ",", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", ",", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", ",", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", ",", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", ",", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", ",", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", ",", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", ",", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", ",", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", ",", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", ",", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", ",", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", ",", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", ",", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", ",", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", ",", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", ",", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", ",", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", ",", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", ",", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", ",", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", ",", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", ",", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", ",", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", ",", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", ",", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", ",", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", ",", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", ",", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", ",", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", ",", "175 Rhombencephalon - Inferior Olive [size: 55]", ",", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", ",", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", ",", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", ",", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", ",", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", ",", "184 Rhombencephalon - Mauthner [size: 2]", ",", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", ",", "187 Rhombencephalon - MiD2 [size: 1]", ",", "188 Rhombencephalon - MiD3 [size: 16]", ",", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", ",", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", ",", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", ",", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", ",", "202 Rhombencephalon - Olig2 Cluster [size: 20]", ",", "203 Rhombencephalon - Olig2 Stripe [size: 61]", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", ",", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", ",", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", ",", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", ",", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", ",", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", ",", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", ",", "217 Rhombencephalon - Raphe - Inferior [size: 5]", ",", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", ",", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", ",", "221 Rhombencephalon - Rhombomere 3 [size: 577]", ",", "222 Rhombencephalon - Rhombomere 4 [size: 364]", ",", "223 Rhombencephalon - Rhombomere 5 [size: 381]", ",", "224 Rhombencephalon - Rhombomere 6 [size: 970]", ",", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", ",", "233 Rhombencephalon - S1181t Cluster [size: 379]", ",", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", ",", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", ",", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", ",", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", ",", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", ",", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", ",", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", ",", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", ",", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", ",", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", ",", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", ",", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", ",", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", ",", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", ",", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", ",", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", ",", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", ",", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", ",", "260 Spinal Cord [size: 338]", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", ",", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", ",", "265 Spinal Cord - Glyt2 Stripe [size: 132]", ",", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", ",", "268 Spinal Cord - Neuropil Region [size: 24]", ",", "269 Spinal Cord - Olig2 Stripe [size: 18]", ",", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", ",", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", ",", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", ",", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", ",", "275 Telencephalon - [size: 690]", ",", "277 Telencephalon - Isl1 cluster 1 [size: 3]", ",", "279 Telencephalon - Olfactory Bulb [size: 38]", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", ",", "283 Telencephalon - Pallium [size: 490]", ",", "285 Telencephalon - S1181t Cluster [size: 9]", ",", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", ",", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", ",", "288 Telencephalon - Subpallial Otpb strip [size: 29]", ",", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", ",", "291 Telencephalon - Subpallium [size: 98]", ",", "293 Telencephalon - Vglut2 rind [size: 181]", ",", "294 Telencephalon - Vmat2 cluster [size: 30]", ",", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", ",", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]" ],
+                                    "items": [ "1 Diencephalon - [size: 1747]", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", ",", "13 Diencephalon - Dorsal Thalamus [size: 297]", ",", "14 Diencephalon - Eminentia Thalami [size: 4]", ",", "15 Diencephalon - Habenula [size: 149]", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", ",", "36 Diencephalon - Isl1 cluster 1 [size: 1]", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", ",", "40 Diencephalon - Medial vglut2 cluster [size: 37]", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", ",", "43 Diencephalon - Olig2 Band [size: 308]", ",", "44 Diencephalon - Olig2 Band 2 [size: 140]", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", ",", "58 Diencephalon - Posterior Tuberculum [size: 86]", ",", "60 Diencephalon - Preoptic Area [size: 32]", ",", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", ",", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", ",", "66 Diencephalon - Pretectum [size: 419]", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", ",", "76 Diencephalon - Ventral Thalamus [size: 370]", ",", "78 Ganglia - Eyes [size: 12]", ",", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", ",", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", ",", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", ",", "94 Mesencephalon - [size: 6799]", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", ",", "96 Mesencephalon - Medial Tectal Band [size: 780]", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", ",", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", ",", "99 Mesencephalon - Otpb Cluster [size: 103]", ",", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", ",", "101 Mesencephalon - Ptf1a Cluster [size: 42]", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", ",", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", ",", "107 Mesencephalon - Tectum Neuropil [size: 212]", ",", "108 Mesencephalon - Tegmentum [size: 2111]", ",", "109 Mesencephalon - Torus Longitudinalis [size: 9]", ",", "110 Mesencephalon - Torus Semicircularis [size: 212]", ",", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", ",", "114 Rhombencephalon - [size: 12906]", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", ",", "125 Rhombencephalon - Area Postrema [size: 12]", ",", "126 Rhombencephalon - CaD [size: 5]", ",", "127 Rhombencephalon - CaV [size: 2]", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", ",", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", ",", "131 Rhombencephalon - Cerebellum [size: 2952]", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", ",", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", ",", "134 Rhombencephalon - Eminentia Granularis [size: 205]", ",", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", ",", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", ",", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", ",", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", ",", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", ",", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", ",", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", ",", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", ",", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", ",", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", ",", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", ",", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", ",", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", ",", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", ",", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", ",", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", ",", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", ",", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", ",", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", ",", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", ",", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", ",", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", ",", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", ",", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", ",", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", ",", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", ",", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", ",", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", ",", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", ",", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", ",", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", ",", "175 Rhombencephalon - Inferior Olive [size: 55]", ",", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", ",", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", ",", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", ",", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", ",", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", ",", "184 Rhombencephalon - Mauthner [size: 2]", ",", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", ",", "187 Rhombencephalon - MiD2 [size: 1]", ",", "188 Rhombencephalon - MiD3 [size: 16]", ",", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", ",", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", ",", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", ",", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", ",", "202 Rhombencephalon - Olig2 Cluster [size: 20]", ",", "203 Rhombencephalon - Olig2 Stripe [size: 61]", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", ",", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", ",", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", ",", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", ",", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", ",", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", ",", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", ",", "217 Rhombencephalon - Raphe - Inferior [size: 5]", ",", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", ",", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", ",", "221 Rhombencephalon - Rhombomere 3 [size: 577]", ",", "222 Rhombencephalon - Rhombomere 4 [size: 364]", ",", "223 Rhombencephalon - Rhombomere 5 [size: 381]", ",", "224 Rhombencephalon - Rhombomere 6 [size: 970]", ",", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", ",", "233 Rhombencephalon - S1181t Cluster [size: 379]", ",", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", ",", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", ",", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", ",", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", ",", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", ",", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", ",", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", ",", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", ",", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", ",", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", ",", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", ",", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", ",", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", ",", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", ",", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", ",", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", ",", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", ",", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", ",", "260 Spinal Cord [size: 338]", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", ",", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", ",", "265 Spinal Cord - Glyt2 Stripe [size: 132]", ",", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", ",", "268 Spinal Cord - Neuropil Region [size: 24]", ",", "269 Spinal Cord - Olig2 Stripe [size: 18]", ",", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", ",", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", ",", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", ",", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", ",", "275 Telencephalon - [size: 690]", ",", "277 Telencephalon - Isl1 cluster 1 [size: 3]", ",", "279 Telencephalon - Olfactory Bulb [size: 38]", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", ",", "283 Telencephalon - Pallium [size: 490]", ",", "285 Telencephalon - S1181t Cluster [size: 9]", ",", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", ",", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", ",", "288 Telencephalon - Subpallial Otpb strip [size: 29]", ",", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", ",", "291 Telencephalon - Subpallium [size: 98]", ",", "293 Telencephalon - Vglut2 rind [size: 181]", ",", "294 Telencephalon - Vmat2 cluster [size: 30]", ",", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", ",", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]", ",", "302 Full Brain [size: 23743]" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -25211,7 +26107,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 2.0, 64.0, 89.0, 10.0 ],
                     "setminmax": [ 0.0, 1.0 ],
-                    "slidercolor": [ 0.192, 1.0, 0.259, 1.0 ],
+                    "slidercolor": [ 0.847, 0.161, 0.161, 1.0 ],
                     "thickness": 1
                 }
             },
@@ -25665,7 +26561,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[16]",
+                            "parameter_longname": "Chord sustain[3]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -26839,7 +27735,7 @@
                             {
                                 "box": {
                                     "id": "obj-30",
-                                    "linecount": 2,
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -30064,6 +30960,7 @@
                                             {
                                                 "box": {
                                                     "id": "obj-154",
+                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -30097,6 +30994,7 @@
                                             {
                                                 "box": {
                                                     "id": "obj-80",
+                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -31102,6 +32000,7 @@
                             {
                                 "box": {
                                     "id": "obj-82",
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -33011,7 +33910,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "Timeline[7]",
+                            "parameter_longname": "Timeline[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Timeline",
@@ -33045,7 +33944,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "3D view[7]",
+                            "parameter_longname": "3D view[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "3D view",
@@ -33096,7 +33995,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[1]",
+                            "parameter_longname": "Chord sustain[17]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -33179,7 +34078,7 @@
                             "parameter_enum": [ "off", "on" ],
                             "parameter_initial": [ 1 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.toggle[1]",
+                            "parameter_longname": "live.toggle[2]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.toggle",
@@ -33656,7 +34555,7 @@
                             "parameter_enum": [ "auto: divide", "auto: sort-activity", "k-means", "map-file" ],
                             "parameter_initial": [ 0.0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.menu[2]",
+                            "parameter_longname": "live.menu[5]",
                             "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -33686,7 +34585,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "hold",
+                            "parameter_longname": "Chord sustain[2]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -33717,7 +34616,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.text[2]",
+                            "parameter_longname": "live.text[8]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[3]",
@@ -33744,7 +34643,7 @@
                         "valueof": {
                             "parameter_initial": [ 1.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[33]",
+                            "parameter_longname": "live.numbox[3]",
                             "parameter_mmax": 256.0,
                             "parameter_mmin": 1.0,
                             "parameter_modmode": 4,
@@ -33767,7 +34666,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel #2",
+                    "text": "Channel 1",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -33793,7 +34692,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "Load clusters CSV file[5]",
+                            "parameter_longname": "Load clusters CSV file[4]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Load clusters",
@@ -33827,7 +34726,7 @@
                         },
                         "valueof": {
                             "parameter_invisible": 1,
-                            "parameter_longname": "ClustersNotes[8]",
+                            "parameter_longname": "ClustersNotes[1]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "ClustersNotes[6]",
                             "parameter_type": 3
@@ -34448,42 +35347,6 @@
                 }
             }
         ],
-        "parameters": {
-            "obj-10": [ "Load clusters CSV file[5]", "Load clusters", 0 ],
-            "obj-12": [ "live.menu[2]", "live.menu", 0 ],
-            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
-            "obj-130::obj-25": [ "live.step[2]", "live.step", 0 ],
-            "obj-130::obj-56": [ "live.text[6]", "live.text", 0 ],
-            "obj-15": [ "3D view[7]", "3D view", 0 ],
-            "obj-20": [ "hold", "hold", 0 ],
-            "obj-22": [ "Timeline[7]", "Timeline", 0 ],
-            "obj-3": [ "live.menu[15]", "8439.clusterMenu", 0 ],
-            "obj-45": [ "ClustersNotes[8]", "ClustersNotes[6]", 0 ],
-            "obj-54": [ "SubClusterColormode", "SubClusterColormode", 0 ],
-            "obj-57": [ "RemoveMapFile", "RemoveMapFile", 0 ],
-            "obj-61": [ "velocity range", "velocityRange", 0 ],
-            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
-            "obj-78": [ "1-MIDI-IN-Channel", "1-MIDI-IN-Channel", 0 ],
-            "obj-79": [ "poly pressure range", "polyPressureRange", 0 ],
-            "obj-8": [ "live.numbox[33]", "live.numbox", 0 ],
-            "obj-80": [ "live.text[4]", "live.text[3]", 0 ],
-            "obj-82": [ "1-MIDI-OUT-Channel", "1-MIDI-OUT-Channel", 0 ],
-            "obj-89": [ "live.text[2]", "live.text[3]", 0 ],
-            "obj-9": [ "live.toggle[1]", "live.toggle", 0 ],
-            "obj-91": [ "live.menu[17]", "live.menu", 0 ],
-            "obj-97": [ "live.menu[91]", "live.menu", 0 ],
-            "obj-98": [ "live.menu", "live.menu", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
-            "inherited_shortname": 1
-        },
-        "autosave": 0,
         "styles": [
             {
                 "name": "MP-M4L",
