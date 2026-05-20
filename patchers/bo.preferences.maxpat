@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 62.0, 94.0, 575.0, 371.0 ],
+        "rect": [ 62.0, 94.0, 507.0, 421.0 ],
         "openinpresentation": 1,
         "lefttoolbarpinned": 2,
         "toptoolbarpinned": 2,
@@ -1233,7 +1233,7 @@
                     "patching_rect": [ 63.0, 77.0, 343.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 61.0, 343.0, 20.0 ],
-                    "text": "(loaded upon loading and saved in the file tbo.preferences.coll)"
+                    "text": "(loaded at launch and saved in the file tbo.preferences.coll)"
                 }
             },
             {
