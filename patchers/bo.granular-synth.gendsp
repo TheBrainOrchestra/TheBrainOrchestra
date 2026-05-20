@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "dsp.gen",
-        "rect": [ 297.0, -942.0, 836.0, 848.0 ],
+        "rect": [ 377.0, -969.0, 995.0, 848.0 ],
         "boxes": [
             {
                 "box": {
@@ -38,8 +38,8 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 595.0, 245.0, 137.0, 22.0 ],
-                    "text": "param factor @default 1"
+                    "patching_rect": [ 595.0, 245.0, 224.0, 22.0 ],
+                    "text": "param shrinkfactor @default 0.5 @min 0"
                 }
             },
             {
@@ -173,7 +173,7 @@
             },
             {
                 "box": {
-                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\n\r\nstart = in1;\r\ngrain_count = dim(active_grains);\r\n\r\n// global gain divide the polyphony\r\nglobalGain = poly_voicecount/grain_count;\r\n\r\n//len_samps = 128;\r\nlen_samps = grainSize;\r\n\r\ngrain_slice = grain_count/poly_voicecount;\r\n\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\n\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n        \n\t\tfor (i=0; i<len_samps; i+=1) {\r\n\t\t\t\r\n\t\t    //gg = peek(speed, grain_idx);\r\n\t\t\t\r\n\t\t\t//what += 0.00001;\r\n\t\t\t\n\t\t\t// read grain from source buffer\n\t\t\t//source = peek(src, i*grainSpeed, \n\t\t\t//\t\tinterp=\"linear\", boundmode=\"ignore\");\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, factor*grainSpeed*i/len_samps, \n\t\t\t\tinterp=\"linear\", boundmode=\"ignore\");\n\t\t\t\n\t\t\t// overlap add:\r\n\t\t\t\r\n\t\t\t// mono version\r\n\t\t\t//poke(ola, source, start+i, 0, 1, \n\t\t\t//\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\r\n\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\r\n\t\t\n\t}\n\t//buffer(active_grains).clear;\n}",
+                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\nHistory Ka;\r\nHistory Kb;\r\nHistory K;\r\n\r\nstart = in1;\r\ngrain_count = dim(active_grains);\r\nglobalGain = poly_voicecount/grain_count; // divide by polyphony\r\nlen_samps = grainSize;\r\ngrain_slice = grain_count/poly_voicecount;\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\nKa = (1-shrinkfactor)/len_samps;\r\nKb = shrinkfactor/len_samps;\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\r\n        \n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n            \r\n        K = max(Ka+Kb*grainSpeed, 1);\r\n        \n\t\tfor (i=0; i<(len_samps-1); i+=1) {\t\t\t\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, K*i, \n\t\t\t\tinterp=\"linear\", boundmode=\"ignore\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\t\t\n\t}\n\t//buffer(active_grains).clear;\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
