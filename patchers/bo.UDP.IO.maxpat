@@ -3,14 +3,102 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 3,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 59.0, 119.0, 421.0, 495.0 ],
+        "rect": [ 402.0, 100.0, 510.0, 688.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 146.0, 523.0, 79.0, 22.0 ],
+                    "text": "prepend host"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-24",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 146.0, 495.0, 184.0, 22.0 ],
+                    "text": "r /TBO/network/UDP/out/address"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 55.0, 523.0, 77.0, 22.0 ],
+                    "text": "prepend port"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-15",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 55.0, 495.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-16",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 55.0, 468.0, 162.0, 22.0 ],
+                    "text": "r /TBO/network/UDP/out/port"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 29.0, 147.0, 77.0, 22.0 ],
+                    "text": "prepend port"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-10",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 29.0, 119.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 29.0, 92.0, 155.0, 22.0 ],
+                    "text": "r /TBO/network/UDP/in/port"
+                }
+            },
             {
                 "box": {
                     "id": "obj-17",
@@ -22,8 +110,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 3,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -134,7 +222,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 241.0, 115.0, 100.0, 22.0 ],
+                    "patching_rect": [ 220.0, 151.0, 100.0, 22.0 ],
                     "text": "p parse-attr"
                 }
             },
@@ -145,7 +233,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 184.0, 87.0, 76.0, 22.0 ],
+                    "patching_rect": [ 163.0, 123.0, 76.0, 22.0 ],
                     "text": "patcherargs"
                 }
             },
@@ -161,8 +249,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 3,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -212,7 +300,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 224.0, 330.0, 94.0, 24.0 ],
+                    "patching_rect": [ 203.0, 366.0, 94.0, 24.0 ],
                     "text": "p OSC-output"
                 }
             },
@@ -247,7 +335,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 50.0, 330.0, 24.0, 24.0 ]
+                    "patching_rect": [ 29.0, 366.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -257,7 +345,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 50.0, 362.0, 116.0, 22.0 ],
+                    "patching_rect": [ 29.0, 398.0, 116.0, 22.0 ],
                     "text": "zl.reg /TBO/isReady"
                 }
             },
@@ -272,8 +360,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 3,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -376,7 +464,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 50.0, 300.0, 100.0, 22.0 ],
+                    "patching_rect": [ 29.0, 336.0, 100.0, 22.0 ],
                     "text": "p /TBO/isReady?"
                 }
             },
@@ -390,8 +478,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 3,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -481,7 +569,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 68.0, 199.0, 111.0, 22.0 ],
+                    "patching_rect": [ 47.0, 235.0, 111.0, 22.0 ],
                     "text": "p print-UDOreceive"
                 }
             },
@@ -496,14 +584,36 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 3,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 119.0, 298.0, 286.0 ],
+                        "rect": [ 447.0, 361.0, 362.0, 364.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 87.0, 173.0, 31.0, 22.0 ],
+                                    "text": "t b s"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 6,
+                                    "outlettype": [ "signal", "bang", "int", "float", "", "" ],
+                                    "patching_rect": [ 50.0, 119.0, 97.0, 22.0 ],
+                                    "text": "typeroute~"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-2",
@@ -522,7 +632,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 142.0, 172.0, 82.0, 22.0 ],
+                                    "patching_rect": [ 223.0, 240.0, 82.0, 22.0 ],
                                     "text": "prepend send"
                                 }
                             },
@@ -534,7 +644,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 50.0, 128.0, 111.0, 35.0 ],
+                                    "patching_rect": [ 128.0, 160.0, 114.0, 35.0 ],
                                     "text": "zl.ecils 1 @zlmaxsize 32000"
                                 }
                             },
@@ -544,19 +654,18 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 50.0, 217.0, 49.0, 22.0 ],
+                                    "patching_rect": [ 87.0, 279.0, 49.0, 22.0 ],
                                     "text": "forward"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-10",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 50.0, 86.0, 111.0, 35.0 ],
+                                    "patching_rect": [ 50.0, 86.0, 159.0, 22.0 ],
                                     "text": "list.rot -1 @zlmaxsize 32000"
                                 }
                             },
@@ -577,6 +686,18 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-18", 0 ],
+                                    "source": [ "obj-1", 5 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 0 ],
+                                    "source": [ "obj-1", 4 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
                                     "source": [ "obj-10", 0 ]
                                 }
                             },
@@ -603,10 +724,22 @@
                                     "destination": [ "obj-10", 0 ],
                                     "source": [ "obj-22", 0 ]
                                 }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-17", 0 ],
+                                    "source": [ "obj-7", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-7", 1 ]
+                                }
                             }
                         ]
                     },
-                    "patching_rect": [ 224.0, 299.0, 86.0, 24.0 ],
+                    "patching_rect": [ 203.0, 335.0, 86.0, 24.0 ],
                     "text": "p OSC-input"
                 }
             },
@@ -618,7 +751,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 50.0, 268.0, 24.0, 24.0 ]
+                    "patching_rect": [ 29.0, 304.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -628,7 +761,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 50.0, 238.0, 193.0, 22.0 ],
+                    "patching_rect": [ 29.0, 274.0, 193.0, 22.0 ],
                     "text": "route /TBO/areYouReady"
                 }
             },
@@ -641,7 +774,10 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 50.0, 154.0, 142.0, 29.0 ],
+                    "patching_rect": [ 29.0, 190.0, 142.0, 29.0 ],
+                    "saved_object_attributes": {
+                        "port": 8000
+                    },
                     "text": "udpreceive 8000"
                 }
             },
@@ -653,12 +789,36 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 50.0, 411.0, 203.0, 29.0 ],
+                    "patching_rect": [ 29.0, 567.0, 203.0, 29.0 ],
                     "text": "udpsend 127.0.0.1 9000"
                 }
             }
         ],
         "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-10", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-11", 0 ],
+                    "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "source": [ "obj-11", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-8", 0 ],
+                    "source": [ "obj-12", 0 ]
+                }
+            },
             {
                 "patchline": {
                     "destination": [ "obj-14", 0 ],
@@ -675,15 +835,27 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-12", 0 ],
+                    "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-13", 0 ],
-                    "midpoints": [ 250.5, 145.5, 59.5, 145.5 ],
+                    "midpoints": [ 229.5, 181.5, 38.5, 181.5 ],
                     "source": [ "obj-17", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-8", 0 ],
-                    "midpoints": [ 331.5, 404.328125, 59.5, 404.328125 ],
+                    "midpoints": [ 310.5, 440.328125, 38.5, 440.328125 ],
                     "source": [ "obj-17", 1 ]
                 }
             },
@@ -707,8 +879,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-8", 0 ],
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-19", 0 ],
                     "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-24", 0 ]
                 }
             },
             {
@@ -726,7 +910,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-8", 0 ],
-                    "midpoints": [ 233.5, 397.796875, 59.5, 397.796875 ],
+                    "midpoints": [ 212.5, 433.796875, 38.5, 433.796875 ],
                     "source": [ "obj-6", 0 ]
                 }
             },
