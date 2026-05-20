@@ -31,7 +31,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 49.0, 120.0, 158.0, 22.0 ],
-                    "text": "r /TBO/transport/frameIndex"
+                    "text": "r /TBO/transport/frame"
                 }
             },
             {
