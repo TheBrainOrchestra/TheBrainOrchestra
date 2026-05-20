@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 45.0, 546.0, 1231.0, 705.0 ],
+        "rect": [ 93.0, 216.0, 1231.0, 705.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 4,
         "boxes": [
@@ -666,7 +666,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 157.0, 183.0, 150.0, 20.0 ],
-                                    "text": "---.2.notes"
+                                    "text": "#1.#2.notes"
                                 }
                             },
                             {
@@ -1958,7 +1958,6 @@
                             {
                                 "box": {
                                     "id": "obj-84",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5063,7 +5062,6 @@
                             {
                                 "box": {
                                     "id": "obj-70",
-                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5960,7 +5958,8 @@
                                                     "numoutlets": 0,
                                                     "patching_rect": [ 1039.0, 219.0, 136.0, 22.0 ],
                                                     "presentation": 1,
-                                                    "presentation_rect": [ 4.0, 7.0, 99.0, 22.0 ]
+                                                    "presentation_rect": [ 4.0, 7.0, 99.0, 22.0 ],
+                                                    "text": "Channel #2:"
                                                 }
                                             },
                                             {
@@ -15913,7 +15912,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 23743,
+                                                                    "cols": 10000,
                                                                     "colwidth": 18,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
@@ -19882,7 +19881,6 @@
                     "annotation_name": "Cluster name",
                     "fontname": "Ableton Sans Medium Regular",
                     "id": "obj-3",
-                    "ignoreclick": 1,
                     "maxclass": "live.menu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -19894,9 +19892,9 @@
                     "presentation_rect": [ 205.0, 7.0, 527.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "Empty menu", "Empty menu" ],
+                            "parameter_enum": [ "No Cluster", "1 Diencephalon - [size: 1747]", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", "13 Diencephalon - Dorsal Thalamus [size: 297]", "14 Diencephalon - Eminentia Thalami [size: 4]", "15 Diencephalon - Habenula [size: 149]", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", "36 Diencephalon - Isl1 cluster 1 [size: 1]", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", "40 Diencephalon - Medial vglut2 cluster [size: 37]", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", "43 Diencephalon - Olig2 Band [size: 308]", "44 Diencephalon - Olig2 Band 2 [size: 140]", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", "58 Diencephalon - Posterior Tuberculum [size: 86]", "60 Diencephalon - Preoptic Area [size: 32]", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", "66 Diencephalon - Pretectum [size: 419]", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", "76 Diencephalon - Ventral Thalamus [size: 370]", "78 Ganglia - Eyes [size: 12]", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", "94 Mesencephalon - [size: 6799]", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", "96 Mesencephalon - Medial Tectal Band [size: 780]", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", "99 Mesencephalon - Otpb Cluster [size: 103]", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", "101 Mesencephalon - Ptf1a Cluster [size: 42]", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", "107 Mesencephalon - Tectum Neuropil [size: 212]", "108 Mesencephalon - Tegmentum [size: 2111]", "109 Mesencephalon - Torus Longitudinalis [size: 9]", "110 Mesencephalon - Torus Semicircularis [size: 212]", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", "114 Rhombencephalon - [size: 12906]", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", "125 Rhombencephalon - Area Postrema [size: 12]", "126 Rhombencephalon - CaD [size: 5]", "127 Rhombencephalon - CaV [size: 2]", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", "131 Rhombencephalon - Cerebellum [size: 2952]", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", "134 Rhombencephalon - Eminentia Granularis [size: 205]", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", "175 Rhombencephalon - Inferior Olive [size: 55]", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", "184 Rhombencephalon - Mauthner [size: 2]", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", "187 Rhombencephalon - MiD2 [size: 1]", "188 Rhombencephalon - MiD3 [size: 16]", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", "202 Rhombencephalon - Olig2 Cluster [size: 20]", "203 Rhombencephalon - Olig2 Stripe [size: 61]", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", "217 Rhombencephalon - Raphe - Inferior [size: 5]", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", "221 Rhombencephalon - Rhombomere 3 [size: 577]", "222 Rhombencephalon - Rhombomere 4 [size: 364]", "223 Rhombencephalon - Rhombomere 5 [size: 381]", "224 Rhombencephalon - Rhombomere 6 [size: 970]", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", "233 Rhombencephalon - S1181t Cluster [size: 379]", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", "260 Spinal Cord [size: 338]", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", "265 Spinal Cord - Glyt2 Stripe [size: 132]", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", "268 Spinal Cord - Neuropil Region [size: 24]", "269 Spinal Cord - Olig2 Stripe [size: 18]", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", "275 Telencephalon - [size: 690]", "277 Telencephalon - Isl1 cluster 1 [size: 3]", "279 Telencephalon - Olfactory Bulb [size: 38]", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", "283 Telencephalon - Pallium [size: 490]", "285 Telencephalon - S1181t Cluster [size: 9]", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", "288 Telencephalon - Subpallial Otpb strip [size: 29]", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", "291 Telencephalon - Subpallium [size: 98]", "293 Telencephalon - Vglut2 rind [size: 181]", "294 Telencephalon - Vmat2 cluster [size: 30]", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]" ],
                             "parameter_longname": "live.menu[15]",
-                            "parameter_mmax": 1,
+                            "parameter_mmax": 184,
                             "parameter_modmode": 0,
                             "parameter_shortname": "8439.clusterMenu",
                             "parameter_type": 2
@@ -23475,7 +23473,7 @@
                                     "bgfillcolor_type": "color",
                                     "fontsize": 9.0,
                                     "id": "obj-18",
-                                    "items": [ "1 Diencephalon - [size: 1747]", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", ",", "13 Diencephalon - Dorsal Thalamus [size: 297]", ",", "14 Diencephalon - Eminentia Thalami [size: 4]", ",", "15 Diencephalon - Habenula [size: 149]", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", ",", "36 Diencephalon - Isl1 cluster 1 [size: 1]", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", ",", "40 Diencephalon - Medial vglut2 cluster [size: 37]", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", ",", "43 Diencephalon - Olig2 Band [size: 308]", ",", "44 Diencephalon - Olig2 Band 2 [size: 140]", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", ",", "58 Diencephalon - Posterior Tuberculum [size: 86]", ",", "60 Diencephalon - Preoptic Area [size: 32]", ",", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", ",", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", ",", "66 Diencephalon - Pretectum [size: 419]", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", ",", "76 Diencephalon - Ventral Thalamus [size: 370]", ",", "78 Ganglia - Eyes [size: 12]", ",", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", ",", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", ",", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", ",", "94 Mesencephalon - [size: 6799]", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", ",", "96 Mesencephalon - Medial Tectal Band [size: 780]", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", ",", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", ",", "99 Mesencephalon - Otpb Cluster [size: 103]", ",", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", ",", "101 Mesencephalon - Ptf1a Cluster [size: 42]", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", ",", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", ",", "107 Mesencephalon - Tectum Neuropil [size: 212]", ",", "108 Mesencephalon - Tegmentum [size: 2111]", ",", "109 Mesencephalon - Torus Longitudinalis [size: 9]", ",", "110 Mesencephalon - Torus Semicircularis [size: 212]", ",", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", ",", "114 Rhombencephalon - [size: 12906]", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", ",", "125 Rhombencephalon - Area Postrema [size: 12]", ",", "126 Rhombencephalon - CaD [size: 5]", ",", "127 Rhombencephalon - CaV [size: 2]", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", ",", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", ",", "131 Rhombencephalon - Cerebellum [size: 2952]", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", ",", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", ",", "134 Rhombencephalon - Eminentia Granularis [size: 205]", ",", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", ",", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", ",", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", ",", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", ",", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", ",", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", ",", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", ",", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", ",", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", ",", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", ",", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", ",", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", ",", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", ",", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", ",", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", ",", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", ",", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", ",", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", ",", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", ",", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", ",", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", ",", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", ",", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", ",", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", ",", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", ",", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", ",", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", ",", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", ",", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", ",", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", ",", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", ",", "175 Rhombencephalon - Inferior Olive [size: 55]", ",", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", ",", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", ",", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", ",", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", ",", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", ",", "184 Rhombencephalon - Mauthner [size: 2]", ",", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", ",", "187 Rhombencephalon - MiD2 [size: 1]", ",", "188 Rhombencephalon - MiD3 [size: 16]", ",", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", ",", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", ",", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", ",", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", ",", "202 Rhombencephalon - Olig2 Cluster [size: 20]", ",", "203 Rhombencephalon - Olig2 Stripe [size: 61]", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", ",", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", ",", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", ",", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", ",", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", ",", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", ",", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", ",", "217 Rhombencephalon - Raphe - Inferior [size: 5]", ",", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", ",", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", ",", "221 Rhombencephalon - Rhombomere 3 [size: 577]", ",", "222 Rhombencephalon - Rhombomere 4 [size: 364]", ",", "223 Rhombencephalon - Rhombomere 5 [size: 381]", ",", "224 Rhombencephalon - Rhombomere 6 [size: 970]", ",", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", ",", "233 Rhombencephalon - S1181t Cluster [size: 379]", ",", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", ",", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", ",", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", ",", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", ",", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", ",", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", ",", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", ",", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", ",", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", ",", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", ",", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", ",", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", ",", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", ",", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", ",", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", ",", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", ",", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", ",", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", ",", "260 Spinal Cord [size: 338]", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", ",", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", ",", "265 Spinal Cord - Glyt2 Stripe [size: 132]", ",", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", ",", "268 Spinal Cord - Neuropil Region [size: 24]", ",", "269 Spinal Cord - Olig2 Stripe [size: 18]", ",", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", ",", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", ",", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", ",", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", ",", "275 Telencephalon - [size: 690]", ",", "277 Telencephalon - Isl1 cluster 1 [size: 3]", ",", "279 Telencephalon - Olfactory Bulb [size: 38]", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", ",", "283 Telencephalon - Pallium [size: 490]", ",", "285 Telencephalon - S1181t Cluster [size: 9]", ",", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", ",", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", ",", "288 Telencephalon - Subpallial Otpb strip [size: 29]", ",", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", ",", "291 Telencephalon - Subpallium [size: 98]", ",", "293 Telencephalon - Vglut2 rind [size: 181]", ",", "294 Telencephalon - Vmat2 cluster [size: 30]" ],
+                                    "items": [ "1 Diencephalon - [size: 1747]", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", ",", "13 Diencephalon - Dorsal Thalamus [size: 297]", ",", "14 Diencephalon - Eminentia Thalami [size: 4]", ",", "15 Diencephalon - Habenula [size: 149]", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", ",", "36 Diencephalon - Isl1 cluster 1 [size: 1]", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", ",", "40 Diencephalon - Medial vglut2 cluster [size: 37]", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", ",", "43 Diencephalon - Olig2 Band [size: 308]", ",", "44 Diencephalon - Olig2 Band 2 [size: 140]", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", ",", "58 Diencephalon - Posterior Tuberculum [size: 86]", ",", "60 Diencephalon - Preoptic Area [size: 32]", ",", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", ",", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", ",", "66 Diencephalon - Pretectum [size: 419]", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", ",", "76 Diencephalon - Ventral Thalamus [size: 370]", ",", "78 Ganglia - Eyes [size: 12]", ",", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", ",", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", ",", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", ",", "94 Mesencephalon - [size: 6799]", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", ",", "96 Mesencephalon - Medial Tectal Band [size: 780]", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", ",", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", ",", "99 Mesencephalon - Otpb Cluster [size: 103]", ",", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", ",", "101 Mesencephalon - Ptf1a Cluster [size: 42]", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", ",", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", ",", "107 Mesencephalon - Tectum Neuropil [size: 212]", ",", "108 Mesencephalon - Tegmentum [size: 2111]", ",", "109 Mesencephalon - Torus Longitudinalis [size: 9]", ",", "110 Mesencephalon - Torus Semicircularis [size: 212]", ",", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", ",", "114 Rhombencephalon - [size: 12906]", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", ",", "125 Rhombencephalon - Area Postrema [size: 12]", ",", "126 Rhombencephalon - CaD [size: 5]", ",", "127 Rhombencephalon - CaV [size: 2]", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", ",", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", ",", "131 Rhombencephalon - Cerebellum [size: 2952]", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", ",", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", ",", "134 Rhombencephalon - Eminentia Granularis [size: 205]", ",", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", ",", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", ",", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", ",", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", ",", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", ",", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", ",", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", ",", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", ",", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", ",", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", ",", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", ",", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", ",", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", ",", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", ",", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", ",", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", ",", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", ",", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", ",", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", ",", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", ",", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", ",", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", ",", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", ",", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", ",", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", ",", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", ",", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", ",", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", ",", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", ",", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", ",", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", ",", "175 Rhombencephalon - Inferior Olive [size: 55]", ",", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", ",", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", ",", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", ",", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", ",", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", ",", "184 Rhombencephalon - Mauthner [size: 2]", ",", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", ",", "187 Rhombencephalon - MiD2 [size: 1]", ",", "188 Rhombencephalon - MiD3 [size: 16]", ",", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", ",", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", ",", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", ",", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", ",", "202 Rhombencephalon - Olig2 Cluster [size: 20]", ",", "203 Rhombencephalon - Olig2 Stripe [size: 61]", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", ",", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", ",", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", ",", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", ",", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", ",", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", ",", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", ",", "217 Rhombencephalon - Raphe - Inferior [size: 5]", ",", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", ",", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", ",", "221 Rhombencephalon - Rhombomere 3 [size: 577]", ",", "222 Rhombencephalon - Rhombomere 4 [size: 364]", ",", "223 Rhombencephalon - Rhombomere 5 [size: 381]", ",", "224 Rhombencephalon - Rhombomere 6 [size: 970]", ",", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", ",", "233 Rhombencephalon - S1181t Cluster [size: 379]", ",", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", ",", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", ",", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", ",", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", ",", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", ",", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", ",", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", ",", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", ",", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", ",", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", ",", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", ",", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", ",", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", ",", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", ",", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", ",", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", ",", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", ",", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", ",", "260 Spinal Cord [size: 338]", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", ",", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", ",", "265 Spinal Cord - Glyt2 Stripe [size: 132]", ",", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", ",", "268 Spinal Cord - Neuropil Region [size: 24]", ",", "269 Spinal Cord - Olig2 Stripe [size: 18]", ",", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", ",", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", ",", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", ",", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", ",", "275 Telencephalon - [size: 690]", ",", "277 Telencephalon - Isl1 cluster 1 [size: 3]", ",", "279 Telencephalon - Olfactory Bulb [size: 38]", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", ",", "283 Telencephalon - Pallium [size: 490]", ",", "285 Telencephalon - S1181t Cluster [size: 9]", ",", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", ",", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", ",", "288 Telencephalon - Subpallial Otpb strip [size: 29]", ",", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", ",", "291 Telencephalon - Subpallium [size: 98]", ",", "293 Telencephalon - Vglut2 rind [size: 181]", ",", "294 Telencephalon - Vmat2 cluster [size: 30]", ",", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", ",", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -25213,7 +25211,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 2.0, 64.0, 89.0, 10.0 ],
                     "setminmax": [ 0.0, 1.0 ],
-                    "slidercolor": [ 0.847, 0.161, 0.161, 1.0 ],
+                    "slidercolor": [ 0.192, 1.0, 0.259, 1.0 ],
                     "thickness": 1
                 }
             },
@@ -26312,8 +26310,30 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 59.0, 106.0, 640.0, 480.0 ],
+                                        "rect": [ 59.0, 106.0, 327.0, 324.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-4",
+                                                    "linecount": 3,
+                                                    "maxclass": "comment",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 158.0, 111.0, 83.0, 47.0 ],
+                                                    "text": "because we only have 128 MIDI notes"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-1",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 3,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 87.0, 109.0, 60.0, 22.0 ],
+                                                    "text": "clip 1 128"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-2",
@@ -26322,7 +26342,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "bang" ],
                                                     "parameter_enable": 0,
-                                                    "patching_rect": [ 87.0, 96.0, 50.0, 22.0 ]
+                                                    "patching_rect": [ 87.0, 140.0, 50.0, 22.0 ]
                                                 }
                                             },
                                             {
@@ -26332,7 +26352,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 87.0, 120.0, 103.0, 22.0 ],
+                                                    "patching_rect": [ 87.0, 164.0, 103.0, 22.0 ],
                                                     "text": "prepend listlength"
                                                 }
                                             },
@@ -26354,7 +26374,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 50.0, 160.0, 114.0, 22.0 ],
+                                                    "patching_rect": [ 50.0, 204.0, 114.0, 22.0 ],
                                                     "text": "jit.spill @listlength 1"
                                                 }
                                             },
@@ -26378,11 +26398,17 @@
                                                     "maxclass": "outlet",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 50.0, 197.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 50.0, 241.0, 30.0, 30.0 ]
                                                 }
                                             }
                                         ],
                                         "lines": [
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "source": [ "obj-1", 0 ]
+                                                }
+                                            },
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-15", 0 ],
@@ -26403,7 +26429,7 @@
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-2", 0 ],
+                                                    "destination": [ "obj-1", 0 ],
                                                     "source": [ "obj-51", 0 ]
                                                 }
                                             },
@@ -26818,7 +26844,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 215.0, 25.0, 105.0, 22.0 ],
+                                    "patching_rect": [ 215.0, 25.0, 97.0, 35.0 ],
                                     "text": "r #0.monophonic"
                                 }
                             },
@@ -30038,7 +30064,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-154",
-                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -30072,7 +30097,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-80",
-                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -31078,7 +31102,6 @@
                             {
                                 "box": {
                                     "id": "obj-82",
-                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -33663,7 +33686,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain",
+                            "parameter_longname": "hold",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -33744,7 +33767,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel 2",
+                    "text": "Channel #2",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -34425,6 +34448,42 @@
                 }
             }
         ],
+        "parameters": {
+            "obj-10": [ "Load clusters CSV file[5]", "Load clusters", 0 ],
+            "obj-12": [ "live.menu[2]", "live.menu", 0 ],
+            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
+            "obj-130::obj-25": [ "live.step[2]", "live.step", 0 ],
+            "obj-130::obj-56": [ "live.text[6]", "live.text", 0 ],
+            "obj-15": [ "3D view[7]", "3D view", 0 ],
+            "obj-20": [ "hold", "hold", 0 ],
+            "obj-22": [ "Timeline[7]", "Timeline", 0 ],
+            "obj-3": [ "live.menu[15]", "8439.clusterMenu", 0 ],
+            "obj-45": [ "ClustersNotes[8]", "ClustersNotes[6]", 0 ],
+            "obj-54": [ "SubClusterColormode", "SubClusterColormode", 0 ],
+            "obj-57": [ "RemoveMapFile", "RemoveMapFile", 0 ],
+            "obj-61": [ "velocity range", "velocityRange", 0 ],
+            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
+            "obj-78": [ "1-MIDI-IN-Channel", "1-MIDI-IN-Channel", 0 ],
+            "obj-79": [ "poly pressure range", "polyPressureRange", 0 ],
+            "obj-8": [ "live.numbox[33]", "live.numbox", 0 ],
+            "obj-80": [ "live.text[4]", "live.text[3]", 0 ],
+            "obj-82": [ "1-MIDI-OUT-Channel", "1-MIDI-OUT-Channel", 0 ],
+            "obj-89": [ "live.text[2]", "live.text[3]", 0 ],
+            "obj-9": [ "live.toggle[1]", "live.toggle", 0 ],
+            "obj-91": [ "live.menu[17]", "live.menu", 0 ],
+            "obj-97": [ "live.menu[91]", "live.menu", 0 ],
+            "obj-98": [ "live.menu", "live.menu", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
+            "inherited_shortname": 1
+        },
+        "autosave": 0,
         "styles": [
             {
                 "name": "MP-M4L",
