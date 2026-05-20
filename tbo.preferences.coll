@@ -1,1 +1,1 @@
-/TBO/subcluster-method/k-means/warning-size, 5000;/TBO/render/FSmonitor, 1;
+/TBO/subcluster-method/k-means/warning-size, 5000;/TBO/render/FSmonitor, 0;/TBO/network/UDP/in/port, 8000;/TBO/network/TCP/in/port, 8087;/TBO/network/UDP/out/port, 9000;/TBO/network/UDP/out/address, 127 0 0 1;
