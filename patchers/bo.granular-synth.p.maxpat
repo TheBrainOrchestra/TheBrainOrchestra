@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 149.0, 550.0, 667.0, 361.0 ],
+        "rect": [ 281.0, 162.0, 530.0, 313.0 ],
         "boxes": [
             {
                 "box": {
@@ -17,7 +17,11 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 237.0, 220.0, 42.0, 22.0 ],
+                    "patching_rect": [ 399.0, 243.0, 42.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "out~ 2"
                 }
             },
@@ -41,10 +45,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 284.0, 30.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 1"
                 }
             },
@@ -131,23 +131,20 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 46.0, 220.0, 42.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
+                    "patching_rect": [ 46.0, 243.0, 42.0, 22.0 ],
                     "text": "out~ 1"
                 }
             },
             {
                 "box": {
                     "id": "obj-1",
+                    "linecount": 3,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 46.0, 182.0, 210.0, 22.0 ],
-                    "text": "gen~ @gen bo.granular-synth.gendsp"
+                    "patching_rect": [ 46.0, 182.0, 372.0, 49.0 ],
+                    "text": "gen~ @gen bo.granular-synth.gendsp @active_grains #1.active_grains @src #1.src @speed #1.speed @gainL #1.gainL @gainR #1.gainR @win #1.win"
                 }
             }
         ],
