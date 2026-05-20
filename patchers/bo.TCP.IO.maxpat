@@ -3,8 +3,8 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 4,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
@@ -76,8 +76,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 4,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -223,12 +223,12 @@
                                     "numinlets": 1,
                                     "numoutlets": 4,
                                     "outlettype": [ "", "", "", "" ],
-                                    "patching_rect": [ 91.0, 469.0, 55.0, 22.0 ],
+                                    "patching_rect": [ 91.0, 469.0, 135.0, 22.0 ],
                                     "saved_object_attributes": {
                                         "embed": 0,
                                         "precision": 6
                                     },
-                                    "text": "coll atlas"
+                                    "text": "coll ---atlasClassNames"
                                 }
                             },
                             {
@@ -403,12 +403,12 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 482.0, 507.0, 55.0, 22.0 ],
+                    "patching_rect": [ 482.0, 507.0, 135.0, 22.0 ],
                     "saved_object_attributes": {
                         "embed": 0,
                         "precision": 6
                     },
-                    "text": "coll atlas"
+                    "text": "coll ---atlasClassNames"
                 }
             },
             {
@@ -471,8 +471,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
-                    "patching_rect": [ 390.0, 432.0, 216.0, 22.0 ],
-                    "text": "jit.matrix atlas 1 char 1 1 @adapt 1"
+                    "patching_rect": [ 390.0, 432.0, 229.0, 22.0 ],
+                    "text": "jit.matrix atlasLabels 1 char 1 1 @adapt 1"
                 }
             },
             {
@@ -535,8 +535,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
-                    "patching_rect": [ 189.0, 708.0, 225.0, 22.0 ],
-                    "text": "jit.matrix dataMatrix 1 char 1 1 @adapt 1"
+                    "patching_rect": [ 189.0, 708.0, 260.0, 22.0 ],
+                    "text": "jit.matrix ---neuronsSpikes 1 char 1 1 @adapt 1"
                 }
             },
             {
@@ -550,8 +550,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 4,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -870,8 +870,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
-                    "patching_rect": [ 256.0, 624.0, 247.0, 22.0 ],
-                    "text": "jit.matrix mappingMatrix 1 long 1 1 @adapt 1"
+                    "patching_rect": [ 256.0, 624.0, 295.0, 22.0 ],
+                    "text": "jit.matrix ---neurons2AtlasLabels 1 long 1 1 @adapt 1"
                 }
             },
             {
@@ -923,8 +923,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
-                    "patching_rect": [ 323.0, 544.0, 216.0, 22.0 ],
-                    "text": "jit.matrix 3Dpos 3 float32 1 1 @adapt 1"
+                    "patching_rect": [ 323.0, 544.0, 288.0, 22.0 ],
+                    "text": "jit.matrix ---neurons3Dcoords 3 float32 1 1 @adapt 1"
                 }
             },
             {
@@ -949,8 +949,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 4,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1180,12 +1180,16 @@
             },
             {
                 "box": {
+                    "depthbuffer": 1,
+                    "doublebuffer": 1,
+                    "fsaa": 0,
                     "id": "obj-7",
                     "maxclass": "jit.pwindow",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
                     "patching_rect": [ 204.0, 246.0, 155.0, 79.0 ],
+                    "stereo": 0,
                     "sync": 1
                 }
             },
