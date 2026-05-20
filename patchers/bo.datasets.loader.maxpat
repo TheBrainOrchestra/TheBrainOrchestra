@@ -3908,7 +3908,7 @@
                             {
                                 "box": {
                                     "id": "obj-48",
-                                    "items": [ "T26_fish2_FULL.3Dcoords.jxf", ",", "T26_fish2_FULL.atlas.energy.jxf", ",", "T26_fish2_FULL.atlas.labels.coll", ",", "T26_fish2_FULL.atlas.mapping.jxf", ",", "T26_fish2_FULL.spikes.jxf" ],
+                                    "items": [ "T26_fish2.3Dcoords.jxf", ",", "T26_fish2.atlas.energy.jxf", ",", "T26_fish2.atlas.labels.coll", ",", "T26_fish2.atlas.mapping.jxf", ",", "T26_fish2.atlas.mapping_ARTR.jxf", ",", "T26_fish2.spikes.jxf", ",", "T26_fish2_ARTR_atlasClassNames.coll", ",", "T26_fish2_ARTR_atlasMapping.jxf" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -4281,7 +4281,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 56.0, 338.0, 94.0, 230.0 ],
-                                    "rows": 185
+                                    "rows": 182
                                 }
                             },
                             {
@@ -5546,7 +5546,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 119.0, 10.0, 158.0, 22.0 ],
-                                    "text": "r /TBO/transport/frameIndex"
+                                    "text": "r /TBO/transport/frame"
                                 }
                             },
                             {
@@ -9779,7 +9779,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 23743,
+                                    "cols": 10000,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -9927,7 +9927,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 258.0, 425.0, 199.0, 93.0 ],
-                                    "rows": 185
+                                    "rows": 182
                                 }
                             },
                             {
@@ -10950,7 +10950,7 @@
                                                                     "numoutlets": 4,
                                                                     "outlettype": [ "list", "", "", "" ],
                                                                     "patching_rect": [ 309.0, 226.0, 200.0, 200.0 ],
-                                                                    "rows": 185
+                                                                    "rows": 182
                                                                 }
                                                             },
                                                             {
@@ -13835,7 +13835,7 @@
                         "boxes": [
                             {
                                 "box": {
-                                    "cols": 185,
+                                    "cols": 182,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -15011,7 +15011,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 185,
+                                                    "cols": 182,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
