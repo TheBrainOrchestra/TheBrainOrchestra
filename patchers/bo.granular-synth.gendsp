@@ -1,0 +1,339 @@
+{
+    "patcher": {
+        "fileversion": 1,
+        "appversion": {
+            "major": 9,
+            "minor": 2,
+            "revision": 0,
+            "architecture": "x64",
+            "modernui": 1
+        },
+        "classnamespace": "dsp.gen",
+        "rect": [ 230.0, 100.0, 1064.0, 848.0 ],
+        "boxes": [
+            {
+                "box": {
+                    "id": "obj-15",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 651.0, 71.0, 137.0, 22.0 ],
+                    "text": "param factor @default 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 399.0, 89.0, 74.0, 22.0 ],
+                    "text": "buffer gainR"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 326.0, 89.0, 72.0, 22.0 ],
+                    "text": "buffer gainL"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-8",
+                    "linecount": 2,
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 486.0, 53.0, 115.0, 35.0 ],
+                    "text": "param grainSize @default 512"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-3",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 651.0, 47.0, 131.0, 22.0 ],
+                    "text": "param poly_voiceindex"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-2",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 651.0, 23.0, 132.0, 22.0 ],
+                    "text": "param poly_voicecount"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 326.0, 23.0, 75.0, 22.0 ],
+                    "text": "buffer speed"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 486.0, 23.0, 124.0, 22.0 ],
+                    "text": "buffer active_grains"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-33",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 698.0, 119.0, 59.0, 20.0 ],
+                    "text": "playback"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-32",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 718.0, 184.0, 19.0, 22.0 ],
+                    "text": "0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 0,
+                    "patching_rect": [ 795.0, 229.0, 66.0, 22.0 ],
+                    "text": "poke ola 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-29",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 0,
+                    "patching_rect": [ 718.0, 229.0, 66.0, 22.0 ],
+                    "text": "poke ola 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-28",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 595.0, 119.0, 97.0, 22.0 ],
+                    "text": "peek ola 2"
+                }
+            },
+            {
+                "box": {
+                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\n\r\nstart = in1;\r\ngrain_count = dim(active_grains);\r\n\r\n// global gain divide the polyphony\r\nglobalGain = poly_voicecount/grain_count;\r\n\r\n//len_samps = 128;\r\nlen_samps = grainSize;\r\n\r\ngrain_slice = grain_count/poly_voicecount;\r\n\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\n\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n        \n\t\tfor (i=0; i<len_samps; i+=1) {\r\n\t\t\t\r\n\t\t    //gg = peek(speed, grain_idx);\r\n\t\t\t\r\n\t\t\t//what += 0.00001;\r\n\t\t\t\n\t\t\t// read grain from source buffer\n\t\t\t//source = peek(src, i*grainSpeed, \n\t\t\t//\t\tinterp=\"linear\", boundmode=\"ignore\");\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, factor*grainSpeed*i/len_samps, \n\t\t\t\tinterp=\"linear\", boundmode=\"ignore\");\n\t\t\t\n\t\t\t// overlap add:\r\n\t\t\t\r\n\t\t\t// mono version\r\n\t\t\t//poke(ola, source, start+i, 0, 1, \n\t\t\t//\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\r\n\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\r\n\t\t\n\t}\n\t//buffer(active_grains).clear;\n}",
+                    "fontface": 0,
+                    "fontname": "<Monospaced>",
+                    "fontsize": 12.0,
+                    "id": "obj-7",
+                    "maxclass": "codebox",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 26.0, 119.0, 556.0, 724.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-19",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 634.0, 229.0, 37.0, 22.0 ],
+                    "text": "out 2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-13",
+                    "linecount": 6,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 866.0, 164.0, 59.0, 87.0 ],
+                    "text": "zero out the ola buffer once we have read it"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 409.0, 23.0, 60.0, 22.0 ],
+                    "text": "buffer src"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 409.0, 47.0, 62.0, 22.0 ],
+                    "text": "buffer win"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-16",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 172.0, 0.0, 121.0, 33.0 ],
+                    "text": "simple timer reading through buffer"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-14",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 26.0, 6.0, 19.0, 22.0 ],
+                    "text": "1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-9",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 26.0, 40.0, 51.0, 22.0 ],
+                    "text": "counter"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 58.0, 6.0, 100.0, 22.0 ],
+                    "text": "data ola 44100 2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 595.0, 229.0, 37.0, 22.0 ],
+                    "text": "out 1"
+                }
+            }
+        ],
+        "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-9", 0 ],
+                    "source": [ "obj-14", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "source": [ "obj-28", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-29", 1 ],
+                    "midpoints": [ 682.5, 169.5, 751.0, 169.5 ],
+                    "order": 1,
+                    "source": [ "obj-28", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-30", 1 ],
+                    "midpoints": [ 682.5, 169.5, 828.0, 169.5 ],
+                    "order": 0,
+                    "source": [ "obj-28", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "source": [ "obj-28", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-29", 0 ],
+                    "order": 1,
+                    "source": [ "obj-32", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-30", 0 ],
+                    "order": 0,
+                    "source": [ "obj-32", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-9", 2 ],
+                    "source": [ "obj-5", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-28", 0 ],
+                    "order": 0,
+                    "source": [ "obj-9", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "order": 1,
+                    "source": [ "obj-9", 0 ]
+                }
+            }
+        ],
+        "autosave": 0
+    }
+}
