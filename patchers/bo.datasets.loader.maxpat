@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 47.0, -732.0, 1444.0, 514.0 ],
+        "rect": [ 45.0, 310.0, 1444.0, 514.0 ],
         "boxes": [
             {
                 "box": {
@@ -3908,7 +3908,7 @@
                             {
                                 "box": {
                                     "id": "obj-48",
-                                    "items": [ "T26_fish2.3Dcoords.jxf", ",", "T26_fish2.atlas.energy.jxf", ",", "T26_fish2.atlas.labels.coll", ",", "T26_fish2.atlas.mapping.jxf", ",", "T26_fish2.atlas.mapping_ARTR.jxf", ",", "T26_fish2.spikes.jxf", ",", "T26_fish2_ARTR_atlasClassNames.coll", ",", "T26_fish2_ARTR_atlasMapping.jxf" ],
+                                    "items": [ "T26_fish2_FULL.3Dcoords.jxf", ",", "T26_fish2_FULL.atlas.energy.jxf", ",", "T26_fish2_FULL.atlas.labels.coll", ",", "T26_fish2_FULL.atlas.mapping.jxf", ",", "T26_fish2_FULL.spikes.jxf" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -4224,6 +4224,27 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-11",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 171.0, 276.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 171.0, 304.0, 179.0, 22.0 ],
+                                    "text": "s ---neuronCountPerLabel.done"
+                                }
+                            },
+                            {
+                                "box": {
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -4281,7 +4302,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 56.0, 338.0, 94.0, 230.0 ],
-                                    "rows": 182
+                                    "rows": 185
                                 }
                             },
                             {
@@ -4343,6 +4364,12 @@
                         "lines": [
                             {
                                 "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "source": [ "obj-11", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-6", 0 ],
                                     "source": [ "obj-2", 0 ]
                                 }
@@ -4374,6 +4401,13 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-10", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-9", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-11", 0 ],
                                     "order": 0,
                                     "source": [ "obj-9", 0 ]
                                 }
@@ -4381,21 +4415,13 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-4", 0 ],
-                                    "order": 1,
+                                    "order": 2,
                                     "source": [ "obj-9", 0 ]
                                 }
                             }
-                        ],
-                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ],
-                        "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
+                        ]
                     },
                     "patching_rect": [ 70.0, 375.0, 228.0, 24.0 ],
-                    "saved_object_attributes": {
-                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                        "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
-                    },
                     "text": "p \"compute neuron-count per label\""
                 }
             },
@@ -9927,7 +9953,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 258.0, 425.0, 199.0, 93.0 ],
-                                    "rows": 182
+                                    "rows": 185
                                 }
                             },
                             {
@@ -10950,7 +10976,7 @@
                                                                     "numoutlets": 4,
                                                                     "outlettype": [ "list", "", "", "" ],
                                                                     "patching_rect": [ 309.0, 226.0, 200.0, 200.0 ],
-                                                                    "rows": 182
+                                                                    "rows": 185
                                                                 }
                                                             },
                                                             {
@@ -13835,7 +13861,7 @@
                         "boxes": [
                             {
                                 "box": {
-                                    "cols": 182,
+                                    "cols": 185,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -15011,7 +15037,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 182,
+                                                    "cols": 185,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
