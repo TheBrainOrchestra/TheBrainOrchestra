@@ -18,8 +18,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 462.5, 280.0, 267.0, 22.0 ],
-                    "text": "buffer~ #1.src @samps 1024"
+                    "patching_rect": [ 463.0, 280.0, 266.0, 22.0 ],
+                    "text": "buffer~ #1.src @samps 48000"
                 }
             },
             {
@@ -30,7 +30,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
                     "patching_rect": [ 462.5, 252.0, 267.0, 22.0 ],
-                    "text": "buffer~ #1.win @samps 44100"
+                    "text": "buffer~ #1.win @samps 48000"
                 }
             },
             {
