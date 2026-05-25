@@ -64,7 +64,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "RemoveMapFile",
+                            "parameter_longname": "RemoveMapFile[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "RemoveMapFile",
@@ -330,7 +330,7 @@
                                             "parameter_enum": [ "off", "on" ],
                                             "parameter_initial": [ 1 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.text[6]",
+                                            "parameter_longname": "live.text[7]",
                                             "parameter_mmax": 1,
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "live.text",
@@ -416,7 +416,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 0 ],
                                             "parameter_invisible": 1,
-                                            "parameter_longname": "live.step[2]",
+                                            "parameter_longname": "live.step[3]",
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "live.step",
                                             "parameter_type": 3
@@ -666,7 +666,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 157.0, 183.0, 150.0, 20.0 ],
-                                    "text": "---.2.notes"
+                                    "text": "---.1.notes"
                                 }
                             },
                             {
@@ -5492,7 +5492,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "subcluster", "cluster", "none" ],
-                            "parameter_longname": "live.menu[91]",
+                            "parameter_longname": "live.menu[18]",
                             "parameter_mmax": 2,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -6419,7 +6419,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
                                                     "patching_rect": [ 439.0, 103.0, 69.0, 22.0 ],
-                                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 346, 1500, 807, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                                     "text": "thispatcher"
                                                 }
                                             },
@@ -11210,7 +11210,7 @@
                             "parameter_initial": [ 0, 127 ],
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
-                            "parameter_longname": "poly pressure range",
+                            "parameter_longname": "poly pressure range[1]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "polyPressureRange",
                             "parameter_type": 3
@@ -11243,7 +11243,7 @@
                             "parameter_initial": [ 0, 127 ],
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
-                            "parameter_longname": "velocity range",
+                            "parameter_longname": "velocity range[1]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "velocityRange",
                             "parameter_type": 3
@@ -18826,7 +18826,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.text[4]",
+                            "parameter_longname": "live.text[5]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[3]",
@@ -18863,7 +18863,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16", "MPE" ],
-                            "parameter_longname": "1-MIDI-OUT-Channel",
+                            "parameter_longname": "1-MIDI-OUT-Channel[1]",
                             "parameter_mmax": 16,
                             "parameter_modmode": 0,
                             "parameter_shortname": "1-MIDI-OUT-Channel",
@@ -18891,7 +18891,7 @@
                             "parameter_enum": [ "All Channels", "Ch. 1", "Ch. 2", "Ch. 3", "Ch. 4", "Ch. 5", "Ch. 6", "Ch. 7", "Ch. 8", "Ch. 9", "Ch. 10", "Ch. 11", "Ch. 12", "Ch. 13", "Ch. 14", "Ch. 15", "Ch. 16" ],
                             "parameter_initial": [ 0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "1-MIDI-IN-Channel",
+                            "parameter_longname": "1-MIDI-IN-Channel[1]",
                             "parameter_mmax": 16,
                             "parameter_modmode": 0,
                             "parameter_shortname": "1-MIDI-IN-Channel",
@@ -20291,7 +20291,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "SubClusterColormode",
+                            "parameter_longname": "SubClusterColormode[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "SubClusterColormode",
@@ -20826,7 +20826,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Empty menu", "Empty menu" ],
-                            "parameter_longname": "live.menu[15]",
+                            "parameter_longname": "live.menu[19]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "8439.clusterMenu",
@@ -23847,7 +23847,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
-                            "parameter_longname": "live.menu",
+                            "parameter_longname": "live.menu[6]",
                             "parameter_mmax": 5,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -23873,7 +23873,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
-                            "parameter_longname": "live.menu[17]",
+                            "parameter_longname": "live.menu[4]",
                             "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -24105,13 +24105,35 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-19",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 82.0, 137.0, 41.0, 22.0 ],
+                                    "text": "qlim 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 261.0, 34.5, 179.0, 22.0 ],
+                                    "text": "r ---neuronCountPerLabel.done"
+                                }
+                            },
+                            {
+                                "box": {
                                     "fontsize": 11.0,
                                     "id": "obj-41",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 82.0, 177.0, 45.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 261.0, 45.0, 21.0 ],
                                     "text": "append"
                                 }
                             },
@@ -24191,7 +24213,7 @@
                                             }
                                         ]
                                     },
-                                    "patching_rect": [ 82.0, 136.99345, 29.0, 22.0 ],
+                                    "patching_rect": [ 82.0, 221.0, 29.0, 22.0 ],
                                     "text": "p rs"
                                 }
                             },
@@ -24389,7 +24411,7 @@
                                             }
                                         ]
                                     },
-                                    "patching_rect": [ 117.33333333333334, 136.99345, 98.0, 22.0 ],
+                                    "patching_rect": [ 117.0, 221.0, 98.0, 22.0 ],
                                     "text": "p \"get cell count\""
                                 }
                             },
@@ -24406,13 +24428,13 @@
                                     "bgfillcolor_type": "color",
                                     "fontsize": 9.0,
                                     "id": "obj-18",
-                                    "items": [ "1 Diencephalon - [size: 0]", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 0]", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 0]", ",", "13 Diencephalon - Dorsal Thalamus [size: 0]", ",", "14 Diencephalon - Eminentia Thalami [size: 0]", ",", "15 Diencephalon - Habenula [size: 0]", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 0]", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 0]", ",", "36 Diencephalon - Isl1 cluster 1 [size: 0]", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 0]", ",", "40 Diencephalon - Medial vglut2 cluster [size: 0]", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 0]", ",", "43 Diencephalon - Olig2 Band [size: 0]", ",", "44 Diencephalon - Olig2 Band 2 [size: 0]", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 0]", ",", "58 Diencephalon - Posterior Tuberculum [size: 0]", ",", "60 Diencephalon - Preoptic Area [size: 0]", ",", "64 Diencephalon - Pretectal Gad1b Cluster [size: 0]", ",", "65 Diencephalon - Pretectal dopaminergic cluster [size: 0]", ",", "66 Diencephalon - Pretectum [size: 0]", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 0]", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 0]", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 0]", ",", "76 Diencephalon - Ventral Thalamus [size: 0]", ",", "78 Ganglia - Eyes [size: 0]", ",", "85 Ganglia - Lateral Line Neuromast OC1 [size: 0]", ",", "88 Ganglia - Lateral Line Neuromast SO3 [size: 0]", ",", "90 Ganglia - Posterior Lateral Line Ganglia [size: 0]", ",", "94 Mesencephalon - [size: 0]", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 0]", ",", "96 Mesencephalon - Medial Tectal Band [size: 0]", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 0]", ",", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 0]", ",", "99 Mesencephalon - Otpb Cluster [size: 0]", ",", "100 Mesencephalon - Oxtl Cluster Sparse [size: 0]", ",", "101 Mesencephalon - Ptf1a Cluster [size: 0]", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 0]", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 0]", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 0]", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 0]", ",", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 0]", ",", "107 Mesencephalon - Tectum Neuropil [size: 0]", ",", "108 Mesencephalon - Tegmentum [size: 0]", ",", "109 Mesencephalon - Torus Longitudinalis [size: 0]", ",", "110 Mesencephalon - Torus Semicircularis [size: 0]", ",", "111 Mesencephalon - Vglut2 cluster 1 [size: 0]", ",", "114 Rhombencephalon - [size: 0]", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 0]", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 0]", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 0]", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 0]", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 0]", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 0]", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 0]", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 0]", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 0]", ",", "125 Rhombencephalon - Area Postrema [size: 0]", ",", "126 Rhombencephalon - CaD [size: 0]", ",", "127 Rhombencephalon - CaV [size: 0]", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 0]", ",", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 0]", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 0]", ",", "131 Rhombencephalon - Cerebellum [size: 0]", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 0]", ",", "133 Rhombencephalon - Corpus Cerebelli [size: 0]", ",", "134 Rhombencephalon - Eminentia Granularis [size: 0]", ",", "135 Rhombencephalon - Gad1b Cluster 1 [size: 0]", ",", "137 Rhombencephalon - Gad1b Cluster 11 [size: 0]", ",", "139 Rhombencephalon - Gad1b Cluster 13 [size: 0]", ",", "140 Rhombencephalon - Gad1b Cluster 14 [size: 0]", ",", "141 Rhombencephalon - Gad1b Cluster 15 [size: 0]", ",", "142 Rhombencephalon - Gad1b Cluster 16 [size: 0]", ",", "143 Rhombencephalon - Gad1b Cluster 17 [size: 0]", ",", "144 Rhombencephalon - Gad1b Cluster 18 [size: 0]", ",", "145 Rhombencephalon - Gad1b Cluster 19 [size: 0]", ",", "146 Rhombencephalon - Gad1b Cluster 2 [size: 0]", ",", "147 Rhombencephalon - Gad1b Cluster 20 [size: 0]", ",", "149 Rhombencephalon - Gad1b Cluster 4 [size: 0]", ",", "150 Rhombencephalon - Gad1b Cluster 5 [size: 0]", ",", "151 Rhombencephalon - Gad1b Cluster 6 [size: 0]", ",", "152 Rhombencephalon - Gad1b Cluster 7 [size: 0]", ",", "155 Rhombencephalon - Gad1b Stripe 1 [size: 0]", ",", "156 Rhombencephalon - Gad1b Stripe 2 [size: 0]", ",", "157 Rhombencephalon - Gad1b Stripe 3 [size: 0]", ",", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 0]", ",", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 0]", ",", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 0]", ",", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 0]", ",", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 0]", ",", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 0]", ",", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 0]", ",", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 0]", ",", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 0]", ",", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 0]", ",", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 0]", ",", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 0]", ",", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 0]", ",", "175 Rhombencephalon - Inferior Olive [size: 0]", ",", "177 Rhombencephalon - Isl1 Cluster 1 [size: 0]", ",", "178 Rhombencephalon - Isl1 Cluster 2 [size: 0]", ",", "179 Rhombencephalon - Isl1 Cluster 3 [size: 0]", ",", "180 Rhombencephalon - Isl1 Stripe 1 [size: 0]", ",", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 0]", ",", "184 Rhombencephalon - Mauthner [size: 0]", ",", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 0]", ",", "187 Rhombencephalon - MiD2 [size: 0]", ",", "188 Rhombencephalon - MiD3 [size: 0]", ",", "195 Rhombencephalon - Neuropil Region 2 [size: 0]", ",", "196 Rhombencephalon - Neuropil Region 3 [size: 0]", ",", "197 Rhombencephalon - Neuropil Region 4 [size: 0]", ",", "198 Rhombencephalon - Neuropil Region 5 [size: 0]", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 0]", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 0]", ",", "202 Rhombencephalon - Olig2 Cluster [size: 0]", ",", "203 Rhombencephalon - Olig2 Stripe [size: 0]", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 0]", ",", "207 Rhombencephalon - Otpb Cluster 3 [size: 0]", ",", "208 Rhombencephalon - Otpb Cluster 4 [size: 0]", ",", "209 Rhombencephalon - Otpb Cluster 5 [size: 0]", ",", "210 Rhombencephalon - Otpb Cluster 6 [size: 0]", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 0]", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 0]", ",", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 0]", ",", "215 Rhombencephalon - Ptf1a Stripe [size: 0]", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 0]", ",", "217 Rhombencephalon - Raphe - Inferior [size: 0]", ",", "219 Rhombencephalon - Rhombomere 1 [size: 0]", ",", "220 Rhombencephalon - Rhombomere 2 [size: 0]", ",", "221 Rhombencephalon - Rhombomere 3 [size: 0]", ",", "222 Rhombencephalon - Rhombomere 4 [size: 0]", ",", "223 Rhombencephalon - Rhombomere 5 [size: 0]", ",", "224 Rhombencephalon - Rhombomere 6 [size: 0]", ",", "225 Rhombencephalon - Rhombomere 7 [size: 0]", ",", "233 Rhombencephalon - S1181t Cluster [size: 0]", ",", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 0]", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 0]", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 0]", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 0]", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 0]", ",", "241 Rhombencephalon - Valvula Cerebelli [size: 0]", ",", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 0]", ",", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 0]", ",", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 0]", ",", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 0]", ",", "247 Rhombencephalon - Vglut2 cluster 1 [size: 0]", ",", "248 Rhombencephalon - Vglut2 cluster 2 [size: 0]", ",", "249 Rhombencephalon - Vglut2 cluster 3 [size: 0]", ",", "250 Rhombencephalon - Vglut2 cluster 4 [size: 0]", ",", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 0]", ",", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 0]", ",", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 0]", ",", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 0]", ",", "256 Rhombencephalon - Vmat2 Stripe1 [size: 0]", ",", "257 Rhombencephalon - Vmat2 Stripe2 [size: 0]", ",", "258 Rhombencephalon - Vmat2 Stripe3 [size: 0]", ",", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 0]", ",", "260 Spinal Cord [size: 0]", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 0]", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 0]", ",", "263 Spinal Cord - Gad1b Stripe 1 [size: 0]", ",", "265 Spinal Cord - Glyt2 Stripe [size: 0]", ",", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 0]", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 0]", ",", "268 Spinal Cord - Neuropil Region [size: 0]", ",", "269 Spinal Cord - Olig2 Stripe [size: 0]", ",", "270 Spinal Cord - Vglut2 Stripe 1 [size: 0]", ",", "271 Spinal Cord - Vglut2 Stripe 2 [size: 0]", ",", "272 Spinal Cord - Vglut2 Stripe 3 [size: 0]", ",", "273 Spinal Cord - Vmat2 Stripe1 [size: 0]", ",", "275 Telencephalon - [size: 0]", ",", "277 Telencephalon - Isl1 cluster 1 [size: 0]", ",", "279 Telencephalon - Olfactory Bulb [size: 0]", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 0]", ",", "283 Telencephalon - Pallium [size: 0]", ",", "285 Telencephalon - S1181t Cluster [size: 0]", ",", "286 Telencephalon - Subpallial Gad1b cluster [size: 0]", ",", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 0]", ",", "288 Telencephalon - Subpallial Otpb strip [size: 0]", ",", "290 Telencephalon - Subpallial dopaminergic cluster [size: 0]", ",", "291 Telencephalon - Subpallium [size: 0]", ",", "293 Telencephalon - Vglut2 rind [size: 0]", ",", "294 Telencephalon - Vmat2 cluster [size: 0]" ],
+                                    "items": [ "1 Diencephalon - [size: 0]", ",", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 0]", ",", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 0]", ",", "13 Diencephalon - Dorsal Thalamus [size: 0]", ",", "14 Diencephalon - Eminentia Thalami [size: 0]", ",", "15 Diencephalon - Habenula [size: 0]", ",", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 0]", ",", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 0]", ",", "36 Diencephalon - Isl1 cluster 1 [size: 0]", ",", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 0]", ",", "40 Diencephalon - Medial vglut2 cluster [size: 0]", ",", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 0]", ",", "43 Diencephalon - Olig2 Band [size: 0]", ",", "44 Diencephalon - Olig2 Band 2 [size: 0]", ",", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 0]", ",", "58 Diencephalon - Posterior Tuberculum [size: 0]", ",", "60 Diencephalon - Preoptic Area [size: 0]", ",", "64 Diencephalon - Pretectal Gad1b Cluster [size: 0]", ",", "65 Diencephalon - Pretectal dopaminergic cluster [size: 0]", ",", "66 Diencephalon - Pretectum [size: 0]", ",", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 0]", ",", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 0]", ",", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 0]", ",", "76 Diencephalon - Ventral Thalamus [size: 0]", ",", "78 Ganglia - Eyes [size: 0]", ",", "85 Ganglia - Lateral Line Neuromast OC1 [size: 0]", ",", "88 Ganglia - Lateral Line Neuromast SO3 [size: 0]", ",", "90 Ganglia - Posterior Lateral Line Ganglia [size: 0]", ",", "94 Mesencephalon - [size: 0]", ",", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 0]", ",", "96 Mesencephalon - Medial Tectal Band [size: 0]", ",", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 0]", ",", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 0]", ",", "99 Mesencephalon - Otpb Cluster [size: 0]", ",", "100 Mesencephalon - Oxtl Cluster Sparse [size: 0]", ",", "101 Mesencephalon - Ptf1a Cluster [size: 0]", ",", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 0]", ",", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 0]", ",", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 0]", ",", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 0]", ",", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 0]", ",", "107 Mesencephalon - Tectum Neuropil [size: 0]", ",", "108 Mesencephalon - Tegmentum [size: 0]", ",", "109 Mesencephalon - Torus Longitudinalis [size: 0]", ",", "110 Mesencephalon - Torus Semicircularis [size: 0]", ",", "111 Mesencephalon - Vglut2 cluster 1 [size: 0]", ",", "114 Rhombencephalon - [size: 0]", ",", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 0]", ",", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 0]", ",", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 0]", ",", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 0]", ",", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 0]", ",", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 0]", ",", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 0]", ",", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 0]", ",", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 0]", ",", "125 Rhombencephalon - Area Postrema [size: 0]", ",", "126 Rhombencephalon - CaD [size: 0]", ",", "127 Rhombencephalon - CaV [size: 0]", ",", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 0]", ",", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 0]", ",", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 0]", ",", "131 Rhombencephalon - Cerebellum [size: 0]", ",", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 0]", ",", "133 Rhombencephalon - Corpus Cerebelli [size: 0]", ",", "134 Rhombencephalon - Eminentia Granularis [size: 0]", ",", "135 Rhombencephalon - Gad1b Cluster 1 [size: 0]", ",", "137 Rhombencephalon - Gad1b Cluster 11 [size: 0]", ",", "139 Rhombencephalon - Gad1b Cluster 13 [size: 0]", ",", "140 Rhombencephalon - Gad1b Cluster 14 [size: 0]", ",", "141 Rhombencephalon - Gad1b Cluster 15 [size: 0]", ",", "142 Rhombencephalon - Gad1b Cluster 16 [size: 0]", ",", "143 Rhombencephalon - Gad1b Cluster 17 [size: 0]", ",", "144 Rhombencephalon - Gad1b Cluster 18 [size: 0]", ",", "145 Rhombencephalon - Gad1b Cluster 19 [size: 0]", ",", "146 Rhombencephalon - Gad1b Cluster 2 [size: 0]", ",", "147 Rhombencephalon - Gad1b Cluster 20 [size: 0]", ",", "149 Rhombencephalon - Gad1b Cluster 4 [size: 0]", ",", "150 Rhombencephalon - Gad1b Cluster 5 [size: 0]", ",", "151 Rhombencephalon - Gad1b Cluster 6 [size: 0]", ",", "152 Rhombencephalon - Gad1b Cluster 7 [size: 0]", ",", "155 Rhombencephalon - Gad1b Stripe 1 [size: 0]", ",", "156 Rhombencephalon - Gad1b Stripe 2 [size: 0]", ",", "157 Rhombencephalon - Gad1b Stripe 3 [size: 0]", ",", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 0]", ",", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 0]", ",", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 0]", ",", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 0]", ",", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 0]", ",", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 0]", ",", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 0]", ",", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 0]", ",", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 0]", ",", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 0]", ",", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 0]", ",", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 0]", ",", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 0]", ",", "175 Rhombencephalon - Inferior Olive [size: 0]", ",", "177 Rhombencephalon - Isl1 Cluster 1 [size: 0]", ",", "178 Rhombencephalon - Isl1 Cluster 2 [size: 0]", ",", "179 Rhombencephalon - Isl1 Cluster 3 [size: 0]", ",", "180 Rhombencephalon - Isl1 Stripe 1 [size: 0]", ",", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 0]", ",", "184 Rhombencephalon - Mauthner [size: 0]", ",", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 0]", ",", "187 Rhombencephalon - MiD2 [size: 0]", ",", "188 Rhombencephalon - MiD3 [size: 0]", ",", "195 Rhombencephalon - Neuropil Region 2 [size: 0]", ",", "196 Rhombencephalon - Neuropil Region 3 [size: 0]", ",", "197 Rhombencephalon - Neuropil Region 4 [size: 0]", ",", "198 Rhombencephalon - Neuropil Region 5 [size: 0]", ",", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 0]", ",", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 0]", ",", "202 Rhombencephalon - Olig2 Cluster [size: 0]", ",", "203 Rhombencephalon - Olig2 Stripe [size: 0]", ",", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 0]", ",", "207 Rhombencephalon - Otpb Cluster 3 [size: 0]", ",", "208 Rhombencephalon - Otpb Cluster 4 [size: 0]", ",", "209 Rhombencephalon - Otpb Cluster 5 [size: 0]", ",", "210 Rhombencephalon - Otpb Cluster 6 [size: 0]", ",", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 0]", ",", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 0]", ",", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 0]", ",", "215 Rhombencephalon - Ptf1a Stripe [size: 0]", ",", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 0]", ",", "217 Rhombencephalon - Raphe - Inferior [size: 0]", ",", "219 Rhombencephalon - Rhombomere 1 [size: 0]", ",", "220 Rhombencephalon - Rhombomere 2 [size: 0]", ",", "221 Rhombencephalon - Rhombomere 3 [size: 0]", ",", "222 Rhombencephalon - Rhombomere 4 [size: 0]", ",", "223 Rhombencephalon - Rhombomere 5 [size: 0]", ",", "224 Rhombencephalon - Rhombomere 6 [size: 0]", ",", "225 Rhombencephalon - Rhombomere 7 [size: 0]", ",", "233 Rhombencephalon - S1181t Cluster [size: 0]", ",", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 0]", ",", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 0]", ",", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 0]", ",", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 0]", ",", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 0]", ",", "241 Rhombencephalon - Valvula Cerebelli [size: 0]", ",", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 0]", ",", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 0]", ",", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 0]", ",", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 0]", ",", "247 Rhombencephalon - Vglut2 cluster 1 [size: 0]", ",", "248 Rhombencephalon - Vglut2 cluster 2 [size: 0]", ",", "249 Rhombencephalon - Vglut2 cluster 3 [size: 0]", ",", "250 Rhombencephalon - Vglut2 cluster 4 [size: 0]", ",", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 0]", ",", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 0]", ",", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 0]", ",", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 0]", ",", "256 Rhombencephalon - Vmat2 Stripe1 [size: 0]", ",", "257 Rhombencephalon - Vmat2 Stripe2 [size: 0]", ",", "258 Rhombencephalon - Vmat2 Stripe3 [size: 0]", ",", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 0]", ",", "260 Spinal Cord [size: 0]", ",", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 0]", ",", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 0]", ",", "263 Spinal Cord - Gad1b Stripe 1 [size: 0]", ",", "265 Spinal Cord - Glyt2 Stripe [size: 0]", ",", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 0]", ",", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 0]", ",", "268 Spinal Cord - Neuropil Region [size: 0]", ",", "269 Spinal Cord - Olig2 Stripe [size: 0]", ",", "270 Spinal Cord - Vglut2 Stripe 1 [size: 0]", ",", "271 Spinal Cord - Vglut2 Stripe 2 [size: 0]", ",", "272 Spinal Cord - Vglut2 Stripe 3 [size: 0]", ",", "273 Spinal Cord - Vmat2 Stripe1 [size: 0]", ",", "275 Telencephalon - [size: 0]", ",", "277 Telencephalon - Isl1 cluster 1 [size: 0]", ",", "279 Telencephalon - Olfactory Bulb [size: 0]", ",", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 0]", ",", "283 Telencephalon - Pallium [size: 0]", ",", "285 Telencephalon - S1181t Cluster [size: 0]", ",", "286 Telencephalon - Subpallial Gad1b cluster [size: 0]", ",", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 0]", ",", "288 Telencephalon - Subpallial Otpb strip [size: 0]", ",", "290 Telencephalon - Subpallial dopaminergic cluster [size: 0]", ",", "291 Telencephalon - Subpallium [size: 0]", ",", "293 Telencephalon - Vglut2 rind [size: 0]", ",", "294 Telencephalon - Vmat2 cluster [size: 0]", ",", "300 Anterior Rhombencephalic Turning Region - Left [size: 0]", ",", "301 Anterior Rhombencephalic Turning Region - Right [size: 0]", ",", "302 Full Brain [size: 0]" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "int", "", "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 236.0, 441.0, 100.0, 19.0 ],
+                                    "patching_rect": [ 236.0, 525.0, 100.0, 19.0 ],
                                     "prefix_mode": 2,
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ],
                                     "varname": "umenu"
@@ -24426,7 +24448,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "bang", "" ],
-                                    "patching_rect": [ 13.0, 366.0, 32.0, 21.0 ],
+                                    "patching_rect": [ 13.0, 450.0, 32.0, 21.0 ],
                                     "text": "sel 1"
                                 }
                             },
@@ -24438,7 +24460,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 13.0, 333.0, 29.5, 21.0 ],
+                                    "patching_rect": [ 13.0, 417.0, 29.5, 21.0 ],
                                     "text": "> 0"
                                 }
                             },
@@ -24450,7 +24472,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 13.0, 303.0, 34.0, 21.0 ],
+                                    "patching_rect": [ 13.0, 387.0, 34.0, 21.0 ],
                                     "text": "zl len"
                                 }
                             },
@@ -24462,7 +24484,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ -24.0, 398.0, 83.0, 35.0 ],
+                                    "patching_rect": [ -24.0, 482.0, 83.0, 35.0 ],
                                     "text": "ignoreclick 0, active 1"
                                 }
                             },
@@ -24474,7 +24496,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "clear" ],
-                                    "patching_rect": [ 320.0, 383.0, 38.0, 21.0 ],
+                                    "patching_rect": [ 320.0, 467.0, 38.0, 21.0 ],
                                     "text": "t clear"
                                 }
                             },
@@ -24486,7 +24508,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 173.0, 383.0, 89.0, 21.0 ],
+                                    "patching_rect": [ 173.0, 467.0, 89.0, 21.0 ],
                                     "text": "prepend append"
                                 }
                             },
@@ -24497,7 +24519,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
-                                    "patching_rect": [ 262.0, 35.0, 58.0, 22.0 ],
+                                    "patching_rect": [ 425.0, 81.0, 58.0, 22.0 ],
                                     "text": "loadbang"
                                 }
                             },
@@ -24508,7 +24530,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 376.0, 294.0, 107.0, 22.0 ],
+                                    "patching_rect": [ 376.0, 378.0, 107.0, 22.0 ],
                                     "text": "r #0.clear4close"
                                 }
                             },
@@ -24520,7 +24542,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 360.0, 325.0, 332.0, 35.0 ],
+                                    "patching_rect": [ 360.0, 409.0, 332.0, 35.0 ],
                                     "text": "_parameter_range \"Empty menu\" \"Empty menu\", ignoreclick 1, active 0"
                                 }
                             },
@@ -24532,7 +24554,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 82.0, 296.0, 112.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 380.0, 112.0, 21.0 ],
                                     "text": "prepend \"No Cluster\""
                                 }
                             },
@@ -24544,7 +24566,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 82.0, 269.0, 81.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 353.0, 81.0, 21.0 ],
                                     "text": "zl 16000 group"
                                 }
                             },
@@ -24557,7 +24579,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 82.0, 326.0, 144.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 410.0, 144.0, 21.0 ],
                                     "text": "prepend _parameter_range"
                                 }
                             },
@@ -24569,7 +24591,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 82.0, 237.0, 53.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 321.0, 53.0, 21.0 ],
                                     "text": "tosymbol"
                                 }
                             },
@@ -24581,7 +24603,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 4,
                                     "outlettype": [ "", "", "", "" ],
-                                    "patching_rect": [ 82.0, 110.28675400291121, 125.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 195.0, 125.0, 21.0 ],
                                     "saved_object_attributes": {
                                         "embed": 0,
                                         "precision": 6
@@ -24608,7 +24630,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "dump", "bang" ],
-                                    "patching_rect": [ 82.0, 85.1433770014556, 178.0, 21.0 ],
+                                    "patching_rect": [ 82.0, 170.0, 178.0, 21.0 ],
                                     "text": "t dump b"
                                 }
                             },
@@ -24632,7 +24654,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 82.0, 403.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 82.0, 487.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
@@ -24641,6 +24663,12 @@
                                 "patchline": {
                                     "destination": [ "obj-11", 0 ],
                                     "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-19", 0 ],
+                                    "source": [ "obj-10", 0 ]
                                 }
                             },
                             {
@@ -24701,6 +24729,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-13", 0 ],
                                     "order": 0,
                                     "source": [ "obj-2", 0 ]
@@ -24708,7 +24742,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
+                                    "destination": [ "obj-19", 0 ],
                                     "order": 1,
                                     "source": [ "obj-2", 0 ]
                                 }
@@ -24759,7 +24793,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
+                                    "destination": [ "obj-19", 0 ],
                                     "source": [ "obj-5", 0 ]
                                 }
                             },
@@ -24783,7 +24817,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
+                                    "destination": [ "obj-19", 0 ],
                                     "source": [ "obj-64", 0 ]
                                 }
                             },
@@ -26598,7 +26632,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[16]",
+                            "parameter_longname": "Chord sustain[3]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -33947,7 +33981,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "Timeline[7]",
+                            "parameter_longname": "Timeline[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Timeline",
@@ -33981,7 +34015,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "3D view[7]",
+                            "parameter_longname": "3D view[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "3D view",
@@ -34032,7 +34066,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[1]",
+                            "parameter_longname": "Chord sustain[17]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -34115,7 +34149,7 @@
                             "parameter_enum": [ "off", "on" ],
                             "parameter_initial": [ 1 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.toggle[1]",
+                            "parameter_longname": "live.toggle[2]",
                             "parameter_mmax": 1.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.toggle",
@@ -34592,7 +34626,7 @@
                             "parameter_enum": [ "auto: divide", "auto: sort-activity", "k-means", "map-file" ],
                             "parameter_initial": [ 0.0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.menu[2]",
+                            "parameter_longname": "live.menu[5]",
                             "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
@@ -34622,7 +34656,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain",
+                            "parameter_longname": "Chord sustain[2]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -34653,7 +34687,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "live.text[2]",
+                            "parameter_longname": "live.text[8]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[3]",
@@ -34680,7 +34714,7 @@
                         "valueof": {
                             "parameter_initial": [ 1.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[33]",
+                            "parameter_longname": "live.numbox[3]",
                             "parameter_mmax": 256.0,
                             "parameter_mmin": 1.0,
                             "parameter_modmode": 4,
@@ -34703,7 +34737,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel 2",
+                    "text": "Channel 1",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -34729,7 +34763,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "Load clusters CSV file[5]",
+                            "parameter_longname": "Load clusters CSV file[4]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Load clusters",
@@ -34763,7 +34797,7 @@
                         },
                         "valueof": {
                             "parameter_invisible": 1,
-                            "parameter_longname": "ClustersNotes[8]",
+                            "parameter_longname": "ClustersNotes[1]",
                             "parameter_modmode": 0,
                             "parameter_shortname": "ClustersNotes[6]",
                             "parameter_type": 3
