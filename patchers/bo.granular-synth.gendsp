@@ -13,11 +13,20 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-23",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 341.0, 743.0, 150.0, 20.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-18",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 596.0, 484.0, 150.0, 20.0 ],
+                    "patching_rect": [ 596.0, 514.0, 150.0, 20.0 ],
                     "text": "buffer size = custom"
                 }
             },
@@ -27,7 +36,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 596.0, 321.0, 150.0, 20.0 ],
+                    "patching_rect": [ 596.0, 351.0, 150.0, 20.0 ],
                     "text": "buffer size = polyphony"
                 }
             },
@@ -49,7 +58,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 433.0, 74.0, 22.0 ],
+                    "patching_rect": [ 595.0, 463.0, 74.0, 22.0 ],
                     "text": "buffer gainR"
                 }
             },
@@ -60,7 +69,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 596.0, 405.0, 72.0, 22.0 ],
+                    "patching_rect": [ 596.0, 435.0, 72.0, 22.0 ],
                     "text": "buffer gainL"
                 }
             },
@@ -71,8 +80,8 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 595.0, 271.0, 171.0, 22.0 ],
-                    "text": "param grainSize @default 512"
+                    "patching_rect": [ 595.0, 271.0, 216.0, 22.0 ],
+                    "text": "param grainSize @default 512 @min 0"
                 }
             },
             {
@@ -82,8 +91,8 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 595.0, 220.0, 131.0, 22.0 ],
-                    "text": "param poly_voiceindex"
+                    "patching_rect": [ 595.0, 220.0, 176.0, 22.0 ],
+                    "text": "param poly_voiceindex @min 1"
                 }
             },
             {
@@ -93,8 +102,8 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 595.0, 194.0, 132.0, 22.0 ],
-                    "text": "param poly_voicecount"
+                    "patching_rect": [ 595.0, 194.0, 177.0, 22.0 ],
+                    "text": "param poly_voicecount @min 1"
                 }
             },
             {
@@ -104,7 +113,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 377.0, 75.0, 22.0 ],
+                    "patching_rect": [ 595.0, 407.0, 75.0, 22.0 ],
                     "text": "buffer speed"
                 }
             },
@@ -115,7 +124,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 596.0, 349.0, 113.0, 22.0 ],
+                    "patching_rect": [ 596.0, 379.0, 113.0, 22.0 ],
                     "text": "buffer active_grains"
                 }
             },
@@ -173,7 +182,7 @@
             },
             {
                 "box": {
-                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\nHistory Ka;\r\nHistory Kb;\r\nHistory K;\r\n\r\nstart = in1;\r\ngrain_count = dim(active_grains);\r\nglobalGain = poly_voicecount/grain_count; // divide by polyphony\r\nlen_samps = grainSize;\r\ngrain_slice = grain_count/poly_voicecount;\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\nKa = (1-shrinkfactor)/len_samps;\r\nKb = shrinkfactor/len_samps;\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\r\n        \n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n            \r\n        K = max(Ka+Kb*grainSpeed, 1);\r\n        \n\t\tfor (i=0; i<(len_samps-1); i+=1) {\t\t\t\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, K*i, \n\t\t\t\tinterp=\"linear\", boundmode=\"ignore\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\t\t\n\t}\n\t//buffer(active_grains).clear;\n}",
+                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\nHistory Ka;\r\nHistory Kb;\r\nHistory Kc;\r\n\r\nstart = in1;\r\ngrain_count = dim(active_grains);\r\nglobalGain = poly_voicecount/grain_count; // divide by polyphony\r\nlen_samps = grainSize;\r\ngrain_slice = grain_count/poly_voicecount;\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\nKa = (1-shrinkfactor)/grainSize;\r\nKb = shrinkfactor/grainSize;\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\r\n        \n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n            \r\n        Kc = Ka + Kb*grainSpeed/110.;\r\n        //K = maximum(Kc, 1.);\r\n        \r\n        //K = (shrinkfactor+1)/grainSize;\r\n        \n\t\tfor (i=0; i<(len_samps-1); i+=1) {\t\t\t\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, Kc*i, \n\t\t\t\tinterp=\"linear\", boundmode=\"ignore\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\t\t\n\t}\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -213,7 +222,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 510.0, 58.0, 22.0 ],
+                    "patching_rect": [ 595.0, 540.0, 58.0, 22.0 ],
                     "text": "buffer src"
                 }
             },
@@ -224,7 +233,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 537.0, 60.0, 22.0 ],
+                    "patching_rect": [ 595.0, 567.0, 60.0, 22.0 ],
                     "text": "buffer win"
                 }
             },
