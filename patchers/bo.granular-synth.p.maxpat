@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 259.0, 482.0, 919.0, 437.0 ],
+        "rect": [ 734.0, 445.0, 919.0, 437.0 ],
         "boxes": [
             {
                 "box": {
@@ -17,7 +17,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 429.0, 243.0, 42.0, 22.0 ],
+                    "patching_rect": [ 237.5, 251.0, 42.0, 22.0 ],
                     "saved_object_attributes": {
                         "attr_comment": "",
                         "c": ""
