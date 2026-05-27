@@ -9,16 +9,39 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 123.0, 163.0, 966.0, 766.0 ],
+        "rect": [ -6.0, 156.0, 966.0, 766.0 ],
         "bglocked": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-44",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 518.0, 441.0, 283.0, 22.0 ],
+                    "text": "/TBO/channelRack/channel.*/pressure-range 40 70"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-14",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 518.0, 418.0, 283.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "/TBO/channelRack/channel.1/velocity-range 80 100"
+                }
+            },
             {
                 "box": {
                     "id": "obj-41",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 523.0, 523.0, 79.0, 20.0 ],
+                    "patching_rect": [ 523.0, 553.0, 79.0, 20.0 ],
                     "text": "MIDI-settings"
                 }
             },
@@ -30,7 +53,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 466.0, 619.0, 50.0, 22.0 ]
+                    "patching_rect": [ 466.0, 649.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -40,8 +63,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 621.0, 337.0, 22.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 518.0, 651.0, 337.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/output_channel $1"
                 }
             },
@@ -52,8 +74,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 595.0, 379.0, 22.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 518.0, 625.0, 379.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/output_device \"No Output\""
                 }
             },
@@ -65,7 +86,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 466.0, 569.0, 50.0, 22.0 ]
+                    "patching_rect": [ 466.0, 599.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -75,7 +96,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 571.0, 329.0, 22.0 ],
+                    "patching_rect": [ 518.0, 601.0, 329.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/input_channel $1"
                 }
             },
@@ -86,8 +107,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 545.0, 376.0, 22.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 518.0, 575.0, 376.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/input_device \"No Input\""
                 }
             },
@@ -110,7 +130,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 270.0, 347.0, 186.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "/TBO/render/frameIndex/show $1"
                 }
             },
@@ -242,7 +261,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 487.0, 24.0, 24.0 ]
+                    "patching_rect": [ 489.0, 517.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -253,7 +272,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 461.0, 24.0, 24.0 ]
+                    "patching_rect": [ 489.0, 491.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -263,7 +282,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 488.0, 250.0, 22.0 ],
+                    "patching_rect": [ 518.0, 518.0, 250.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/monophonic $1"
                 }
             },
@@ -274,7 +293,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 462.0, 217.0, 22.0 ],
+                    "patching_rect": [ 518.0, 492.0, 217.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/legato $1"
                 }
             },
@@ -286,7 +305,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 433.0, 24.0, 24.0 ]
+                    "patching_rect": [ 489.0, 463.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -296,7 +315,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 435.0, 207.0, 22.0 ],
+                    "patching_rect": [ 518.0, 465.0, 207.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/hold $1"
                 }
             },
@@ -785,6 +804,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-45", 0 ],
+                    "source": [ "obj-14", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-13", 0 ],
                     "source": [ "obj-15", 0 ]
                 }
@@ -932,6 +957,12 @@
                 "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-43", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-45", 0 ],
+                    "source": [ "obj-44", 0 ]
                 }
             },
             {
