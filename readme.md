@@ -6,7 +6,7 @@ A software for the sonification of neural activity.
 ![alt text](screenshot.png "Screenshot of the Brain Orchestra.")
 
 ## Pre-requisite
-- install the latest version of Max (> 9.2)
+- install the [latest version of Max](https://cycling74.com/downloads) 
 - install the [MVC package for Max](https://github.com/MVC-for-Max/MVC)
 
 
