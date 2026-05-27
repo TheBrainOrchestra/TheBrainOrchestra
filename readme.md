@@ -5,6 +5,10 @@ A software for the sonification of neural activity.
 
 ![alt text](screenshot.png "Screenshot of the Brain Orchestra.")
 
+## Pre-requisite
+- install the latest version of Max (> 9.2)
+- install the [MVC package for Max](https://github.com/MVC-for-Max/MVC)
+
 
 ## How to install
 At the moment, the Brain Orchestra is provided as a Max package. You'll need to:
