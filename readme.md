@@ -1,13 +1,9 @@
 # The Brain Orchestra
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
 
 A software for the sonification of neural activity.
 
 ![alt text](screenshot.png "Screenshot of the Brain Orchestra.")
-
-## Pre-requisite
-- install the [latest version of Max](https://cycling74.com/downloads) 
-
 
 ## How to install
 The Brain Orchestra is provided as a Max package. You'll need to:
