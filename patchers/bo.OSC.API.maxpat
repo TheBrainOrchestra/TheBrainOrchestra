@@ -9,9 +9,65 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ -6.0, 156.0, 966.0, 766.0 ],
+        "rect": [ 199.0, 154.0, 1279.0, 763.0 ],
         "bglocked": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-57",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 292.0, 751.0, 243.0, 22.0 ],
+                    "text": "/TBO/dataviz/labels/selected 182 183"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-56",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 270.0, 625.0, 178.0, 22.0 ],
+                    "text": "/TBO/dataviz/labels/selected -2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-55",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 270.0, 594.0, 178.0, 22.0 ],
+                    "text": "/TBO/dataviz/labels/selected -1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-52",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 270.0, 570.0, 243.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "/TBO/dataviz/labels/selected 3 11 23 89 156"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-48",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 270.0, 532.0, 184.0, 22.0 ],
+                    "text": "/TBO/dataviz/labels/sort/position"
+                }
+            },
             {
                 "box": {
                     "id": "obj-44",
@@ -19,7 +75,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 441.0, 283.0, 22.0 ],
+                    "patching_rect": [ 578.0, 441.0, 283.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.*/pressure-range 40 70"
                 }
             },
@@ -30,8 +86,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 418.0, 283.0, 22.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 578.0, 418.0, 283.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/velocity-range 80 100"
                 }
             },
@@ -41,7 +96,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 523.0, 553.0, 79.0, 20.0 ],
+                    "patching_rect": [ 583.0, 553.0, 79.0, 20.0 ],
                     "text": "MIDI-settings"
                 }
             },
@@ -53,7 +108,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 466.0, 649.0, 50.0, 22.0 ]
+                    "patching_rect": [ 526.0, 649.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -63,7 +118,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 651.0, 337.0, 22.0 ],
+                    "patching_rect": [ 578.0, 651.0, 337.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/output_channel $1"
                 }
             },
@@ -74,7 +129,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 625.0, 379.0, 22.0 ],
+                    "patching_rect": [ 578.0, 625.0, 379.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/output_device \"No Output\""
                 }
             },
@@ -86,7 +141,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 466.0, 599.0, 50.0, 22.0 ]
+                    "patching_rect": [ 526.0, 599.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -96,7 +151,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 601.0, 329.0, 22.0 ],
+                    "patching_rect": [ 578.0, 601.0, 329.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/input_channel $1"
                 }
             },
@@ -107,7 +162,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 575.0, 376.0, 22.0 ],
+                    "patching_rect": [ 578.0, 575.0, 376.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/MIDIsettings/input_device \"No Input\""
                 }
             },
@@ -141,7 +196,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 228.5, 24.0, 24.0 ]
+                    "patching_rect": [ 549.0, 229.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -151,7 +206,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 228.5, 274.0, 22.0 ],
+                    "patching_rect": [ 578.0, 229.0, 274.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/timeline/show $1 $1"
                 }
             },
@@ -249,7 +304,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 531.0, 107.0, 97.0, 20.0 ],
+                    "patching_rect": [ 591.0, 107.0, 97.0, 20.0 ],
                     "text": "RACK"
                 }
             },
@@ -261,7 +316,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 517.0, 24.0, 24.0 ]
+                    "patching_rect": [ 549.0, 517.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -272,7 +327,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 491.0, 24.0, 24.0 ]
+                    "patching_rect": [ 549.0, 491.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -282,7 +337,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 518.0, 250.0, 22.0 ],
+                    "patching_rect": [ 578.0, 518.0, 250.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/monophonic $1"
                 }
             },
@@ -293,7 +348,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 492.0, 217.0, 22.0 ],
+                    "patching_rect": [ 578.0, 492.0, 217.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/legato $1"
                 }
             },
@@ -305,7 +360,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 463.0, 24.0, 24.0 ]
+                    "patching_rect": [ 549.0, 463.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -315,7 +370,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 465.0, 207.0, 22.0 ],
+                    "patching_rect": [ 578.0, 465.0, 207.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/hold $1"
                 }
             },
@@ -327,7 +382,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 463.0, 379.0, 50.0, 22.0 ]
+                    "patching_rect": [ 523.0, 379.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -337,7 +392,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 379.0, 273.0, 22.0 ],
+                    "patching_rect": [ 578.0, 379.0, 273.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/subcluster-count $1"
                 }
             },
@@ -348,7 +403,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 355.0, 369.0, 22.0 ],
+                    "patching_rect": [ 578.0, 355.0, 369.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/subcluster-method \"auto: sort-activity\""
                 }
             },
@@ -359,7 +414,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 330.0, 340.0, 22.0 ],
+                    "patching_rect": [ 578.0, 330.0, 340.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/subcluster-method \"auto: divide\""
                 }
             },
@@ -370,7 +425,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 306.0, 455.0, 22.0 ],
+                    "patching_rect": [ 578.0, 306.0, 455.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/clustername \"15 Diencephalon - Habenula [size: 149]\""
                 }
             },
@@ -381,7 +436,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 281.0, 302.0, 22.0 ],
+                    "patching_rect": [ 578.0, 281.0, 302.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/clustername \"No Cluster\""
                 }
             },
@@ -393,7 +448,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 728.0, 163.0, 168.0, 37.0 ],
+                    "patching_rect": [ 788.0, 163.0, 168.0, 37.0 ],
                     "text": "use wildcard for MVC-enabled parameters"
                 }
             },
@@ -405,7 +460,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 172.0, 24.0, 24.0 ]
+                    "patching_rect": [ 549.0, 172.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -415,7 +470,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 172.0, 208.0, 22.0 ],
+                    "patching_rect": [ 578.0, 172.0, 208.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.*/ON $1"
                 }
             },
@@ -426,7 +481,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 685.0, 19.0, 22.0 ],
+                    "patching_rect": [ 578.0, 685.0, 19.0, 22.0 ],
                     "text": "t l"
                 }
             },
@@ -438,7 +493,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 489.0, 140.0, 24.0, 24.0 ]
+                    "patching_rect": [ 549.0, 140.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -448,7 +503,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 518.0, 140.0, 208.0, 22.0 ],
+                    "patching_rect": [ 578.0, 140.0, 208.0, 22.0 ],
                     "text": "/TBO/channelRack/channel.1/ON $1"
                 }
             },
@@ -968,7 +1023,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-1", 0 ],
-                    "midpoints": [ 527.5, 728.1953125, 72.5, 728.1953125 ],
+                    "midpoints": [ 587.5, 728.1953125, 72.5, 728.1953125 ],
                     "source": [ "obj-45", 0 ]
                 }
             },
@@ -976,6 +1031,12 @@
                 "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-47", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-48", 0 ]
                 }
             },
             {
@@ -992,6 +1053,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-52", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-53", 0 ]
                 }
@@ -1000,6 +1067,24 @@
                 "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-54", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-55", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-56", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-57", 0 ]
                 }
             },
             {
