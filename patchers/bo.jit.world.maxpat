@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 139.0, 259.0, 1060.0, 689.0 ],
+        "rect": [ 232.0, 197.0, 1060.0, 689.0 ],
         "boxes": [
             {
                 "box": {
@@ -674,7 +674,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 553.0, 207.0, 150.0, 22.0 ],
+                    "patching_rect": [ 553.0, 173.0, 150.0, 22.0 ],
                     "text": "r ---BrainViz/render/update"
                 }
             },
@@ -1304,8 +1304,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_matrix", "bang", "" ],
-                    "patching_rect": [ 159.0, 371.0, 572.0, 22.0 ],
-                    "text": "jit.world ---BrainViz @fps 0.1 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0"
+                    "patching_rect": [ 159.0, 371.0, 569.0, 22.0 ],
+                    "text": "jit.world ---BrainViz @fps 30 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0"
                 }
             },
             {
