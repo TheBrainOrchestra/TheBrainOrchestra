@@ -170,8 +170,9 @@
                 "MIDI-notes": [ 43, 59, 62, 66 ],
                 "pressure-range": [ 21, 127 ],
                 "velocity-range": [ 1, 127 ],
-                "clustername": "300 Anterior Rhombencephalic Turning Region - Left [size: 30]",
+                "clustername": "300 Anterior Rhombencephalic Turning Region - Left [size: 212]",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 1,
                 "preset-name": "none",
@@ -185,8 +186,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.2": {
                 "subcluster-mapfile": "None",
@@ -194,8 +194,9 @@
                 "MIDI-notes": [ 38, 57, 61, 66 ],
                 "pressure-range": [ 13, 127 ],
                 "velocity-range": [ 3, 127 ],
-                "clustername": "301 Anterior Rhombencephalic Turning Region - Right [size: 30]",
+                "clustername": "301 Anterior Rhombencephalic Turning Region - Right [size: 177]",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 1,
                 "preset-name": "none",
@@ -209,8 +210,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.3": {
                 "subcluster-mapfile": "None",
@@ -218,8 +218,9 @@
                 "MIDI-notes": [ 85, 90, 91, 93 ],
                 "pressure-range": [ 52, 112 ],
                 "velocity-range": [ 0, 95 ],
-                "clustername": "300 Anterior Rhombencephalic Turning Region - Left [size: 30]",
+                "clustername": "300 Anterior Rhombencephalic Turning Region - Left [size: 212]",
                 "subcluster-method": "k-means",
+                "monophonic": 1,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -233,8 +234,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 1
+                }
             },
             "channel.4": {
                 "subcluster-mapfile": "None",
@@ -242,8 +242,9 @@
                 "MIDI-notes": [ 81, 83, 85, 86 ],
                 "pressure-range": [ 94, 126 ],
                 "velocity-range": [ 0, 95 ],
-                "clustername": "301 Anterior Rhombencephalic Turning Region - Right [size: 30]",
+                "clustername": "301 Anterior Rhombencephalic Turning Region - Right [size: 177]",
                 "subcluster-method": "k-means",
+                "monophonic": 1,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -257,8 +258,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 1
+                }
             },
             "channel.5": {
                 "subcluster-mapfile": "None",
@@ -268,6 +268,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -281,8 +282,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.6": {
                 "subcluster-mapfile": "None",
@@ -292,6 +292,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -305,8 +306,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.7": {
                 "subcluster-mapfile": "None",
@@ -316,6 +316,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -329,8 +330,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.8": {
                 "subcluster-mapfile": "None",
@@ -340,6 +340,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -353,8 +354,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.9": {
                 "subcluster-mapfile": "None",
@@ -364,6 +364,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -377,8 +378,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.10": {
                 "subcluster-mapfile": "None",
@@ -388,6 +388,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -401,8 +402,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.11": {
                 "subcluster-mapfile": "None",
@@ -412,6 +412,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -425,8 +426,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.12": {
                 "subcluster-mapfile": "None",
@@ -436,6 +436,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -449,8 +450,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.13": {
                 "subcluster-mapfile": "None",
@@ -460,6 +460,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -473,8 +474,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.14": {
                 "subcluster-mapfile": "None",
@@ -484,6 +484,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -497,8 +498,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.15": {
                 "subcluster-mapfile": "None",
@@ -508,6 +508,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -521,8 +522,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             },
             "channel.16": {
                 "subcluster-mapfile": "None",
@@ -532,6 +532,7 @@
                 "velocity-range": [ 48, 115 ],
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
@@ -545,8 +546,7 @@
                     "preset-name": "none",
                     "ON": 1,
                     "preset-description": "undefined"
-                },
-                "monophonic": 0
+                }
             }
         }
     },
@@ -911,6 +911,400 @@
                 "clustername": "No Cluster",
                 "subcluster-method": "auto: divide",
                 "polyphonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 15,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            }
+        }
+    },
+    "Spinal-Tap-v02": {
+        "preset-name": "Spinal-Tap-v02",
+        "ON": 1,
+        "preset-description": "undefined",
+        "channelRack": {
+            "preset-name": "none",
+            "ON": 1,
+            "preset-description": "undefined",
+            "channel.1": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 3,
+                "MIDI-notes": [ 48, 57, 71 ],
+                "pressure-range": [ 21, 127 ],
+                "velocity-range": [ 1, 127 ],
+                "clustername": "1 Diencephalon - [size: 1747]",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 1,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 2,
+                    "output_device": "from Max 1",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.2": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 5,
+                "MIDI-notes": [ 84, 88, 91, 95, 98 ],
+                "pressure-range": [ 13, 127 ],
+                "velocity-range": [ 3, 127 ],
+                "clustername": "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]",
+                "subcluster-method": "k-means",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 1,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 2,
+                    "output_device": "from Max 1",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.3": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 4,
+                "MIDI-notes": [ 41, 50, 53, 55 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 0, 95 ],
+                "clustername": "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]",
+                "subcluster-method": "auto: sort-activity",
+                "monophonic": 1,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 3,
+                    "output_device": "from Max 1",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.4": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 8,
+                "MIDI-notes": [ 72, 74, 76, 77, 79, 81, 83 ],
+                "pressure-range": [ 94, 126 ],
+                "velocity-range": [ 0, 95 ],
+                "clustername": "175 Rhombencephalon - Inferior Olive [size: 55]",
+                "subcluster-method": "auto: divide",
+                "monophonic": 1,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 3,
+                    "output_device": "from Max 1",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.5": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 2,
+                "MIDI-notes": [ 24, 31 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 4,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.6": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 5,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.7": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 6,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.8": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 7,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.9": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 8,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.10": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 9,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.11": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 10,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.12": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 11,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.13": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 12,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.14": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 13,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.15": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 0,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 14,
+                    "output_device": "from Max 2",
+                    "input_channel": 3,
+                    "input_device": "to Max 1",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.16": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": [ 54, 56, 58, 61, 63, 70 ],
+                "pressure-range": [ 52, 112 ],
+                "velocity-range": [ 48, 115 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
                 "hold": 0,
                 "legato": 0,
                 "preset-name": "none",
