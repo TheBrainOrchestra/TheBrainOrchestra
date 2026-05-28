@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 58.0, 316.0, 1378.0, 848.0 ],
+        "rect": [ 58.0, 100.0, 1378.0, 848.0 ],
         "boxes": [
             {
                 "box": {
@@ -20,7 +20,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1273.0, 558.0, 50.0, 62.0 ],
-                    "text": "jit_matrix u601027530"
+                    "text": "jit_matrix u156001254"
                 }
             },
             {
@@ -3857,7 +3857,7 @@
                     "fontsize": 14.0,
                     "id": "obj-181",
                     "maxclass": "newobj",
-                    "numinlets": 0,
+                    "numinlets": 1,
                     "numoutlets": 0,
                     "patcher": {
                         "fileversion": 1,
@@ -3869,8 +3869,20 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 248.0, 110.0, 1230.0, 838.0 ],
+                        "rect": [ 34.0, 110.0, 1230.0, 838.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-16",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 96.0, 16.0, 30.0, 30.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-28",
@@ -4742,7 +4754,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 726.0, 153.0, 115.0, 22.0 ],
+                                    "patching_rect": [ 726.0, 125.0, 115.0, 22.0 ],
                                     "text": "r ---camera.updated"
                                 }
                             },
@@ -5021,12 +5033,6 @@
                                 "patchline": {
                                     "destination": [ "obj-1", 0 ],
                                     "source": [ "obj-3", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-44", 0 ],
-                                    "source": [ "obj-31", 0 ]
                                 }
                             },
                             {
