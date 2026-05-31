@@ -13,6 +13,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-17",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 502.0, 336.0, 150.0, 33.0 ],
+                    "text": "qsdazw reserved for cam navigation"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-12",
                     "maxclass": "toggle",
                     "numinlets": 1,
@@ -485,7 +496,7 @@
                     "numoutlets": 5,
                     "outlettype": [ "bang", "bang", "bang", "bang", "" ],
                     "patching_rect": [ 45.0, 311.0, 371.0, 22.0 ],
-                    "text": "sel 115 83 32 27"
+                    "text": "sel 108 76 32 27"
                 }
             }
         ],
