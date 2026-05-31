@@ -41,7 +41,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 549.0, 264.0, 659.0, 538.0 ],
+                        "rect": [ 549.0, 263.0, 659.0, 538.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -539,17 +539,69 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 589.0, 278.0, 889.0, 523.0 ],
+                        "rect": [ 264.0, 410.0, 889.0, 447.0 ],
+                        "toolbars_unpinned_last_save": 2,
                         "boxes": [
                             {
                                 "box": {
-                                    "id": "obj-9",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
+                                    "id": "obj-13",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 119.0, 318.0, 77.0, 22.0 ],
-                                    "text": "setall 1 1 1 1"
+                                    "patching_rect": [ 76.5, 349.0, 114.0, 22.0 ],
+                                    "text": "prepend setall 1 1 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-12",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "float" ],
+                                    "patching_rect": [ 54.0, 319.0, 41.5, 22.0 ],
+                                    "text": "t b f"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 54.0, 260.0, 161.0, 22.0 ],
+                                    "text": "r /TBO/render/neurons/alpha"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "colwidth",
+                                    "attr_display": 1,
+                                    "fontface": 0,
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-4",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 360.0, 363.5, 215.0, 23.0 ],
+                                    "text_width": 164.0
+                                }
+                            },
+                            {
+                                "box": {
+                                    "format": 6,
+                                    "id": "obj-8",
+                                    "maxclass": "flonum",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 54.0, 284.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -560,7 +612,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 54.0, 312.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 17.0, 318.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -570,8 +622,8 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 54.0, 346.0, 162.0, 22.0 ],
-                                    "text": "jit.matrix 1 float32 23743 1"
+                                    "patching_rect": [ 54.0, 377.0, 123.0, 22.0 ],
+                                    "text": "jit.matrix 4 float32 1 1"
                                 }
                             },
                             {
@@ -592,7 +644,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 58.0, 180.0, 179.0, 22.0 ],
+                                    "patching_rect": [ 58.0, 120.0, 179.0, 22.0 ],
                                     "text": "r ---neurons3Dcoords.load.done"
                                 }
                             },
@@ -697,17 +749,9 @@
                                                     "source": [ "obj-9", 0 ]
                                                 }
                                             }
-                                        ],
-                                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ],
-                                        "bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
+                                        ]
                                     },
-                                    "patching_rect": [ 58.0, 253.0, 63.0, 22.0 ],
-                                    "saved_object_attributes": {
-                                        "editing_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                                        "locked_bgcolor": [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
-                                        "patchlinecolor": [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
-                                    },
+                                    "patching_rect": [ 58.0, 193.0, 63.0, 22.0 ],
                                     "text": "p show-all"
                                 }
                             },
@@ -719,7 +763,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 58.0, 213.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 58.0, 153.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -1776,6 +1820,7 @@
                             {
                                 "box": {
                                     "cols": 23743,
+                                    "colwidth": 121,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -1813,6 +1858,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
                                     "patching_rect": [ 399.0, 320.0, 465.0, 20.0 ],
+                                    "pwinoutlettype": 0,
                                     "stereo": 0,
                                     "sync": 1
                                 }
@@ -1825,11 +1871,17 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 260.0, 390.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 260.0, 456.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
                         "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-8", 0 ],
+                                    "source": [ "obj-10", 0 ]
+                                }
+                            },
                             {
                                 "patchline": {
                                     "destination": [ "obj-42", 1 ],
@@ -1863,6 +1915,24 @@
                                     "destination": [ "obj-38", 0 ],
                                     "order": 2,
                                     "source": [ "obj-115", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-13", 0 ],
+                                    "source": [ "obj-12", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-12", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-13", 0 ]
                                 }
                             },
                             {
@@ -1901,6 +1971,12 @@
                                     "destination": [ "obj-213", 0 ],
                                     "order": 1,
                                     "source": [ "obj-38", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-195", 0 ],
+                                    "source": [ "obj-4", 0 ]
                                 }
                             },
                             {
@@ -1973,8 +2049,8 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-2", 0 ],
-                                    "source": [ "obj-9", 0 ]
+                                    "destination": [ "obj-12", 0 ],
+                                    "source": [ "obj-8", 0 ]
                                 }
                             }
                         ]
@@ -2434,8 +2510,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 199.0, 659.0, 566.0, 38.0 ],
-                    "text": "jit.gl.gridshape ---3DcamNode @shape sphere @dim 10 10 @depth_enable 1 @blend_enable 1 @blend_mode 6 7 @color 1 1 1 0.8 @lighting_enable 1 @smooth_shading 1"
+                    "patching_rect": [ 199.0, 659.0, 609.0, 38.0 ],
+                    "text": "jit.gl.gridshape ---3DcamNode @shape sphere @dim 16 16 @depth_enable 1 @blend_enable 1 @blend_mode 6 7 @color 1 1 1 0.8 @lighting_enable 1 @smooth_shading 1"
                 }
             },
             {
