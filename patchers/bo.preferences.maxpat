@@ -23,7 +23,7 @@
                     "maxclass": "live.line",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 25.0, 249.0, 378.0, 10.0 ],
+                    "patching_rect": [ 72.0, 341.0, 378.0, 10.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 250.0, 456.0, 5.0 ]
                 }
