@@ -1771,7 +1771,6 @@
                             {
                                 "box": {
                                     "id": "obj-84",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -4876,7 +4875,6 @@
                             {
                                 "box": {
                                     "id": "obj-70",
-                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -6261,7 +6259,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
                                                     "patching_rect": [ 439.0, 103.0, 69.0, 22.0 ],
-                                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 65, -1050, 1565, -617, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                                     "text": "thispatcher"
                                                 }
                                             },
@@ -15421,7 +15419,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 23743,
+                                                                    "cols": 10000,
                                                                     "colwidth": 18,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
@@ -25147,7 +25145,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[3]",
+                            "parameter_longname": "Chord sustain[16]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -26348,7 +26346,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 245.0, 130.0, 125.0, 22.0 ],
-                                    "text": "gate 2 1"
+                                    "text": "gate 2 2"
                                 }
                             },
                             {
@@ -29529,7 +29527,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-154",
-                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -29563,7 +29560,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-80",
-                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -30569,7 +30565,6 @@
                             {
                                 "box": {
                                     "id": "obj-82",
-                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -32549,7 +32544,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[17]",
+                            "parameter_longname": "Chord sustain[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -33140,7 +33135,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[2]",
+                            "parameter_longname": "hold",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -33221,7 +33216,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel 1",
+                    "text": "Channel #2",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -33920,6 +33915,42 @@
                     "source": [ "obj-99", 0 ]
                 }
             }
-        ]
+        ],
+        "parameters": {
+            "obj-10": [ "Load clusters CSV file[4]", "Load clusters", 0 ],
+            "obj-12": [ "live.menu[5]", "live.menu", 0 ],
+            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
+            "obj-130::obj-25": [ "live.step[3]", "live.step", 0 ],
+            "obj-130::obj-56": [ "live.text[7]", "live.text", 0 ],
+            "obj-15": [ "3D view[1]", "3D view", 0 ],
+            "obj-20": [ "hold", "hold", 0 ],
+            "obj-22": [ "Timeline[1]", "Timeline", 0 ],
+            "obj-3": [ "live.menu[19]", "8439.clusterMenu", 0 ],
+            "obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
+            "obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
+            "obj-57": [ "RemoveMapFile[1]", "RemoveMapFile", 0 ],
+            "obj-61": [ "velocity range[1]", "velocityRange", 0 ],
+            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
+            "obj-78": [ "1-MIDI-IN-Channel[1]", "1-MIDI-IN-Channel", 0 ],
+            "obj-79": [ "poly pressure range[1]", "polyPressureRange", 0 ],
+            "obj-8": [ "live.numbox[3]", "live.numbox", 0 ],
+            "obj-80": [ "live.text[5]", "live.text[3]", 0 ],
+            "obj-82": [ "1-MIDI-OUT-Channel[1]", "1-MIDI-OUT-Channel", 0 ],
+            "obj-89": [ "live.text[8]", "live.text[3]", 0 ],
+            "obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
+            "obj-91": [ "live.menu[4]", "live.menu", 0 ],
+            "obj-97": [ "live.menu[18]", "live.menu", 0 ],
+            "obj-98": [ "live.menu[6]", "live.menu", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
+            "inherited_shortname": 1
+        },
+        "autosave": 0
     }
 }
