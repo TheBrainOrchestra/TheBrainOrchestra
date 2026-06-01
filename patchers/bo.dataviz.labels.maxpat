@@ -4164,8 +4164,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 150.0, -851.0, 1607.0, 768.0 ],
-                        "visible": 1,
+                        "rect": [ 34.0, 172.0, 1444.0, 768.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -4181,7 +4180,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 185,
+                                    "cols": 1,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
