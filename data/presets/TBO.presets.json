@@ -548,6 +548,15 @@
                     "preset-description": "undefined"
                 }
             }
+        },
+        "transport": {
+            "loop_start": 0,
+            "loop_ON": 0,
+            "preset-name": "none",
+            "ON": 1,
+            "preset-description": "undefined",
+            "loop_end": 6000,
+            "tempo": 120
         }
     },
     "Empty": {
@@ -1320,6 +1329,409 @@
                     "preset-description": "undefined"
                 }
             }
+        }
+    },
+    "Spinal waves": {
+        "preset-name": "Spinal waves",
+        "ON": 1,
+        "preset-description": "undefined",
+        "channelRack": {
+            "preset-name": "none",
+            "ON": 1,
+            "preset-description": "undefined",
+            "channel.1": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 4,
+                "MIDI-notes": [ 52, 55, 59 ],
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 45, 127 ],
+                "clustername": "260 Spinal Cord [size: 338]",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 7,
+                    "output_device": "from Max 1",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.2": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.3": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.4": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.5": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.6": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.7": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.8": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.9": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.10": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.11": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.12": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.13": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.14": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.15": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            },
+            "channel.16": {
+                "subcluster-mapfile": "None",
+                "subcluster-count": 1,
+                "MIDI-notes": -1,
+                "pressure-range": [ 0, 127 ],
+                "velocity-range": [ 0, 127 ],
+                "clustername": "No Cluster",
+                "subcluster-method": "auto: divide",
+                "monophonic": 0,
+                "hold": 0,
+                "legato": 0,
+                "preset-name": "none",
+                "ON": 1,
+                "preset-description": "undefined",
+                "MIDIsettings": {
+                    "output_channel": 1,
+                    "output_device": "No Output",
+                    "input_channel": 0,
+                    "input_device": "No Input",
+                    "preset-name": "none",
+                    "ON": 1,
+                    "preset-description": "undefined"
+                }
+            }
+        },
+        "transport": {
+            "loop_start": 405,
+            "loop_ON": 1,
+            "preset-name": "none",
+            "ON": 1,
+            "preset-description": "undefined",
+            "loop_end": 421,
+            "tempo": 200
         }
     }
 }
