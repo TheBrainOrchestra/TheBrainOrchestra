@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 62.0, 94.0, 507.0, 421.0 ],
+        "rect": [ 62.0, 94.0, 497.0, 481.0 ],
         "openinpresentation": 1,
         "lefttoolbarpinned": 2,
         "toptoolbarpinned": 2,
@@ -17,6 +17,139 @@
         "bottomtoolbarpinned": 2,
         "toolbars_unpinned_last_save": 15,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 67.5, 937.0, 72.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 80.5, 432.0, 101.0, 20.0 ],
+                    "text": "Link latency"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-23",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 66.0, 998.0, 206.0, 22.0 ],
+                    "text": "prepend store /TBO/transport/latency"
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-25",
+                    "maxclass": "flonum",
+                    "minimum": 0.0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 66.0, 965.0, 50.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 25.5, 431.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-27",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 126.0, 965.0, 195.0, 22.0 ],
+                    "text": "sw /TBO/transport/latency"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-13",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 69.5, 897.0, 254.0, 22.0 ],
+                    "text": "prepend store /TBO/transport/link_autolatency"
+                }
+            },
+            {
+                "box": {
+                    "fontface": 1,
+                    "id": "obj-17",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 67.5, 811.0, 147.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 25.5, 379.0, 147.0, 20.0 ],
+                    "text": "TRANSPORT SETTINGS"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-18",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 67.5, 836.0, 102.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 80.5, 404.0, 102.0, 20.0 ],
+                    "text": "Link auto_latency"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "live.toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 69.5, 864.0, 29.0, 26.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 46.5, 401.0, 29.0, 26.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_enum": [ "off", "on" ],
+                            "parameter_longname": "live.toggle[23]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.toggle[23]",
+                            "parameter_type": 2
+                        }
+                    },
+                    "varname": "live.toggle"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 105.625, 866.0, 195.0, 22.0 ],
+                    "text": "sw /TBO/transport/link_autolatency"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "live.line",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 72.0, 780.0, 378.0, 10.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 25.5, 362.0, 456.0, 5.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-74",
@@ -1257,7 +1390,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "writeagain", "" ],
-                    "patching_rect": [ 66.0, 766.0, 83.0, 22.0 ],
+                    "patching_rect": [ 66.0, 1060.0, 83.0, 22.0 ],
                     "text": "t writeagain l"
                 }
             },
@@ -1281,7 +1414,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 66.0, 798.0, 135.0, 22.0 ],
+                    "patching_rect": [ 66.0, 1092.0, 135.0, 22.0 ],
                     "saved_object_attributes": {
                         "embed": 0,
                         "precision": 6
@@ -1380,8 +1513,48 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "order": 1,
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-21", 0 ],
+                    "order": 0,
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-21", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-16", 0 ],
+                    "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-34", 0 ],
                     "source": [ "obj-24", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-23", 0 ],
+                    "order": 1,
+                    "source": [ "obj-25", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-27", 0 ],
+                    "order": 0,
+                    "source": [ "obj-25", 0 ]
                 }
             },
             {
@@ -1394,6 +1567,12 @@
                 "patchline": {
                     "destination": [ "obj-61", 1 ],
                     "source": [ "obj-26", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-25", 0 ],
+                    "source": [ "obj-27", 0 ]
                 }
             },
             {
