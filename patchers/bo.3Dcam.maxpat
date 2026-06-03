@@ -9,8 +9,30 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 396.0, 115.0, 1188.0, 690.0 ],
+        "rect": [ 211.0, 137.0, 1188.0, 690.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-45",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 708.0, 361.0, 85.0, 22.0 ],
+                    "text": "turn 0 10 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-37",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 646.0, 199.0, 24.0, 24.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-79",
@@ -900,7 +922,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 381.0, 371.0, 57.0, 22.0 ],
+                    "patching_rect": [ 366.0, 361.0, 57.0, 22.0 ],
                     "text": "p options"
                 }
             },
@@ -3497,23 +3519,12 @@
             },
             {
                 "box": {
-                    "id": "obj-53",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 876.0, 278.0, 66.0, 22.0 ],
-                    "text": "rotateto $1"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-60",
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 945.0, 278.0, 85.0, 22.0 ],
+                    "patching_rect": [ 881.0, 273.0, 85.0, 22.0 ],
                     "text": "anim_reset"
                 }
             }
@@ -3661,7 +3672,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-49", 0 ],
+                    "destination": [ "obj-37", 0 ],
                     "order": 1,
                     "source": [ "obj-32", 0 ]
                 }
@@ -3694,6 +3705,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-49", 0 ],
+                    "source": [ "obj-37", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-54", 0 ],
+                    "source": [ "obj-45", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-54", 0 ],
                     "source": [ "obj-49", 0 ]
                 }
@@ -3716,12 +3739,6 @@
                 "patchline": {
                     "destination": [ "obj-59", 0 ],
                     "source": [ "obj-52", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-54", 0 ],
-                    "source": [ "obj-53", 0 ]
                 }
             },
             {
