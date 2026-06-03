@@ -13,6 +13,28 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-27",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 325.0, 87.0, 150.0, 20.0 ],
+                    "text": "see bubbletime"
+                }
+            },
+            {
+                "box": {
+                    "attr": "transparency",
+                    "id": "obj-22",
+                    "maxclass": "attrui",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 319.0, 111.0, 150.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
                     "fontsize": 24.0,
                     "id": "obj-83",
                     "maxclass": "comment",
@@ -1467,6 +1489,12 @@
                 "patchline": {
                     "destination": [ "obj-90", 0 ],
                     "source": [ "obj-21", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-90", 0 ],
+                    "source": [ "obj-22", 0 ]
                 }
             },
             {
