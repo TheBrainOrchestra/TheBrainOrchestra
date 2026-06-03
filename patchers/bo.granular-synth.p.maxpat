@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 734.0, 445.0, 919.0, 437.0 ],
+        "rect": [ 559.0, 445.0, 919.0, 437.0 ],
         "boxes": [
             {
                 "box": {
@@ -18,23 +18,18 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 237.5, 251.0, 42.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "out~ 2"
                 }
             },
             {
                 "box": {
                     "id": "obj-7",
-                    "linecount": 2,
                     "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 284.0, 57.0, 134.0, 35.0 ],
-                    "text": "routepass grainSize shrinkfactor"
+                    "numinlets": 4,
+                    "numoutlets": 4,
+                    "outlettype": [ "", "", "", "" ],
+                    "patching_rect": [ 284.0, 57.0, 206.0, 22.0 ],
+                    "text": "routepass grainSize shrinkfactor jitter"
                 }
             },
             {
@@ -45,6 +40,10 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 284.0, 30.0, 28.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "in 1"
                 }
             },
@@ -132,6 +131,10 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 46.0, 243.0, 42.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "out~ 1"
                 }
             },
@@ -143,7 +146,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 46.0, 182.0, 402.0, 49.0 ],
+                    "patching_rect": [ 46.0, 182.0, 403.0, 49.0 ],
                     "text": "gen~ @gen bo.granular-synth.gendsp @active_grains #1.active_grains @src #1.src @speed #1.speed @gainL #1.gainL @gainR #1.gainR @win #1.win"
                 }
             }
@@ -201,6 +204,12 @@
                 "patchline": {
                     "destination": [ "obj-7", 0 ],
                     "source": [ "obj-6", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-7", 2 ]
                 }
             },
             {
