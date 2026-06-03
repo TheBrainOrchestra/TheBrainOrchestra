@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 179.0, 296.0, 1172.0, 578.0 ],
+        "rect": [ 179.0, 296.0, 696.0, 578.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -269,10 +269,10 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.numbox[19]",
-                            "parameter_mmax": 255.0,
+                            "parameter_mmax": 6000.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.numbox[19]",
-                            "parameter_type": 1,
+                            "parameter_type": 0,
                             "parameter_unitstyle": 0
                         }
                     },
