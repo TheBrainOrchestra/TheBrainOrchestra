@@ -4180,7 +4180,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 1,
+                                    "cols": 185,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -7937,7 +7937,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 784.0, 420.0, 423.0, 35.0 ],
-                                    "text": "jit.gl.mesh ---3DcamNode @draw_mode points @point_size 1 @color 1 0 0 1 @depth_enable 0 @layer 1 @blend_enable 1"
+                                    "text": "jit.gl.mesh ---3DcamNode @draw_mode points @point_size 1 @color 1 0 0 1 @depth_enable 0 @layer 1 @blend_enable 1 @enable 0"
                                 }
                             },
                             {
