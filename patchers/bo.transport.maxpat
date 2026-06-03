@@ -9,9 +9,55 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 259.0, 100.0, 990.0, 848.0 ],
+        "rect": [ 179.0, 296.0, 1172.0, 578.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "" ],
+                    "patching_rect": [ 617.0, 512.0, 365.0, 22.0 ],
+                    "text": "mvc.parameter #0.transport loop_start @type integer @default 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1113.0, 66.0, 50.0, 22.0 ],
+                    "text": "GUI"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-18",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "" ],
+                    "patching_rect": [ 676.0, 282.0, 346.0, 22.0 ],
+                    "text": "mvc.parameter #0.transport loop_ON @type bool @default 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-15",
+                    "linecount": 2,
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 906.0, 98.0, 229.0, 35.0 ],
+                    "text": "mvc.model #0.transport TBO transport @type TBO_transport",
+                    "varname": "mvc.model"
+                }
+            },
             {
                 "box": {
                     "id": "obj-51",
@@ -97,7 +143,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 725.0, 401.0, 49.0, 22.0 ],
+                    "patching_rect": [ 616.9999999403954, 415.0, 49.0, 22.0 ],
                     "text": "p range"
                 }
             },
@@ -105,22 +151,11 @@
                 "box": {
                     "id": "obj-44",
                     "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 683.4000009298325, 485.8000018000603, 155.0, 22.0 ],
-                    "text": "sw /TBO/transport/loop/end"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-46",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 616.9999999403954, 509.80000215768814, 158.0, 22.0 ],
-                    "text": "sw /TBO/transport/loop/start"
+                    "numinlets": 2,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "" ],
+                    "patching_rect": [ 683.4000009298325, 485.8000018000603, 375.0, 22.0 ],
+                    "text": "mvc.parameter #0.transport loop_end @type integer @default 100"
                 }
             },
             {
@@ -185,7 +220,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "jit_matrix" ],
-                    "patching_rect": [ 621.0, 400.2000005245209, 49.600000739097595, 33.600000500679016 ],
+                    "patching_rect": [ 676.0, 327.1999997496605, 49.600000739097595, 33.600000500679016 ],
                     "pic": "loop.svg",
                     "presentation": 1,
                     "presentation_rect": [ 595.0, 7.0, 26.875, 15.125 ]
@@ -200,7 +235,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 621.0, 393.0000004172325, 48.800000727176666, 48.00000071525574 ],
+                    "patching_rect": [ 676.0, 316.59999960660934, 48.800000727176666, 48.00000071525574 ],
                     "presentation": 1,
                     "presentation_rect": [ 591.8854296207428, 4.125298276543617, 33.054392606019974, 20.0 ],
                     "saved_attribute_attributes": {
@@ -217,17 +252,6 @@
                         }
                     },
                     "varname": "live.toggle"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-34",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 621.0, 365.0, 153.0, 22.0 ],
-                    "text": "sw /TBO/transport/loop/ON"
                 }
             },
             {
@@ -371,7 +395,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 449.0, 118.0, 100.0, 20.0 ],
+                    "patching_rect": [ 476.0, 118.5, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 43.40425622463226, 5.1063830852508545, 40.0, 18.0 ],
                     "text": "Tap",
@@ -386,7 +410,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 449.0, 144.0, 75.0, 22.0 ],
+                    "patching_rect": [ 476.0, 144.5, 75.0, 22.0 ],
                     "text": "bo.taptempo"
                 }
             },
@@ -4272,12 +4296,13 @@
             {
                 "box": {
                     "id": "obj-6",
+                    "linecount": 3,
                     "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 297.0, 144.5, 142.0, 22.0 ],
-                    "text": "sw /TBO/transport/tempo"
+                    "numinlets": 2,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "" ],
+                    "patching_rect": [ 293.0, 194.5, 167.0, 49.0 ],
+                    "text": "mvc.parameter #0.transport tempo @type integer @default 120"
                 }
             },
             {
@@ -6240,8 +6265,26 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-39", 0 ],
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-8", 0 ],
                     "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 1 ],
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-43", 0 ],
+                    "source": [ "obj-21", 0 ]
                 }
             },
             {
@@ -6345,19 +6388,13 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-39", 0 ],
-                    "source": [ "obj-34", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-8", 0 ],
                     "source": [ "obj-37", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-34", 0 ],
+                    "destination": [ "obj-18", 0 ],
                     "source": [ "obj-39", 0 ]
                 }
             },
@@ -6375,7 +6412,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-46", 0 ],
+                    "destination": [ "obj-21", 0 ],
                     "source": [ "obj-43", 0 ]
                 }
             },
@@ -6389,12 +6426,6 @@
                 "patchline": {
                     "destination": [ "obj-47", 0 ],
                     "source": [ "obj-45", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-43", 0 ],
-                    "source": [ "obj-46", 0 ]
                 }
             },
             {
