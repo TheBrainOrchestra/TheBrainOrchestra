@@ -281,7 +281,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 32.0, 179.5, 95.0, 23.0 ],
+                    "patching_rect": [ 32.0, 186.0, 95.0, 23.0 ],
                     "text": "threadcount $1"
                 }
             },
@@ -313,13 +313,12 @@
             {
                 "box": {
                     "id": "obj-5",
-                    "linecount": 2,
                     "maxclass": "newobj",
-                    "numinlets": 5,
-                    "numoutlets": 5,
-                    "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 243.0, 73.0, 197.66666666666669, 35.0 ],
-                    "text": "routepass grainSize shrinkfactor mute polyphony"
+                    "numinlets": 6,
+                    "numoutlets": 6,
+                    "outlettype": [ "", "", "", "", "", "" ],
+                    "patching_rect": [ 243.0, 64.0, 294.0, 22.0 ],
+                    "text": "routepass grainSize shrinkfactor jitter mute polyphony"
                 }
             },
             {
@@ -569,6 +568,12 @@
             {
                 "patchline": {
                     "destination": [ "obj-115", 0 ],
+                    "source": [ "obj-5", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-115", 0 ],
                     "source": [ "obj-5", 1 ]
                 }
             },
@@ -581,13 +586,13 @@
             {
                 "patchline": {
                     "destination": [ "obj-21", 0 ],
-                    "source": [ "obj-5", 3 ]
+                    "source": [ "obj-5", 4 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-27", 0 ],
-                    "source": [ "obj-5", 2 ]
+                    "source": [ "obj-5", 3 ]
                 }
             },
             {
