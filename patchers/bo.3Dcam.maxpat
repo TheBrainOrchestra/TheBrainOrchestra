@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 211.0, 137.0, 1188.0, 690.0 ],
+        "rect": [ 455.0, 138.0, 1188.0, 690.0 ],
         "boxes": [
             {
                 "box": {
@@ -1296,7 +1296,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 70.0, 243.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 32.0, 208.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -1307,7 +1307,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 32.0, 88.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 427.0, 138.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -1327,7 +1327,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 70.0, 54.0, 115.0, 20.0 ],
+                                    "patching_rect": [ 465.0, 104.0, 115.0, 20.0 ],
                                     "text": "if label is enabled ..."
                                 }
                             },
@@ -1338,7 +1338,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "bang", "int" ],
-                                    "patching_rect": [ 167.0, 139.0, 29.5, 22.0 ],
+                                    "patching_rect": [ 129.0, 104.0, 29.5, 22.0 ],
                                     "text": "t b i"
                                 }
                             },
@@ -1349,7 +1349,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 104.0, 181.0, 29.5, 22.0 ],
+                                    "patching_rect": [ 66.0, 146.0, 29.5, 22.0 ],
                                     "text": "||"
                                 }
                             },
@@ -1360,7 +1360,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 32.0, 53.0, 33.0, 22.0 ],
+                                    "patching_rect": [ 427.0, 103.0, 33.0, 22.0 ],
                                     "text": "== 0"
                                 }
                             },
@@ -1371,7 +1371,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 32.0, 27.0, 105.0, 22.0 ],
+                                    "patching_rect": [ 427.0, 77.0, 105.0, 22.0 ],
                                     "text": "r ---labels.enabled"
                                 }
                             },
@@ -1381,7 +1381,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 205.0, 112.0, 202.0, 20.0 ],
+                                    "patching_rect": [ 167.0, 77.0, 202.0, 20.0 ],
                                     "text": "... don't rotate if clicked in label zone"
                                 }
                             },
@@ -1392,7 +1392,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 167.0, 111.0, 33.0, 22.0 ],
+                                    "patching_rect": [ 129.0, 76.0, 33.0, 22.0 ],
                                     "text": "== 0"
                                 }
                             },
@@ -1403,7 +1403,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 167.0, 78.0, 187.0, 22.0 ],
+                                    "patching_rect": [ 129.0, 43.0, 187.0, 22.0 ],
                                     "text": "r /TBO/render/clicked_label_zone"
                                 }
                             },
@@ -1414,8 +1414,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 32.0, 302.0, 29.5, 22.0 ],
-                                    "text": "&&"
+                                    "patching_rect": [ 32.0, 302.0, 31.0, 22.0 ],
+                                    "text": "&& i"
                                 }
                             },
                             {
@@ -1425,7 +1425,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "bang", "int" ],
-                                    "patching_rect": [ 70.0, 269.0, 29.5, 22.0 ],
+                                    "patching_rect": [ 32.0, 234.0, 29.5, 22.0 ],
                                     "text": "t b i"
                                 }
                             },
@@ -1436,7 +1436,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 70.0, 214.0, 120.0, 22.0 ],
+                                    "patching_rect": [ 32.0, 179.0, 120.0, 22.0 ],
                                     "text": "r ---coordinatesMode"
                                 }
                             },
@@ -1467,7 +1467,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-33", 0 ],
+                                    "destination": [ "obj-33", 1 ],
                                     "source": [ "obj-12", 0 ]
                                 }
                             },
