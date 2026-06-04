@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 62.0, 94.0, 497.0, 481.0 ],
+        "rect": [ 238.0, 263.0, 498.0, 480.0 ],
         "openinpresentation": 1,
         "lefttoolbarpinned": 2,
         "toptoolbarpinned": 2,
@@ -1390,7 +1390,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "writeagain", "" ],
-                    "patching_rect": [ 66.0, 1060.0, 83.0, 22.0 ],
+                    "patching_rect": [ 66.0, 1035.0, 83.0, 22.0 ],
                     "text": "t writeagain l"
                 }
             },
@@ -1414,7 +1414,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 66.0, 1092.0, 135.0, 22.0 ],
+                    "patching_rect": [ 66.0, 1067.0, 135.0, 22.0 ],
                     "saved_object_attributes": {
                         "embed": 0,
                         "precision": 6
