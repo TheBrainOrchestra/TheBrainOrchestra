@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ -52.0, -406.0, 608.0, 291.0 ],
+        "rect": [ 34.0, 100.0, 608.0, 291.0 ],
         "openinpresentation": 1,
         "default_fontsize": 10.0,
         "boxes": [
@@ -49,8 +49,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 356.0, 143.0, 159.0, 20.0 ],
-                    "text": "sw ns.Granular.randomPitch"
+                    "patching_rect": [ 356.0, 143.0, 150.0, 20.0 ],
+                    "text": "sw /TBO/Granular/pitchRandom"
                 }
             },
             {
@@ -563,8 +563,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 45.0, 90.0, 124.0, 20.0 ],
-                    "text": "sw ns.Granular.polyphony"
+                    "patching_rect": [ 45.0, 88.0, 137.0, 20.0 ],
+                    "text": "sw /TBO/Granular/polyphony"
                 }
             }
         ],
