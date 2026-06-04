@@ -18,6 +18,10 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 430.0, 247.0, 42.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "out~ 2"
                 }
             },
@@ -28,8 +32,8 @@
                     "numinlets": 4,
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 284.0, 57.0, 206.0, 22.0 ],
-                    "text": "routepass grainSize shrinkfactor jitter"
+                    "patching_rect": [ 284.0, 57.0, 222.0, 22.0 ],
+                    "text": "routepass grainSize shrink startRandom"
                 }
             },
             {
@@ -40,10 +44,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 284.0, 30.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 1"
                 }
             },
@@ -131,10 +131,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 46.0, 243.0, 42.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "out~ 1"
                 }
             },
