@@ -14,6 +14,33 @@
         "boxes": [
             {
                 "box": {
+                    "fontsize": 14.0,
+                    "hint": "Frame count",
+                    "id": "obj-22",
+                    "maxclass": "live.numbox",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 131.0, 589.0, 57.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 280.95237827301025, 4.081632614135742, 57.0, 20.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.numbox[24]",
+                            "parameter_mmax": 6000.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "live.numbox[1]",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 0
+                        }
+                    },
+                    "textjustification": 2,
+                    "varname": "live.numbox[3]"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-25",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -203,7 +230,9 @@
             },
             {
                 "box": {
+                    "annotation_name": "Loop end",
                     "fontsize": 14.0,
+                    "hint": "Loop end",
                     "id": "obj-42",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
@@ -230,7 +259,9 @@
             },
             {
                 "box": {
+                    "annotation_name": "Loop start",
                     "fontsize": 14.0,
+                    "hint": "Loop start",
                     "id": "obj-43",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
@@ -266,12 +297,14 @@
                     "patching_rect": [ 599.0, 450.399999499321, 49.600000739097595, 33.600000500679016 ],
                     "pic": "loop.svg",
                     "presentation": 1,
-                    "presentation_rect": [ 595.0, 7.0, 26.875, 15.125 ]
+                    "presentation_rect": [ 595.2380895614624, 7.482993125915527, 26.875, 15.125 ]
                 }
             },
             {
                 "box": {
                     "activebgcolor": [ 0.45490187406539917, 0.45490187406539917, 0.45490187406539917, 1.0 ],
+                    "annotation_name": "Loop enable",
+                    "hint": "Loop enable",
                     "id": "obj-39",
                     "maxclass": "live.toggle",
                     "numinlets": 1,
@@ -300,32 +333,7 @@
             {
                 "box": {
                     "fontsize": 14.0,
-                    "id": "obj-33",
-                    "maxclass": "live.numbox",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 134.0, 589.0, 53.0, 20.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 282.10023298859596, 4.125298276543617, 53.0, 20.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_longname": "live.numbox[19]",
-                            "parameter_mmax": 255.0,
-                            "parameter_modmode": 4,
-                            "parameter_shortname": "live.numbox[19]",
-                            "parameter_type": 1,
-                            "parameter_unitstyle": 0
-                        }
-                    },
-                    "textjustification": 2,
-                    "varname": "live.numbox[3]"
-                }
-            },
-            {
-                "box": {
-                    "fontsize": 14.0,
+                    "hint": "Current frame",
                     "id": "obj-17",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
@@ -391,7 +399,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 324.0, 499.0, 209.0, 22.0 ],
+                    "patching_rect": [ 324.0, 492.0, 180.0, 22.0 ],
                     "text": "s #0./TBO/transport/frame/set"
                 }
             },
@@ -539,7 +547,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 307.0, 462.0, 139.0, 22.0 ],
+                    "patching_rect": [ 324.0, 463.0, 139.0, 22.0 ],
                     "text": "sw /TBO/transport/frame"
                 }
             },
@@ -2142,7 +2150,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 35.0, 493.0, 206.0, 22.0 ],
+                    "patching_rect": [ 38.0, 492.0, 206.0, 22.0 ],
                     "text": "p MIDI-click"
                 }
             },
@@ -6593,7 +6601,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-33", 0 ],
+                    "destination": [ "obj-22", 0 ],
                     "source": [ "obj-29", 1 ]
                 }
             },
