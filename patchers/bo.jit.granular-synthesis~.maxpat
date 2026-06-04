@@ -125,7 +125,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 463.0, 262.0, 111.0, 22.0 ],
+                    "patching_rect": [ 499.0, 262.0, 111.0, 22.0 ],
                     "text": "fill 1, apply hanning"
                 }
             },
@@ -136,7 +136,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 463.0, 236.0, 58.0, 22.0 ],
+                    "patching_rect": [ 499.0, 236.0, 58.0, 22.0 ],
                     "text": "loadbang"
                 }
             },
@@ -147,7 +147,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 462.5, 321.0, 103.0, 22.0 ],
+                    "patching_rect": [ 498.0, 321.0, 103.0, 22.0 ],
                     "text": "loadmess fill sin 1"
                 }
             },
@@ -158,7 +158,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 462.5, 351.0, 266.0, 22.0 ],
+                    "patching_rect": [ 498.0, 351.0, 266.0, 22.0 ],
                     "text": "buffer~ #1.src @samps 48000"
                 }
             },
@@ -169,7 +169,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 463.0, 290.0, 267.0, 22.0 ],
+                    "patching_rect": [ 499.0, 290.0, 267.0, 22.0 ],
                     "text": "buffer~ #1.win @samps 48000"
                 }
             },
@@ -180,7 +180,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 463.0, 204.0, 266.0, 22.0 ],
+                    "patching_rect": [ 499.0, 204.0, 266.0, 22.0 ],
                     "text": "buffer~ #1.gainR @samps 100"
                 }
             },
@@ -191,7 +191,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 463.0, 180.0, 264.0, 22.0 ],
+                    "patching_rect": [ 499.0, 180.0, 264.0, 22.0 ],
                     "text": "buffer~ #1.gainL @samps 100"
                 }
             },
@@ -202,7 +202,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 463.0, 96.0, 35.0, 22.0 ],
+                    "patching_rect": [ 548.0, 96.0, 35.0, 22.0 ],
                     "text": "clear"
                 }
             },
@@ -213,7 +213,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 377.0, 115.0, 61.0, 22.0 ],
+                    "patching_rect": [ 475.8, 96.0, 61.0, 22.0 ],
                     "text": "samps $2"
                 }
             },
@@ -224,7 +224,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 463.0, 156.0, 266.0, 22.0 ],
+                    "patching_rect": [ 499.0, 156.0, 266.0, 22.0 ],
                     "text": "buffer~ #1.speed @samps 100"
                 }
             },
@@ -235,7 +235,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 463.0, 132.0, 266.0, 22.0 ],
+                    "patching_rect": [ 499.0, 132.0, 266.0, 22.0 ],
                     "text": "buffer~ #1.active_grains @samps 100"
                 }
             },
@@ -317,8 +317,8 @@
                     "numinlets": 6,
                     "numoutlets": 6,
                     "outlettype": [ "", "", "", "", "", "" ],
-                    "patching_rect": [ 243.0, 64.0, 294.0, 22.0 ],
-                    "text": "routepass grainSize shrinkfactor jitter mute polyphony"
+                    "patching_rect": [ 243.0, 64.0, 310.0, 22.0 ],
+                    "text": "routepass grainSize shrink startRandom mute polyphony"
                 }
             },
             {
