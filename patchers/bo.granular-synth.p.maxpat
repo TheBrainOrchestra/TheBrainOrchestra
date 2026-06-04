@@ -17,7 +17,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 237.5, 251.0, 42.0, 22.0 ],
+                    "patching_rect": [ 430.0, 247.0, 42.0, 22.0 ],
                     "text": "out~ 2"
                 }
             },
