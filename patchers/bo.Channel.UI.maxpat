@@ -596,7 +596,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "3D view[38]",
+                            "parameter_longname": "3D view[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "3D view",
@@ -2357,6 +2357,7 @@
                             {
                                 "box": {
                                     "id": "obj-84",
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5461,6 +5462,7 @@
                             {
                                 "box": {
                                     "id": "obj-70",
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -6159,7 +6161,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 96.0, 395.0, 405.0, 35.0 ],
+                                                    "patching_rect": [ 96.0, 395.0, 408.0, 35.0 ],
                                                     "text": "jit.gl.videoplane ---BrainViz @blend_enable 1 @blend_mode 1 1 @dim 2 2 @enable 0"
                                                 }
                                             },
@@ -6382,7 +6384,7 @@
                                                     "maxclass": "comment",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 1061.0, 162.0, 295.0, 22.0 ],
+                                                    "patching_rect": [ 1061.0, 162.0, 308.0, 22.0 ],
                                                     "presentation": 1,
                                                     "presentation_rect": [ 84.0, 7.0, 591.0, 22.0 ]
                                                 }
@@ -6845,7 +6847,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
                                                     "patching_rect": [ 439.0, 103.0, 69.0, 22.0 ],
-                                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 65, -1050, 1565, -617, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                                     "text": "thispatcher"
                                                 }
                                             },
@@ -11312,6 +11314,7 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 59.0, 119.0, 316.0, 310.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -11403,8 +11406,8 @@
                                                                     "numinlets": 3,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "" ],
-                                                                    "patching_rect": [ 33.0, 117.0, 298.0, 22.0 ],
-                                                                    "text": "combine /TBO/channelRack/channel. 0 /neurons/show"
+                                                                    "patching_rect": [ 33.0, 117.0, 301.0, 22.0 ],
+                                                                    "text": "combine /TBO/channelRack/channel. 0 /neurons_show"
                                                                 }
                                                             },
                                                             {
@@ -16005,7 +16008,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 10000,
+                                                                    "cols": 23743,
                                                                     "colwidth": 18,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
@@ -23019,7 +23022,7 @@
                     "presentation_rect": [ 957.0, 49.0, 84.0160789899528, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "MK-225C USB MIDI keyboard", "No Output" ],
+                            "parameter_enum": [ "AU DLS Synth 1", "Réseau Session 1", "MK-225C USB MIDI keyboard", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                             "parameter_longname": "live.menu[6]",
                             "parameter_mmax": 6,
                             "parameter_modmode": 0,
@@ -23045,7 +23048,7 @@
                     "presentation_rect": [ 957.0, 21.0, 84.18212632089853, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "Réseau Session 1", "to Max 1", "to Max 2", "MK-225C USB MIDI keyboard", "No Input" ],
+                            "parameter_enum": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "to Max 1", "to Max 2", "No Input" ],
                             "parameter_longname": "live.menu[4]",
                             "parameter_mmax": 4,
                             "parameter_modmode": 0,
@@ -25720,7 +25723,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[16]",
+                            "parameter_longname": "Chord sustain[3]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -30102,6 +30105,7 @@
                                             {
                                                 "box": {
                                                     "id": "obj-154",
+                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -30135,6 +30139,7 @@
                                             {
                                                 "box": {
                                                     "id": "obj-80",
+                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -31140,6 +31145,7 @@
                             {
                                 "box": {
                                     "id": "obj-82",
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -33067,7 +33073,7 @@
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_initial": [ 0 ],
                             "parameter_invisible": 2,
-                            "parameter_longname": "3D view[1]",
+                            "parameter_longname": "3D view[2]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "3D view",
@@ -33118,7 +33124,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[1]",
+                            "parameter_longname": "Chord sustain[17]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -33709,7 +33715,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "hold",
+                            "parameter_longname": "Chord sustain[2]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -33790,7 +33796,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel #2",
+                    "text": "Channel 1",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -34495,43 +34501,6 @@
                     "source": [ "obj-99", 0 ]
                 }
             }
-        ],
-        "parameters": {
-            "obj-10": [ "Load clusters CSV file[4]", "Load clusters", 0 ],
-            "obj-12": [ "live.menu[5]", "live.menu", 0 ],
-            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
-            "obj-130::obj-25": [ "live.step[3]", "live.step", 0 ],
-            "obj-130::obj-56": [ "live.text[7]", "live.text", 0 ],
-            "obj-15": [ "3D view[1]", "3D view", 0 ],
-            "obj-20": [ "hold", "hold", 0 ],
-            "obj-22": [ "Timeline[1]", "Timeline", 0 ],
-            "obj-3": [ "live.menu[19]", "8439.clusterMenu", 0 ],
-            "obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
-            "obj-46": [ "3D view[38]", "3D view", 0 ],
-            "obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
-            "obj-57": [ "RemoveMapFile[1]", "RemoveMapFile", 0 ],
-            "obj-61": [ "velocity range[1]", "velocityRange", 0 ],
-            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
-            "obj-78": [ "1-MIDI-IN-Channel[1]", "1-MIDI-IN-Channel", 0 ],
-            "obj-79": [ "poly pressure range[1]", "polyPressureRange", 0 ],
-            "obj-8": [ "live.numbox[3]", "live.numbox", 0 ],
-            "obj-80": [ "live.text[5]", "live.text[3]", 0 ],
-            "obj-82": [ "1-MIDI-OUT-Channel[1]", "1-MIDI-OUT-Channel", 0 ],
-            "obj-89": [ "live.text[8]", "live.text[3]", 0 ],
-            "obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
-            "obj-91": [ "live.menu[4]", "live.menu", 0 ],
-            "obj-97": [ "live.menu[18]", "live.menu", 0 ],
-            "obj-98": [ "live.menu[6]", "live.menu", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
-            "inherited_shortname": 1
-        },
-        "autosave": 0
+        ]
     }
 }
