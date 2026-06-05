@@ -369,11 +369,11 @@
                 "box": {
                     "id": "obj-14",
                     "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 9,
-                    "outlettype": [ "mvc.parameter", "ChannelModelUID", "/neurons/show", "@type", "bool", "@default", "int", "@description", "Show neurons" ],
-                    "patching_rect": [ 112.0, 203.0, 566.0, 22.0 ],
-                    "text": "t mvc.parameter ChannelModelUID /neurons/show @type bool @default 0 @description \"Show neurons\""
+                    "numinlets": 2,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "" ],
+                    "patching_rect": [ 112.0, 203.0, 559.0, 22.0 ],
+                    "text": "mvc.parameter ChannelModelUID neurons_show @type bool @default 0 @description \"Show neurons\""
                 }
             },
             {
@@ -746,20 +746,6 @@
                     "source": [ "obj-8", 1 ]
                 }
             }
-        ],
-        "parameters": {
-            "obj-42": [ "velocity range[17]", "velocityRange", 0 ],
-            "obj-61": [ "velocity range[16]", "velocityRange", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
-            "inherited_shortname": 1
-        },
-        "autosave": 0
+        ]
     }
 }
