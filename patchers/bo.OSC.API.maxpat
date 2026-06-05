@@ -9,9 +9,31 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 60.0, 212.0, 1308.0, 810.0 ],
+        "rect": [ 112.0, 138.0, 1308.0, 810.0 ],
         "bglocked": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-50",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 549.0, 255.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-57",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 578.0, 255.0, 257.0, 22.0 ],
+                    "text": "/TBO/channelRack/channel.1/timeline/show $1"
+                }
+            },
             {
                 "box": {
                     "bubble": 1,
@@ -20,7 +42,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 209.0, 734.0, 255.0, 24.0 ],
-                    "presentation_linecount": 11,
                     "text": "set input port in the preferences (gear icon)"
                 }
             },
@@ -32,7 +53,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 442.0, 624.0, 52.0, 24.0 ],
-                    "presentation_linecount": 4,
                     "text": "none"
                 }
             },
@@ -88,7 +108,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 63.0, 398.0, 160.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "/TBO/transport/loop_start $1"
                 }
             },
@@ -111,7 +130,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 63.0, 373.0, 155.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "/TBO/transport/loop_ON $1"
                 }
             },
@@ -364,8 +382,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 578.0, 229.0, 274.0, 22.0 ],
-                    "text": "/TBO/channelRack/channel.1/timeline/show $1 $1"
+                    "patching_rect": [ 578.0, 229.0, 257.0, 22.0 ],
+                    "text": "/TBO/channelRack/channel.1/timeline/show $1"
                 }
             },
             {
@@ -1217,6 +1235,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-57", 0 ],
+                    "source": [ "obj-50", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-26", 0 ],
                     "source": [ "obj-52", 0 ]
                 }
@@ -1243,6 +1267,12 @@
                 "patchline": {
                     "destination": [ "obj-26", 0 ],
                     "source": [ "obj-56", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-45", 0 ],
+                    "source": [ "obj-57", 0 ]
                 }
             },
             {
