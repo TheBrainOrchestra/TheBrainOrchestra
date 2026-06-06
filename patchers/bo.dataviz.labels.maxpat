@@ -34,13 +34,27 @@
                                 "box": {
                                     "bubble": 1,
                                     "bubbleside": 2,
-                                    "id": "obj-8",
-                                    "linecount": 3,
+                                    "id": "obj-1",
+                                    "linecount": 2,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 131.0, 231.0, 89.0, 66.0 ],
-                                    "text": "for index -1, select all neurons "
+                                    "patching_rect": [ 371.0, 248.0, 102.0, 52.0 ],
+                                    "presentation_linecount": 2,
+                                    "text": "reset all values to low brightness"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bubble": 1,
+                                    "bubbleside": 2,
+                                    "id": "obj-8",
+                                    "linecount": 4,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 131.0, 224.5, 149.0, 79.0 ],
+                                    "text": "for index -1, select all neurons (with a value of 0.5, so that they appear less bright)"
                                 }
                             },
                             {
@@ -2662,8 +2676,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 655.0, -595.0, 794.0, 554.0 ],
-                                        "visible": 1,
+                                        "rect": [ 333.0, 261.0, 794.0, 554.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
