@@ -262,8 +262,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 55.0, 392.0, 482.0, 35.0 ],
-                    "text": "jit.gl.text ---BrainViz @position 0.1 -0.8 0. @mode 2d @color 0.7 0.7 0.7 1. @fontsize 12 @align 2 @fontname Menlo"
+                    "patching_rect": [ 55.0, 392.0, 538.0, 35.0 ],
+                    "text": "jit.gl.text ---BrainViz @position 0.02 -0.8 0. @mode 2d @color 0.7 0.7 0.7 1. @fontsize 12 @align 2 @fontname Menlo"
                 }
             }
         ],
