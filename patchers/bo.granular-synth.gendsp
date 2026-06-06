@@ -13,6 +13,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-21",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 595.0, 330.0, 289.0, 22.0 ],
+                    "text": "param polyphony @default 100 @min 1 @max 5000"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-10",
                     "maxclass": "newobj",
                     "numinlets": 0,
@@ -28,7 +39,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 596.0, 514.0, 150.0, 20.0 ],
+                    "patching_rect": [ 596.0, 544.0, 150.0, 20.0 ],
                     "text": "buffer size = custom"
                 }
             },
@@ -38,7 +49,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 596.0, 351.0, 150.0, 20.0 ],
+                    "patching_rect": [ 596.0, 381.0, 150.0, 20.0 ],
                     "text": "buffer size = polyphony"
                 }
             },
@@ -60,7 +71,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 463.0, 74.0, 22.0 ],
+                    "patching_rect": [ 595.0, 493.0, 74.0, 22.0 ],
                     "text": "buffer gainR"
                 }
             },
@@ -71,7 +82,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 596.0, 435.0, 72.0, 22.0 ],
+                    "patching_rect": [ 596.0, 465.0, 72.0, 22.0 ],
                     "text": "buffer gainL"
                 }
             },
@@ -115,7 +126,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 407.0, 75.0, 22.0 ],
+                    "patching_rect": [ 595.0, 437.0, 75.0, 22.0 ],
                     "text": "buffer speed"
                 }
             },
@@ -126,7 +137,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 596.0, 379.0, 113.0, 22.0 ],
+                    "patching_rect": [ 596.0, 409.0, 113.0, 22.0 ],
                     "text": "buffer active_grains"
                 }
             },
@@ -184,7 +195,7 @@
             },
             {
                 "box": {
-                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\nHistory Ka;\r\nHistory Kb;\r\nHistory Kc;\r\n\r\ngrain_count = dim(active_grains);\r\nglobalGain = poly_voicecount/grain_count; // divide by polyphony\r\ngrain_slice = grain_count/poly_voicecount;\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\nKa = (1-shrink)/grainSize;\r\nKb = shrink/grainSize;\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\r\n    start = in1+(1+noise())*startRandom;\r\n\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\r\n        \n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n            \r\n        Kc = Ka + Kb*grainSpeed/110.; //grain below 100Hz won't be shrinked\r\n        K = maximum(Kc, 1/grainSize);\r\n        \r\n\n\t\tfor (i=0; i<(grainSize-1); i+=1) {\t\t\t\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, K*i, \n\t\t\t\tinterp=\"linear\", boundmode=\"clip\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\t\t\n\t}\n}",
+                    "code": "History grainSpeed;\r\nHistory min_index;\r\nHistory max_index;\r\nHistory Ka;\r\nHistory Kb;\r\nHistory Kc;\r\n\r\n//grain_count = dim(active_grains);\r\ngrain_count = polyphony;\r\nglobalGain = poly_voicecount/(1+log(grain_count)); // divide by polyphony\r\ngrain_slice = grain_count/poly_voicecount;\r\nmin_index = grain_slice*(poly_voiceindex - 1);\r\nmax_index = grain_slice*poly_voiceindex;\r\nKa = (1-shrink)/grainSize;\r\nKb = shrink/grainSize;\r\n\r\n// if time to trigger, write a new grain:\nfor (grain_idx=min_index; grain_idx<max_index; grain_idx+=1) {\n\t\r\n    start = in1+(1+noise())*startRandom;\r\n\n\tspawn = peek(active_grains, grain_idx, \r\n\t\tinterp=\"none\", boundmode=\"wrap\");\r\n\t\t\n\tif (spawn) {\r\n        \n\t\tgrainSpeed = peek(speed, grain_idx, \r\n\t\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\t\r\n\t\t// panning\r\n\t\tpan_L = globalGain*peek(gainL, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\n\t\tpan_R = globalGain*peek(gainR, grain_idx, \r\n\t\t\t\tinterp=\"none\", boundmode=\"wrap\");\r\n            \r\n        Kc = Ka + Kb*grainSpeed/110.; //grain below 100Hz won't be shrinked\r\n        K = maximum(Kc, 1/grainSize);\r\n        \r\n\n\t\tfor (i=0; i<(grainSize-1); i+=1) {\t\t\t\r\n                    \r\n            source = peek(src, i*grainSpeed, \n\t\t\t\t\tinterp=\"linear\", boundmode=\"wrap\");\r\n                    \n\t\t\t// apply window and gain\n\t\t    window = sample(win, K*i, \n\t\t\t\tinterp=\"linear\", boundmode=\"clip\");\n\t\t\t\t\r\n\t\t\t//stereo\n\t\t\tpoke(ola, source*window*pan_L, start+i, 0, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\n\t\t\tpoke(ola, source*window*pan_R, start+i, 1, 1, \n\t\t\t\toverdubmode=\"accum\", boundmode=\"wrap\");\t\t\t\n\t\t}\r\n\t\t\r\n\t\t// reset the active grain by writing \r\n\t\t// with a mix factor (5th argument) of zero (=pure overwrite)\r\n\t\tpoke(active_grains, 0, grain_idx, 0, 0, \n\t\t\toverdubmode=\"mix\", boundmode=\"ignore\");\r\n\t\t\t\t\n\t}\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -224,7 +235,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 540.0, 58.0, 22.0 ],
+                    "patching_rect": [ 595.0, 570.0, 58.0, 22.0 ],
                     "text": "buffer src"
                 }
             },
@@ -235,7 +246,7 @@
                     "numinlets": 0,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 595.0, 567.0, 60.0, 22.0 ],
+                    "patching_rect": [ 595.0, 597.0, 60.0, 22.0 ],
                     "text": "buffer win"
                 }
             },

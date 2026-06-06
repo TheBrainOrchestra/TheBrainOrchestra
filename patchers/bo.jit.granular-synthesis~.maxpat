@@ -568,7 +568,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-115", 0 ],
-                    "order": 1,
                     "source": [ "obj-5", 4 ]
                 }
             },
@@ -588,13 +587,6 @@
                 "patchline": {
                     "destination": [ "obj-115", 0 ],
                     "source": [ "obj-5", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-21", 0 ],
-                    "order": 0,
-                    "source": [ "obj-5", 4 ]
                 }
             },
             {
