@@ -9,10 +9,45 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 141.0, 243.0, 1231.0, 705.0 ],
+        "rect": [ 116.0, 163.0, 1231.0, 705.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 4,
         "boxes": [
+            {
+                "box": {
+                    "annotation": "Display 3D view of neurons and clusters.",
+                    "annotation_name": "3D view",
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 12.0,
+                    "hint": "",
+                    "id": "obj-27",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 212.0, 60.75, 48.0, 19.5 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 45.33581927418709, 43.15174163381259, 45.33581927418709, 18.18159169952075 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 0 ],
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[3]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "focus",
+                    "texton": "Color",
+                    "varname": "live.text[8]"
+                }
+            },
             {
                 "box": {
                     "id": "obj-56",
@@ -590,7 +625,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 212.5, 456.0, 48.0, 19.5 ],
                     "presentation": 1,
-                    "presentation_rect": [ 45.0, 27.0, 48.0, 17.333333333333343 ],
+                    "presentation_rect": [ 3.3608049005270004, 25.0, 87.4816879183054, 16.99438238143921 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -603,7 +638,7 @@
                             "parameter_type": 2
                         }
                     },
-                    "text": "Color",
+                    "text": "color",
                     "texton": "Color",
                     "varname": "live.text[7]"
                 }
@@ -1603,7 +1638,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 310.5, 102.0, 78.0, 22.0 ],
+                    "patching_rect": [ 302.0, 93.5, 78.0, 22.0 ],
                     "text": "p mvc.sw"
                 }
             },
@@ -2357,7 +2392,6 @@
                             {
                                 "box": {
                                     "id": "obj-84",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -5462,7 +5496,6 @@
                             {
                                 "box": {
                                     "id": "obj-70",
-                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
@@ -6128,7 +6161,6 @@
                                         "toolbars_unpinned_last_save": 15,
                                         "enablehscroll": 0,
                                         "enablevscroll": 0,
-                                        "visible": 1,
                                         "boxes": [
                                             {
                                                 "box": {
@@ -6411,7 +6443,8 @@
                                                     "numoutlets": 0,
                                                     "patching_rect": [ 1039.0, 219.0, 136.0, 22.0 ],
                                                     "presentation": 1,
-                                                    "presentation_rect": [ 4.0, 7.0, 99.0, 22.0 ]
+                                                    "presentation_rect": [ 4.0, 7.0, 99.0, 22.0 ],
+                                                    "text": "Channel #2:"
                                                 }
                                             },
                                             {
@@ -6848,7 +6881,7 @@
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
                                                     "patching_rect": [ 439.0, 103.0, 69.0, 22.0 ],
-                                                    "save": [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", -12, -1052, 1488, -619, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+                                                    "save": [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
                                                     "text": "thispatcher"
                                                 }
                                             },
@@ -11675,8 +11708,8 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0.11764705882352941, 0.11764705882352941, 0.11764705882352941, 1.0 ],
-                    "fgcolor": [ 0.011764705882352941, 0.7647058823529411, 0.8352941176470589, 1.0 ],
+                    "bgcolor": [ 0.21456951819342446, 0.2145694601991729, 0.21456947537278298, 1.0 ],
+                    "fgcolor": [ 0.5698479178824192, 0.696305670064156, 0.9027145980707068, 1.0 ],
                     "id": "obj-79",
                     "maxclass": "rslider",
                     "numinlets": 2,
@@ -11708,8 +11741,8 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0.11764705882352941, 0.11764705882352941, 0.11764705882352941, 1.0 ],
-                    "fgcolor": [ 0.011764705882352941, 0.7647058823529411, 0.8352941176470589, 1.0 ],
+                    "bgcolor": [ 0.21456951819342446, 0.2145694601991729, 0.21456947537278298, 1.0 ],
+                    "fgcolor": [ 0.5698479178824192, 0.696305670064156, 0.9027145980707068, 1.0 ],
                     "id": "obj-61",
                     "maxclass": "rslider",
                     "numinlets": 2,
@@ -11743,7 +11776,7 @@
                 "box": {
                     "annotation": "Blink when MIDI is received",
                     "bgcolor": [ 0.2, 0.2, 0.2, 0.0 ],
-                    "blinkcolor": [ 1.0, 0.6784313725490196, 0.33725490196078434, 1.0 ],
+                    "blinkcolor": [ 0.9, 0.65, 0.05, 1.0 ],
                     "hint": "Blink when MIDI is received",
                     "id": "obj-43",
                     "maxclass": "button",
@@ -16048,7 +16081,7 @@
                                                             },
                                                             {
                                                                 "box": {
-                                                                    "cols": 23743,
+                                                                    "cols": 10000,
                                                                     "colwidth": 18,
                                                                     "fontface": 0,
                                                                     "fontname": "Arial",
@@ -19545,7 +19578,7 @@
                 "box": {
                     "id": "obj-33",
                     "maxclass": "newobj",
-                    "numinlets": 1,
+                    "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patcher": {
@@ -19558,8 +19591,67 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 686.0, 468.0, 365.0, 213.0 ],
+                        "rect": [ 686.0, 468.0, 529.0, 374.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-8",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 315.0, 97.0, 69.0, 22.0 ],
+                                    "text": "prepend #2"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 4,
+                                    "outlettype": [ "", "", "", "" ],
+                                    "patching_rect": [ 315.0, 127.0, 138.0, 22.0 ],
+                                    "saved_object_attributes": {
+                                        "embed": 0,
+                                        "precision": 6
+                                    },
+                                    "text": "coll TBO.channel2labels"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 10.0, 199.0, 177.0, 22.0 ],
+                                    "text": "s /TBO/3Dcam/focus_on_labels"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 10.0, 102.0, 29.5, 22.0 ],
+                                    "text": "int"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-3",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 10.0, 23.0, 30.0, 30.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-2",
@@ -19883,7 +19975,7 @@
                                 "box": {
                                     "comment": "",
                                     "id": "obj-6",
-                                    "index": 1,
+                                    "index": 2,
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -19919,12 +20011,28 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-1", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-114", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-2", 2 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 1 ],
+                                    "order": 1,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-8", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-2", 2 ]
                                 }
                             },
@@ -19936,8 +20044,26 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-2", 0 ],
                                     "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 0 ],
+                                    "source": [ "obj-8", 0 ]
                                 }
                             }
                         ]
@@ -19988,21 +20114,20 @@
                     "annotation_name": "Cluster name",
                     "fontname": "Ableton Sans Medium Regular",
                     "id": "obj-3",
-                    "ignoreclick": 1,
                     "maxclass": "live.menu",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "float" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 212.0, 63.0, 216.0, 15.0 ],
+                    "patching_rect": [ 272.0, 63.0, 79.0, 15.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 205.0, 7.0, 527.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "Empty menu", "Empty menu" ],
+                            "parameter_enum": [ "No Cluster", "1 Diencephalon - [size: 1747]", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", "13 Diencephalon - Dorsal Thalamus [size: 297]", "14 Diencephalon - Eminentia Thalami [size: 4]", "15 Diencephalon - Habenula [size: 149]", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", "36 Diencephalon - Isl1 cluster 1 [size: 1]", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", "40 Diencephalon - Medial vglut2 cluster [size: 37]", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", "43 Diencephalon - Olig2 Band [size: 308]", "44 Diencephalon - Olig2 Band 2 [size: 140]", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", "58 Diencephalon - Posterior Tuberculum [size: 86]", "60 Diencephalon - Preoptic Area [size: 32]", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", "66 Diencephalon - Pretectum [size: 419]", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", "76 Diencephalon - Ventral Thalamus [size: 370]", "78 Ganglia - Eyes [size: 12]", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", "94 Mesencephalon - [size: 6799]", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", "96 Mesencephalon - Medial Tectal Band [size: 780]", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", "99 Mesencephalon - Otpb Cluster [size: 103]", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", "101 Mesencephalon - Ptf1a Cluster [size: 42]", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", "107 Mesencephalon - Tectum Neuropil [size: 212]", "108 Mesencephalon - Tegmentum [size: 2111]", "109 Mesencephalon - Torus Longitudinalis [size: 9]", "110 Mesencephalon - Torus Semicircularis [size: 212]", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", "114 Rhombencephalon - [size: 12906]", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", "125 Rhombencephalon - Area Postrema [size: 12]", "126 Rhombencephalon - CaD [size: 5]", "127 Rhombencephalon - CaV [size: 2]", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", "131 Rhombencephalon - Cerebellum [size: 2952]", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", "134 Rhombencephalon - Eminentia Granularis [size: 205]", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", "175 Rhombencephalon - Inferior Olive [size: 55]", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", "184 Rhombencephalon - Mauthner [size: 2]", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", "187 Rhombencephalon - MiD2 [size: 1]", "188 Rhombencephalon - MiD3 [size: 16]", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", "202 Rhombencephalon - Olig2 Cluster [size: 20]", "203 Rhombencephalon - Olig2 Stripe [size: 61]", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", "217 Rhombencephalon - Raphe - Inferior [size: 5]", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", "221 Rhombencephalon - Rhombomere 3 [size: 577]", "222 Rhombencephalon - Rhombomere 4 [size: 364]", "223 Rhombencephalon - Rhombomere 5 [size: 381]", "224 Rhombencephalon - Rhombomere 6 [size: 970]", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", "233 Rhombencephalon - S1181t Cluster [size: 379]", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", "260 Spinal Cord [size: 338]", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", "265 Spinal Cord - Glyt2 Stripe [size: 132]", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", "268 Spinal Cord - Neuropil Region [size: 24]", "269 Spinal Cord - Olig2 Stripe [size: 18]", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", "275 Telencephalon - [size: 690]", "277 Telencephalon - Isl1 cluster 1 [size: 3]", "279 Telencephalon - Olfactory Bulb [size: 38]", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", "283 Telencephalon - Pallium [size: 490]", "285 Telencephalon - S1181t Cluster [size: 9]", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", "288 Telencephalon - Subpallial Otpb strip [size: 29]", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", "291 Telencephalon - Subpallium [size: 98]", "293 Telencephalon - Vglut2 rind [size: 181]", "294 Telencephalon - Vmat2 cluster [size: 30]", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]", "302 Full Brain [size: 23743]" ],
                             "parameter_longname": "live.menu[19]",
-                            "parameter_mmax": 1,
+                            "parameter_mmax": 185,
                             "parameter_modmode": 0,
                             "parameter_shortname": "8439.clusterMenu",
                             "parameter_type": 2
@@ -23976,7 +24101,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 212.0, 11.0, 64.0, 22.0 ],
+                    "patching_rect": [ 272.0, 29.0, 64.0, 22.0 ],
                     "text": "p fill-menu"
                 }
             },
@@ -25091,7 +25216,7 @@
                 "box": {
                     "annotation": "Blink when MIDI is sent",
                     "bgcolor": [ 0.2, 0.2, 0.2, 0.0 ],
-                    "blinkcolor": [ 1.0, 0.6784313725490196, 0.33725490196078434, 1.0 ],
+                    "blinkcolor": [ 0.9, 0.65, 0.05, 1.0 ],
                     "hint": "Blink when MIDI is sent",
                     "id": "obj-40",
                     "maxclass": "button",
@@ -25308,10 +25433,8 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 13.0, 629.0, 141.0, 16.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 2.0, 64.0, 89.0, 10.0 ],
                     "setminmax": [ 0.0, 1.0 ],
-                    "slidercolor": [ 0.847, 0.161, 0.161, 1.0 ],
+                    "slidercolor": [ 0.192, 1.0, 0.259, 1.0 ],
                     "thickness": 1
                 }
             },
@@ -25765,7 +25888,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[3]",
+                            "parameter_longname": "Chord sustain[16]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -30147,7 +30270,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-154",
-                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -30181,7 +30303,6 @@
                                             {
                                                 "box": {
                                                     "id": "obj-80",
-                                                    "linecount": 2,
                                                     "maxclass": "newobj",
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
@@ -31187,7 +31308,6 @@
                             {
                                 "box": {
                                     "id": "obj-82",
-                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
@@ -33074,7 +33194,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 199.0, 243.0, 94.0, 17.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 2.0, 45.0, 89.0, 17.0 ],
+                    "presentation_rect": [ 3.3608049005270004, 63.0, 87.4816879183054, 17.0 ],
                     "remapsvgcolors": 1,
                     "saved_attribute_attributes": {
                         "valueof": {
@@ -33088,8 +33208,8 @@
                             "parameter_type": 2
                         }
                     },
-                    "text": "Timeline",
-                    "texton": "Timeline",
+                    "text": "timeline",
+                    "texton": "timeline",
                     "varname": "live.text[5]"
                 }
             },
@@ -33109,7 +33229,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 201.0, 194.0, 73.0, 17.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 2.0, 27.0, 43.0, 17.333333333333343 ],
+                    "presentation_rect": [ 3.3608049005270004, 44.0, 39.97501437366009, 17.333333333333343 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -33122,8 +33242,8 @@
                             "parameter_type": 2
                         }
                     },
-                    "text": "Show",
-                    "texton": "Show",
+                    "text": "show",
+                    "texton": "show",
                     "varname": "live.text[1]"
                 }
             },
@@ -33166,7 +33286,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[17]",
+                            "parameter_longname": "Chord sustain[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "chordSustain",
@@ -33225,8 +33345,8 @@
             },
             {
                 "box": {
-                    "activebgcolor": [ 0.5, 0.5, 0.5, 1.0 ],
-                    "activebgoncolor": [ 0.5, 0.5, 0.5, 1.0 ],
+                    "activebgcolor": [ 0.647, 0.647, 0.647, 1.0 ],
+                    "activebgoncolor": [ 1.0, 0.71, 0.196, 1.0 ],
                     "annotation": "Click here to activate/deactivate this MIDI track.",
                     "annotation_name": "Activate MIDI track",
                     "hint": "",
@@ -33757,7 +33877,7 @@
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
                             "parameter_linknames": 1,
-                            "parameter_longname": "Chord sustain[2]",
+                            "parameter_longname": "hold",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "hold",
@@ -33838,7 +33958,7 @@
                     "patching_rect": [ 10.5, 29.0, 123.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.60674273967743, 4.494382381439209, 80.13513612747192, 20.0 ],
-                    "text": "Channel 1",
+                    "text": "Channel #2",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
             },
@@ -33879,7 +33999,7 @@
                 "box": {
                     "annotation": "Notes assigned to the sub-clusters. The lowest note will be assigned to the sub-cluster of lowest index value.",
                     "annotation_name": "Sub-cluster notes",
-                    "hkeycolor": [ 1.0, 0.6784313725490196, 0.33725490196078434, 1.0 ],
+                    "hkeycolor": [ 0.9, 0.65, 0.05, 1.0 ],
                     "id": "obj-45",
                     "maxclass": "kslider",
                     "mode": 1,
@@ -34143,13 +34263,19 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-33", 0 ],
+                    "source": [ "obj-27", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-122", 0 ],
                     "source": [ "obj-3", 1 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-33", 0 ],
+                    "destination": [ "obj-33", 1 ],
                     "source": [ "obj-3", 0 ]
                 }
             },
@@ -34543,6 +34669,44 @@
                     "source": [ "obj-99", 0 ]
                 }
             }
-        ]
+        ],
+        "parameters": {
+            "obj-10": [ "Load clusters CSV file[4]", "Load clusters", 0 ],
+            "obj-12": [ "live.menu[5]", "live.menu", 0 ],
+            "obj-13": [ "Chord sustain[1]", "chordSustain", 0 ],
+            "obj-130::obj-25": [ "live.step[3]", "live.step", 0 ],
+            "obj-130::obj-56": [ "live.text[7]", "live.text", 0 ],
+            "obj-15": [ "3D view[2]", "3D view", 0 ],
+            "obj-20": [ "hold", "hold", 0 ],
+            "obj-22": [ "Timeline[1]", "Timeline", 0 ],
+            "obj-27": [ "3D view[3]", "3D view", 0 ],
+            "obj-3": [ "live.menu[19]", "8439.clusterMenu", 0 ],
+            "obj-45": [ "ClustersNotes[1]", "ClustersNotes[6]", 0 ],
+            "obj-46": [ "3D view[1]", "3D view", 0 ],
+            "obj-54": [ "SubClusterColormode[1]", "SubClusterColormode", 0 ],
+            "obj-57": [ "RemoveMapFile[1]", "RemoveMapFile", 0 ],
+            "obj-61": [ "velocity range[1]", "velocityRange", 0 ],
+            "obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
+            "obj-78": [ "1-MIDI-IN-Channel[1]", "1-MIDI-IN-Channel", 0 ],
+            "obj-79": [ "poly pressure range[1]", "polyPressureRange", 0 ],
+            "obj-8": [ "live.numbox[3]", "live.numbox", 0 ],
+            "obj-80": [ "live.text[5]", "live.text[3]", 0 ],
+            "obj-82": [ "1-MIDI-OUT-Channel[1]", "1-MIDI-OUT-Channel", 0 ],
+            "obj-89": [ "live.text[8]", "live.text[3]", 0 ],
+            "obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
+            "obj-91": [ "live.menu[4]", "live.menu", 0 ],
+            "obj-97": [ "live.menu[18]", "live.menu", 0 ],
+            "obj-98": [ "live.menu[6]", "live.menu", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
+            "inherited_shortname": 1
+        },
+        "autosave": 0
     }
 }
