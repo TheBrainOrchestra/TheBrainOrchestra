@@ -13,6 +13,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-78",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 651.0, 419.0, 67.0, 22.0 ],
+                    "text": "getposition"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-47",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -501,8 +512,74 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 118.0, 543.0, 739.0, 368.0 ],
+                                        "rect": [ 118.0, 441.0, 1001.0, 470.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-60",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 623.5, 35.0, 129.0, 22.0 ],
+                                                    "text": "r /TBO/3Dcam/teleport"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-57",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "" ],
+                                                    "patching_rect": [ 623.5, 95.0, 29.5, 22.0 ],
+                                                    "text": "t l l"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-55",
+                                                    "maxclass": "message",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 501.0, 128.0, 49.0, 22.0 ],
+                                                    "text": "0 $2 0"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-54",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 634.0, 233.0, 59.0, 22.0 ],
+                                                    "text": "append 3"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-53",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 634.0, 268.0, 95.0, 22.0 ],
+                                                    "text": "prepend moveto"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-85",
+                                                    "maxclass": "message",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 623.5, 68.0, 165.0, 22.0 ],
+                                                    "text": "0.071663 0.075348 0.062913"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-1",
@@ -510,7 +587,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 313.0, 55.0, 115.0, 22.0 ],
+                                                    "patching_rect": [ 392.0, 55.0, 115.0, 22.0 ],
                                                     "text": "r /TBO/3Dcam/reset"
                                                 }
                                             },
@@ -564,8 +641,8 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 23.0, 262.0, 103.0, 22.0 ],
-                                                    "text": "bo.list.interp 3000"
+                                                    "patching_rect": [ 23.0, 262.0, 107.0, 22.0 ],
+                                                    "text": "bo.list.interp.b 120"
                                                 }
                                             },
                                             {
@@ -1207,7 +1284,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 313.0, 121.0, 35.0, 22.0 ],
+                                                    "patching_rect": [ 392.0, 121.0, 35.0, 22.0 ],
                                                     "text": "0 0 0"
                                                 }
                                             },
@@ -1218,7 +1295,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "bang" ],
-                                                    "patching_rect": [ 313.0, 149.0, 36.0, 22.0 ],
+                                                    "patching_rect": [ 392.0, 149.0, 36.0, 22.0 ],
                                                     "text": "t l b"
                                                 }
                                             },
@@ -1241,7 +1318,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "bang" ],
                                                     "parameter_enable": 0,
-                                                    "patching_rect": [ 313.0, 80.0, 24.0, 24.0 ]
+                                                    "patching_rect": [ 392.0, 80.0, 24.0, 24.0 ]
                                                 }
                                             },
                                             {
@@ -1251,8 +1328,8 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 330.0, 205.0, 88.0, 22.0 ],
-                                                    "text": "moveto 0 0 1 2"
+                                                    "patching_rect": [ 409.0, 198.0, 88.0, 22.0 ],
+                                                    "text": "moveto 0 0 1 6"
                                                 }
                                             },
                                             {
@@ -1273,7 +1350,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 279.0, 268.0, 111.0, 22.0 ],
-                                                    "text": "moveto $1 $2 0.2 3"
+                                                    "text": "moveto $1 $2 0.2 6"
                                                 }
                                             },
                                             {
@@ -1506,8 +1583,50 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-34", 0 ],
+                                                    "source": [ "obj-53", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-53", 0 ],
+                                                    "source": [ "obj-54", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-45", 0 ],
+                                                    "source": [ "obj-55", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-54", 0 ],
+                                                    "source": [ "obj-57", 1 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-55", 0 ],
+                                                    "source": [ "obj-57", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-23", 0 ],
                                                     "source": [ "obj-58", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-85", 0 ],
+                                                    "source": [ "obj-60", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-57", 0 ],
+                                                    "source": [ "obj-85", 0 ]
                                                 }
                                             }
                                         ]
@@ -2065,16 +2184,6 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 146.0, 140.0, 158.0, 22.0 ],
                                     "text": "s TBO.render.camera.lookat"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-1",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 456.5, 421.0, 168.0, 22.0 ],
-                                    "text": "s TBO.render.camera.position"
                                 }
                             },
                             {
@@ -3107,7 +3216,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 324.0, 415.0, 202.0, 33.0 ],
+                    "patching_rect": [ 324.0, 440.0, 202.0, 33.0 ],
                     "text": "This camera displays the 3D points and renders them to a texture."
                 }
             },
@@ -5088,13 +5197,12 @@
             {
                 "box": {
                     "id": "obj-89",
-                    "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "" ],
-                    "patching_rect": [ 245.0, 395.0, 342.0, 35.0 ],
-                    "text": "jit.gl.camera @name ---movingCam @position 0 0 2 @near_clip 0.01"
+                    "patching_rect": [ 245.0, 395.0, 383.0, 22.0 ],
+                    "text": "jit.gl.camera @name ---movingCam @position 0 0 2 @near_clip 0.001"
                 }
             },
             {
@@ -5540,6 +5648,12 @@
                 "patchline": {
                     "destination": [ "obj-89", 0 ],
                     "source": [ "obj-77", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-89", 0 ],
+                    "source": [ "obj-78", 0 ]
                 }
             },
             {
