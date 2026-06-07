@@ -15,30 +15,34 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-167",
-                    "lastchannelcount": 2,
-                    "maxclass": "mc.live.gain~",
+                    "id": "obj-1",
+                    "maxclass": "comment",
                     "numinlets": 1,
-                    "numoutlets": 4,
-                    "orientation": 1,
-                    "outlettype": [ "multichannelsignal", "", "float", "list" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 315.0, 503.0, 136.0, 36.0 ],
+                    "numoutlets": 0,
+                    "patching_rect": [ 272.0, 618.0, 87.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 267.0, 522.0, 136.0, 36.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_longname": "mc.live.gain~[2]",
-                            "parameter_mmax": 6.0,
-                            "parameter_mmin": -70.0,
-                            "parameter_modmode": 3,
-                            "parameter_shortname": "mc.live.gain~",
-                            "parameter_type": 0,
-                            "parameter_unitstyle": 4
-                        }
-                    },
-                    "showname": 0,
-                    "varname": "mc.live.gain~[1]"
+                    "presentation_rect": [ 596.0, 81.0, 89.0, 20.0 ],
+                    "text": "Reverb decay",
+                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.5176470875740051, 0.5176470875740051, 0.5176470875740051, 1.0 ],
+                    "contdata": 1,
+                    "ghostbar": 70,
+                    "id": "obj-4",
+                    "maxclass": "multislider",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "orientation": 0,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 238.0, 618.0, 158.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 562.0, 81.0, 154.0, 19.0 ],
+                    "setminmax": [ 0.0, 1.0 ],
+                    "slidercolor": [ 0.043137254901960784, 0.8, 0.8313725490196079, 1.0 ]
                 }
             },
             {
@@ -133,7 +137,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 156.0, 567.0, 87.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 508.0, 81.0, 89.0, 20.0 ],
+                    "presentation_rect": [ 433.0, 81.0, 89.0, 20.0 ],
                     "text": "Overdrive high",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
@@ -152,7 +156,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 122.0, 567.0, 158.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 474.0, 81.0, 154.0, 19.0 ],
+                    "presentation_rect": [ 399.0, 81.0, 154.0, 19.0 ],
                     "setminmax": [ 1.0, 20.0 ],
                     "slidercolor": [ 0.043137254901960784, 0.8, 0.8313725490196079, 1.0 ]
                 }
@@ -165,7 +169,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 156.0, 541.0, 82.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 346.0, 81.5, 89.0, 20.0 ],
+                    "presentation_rect": [ 271.0, 82.0, 89.0, 20.0 ],
                     "text": "Overdrive low",
                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                 }
@@ -184,7 +188,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 122.0, 541.0, 158.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 312.0, 81.5, 154.0, 19.0 ],
+                    "presentation_rect": [ 237.0, 82.0, 154.0, 19.0 ],
                     "setminmax": [ 1.0, 20.0 ],
                     "slidercolor": [ 0.043137254901960784, 0.8, 0.8313725490196079, 1.0 ]
                 }
@@ -3560,7 +3564,7 @@
                 "box": {
                     "id": "obj-150",
                     "maxclass": "newobj",
-                    "numinlets": 1,
+                    "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "multichannelsignal" ],
                     "patcher": {
@@ -3575,6 +3579,18 @@
                         "classnamespace": "box",
                         "rect": [ 259.0, 110.0, 682.0, 566.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-2",
+                                    "index": 2,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 490.0, 97.0, 30.0, 30.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-46",
@@ -4115,6 +4131,12 @@
                                     "destination": [ "obj-16", 0 ],
                                     "order": 1,
                                     "source": [ "obj-18", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-58", 0 ],
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
@@ -16024,6 +16046,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-150", 1 ],
+                    "source": [ "obj-4", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-146", 0 ],
                     "order": 0,
                     "source": [ "obj-40", 0 ]
@@ -16124,14 +16152,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-123", 0 ],
-                    "order": 1,
-                    "source": [ "obj-6", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-167", 0 ],
-                    "order": 0,
                     "source": [ "obj-6", 0 ]
                 }
             },
