@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 310.0, 1444.0, 514.0 ],
+        "rect": [ 34.0, 434.0, 1444.0, 514.0 ],
         "boxes": [
             {
                 "box": {
@@ -103,7 +103,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 10000,
+                                    "cols": 185,
                                     "colwidth": 16,
                                     "fontface": 0,
                                     "fontname": "Arial",
@@ -114,7 +114,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
                                     "patching_rect": [ 138.0, 342.0, 211.0, 74.0 ],
-                                    "rows": 6000
+                                    "rows": 1
                                 }
                             },
                             {
@@ -161,6 +161,16 @@
                                         "boxes": [
                                             {
                                                 "box": {
+                                                    "id": "obj-5",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 152.0, 235.0, 209.0, 22.0 ],
+                                                    "text": "print /TBO/datasets/atlasColor/loaded"
+                                                }
+                                            },
+                                            {
+                                                "box": {
                                                     "id": "obj-4",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
@@ -198,7 +208,7 @@
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 137.0, 237.0, 191.0, 22.0 ],
+                                                    "patching_rect": [ 137.0, 270.0, 191.0, 22.0 ],
                                                     "text": "s /TBO/datasets/atlasColor/loaded"
                                                 }
                                             },
@@ -241,6 +251,7 @@
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-1", 0 ],
+                                                    "order": 1,
                                                     "source": [ "obj-2", 0 ]
                                                 }
                                             },
@@ -248,6 +259,13 @@
                                                 "patchline": {
                                                     "destination": [ "obj-3", 0 ],
                                                     "source": [ "obj-2", 1 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-5", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-2", 0 ]
                                                 }
                                             },
                                             {
@@ -2060,6 +2078,16 @@
                                         "boxes": [
                                             {
                                                 "box": {
+                                                    "id": "obj-2",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 169.0, 200.0, 197.0, 22.0 ],
+                                                    "text": "s /TBO/dataset/atlas.energy/loaded"
+                                                }
+                                            },
+                                            {
+                                                "box": {
                                                     "id": "obj-1",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
@@ -2128,7 +2156,15 @@
                                         "lines": [
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-27", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-3", 0 ],
+                                                    "order": 1,
                                                     "source": [ "obj-27", 0 ]
                                                 }
                                             },
@@ -3855,7 +3891,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 119.0, 1204.0, 784.0 ],
+                        "rect": [ 122.0, 303.0, 962.0, 522.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -3908,6 +3944,16 @@
                                         "classnamespace": "box",
                                         "rect": [ 59.0, 119.0, 418.0, 317.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-1",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 112.0, 185.0, 147.0, 22.0 ],
+                                                    "text": "print --------dataset-loaded"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-18",
@@ -3963,7 +4009,15 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-1", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-18", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-21", 0 ],
+                                                    "order": 1,
                                                     "source": [ "obj-18", 0 ]
                                                 }
                                             },
@@ -4264,7 +4318,6 @@
                                         ]
                                     },
                                     "patching_rect": [ 780.0, 410.0, 86.0, 22.0 ],
-                                    "presentation_linecount": 3,
                                     "text": "p atlas.colors?"
                                 }
                             },
@@ -6327,7 +6380,7 @@
                             {
                                 "box": {
                                     "id": "obj-48",
-                                    "items": [ "T26_fish2_FULL.3Dcoords.jxf", ",", "T26_fish2_FULL.atlas.energy.jxf", ",", "T26_fish2_FULL.atlas.labels.coll", ",", "T26_fish2_FULL.atlas.mapping.jxf", ",", "T26_fish2_FULL.spikes.jxf" ],
+                                    "items": [ "T26_fish2_FULL.3Dcoords.jxf", ",", "T26_fish2_FULL.atlas.energy.jxf", ",", "T26_fish2_FULL.atlas.labels.coll", ",", "T26_fish2_FULL.atlas.mapping.jxf", ",", "T26_fish2_FULL.spikes.jxf", ",", "test.atlas.colors.jxf" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -7265,15 +7318,25 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 372.0, 309.0, 348.0, 337.0 ],
+                                        "rect": [ 372.0, 309.0, 614.0, 337.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-2",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 183.0, 205.0, 197.0, 22.0 ],
+                                                    "text": "print /TBO/dataset/pixelmap/loaded"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-1",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 50.0, 247.0, 189.0, 22.0 ],
+                                                    "patching_rect": [ 50.0, 263.0, 189.0, 22.0 ],
                                                     "text": "s /TBO/dataset/pixelmap/filename"
                                                 }
                                             },
@@ -7337,7 +7400,15 @@
                                         "lines": [
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-27", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-3", 0 ],
+                                                    "order": 1,
                                                     "source": [ "obj-27", 0 ]
                                                 }
                                             },
@@ -8651,11 +8722,21 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 162.0, 219.0, 215.0, 22.0 ],
+                                    "text": "print /TBO/datasets/atlas.labels/loaded"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-104",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 99.0, 257.0, 84.0, 22.0 ],
+                                    "patching_rect": [ 99.0, 274.0, 84.0, 22.0 ],
                                     "text": "s ---labels.dim"
                                 }
                             },
@@ -8758,7 +8839,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 139.5, 217.0, 179.0, 22.0 ],
+                                    "patching_rect": [ 139.5, 243.0, 179.0, 22.0 ],
                                     "text": "s ---atlasClassNames.load.done"
                                 }
                             },
@@ -8820,7 +8901,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 50.0, 181.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 50.0, 274.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
@@ -8905,7 +8986,15 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-6", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-3", 0 ]
                                 }
                             },
@@ -12639,11 +12728,21 @@
                                         "boxes": [
                                             {
                                                 "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 155.0, 265.0, 223.0, 22.0 ],
+                                                    "text": "print /TBO/dataset/atlas.mapping/loaded"
+                                                }
+                                            },
+                                            {
+                                                "box": {
                                                     "id": "obj-4",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 50.0, 302.0, 215.0, 22.0 ],
+                                                    "patching_rect": [ 50.0, 329.0, 215.0, 22.0 ],
                                                     "text": "s /TBO/dataset/atlas.mapping/filename"
                                                 }
                                             },
@@ -12697,7 +12796,7 @@
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 137.0, 268.0, 181.0, 22.0 ],
+                                                    "patching_rect": [ 137.0, 295.0, 181.0, 22.0 ],
                                                     "text": "s ---neurons2AtlasLabels.loaded"
                                                 }
                                             },
@@ -12795,6 +12894,14 @@
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-1", 0 ],
+                                                    "order": 1,
+                                                    "source": [ "obj-7", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-9", 0 ],
+                                                    "order": 0,
                                                     "source": [ "obj-7", 0 ]
                                                 }
                                             },
@@ -13806,6 +13913,16 @@
                                         "boxes": [
                                             {
                                                 "box": {
+                                                    "id": "obj-6",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 152.0, 252.0, 189.0, 22.0 ],
+                                                    "text": "print /TBO/datasets/spikes/loaded"
+                                                }
+                                            },
+                                            {
+                                                "box": {
                                                     "id": "obj-4",
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
@@ -13843,7 +13960,7 @@
                                                     "maxclass": "newobj",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 137.0, 237.0, 165.0, 22.0 ],
+                                                    "patching_rect": [ 137.0, 284.0, 165.0, 22.0 ],
                                                     "text": "s ---neuronsSpikes.load.done"
                                                 }
                                             },
@@ -13886,6 +14003,7 @@
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-1", 0 ],
+                                                    "order": 1,
                                                     "source": [ "obj-2", 0 ]
                                                 }
                                             },
@@ -13893,6 +14011,13 @@
                                                 "patchline": {
                                                     "destination": [ "obj-3", 0 ],
                                                     "source": [ "obj-2", 1 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-2", 0 ]
                                                 }
                                             },
                                             {
@@ -14113,12 +14238,212 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "fontsize": 14.0,
+                                    "id": "obj-6",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "jit_matrix" ],
+                                    "patcher": {
+                                        "fileversion": 1,
+                                        "appversion": {
+                                            "major": 9,
+                                            "minor": 2,
+                                            "revision": 0,
+                                            "architecture": "x64",
+                                            "modernui": 1
+                                        },
+                                        "classnamespace": "box",
+                                        "rect": [ 282.0, 246.0, 543.0, 306.0 ],
+                                        "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-16",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "int" ],
+                                                    "patching_rect": [ 50.0, 118.0, 29.5, 22.0 ],
+                                                    "text": "+ 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-15",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 50.0, 88.0, 155.0, 22.0 ],
+                                                    "text": "v _add_noise_to_3Dcoords"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-14",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "bang" ],
+                                                    "patching_rect": [ 83.0, 51.0, 29.5, 22.0 ],
+                                                    "text": "t l b"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-13",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "" ],
+                                                    "patching_rect": [ 50.0, 147.0, 52.0, 22.0 ],
+                                                    "text": "gate 2 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-10",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 117.0, 198.0, 433.0, 22.0 ],
+                                                    "text": "jit.expr @expr in[0]+0.01*noise.cell(norm[0]*dim[0]\\, norm[1]*dim[1]\\, @seed 313)"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-9",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 3,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "jit_matrix", "" ],
+                                                    "patching_rect": [ 82.0, 219.0, 56.0, 22.0 ],
+                                                    "text": "jit.pack 3"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-8",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 4,
+                                                    "outlettype": [ "jit_matrix", "jit_matrix", "jit_matrix", "" ],
+                                                    "patching_rect": [ 83.0, 178.0, 69.0, 22.0 ],
+                                                    "text": "jit.unpack 3"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-5",
+                                                    "index": 1,
+                                                    "maxclass": "inlet",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "jit_matrix" ],
+                                                    "patching_rect": [ 83.0, 9.0, 30.0, 30.0 ]
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-6",
+                                                    "index": 1,
+                                                    "maxclass": "outlet",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 50.0, 252.0, 30.0, 30.0 ]
+                                                }
+                                            }
+                                        ],
+                                        "lines": [
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-9", 2 ],
+                                                    "source": [ "obj-10", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "source": [ "obj-13", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-8", 0 ],
+                                                    "source": [ "obj-13", 1 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-13", 1 ],
+                                                    "source": [ "obj-14", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-15", 0 ],
+                                                    "source": [ "obj-14", 1 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-16", 0 ],
+                                                    "source": [ "obj-15", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-13", 0 ],
+                                                    "source": [ "obj-16", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-14", 0 ],
+                                                    "source": [ "obj-5", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-10", 0 ],
+                                                    "source": [ "obj-8", 2 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-9", 1 ],
+                                                    "source": [ "obj-8", 1 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-9", 0 ],
+                                                    "source": [ "obj-8", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "source": [ "obj-9", 0 ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "patching_rect": [ 110.0, 196.0, 82.0, 24.0 ],
+                                    "text": "p add-noise"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-41",
                                     "maxclass": "message",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 177.0, 312.0, 52.0, 22.0 ],
+                                    "patching_rect": [ 177.0, 361.0, 52.0, 22.0 ],
                                     "text": "plane -1"
                                 }
                             },
@@ -14134,7 +14459,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 4,
                                     "outlettype": [ "list", "", "", "" ],
-                                    "patching_rect": [ 177.0, 346.0, 247.0, 44.0 ],
+                                    "patching_rect": [ 177.0, 395.0, 247.0, 44.0 ],
                                     "rows": 1
                                 }
                             },
@@ -14189,6 +14514,16 @@
                                         "classnamespace": "box",
                                         "rect": [ 577.0, 309.0, 640.0, 480.0 ],
                                         "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-2",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 184.0, 189.0, 200.0, 22.0 ],
+                                                    "text": "print /TBO/dataset/3Dcoords/loaded"
+                                                }
+                                            },
                                             {
                                                 "box": {
                                                     "id": "obj-6",
@@ -14265,7 +14600,15 @@
                                             },
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
+                                                    "order": 0,
+                                                    "source": [ "obj-27", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-3", 0 ],
+                                                    "order": 1,
                                                     "source": [ "obj-27", 0 ]
                                                 }
                                             },
@@ -14316,7 +14659,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 110.0, 280.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 110.0, 329.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -14337,7 +14680,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 536.0, 476.0, 640.0, 480.0 ],
+                                        "rect": [ 536.0, 468.0, 640.0, 480.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -14469,7 +14812,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 144.0, 257.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 144.0, 306.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -14478,7 +14821,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 144.0, 288.0, 181.0, 22.0 ],
+                                    "patching_rect": [ 144.0, 337.0, 181.0, 22.0 ],
                                     "text": "s ---neurons3Dcoords.load.done"
                                 }
                             },
@@ -14489,7 +14832,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 110.0, 200.0, 288.0, 22.0 ],
+                                    "patching_rect": [ 110.0, 249.0, 288.0, 22.0 ],
                                     "text": "jit.matrix ---neurons3Dcoords 3 float32 1 1 @adapt 1"
                                 }
                             },
@@ -14499,7 +14842,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 426.0, 288.0, 182.0, 22.0 ],
+                                    "patching_rect": [ 426.0, 337.0, 182.0, 22.0 ],
                                     "text": "s ---neurons.3Dcoords.maxscale"
                                 }
                             },
@@ -14512,7 +14855,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 426.0, 258.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 426.0, 307.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -14522,7 +14865,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "float", "int" ],
-                                    "patching_rect": [ 426.0, 231.0, 74.0, 22.0 ],
+                                    "patching_rect": [ 426.0, 280.0, 74.0, 22.0 ],
                                     "text": "maximum 0."
                                 }
                             },
@@ -14533,7 +14876,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 4,
                                     "outlettype": [ "", "", "", "" ],
-                                    "patching_rect": [ 405.0, 200.0, 50.5, 22.0 ],
+                                    "patching_rect": [ 405.0, 249.0, 50.5, 22.0 ],
                                     "text": "jit.3m"
                                 }
                             },
@@ -14556,7 +14899,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
                                     "patching_rect": [ 110.0, 123.0, 163.0, 22.0 ],
-                                    "text": "jit.matrix ---neurons3Dcoords"
+                                    "text": "jit.matrix"
                                 }
                             },
                             {
@@ -14661,13 +15004,19 @@
                                 "patchline": {
                                     "destination": [ "obj-2", 0 ],
                                     "order": 1,
-                                    "source": [ "obj-7", 0 ]
+                                    "source": [ "obj-6", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-94", 0 ],
                                     "order": 0,
+                                    "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-6", 0 ],
                                     "source": [ "obj-7", 0 ]
                                 }
                             },
@@ -14848,7 +15197,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 587.0, 262.0, 133.0, 33.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "if a matrix found, ensure it has right dims"
                                 }
                             },
