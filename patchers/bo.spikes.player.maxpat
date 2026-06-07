@@ -73,7 +73,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 275.0, 758.0, 335.0 ],
+                        "rect": [ 498.0, 584.0, 758.0, 335.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -115,8 +115,8 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 309.0, 195.0, 220.0, 22.0 ],
-                                    "text": "jit.matrix emptyFrame 1 float32 23743 1"
+                                    "patching_rect": [ 309.0, 195.0, 181.0, 22.0 ],
+                                    "text": "jit.matrix emptyFrame 1 char 1 1"
                                 }
                             },
                             {
@@ -227,7 +227,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 50.0, 232.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 50.0, 241.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
