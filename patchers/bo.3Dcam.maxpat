@@ -2643,7 +2643,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "patching_rect": [ 646.0, 319.0, 460.0, 22.0 ],
-                    "text": "jit.anim.drive @ui_listen 0 @speed 0.1 @easein 5 @easeout 2 @easefunc quadratic"
+                    "text": "jit.anim.drive @ui_listen 0 @speed 0.1 @easein 1 @easeout 1 @easefunc quadratic"
                 }
             },
             {
