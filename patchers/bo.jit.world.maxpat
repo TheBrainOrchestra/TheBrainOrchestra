@@ -1320,12 +1320,13 @@
             {
                 "box": {
                     "id": "obj-90",
+                    "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_matrix", "bang", "" ],
-                    "patching_rect": [ 159.0, 371.0, 569.0, 22.0 ],
-                    "text": "jit.world ---BrainViz @fps 30 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0",
+                    "patching_rect": [ 157.5, 364.5, 485.0, 35.0 ],
+                    "text": "jit.world ---BrainViz @fps 30 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0 @transparency 1",
                     "varname": "TBO_jit_world"
                 }
             },
