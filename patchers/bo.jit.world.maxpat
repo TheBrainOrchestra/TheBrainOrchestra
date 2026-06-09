@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 232.0, 259.0, 1060.0, 689.0 ],
+        "rect": [ 290.0, -898.0, 1060.0, 689.0 ],
         "boxes": [
             {
                 "box": {
@@ -1320,13 +1320,12 @@
             {
                 "box": {
                     "id": "obj-90",
-                    "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_matrix", "bang", "" ],
-                    "patching_rect": [ 157.5, 364.5, 485.0, 35.0 ],
-                    "text": "jit.world ---BrainViz @fps 30 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0 @transparency 1",
+                    "patching_rect": [ 157.5, 364.5, 569.0, 22.0 ],
+                    "text": "jit.world ---BrainViz @fps 30 @erase_color 0 0 0 1 @visible 0 @sync 0 @esc_fullscreen 0 @fsmenubar 0",
                     "varname": "TBO_jit_world"
                 }
             },
