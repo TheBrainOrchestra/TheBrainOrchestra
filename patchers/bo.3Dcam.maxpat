@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 113.0, 229.0, 1188.0, 690.0 ],
+        "rect": [ 290.0, 223.0, 1188.0, 690.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 903.0, 153.0, 143.0, 22.0 ],
+                    "text": "r /TBO/3Dcam/autorotate"
+                }
+            },
             {
                 "box": {
                     "id": "obj-48",
@@ -31,29 +42,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 966.0, 168.0, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-44",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "float" ],
-                    "patching_rect": [ 903.0, 193.0, 33.0, 22.0 ],
-                    "text": "* 0.1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-42",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 903.0, 161.0, 24.0, 24.0 ]
+                    "patching_rect": [ 903.0, 189.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -66,7 +55,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 903.0, 224.5, 80.0, 23.0 ],
-                    "presentation_linecount": 2,
                     "text": "move $1 0 0"
                 }
             },
@@ -159,7 +147,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 767.0, 152.0, 24.0, 24.0 ]
+                    "patching_rect": [ 727.0, 123.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -169,7 +157,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 767.0, 122.0, 150.0, 22.0 ],
+                    "patching_rect": [ 727.0, 93.0, 150.0, 22.0 ],
                     "text": "r ---BrainViz/render/update"
                 }
             },
@@ -593,7 +581,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 623.5, 35.0, 129.0, 22.0 ],
+                                                    "patching_rect": [ 623.5, 55.0, 129.0, 22.0 ],
                                                     "text": "r /TBO/3Dcam/teleport"
                                                 }
                                             },
@@ -639,17 +627,6 @@
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 634.0, 268.0, 95.0, 22.0 ],
                                                     "text": "prepend moveto"
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "id": "obj-85",
-                                                    "maxclass": "message",
-                                                    "numinlets": 2,
-                                                    "numoutlets": 1,
-                                                    "outlettype": [ "" ],
-                                                    "patching_rect": [ 623.5, 68.0, 165.0, 22.0 ],
-                                                    "text": "0.071663 0.075348 0.062913"
                                                 }
                                             },
                                             {
@@ -1691,14 +1668,8 @@
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-85", 0 ],
-                                                    "source": [ "obj-60", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
                                                     "destination": [ "obj-57", 0 ],
-                                                    "source": [ "obj-85", 0 ]
+                                                    "source": [ "obj-60", 0 ]
                                                 }
                                             }
                                         ]
@@ -5387,6 +5358,12 @@
         "lines": [
             {
                 "patchline": {
+                    "destination": [ "obj-46", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-9", 0 ],
                     "source": [ "obj-10", 0 ]
                 }
@@ -5584,12 +5561,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-44", 0 ],
-                    "source": [ "obj-42", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-89", 0 ],
                     "source": [ "obj-43", 0 ]
                 }
@@ -5597,12 +5568,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-39", 0 ],
-                    "source": [ "obj-44", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-44", 1 ],
                     "source": [ "obj-46", 0 ]
                 }
             },
