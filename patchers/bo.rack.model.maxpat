@@ -9,8 +9,30 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 219.0, 147.0, 824.0, 759.0 ],
+        "rect": [ 536.0, 100.0, 824.0, 759.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 451.0, 51.0, 72.0, 22.0 ],
+                    "text": "route tralala"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-27",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 451.0, 22.0, 53.0, 22.0 ],
+                    "text": "r toRack"
+                }
+            },
             {
                 "box": {
                     "id": "obj-9",
@@ -18,7 +40,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 114.0, 537.0, 659.0, 22.0 ],
+                    "patching_rect": [ 99.0, 594.0, 659.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID subcluster-mapfile @type string @default None @description \"Subcluster map file path\""
                 }
             },
@@ -29,7 +51,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 115.0, 501.0, 597.0, 22.0 ],
+                    "patching_rect": [ 100.0, 558.0, 597.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID subcluster-count @type integer @default 1 @description Subcluster-count"
                 }
             },
@@ -39,7 +61,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 265.0, 452.0, 150.0, 20.0 ],
+                    "patching_rect": [ 250.0, 509.0, 150.0, 20.0 ],
                     "text": "/subcluster-count"
                 }
             },
@@ -50,7 +72,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 358.0, 839.0, 26.0, 22.0 ],
+                    "patching_rect": [ 343.0, 896.0, 26.0, 22.0 ],
                     "text": "t -1"
                 }
             },
@@ -63,7 +85,7 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
-                    "patching_rect": [ 271.0, 815.0, 107.0, 22.0 ],
+                    "patching_rect": [ 256.0, 872.0, 107.0, 22.0 ],
                     "text": "bo.kslider2pitchlist"
                 }
             },
@@ -76,7 +98,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "int", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 271.0, 757.0, 336.0, 53.0 ]
+                    "patching_rect": [ 256.0, 814.0, 336.0, 53.0 ]
                 }
             },
             {
@@ -92,7 +114,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 15.0, 938.0, 97.0, 23.0 ]
+                    "patching_rect": [ 0.0, 995.0, 97.0, 23.0 ]
                 }
             },
             {
@@ -108,7 +130,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 14.0, 996.0, 100.0, 23.0 ]
+                    "patching_rect": [ -1.0, 1053.0, 100.0, 23.0 ]
                 }
             },
             {
@@ -118,7 +140,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 104.0, 845.0, 576.0, 22.0 ],
+                    "patching_rect": [ 89.0, 902.0, 576.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID MIDI-notes @type list @default -1 @description \"MIDI notes\""
                 }
             },
@@ -129,7 +151,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 105.0, 797.0, 100.0, 22.0 ],
+                    "patching_rect": [ 90.0, 854.0, 100.0, 22.0 ],
                     "text": "pack 0 127"
                 }
             },
@@ -140,7 +162,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "int", "int" ],
-                    "patching_rect": [ 104.0, 742.0, 100.0, 22.0 ],
+                    "patching_rect": [ 89.0, 799.0, 100.0, 22.0 ],
                     "text": "unpack 0 127"
                 }
             },
@@ -154,7 +176,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 104.0, 769.0, 100.0, 18.0 ],
+                    "patching_rect": [ 89.0, 826.0, 100.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 90.0, 1014.0, 114.0, 15.0 ],
                     "saved_attribute_attributes": {
@@ -184,7 +206,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 104.0, 712.0, 576.0, 22.0 ],
+                    "patching_rect": [ 89.0, 769.0, 576.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID pressure-range @type list @default 0 127 @description \"Pressre range\""
                 }
             },
@@ -195,7 +217,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 113.0, 666.0, 100.0, 22.0 ],
+                    "patching_rect": [ 98.0, 723.0, 100.0, 22.0 ],
                     "text": "pack 0 127"
                 }
             },
@@ -206,7 +228,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "int", "int" ],
-                    "patching_rect": [ 112.0, 611.0, 100.0, 22.0 ],
+                    "patching_rect": [ 97.0, 668.0, 100.0, 22.0 ],
                     "text": "unpack 0 127"
                 }
             },
@@ -220,7 +242,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 112.0, 638.0, 100.0, 18.0 ],
+                    "patching_rect": [ 97.0, 695.0, 100.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 808.0, 26.0, 114.0, 15.0 ],
                     "saved_attribute_attributes": {
@@ -250,7 +272,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 112.0, 581.0, 570.0, 22.0 ],
+                    "patching_rect": [ 97.0, 638.0, 570.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID velocity-range @type list @default 0 127 @description \"Velocity range\""
                 }
             },
@@ -261,7 +283,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 112.0, 437.0, 100.0, 22.0 ],
+                    "patching_rect": [ 97.0, 494.0, 100.0, 22.0 ],
                     "text": "prepend symbol"
                 }
             },
@@ -273,7 +295,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 81.0, 1028.0, 50.0, 22.0 ]
+                    "patching_rect": [ 66.0, 1085.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -284,7 +306,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 81.0, 968.0, 50.0, 22.0 ]
+                    "patching_rect": [ 66.0, 1025.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -294,7 +316,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 140.0, 1028.0, 577.0, 22.0 ],
+                    "patching_rect": [ 125.0, 1085.0, 577.0, 22.0 ],
                     "text": "mvc.parameter MIDIsettings output_channel @type integer @default 1 @description \"MIDI output channel\""
                 }
             },
@@ -305,7 +327,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 140.0, 1002.0, 611.0, 22.0 ],
+                    "patching_rect": [ 125.0, 1059.0, 611.0, 22.0 ],
                     "text": "mvc.parameter MIDIsettings output_device @type string @default \"No Output\" @description \"MIDI output device\""
                 }
             },
@@ -316,7 +338,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 140.0, 964.0, 562.0, 22.0 ],
+                    "patching_rect": [ 125.0, 1021.0, 562.0, 22.0 ],
                     "text": "mvc.parameter MIDIsettings input_channel @type integer @default 0 @description \"MIDI input channel\""
                 }
             },
@@ -327,7 +349,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 140.0, 938.0, 587.0, 22.0 ],
+                    "patching_rect": [ 125.0, 995.0, 587.0, 22.0 ],
                     "text": "mvc.parameter MIDIsettings input_device @type string @default \"No Input\" @description \"MIDI input device\""
                 }
             },
@@ -338,7 +360,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 425.0, 6.0, 30.0, 22.0 ],
+                    "patching_rect": [ 410.0, 63.0, 30.0, 22.0 ],
                     "text": "GUI"
                 }
             },
@@ -349,7 +371,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 113.0, 905.0, 416.0, 22.0 ],
+                    "patching_rect": [ 98.0, 962.0, 416.0, 22.0 ],
                     "text": "mvc.model MIDIsettings ChannelModelUID MIDIsettings @type MIDIsettings",
                     "varname": "mvc.model[1]"
                 }
@@ -362,7 +384,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 79.0, 202.0, 24.0, 24.0 ]
+                    "patching_rect": [ 64.0, 259.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -372,7 +394,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 112.0, 203.0, 559.0, 22.0 ],
+                    "patching_rect": [ 97.0, 260.0, 559.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID neurons_show @type bool @default 0 @description \"Show neurons\""
                 }
             },
@@ -384,7 +406,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 112.0, 114.0, 485.0, 35.0 ],
+                    "patching_rect": [ 97.0, 171.0, 485.0, 35.0 ],
                     "text": "mvc.parameter ChannelModelUID clustername @type string @default \"No Cluster\" @description \"Cluster name\""
                 }
             },
@@ -395,7 +417,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 555.0, 45.0, 107.0, 22.0 ],
+                    "patching_rect": [ 540.0, 102.0, 107.0, 22.0 ],
                     "text": "preset saveas toto"
                 }
             },
@@ -406,7 +428,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 508.0, 45.0, 30.0, 22.0 ],
+                    "patching_rect": [ 493.0, 102.0, 30.0, 22.0 ],
                     "text": "GUI"
                 }
             },
@@ -419,7 +441,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 59.0, 368.0, 128.0, 22.0 ]
+                    "patching_rect": [ 44.0, 425.0, 128.0, 22.0 ]
                 }
             },
             {
@@ -430,7 +452,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 79.0, 315.0, 24.0, 24.0 ]
+                    "patching_rect": [ 64.0, 372.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -441,7 +463,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 79.0, 252.0, 24.0, 24.0 ]
+                    "patching_rect": [ 64.0, 309.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -452,7 +474,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 79.0, 280.0, 24.0, 24.0 ]
+                    "patching_rect": [ 64.0, 337.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -463,7 +485,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 113.0, 396.0, 539.0, 35.0 ],
+                    "patching_rect": [ 98.0, 453.0, 539.0, 35.0 ],
                     "text": "mvc.parameter ChannelModelUID subcluster-method @type symbol @default \"auto: divide\" @description \"Subclustering method \" @options \"auto: divide\" \"auto: sort activity\" k-means map-file"
                 }
             },
@@ -474,7 +496,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 112.0, 316.0, 569.0, 22.0 ],
+                    "patching_rect": [ 97.0, 373.0, 569.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID monophonic @type bool @default 0 @description \"Monophonic mode\""
                 }
             },
@@ -485,7 +507,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 112.0, 253.0, 485.0, 22.0 ],
+                    "patching_rect": [ 97.0, 310.0, 485.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID hold @type bool @default 0 @description \"Hold mode\""
                 }
             },
@@ -496,7 +518,7 @@
                     "numinlets": 2,
                     "numoutlets": 3,
                     "outlettype": [ "", "int", "" ],
-                    "patching_rect": [ 112.0, 281.0, 507.0, 22.0 ],
+                    "patching_rect": [ 97.0, 338.0, 507.0, 22.0 ],
                     "text": "mvc.parameter ChannelModelUID legato @type bool @default 0 @description \"Legato mode\""
                 }
             },
@@ -507,7 +529,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 63.0, 80.0, 464.0, 22.0 ],
+                    "patching_rect": [ 48.0, 137.0, 464.0, 22.0 ],
                     "text": "mvc.model ChannelModelUID ChannelRackModelUID channel.{1..16} @type channel",
                     "varname": "mvc.model"
                 }
@@ -519,7 +541,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 37.0, 37.0, 407.0, 22.0 ],
+                    "patching_rect": [ 22.0, 94.0, 407.0, 22.0 ],
                     "text": "mvc.model ChannelRackModelUID TBO channelRack @type channelRack",
                     "varname": "mvc.model[2]"
                 }
@@ -594,8 +616,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-30", 0 ],
+                    "source": [ "obj-27", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-11", 0 ],
                     "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 1 ],
+                    "source": [ "obj-30", 0 ]
                 }
             },
             {
@@ -607,7 +641,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-16", 0 ],
-                    "midpoints": [ 121.5, 464.6875, 46.0, 464.6875, 46.0, 364.0, 68.5, 364.0 ],
+                    "midpoints": [ 106.5, 521.6875, 31.0, 521.6875, 31.0, 421.0, 53.5, 421.0 ],
                     "source": [ "obj-34", 0 ]
                 }
             },
@@ -638,7 +672,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-35", 0 ],
-                    "midpoints": [ 122.5, 691.0, 97.0, 691.0, 97.0, 577.0, 121.5, 577.0 ],
+                    "midpoints": [ 107.5, 748.0, 82.0, 748.0, 82.0, 634.0, 106.5, 634.0 ],
                     "source": [ "obj-39", 0 ]
                 }
             },
@@ -651,7 +685,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-43", 0 ],
-                    "midpoints": [ 114.5, 822.0, 89.0, 822.0, 89.0, 708.0, 113.5, 708.0 ],
+                    "midpoints": [ 99.5, 879.0, 74.0, 879.0, 74.0, 765.0, 98.5, 765.0 ],
                     "source": [ "obj-40", 0 ]
                 }
             },
@@ -724,7 +758,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-34", 0 ],
-                    "midpoints": [ 122.5, 448.0 ],
+                    "midpoints": [ 107.5, 505.0 ],
                     "source": [ "obj-6", 0 ]
                 }
             },
