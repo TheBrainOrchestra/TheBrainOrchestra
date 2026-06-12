@@ -3600,7 +3600,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
                                     "patching_rect": [ 536.0, 294.0, 143.0, 22.0 ],
-                                    "text": "jit.map @map 0. 1. 0.2 1."
+                                    "text": "jit.map @map 0. 1. 0.3 1."
                                 }
                             },
                             {
