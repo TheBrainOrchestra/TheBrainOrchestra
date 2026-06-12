@@ -9,8 +9,30 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 290.0, -898.0, 1060.0, 689.0 ],
+        "rect": [ 134.0, 172.0, 1060.0, 689.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-3",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 494.0, 149.0, 70.0, 22.0 ],
+                    "text": "loadmess 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 277.0, 50.0, 70.0, 22.0 ],
+                    "text": "loadmess 1"
+                }
+            },
             {
                 "box": {
                     "id": "obj-36",
@@ -28,7 +50,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 325.0, 87.0, 150.0, 20.0 ],
+                    "patching_rect": [ 277.0, 87.0, 150.0, 20.0 ],
                     "text": "see bubbletime"
                 }
             },
@@ -41,7 +63,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 319.0, 111.0, 150.0, 22.0 ]
+                    "patching_rect": [ 277.0, 111.0, 150.0, 22.0 ]
                 }
             },
             {
@@ -241,7 +263,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 559.0, 149.0, 165.0, 22.0 ],
+                    "patching_rect": [ 608.0, 43.0, 165.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 57.0, 92.0, 165.0, 22.0 ],
                     "text": "p sw /TBO/render/FSmonitor"
@@ -256,7 +278,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 507.0, 149.0, 50.0, 22.0 ],
+                    "patching_rect": [ 556.0, 43.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 5.0, 92.0, 50.0, 22.0 ]
                 }
@@ -1340,9 +1362,27 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 107.0, 81.0, 30.0, 30.0 ]
                 }
+            },
+            {
+                "box": {
+                    "attr": "depth_sort",
+                    "id": "obj-1",
+                    "maxclass": "attrui",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 494.0, 180.0, 150.0, 22.0 ]
+                }
             }
         ],
         "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-90", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
             {
                 "patchline": {
                     "destination": [ "obj-18", 0 ],
@@ -1461,6 +1501,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-31", 0 ],
                     "source": [ "obj-30", 0 ]
                 }
@@ -1487,6 +1533,12 @@
                 "patchline": {
                     "destination": [ "obj-90", 0 ],
                     "source": [ "obj-36", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-4", 0 ]
                 }
             },
             {
