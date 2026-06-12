@@ -14234,8 +14234,42 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 190.0, 337.0, 670.0, 396.0 ],
+                        "rect": [ 407.0, 295.0, 888.0, 546.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "format": 6,
+                                    "id": "obj-21",
+                                    "maxclass": "flonum",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 360.0, 349.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-20",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "float", "int" ],
+                                    "patching_rect": [ 355.5, 314.0, 74.0, 22.0 ],
+                                    "text": "maximum 0."
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-15",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 353.0, 284.0, 79.0, 22.0 ],
+                                    "text": "vexpr $f2-$f1"
+                                }
+                            },
                             {
                                 "box": {
                                     "fontsize": 14.0,
@@ -14842,7 +14876,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 426.0, 337.0, 182.0, 22.0 ],
+                                    "patching_rect": [ 495.0, 336.0, 182.0, 22.0 ],
                                     "text": "s ---neurons.3Dcoords.maxscale"
                                 }
                             },
@@ -14855,7 +14889,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 426.0, 307.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 495.0, 306.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -14865,7 +14899,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "float", "int" ],
-                                    "patching_rect": [ 426.0, 280.0, 74.0, 22.0 ],
+                                    "patching_rect": [ 495.0, 270.0, 74.0, 22.0 ],
                                     "text": "maximum 0."
                                 }
                             },
@@ -14876,7 +14910,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 4,
                                     "outlettype": [ "", "", "", "" ],
-                                    "patching_rect": [ 405.0, 249.0, 50.5, 22.0 ],
+                                    "patching_rect": [ 422.0, 218.0, 50.5, 22.0 ],
                                     "text": "jit.3m"
                                 }
                             },
@@ -14924,6 +14958,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-20", 0 ],
+                                    "source": [ "obj-15", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-5", 0 ],
                                     "source": [ "obj-17", 1 ]
                                 }
@@ -14959,6 +14999,12 @@
                                     "destination": [ "obj-8", 0 ],
                                     "order": 2,
                                     "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
@@ -15028,7 +15074,21 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-15", 1 ],
+                                    "order": 1,
+                                    "source": [ "obj-94", 2 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-15", 0 ],
+                                    "source": [ "obj-94", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-97", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-94", 2 ]
                                 }
                             },
