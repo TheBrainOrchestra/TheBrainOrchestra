@@ -572,7 +572,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 118.0, 441.0, 1001.0, 470.0 ],
+                                        "rect": [ 134.0, 172.0, 1001.0, 470.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -798,7 +798,7 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "box",
-                                                        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
+                                                        "rect": [ 134.0, 172.0, 1000.0, 755.0 ],
                                                         "boxes": [
                                                             {
                                                                 "box": {
@@ -959,7 +959,7 @@
                                                                     "numinlets": 2,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "", "" ],
-                                                                    "patching_rect": [ 424.0, 302.0, 37.0, 22.0 ],
+                                                                    "patching_rect": [ 420.0, 337.0, 37.0, 22.0 ],
                                                                     "text": "zl.len"
                                                                 }
                                                             },
@@ -1036,7 +1036,7 @@
                                                                     "numinlets": 1,
                                                                     "numoutlets": 2,
                                                                     "outlettype": [ "bang", "" ],
-                                                                    "patching_rect": [ 50.0, 100.0, 45.0, 22.0 ],
+                                                                    "patching_rect": [ 50.0, 84.0, 45.0, 22.0 ],
                                                                     "text": "t b l"
                                                                 }
                                                             },
@@ -1228,7 +1228,15 @@
                                                             },
                                                             {
                                                                 "patchline": {
+                                                                    "destination": [ "obj-12", 0 ],
+                                                                    "order": 0,
+                                                                    "source": [ "obj-23", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
                                                                     "destination": [ "obj-22", 0 ],
+                                                                    "order": 1,
                                                                     "source": [ "obj-23", 0 ]
                                                                 }
                                                             },
@@ -1284,15 +1292,7 @@
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-12", 0 ],
-                                                                    "order": 0,
-                                                                    "source": [ "obj-6", 2 ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "patchline": {
                                                                     "destination": [ "obj-23", 0 ],
-                                                                    "order": 1,
                                                                     "source": [ "obj-6", 2 ]
                                                                 }
                                                             },
