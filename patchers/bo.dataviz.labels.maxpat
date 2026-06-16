@@ -803,7 +803,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 859.0, 110.0, 120.0, 22.0 ],
-                                    "presentation_linecount": 3,
                                     "text": "symbol \"Avenir Next\""
                                 }
                             },
@@ -815,7 +814,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 903.5, 203.0, 89.0, 22.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "symbol Roboto"
                                 }
                             },
@@ -4532,7 +4530,6 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 34.0, 175.0, 1444.0, 768.0 ],
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -4548,7 +4545,7 @@
                             },
                             {
                                 "box": {
-                                    "cols": 185,
+                                    "cols": 1,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
