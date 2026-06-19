@@ -2554,9 +2554,9 @@
                     "presentation_rect": [ 927.0, 26.0, 110.6797708272934, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "Arturia BeatStep", "Périphérique MIDI USB Port 1", "Périphérique MIDI USB Port 2", "to Max 1", "to Max 2", "No Input" ],
+                            "parameter_enum": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "Arturia BeatStep", "to Max 1", "to Max 2", "No Input" ],
                             "parameter_longname": "live.menu[96]",
-                            "parameter_mmax": 7,
+                            "parameter_mmax": 5,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
                             "parameter_type": 2
@@ -7068,8 +7068,22 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 259.0, 120.0, 949.0, 657.0 ],
+                        "rect": [ 233.0, 244.0, 949.0, 657.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "fontface": 0,
+                                    "fontname": "Arial",
+                                    "fontsize": 12.0,
+                                    "id": "obj-38",
+                                    "maxclass": "jit.fpsgui",
+                                    "mode": 3,
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 389.25, 377.5, 80.0, 35.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "depthbuffer": 1,
@@ -7849,6 +7863,14 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-26", 1 ],
+                                    "order": 1,
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-38", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-1", 0 ]
                                 }
                             },
@@ -7959,12 +7981,6 @@
                                     "destination": [ "obj-32", 0 ],
                                     "order": 1,
                                     "source": [ "obj-20", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-14", 0 ],
-                                    "source": [ "obj-21", 0 ]
                                 }
                             },
                             {
@@ -8975,7 +8991,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 30,
+                                                    "cols": 1470,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -8990,7 +9006,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 30,
+                                                    "cols": 1470,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -9459,7 +9475,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 30,
+                                                    "cols": 1470,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -15382,13 +15398,13 @@
                                     "patching_rect": [ 55.0, 234.0, 583.0, 85.0 ],
                                     "setminmax": [ 0.0, 60.0 ],
                                     "signed": 1,
-                                    "size": 30,
+                                    "size": 1470,
                                     "spacing": 1
                                 }
                             },
                             {
                                 "box": {
-                                    "cols": 30,
+                                    "cols": 1470,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
