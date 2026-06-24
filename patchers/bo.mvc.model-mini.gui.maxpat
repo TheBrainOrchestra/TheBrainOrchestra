@@ -9,9 +9,20 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 384.0, 578.0, 955.0, 556.0 ],
+        "rect": [ 384.0, 392.0, 955.0, 556.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 233.0, 65.0, 72.0, 22.0 ],
+                    "text": "patcherargs"
+                }
+            },
             {
                 "box": {
                     "id": "obj-6",
@@ -1115,7 +1126,7 @@
                     "hint": "TBO/channelRack/channel.1",
                     "id": "obj-23",
                     "ignoreclick": 1,
-                    "items": "channel.1",
+                    "items": "TBO",
                     "maxclass": "umenu",
                     "menumode": 1,
                     "numinlets": 1,
@@ -1140,7 +1151,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "mvc.GUI.presets.maxpat",
+                    "name": "bo.mvc.GUI.presets.maxpat",
                     "numinlets": 2,
                     "numoutlets": 2,
                     "offset": [ 0.0, 0.0 ],
@@ -1238,6 +1249,12 @@
                     "destination": [ "obj-8", 1 ],
                     "midpoints": [ 242.5, 276.0, 259.5, 276.0, 259.5, 205.0, 212.5, 205.0 ],
                     "source": [ "obj-60", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 1 ],
+                    "source": [ "obj-7", 1 ]
                 }
             },
             {
