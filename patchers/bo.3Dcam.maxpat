@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 226.0, 238.0, 1188.0, 690.0 ],
+        "rect": [ 623.0, 100.0, 1188.0, 690.0 ],
         "boxes": [
             {
                 "box": {
@@ -29,8 +29,19 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ -1833.0, -602.0, 957.0, 436.0 ],
+                        "rect": [ 521.0, 118.0, 957.0, 436.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 329.0, 90.0, 92.0, 22.0 ],
+                                    "text": "prepend enable"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-7",
@@ -62,42 +73,6 @@
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 191.0, 97.0, 52.0, 22.0 ],
                                     "text": "gate 2 1"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "filename": "cf.gaussian.2p.jxs",
-                                    "id": "obj-35",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 294.0, 227.0, 392.0, 22.0 ],
-                                    "text": "jit.gl.slab ---3DcamNode @file cf.gaussian.2p.jxs @width 4 0 @enable 0",
-                                    "textfile": {
-                                        "filename": "cf.gaussian.2p.jxs",
-                                        "flags": 0,
-                                        "embed": 0,
-                                        "autowatch": 1
-                                    }
-                                }
-                            },
-                            {
-                                "box": {
-                                    "filename": "cf.gaussian.2p.jxs",
-                                    "id": "obj-37",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 294.0, 197.0, 392.0, 22.0 ],
-                                    "text": "jit.gl.slab ---3DcamNode @file cf.gaussian.2p.jxs @width 4 0 @enable 0",
-                                    "textfile": {
-                                        "filename": "cf.gaussian.2p.jxs",
-                                        "flags": 0,
-                                        "embed": 0,
-                                        "autowatch": 1
-                                    }
                                 }
                             },
                             {
@@ -419,7 +394,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-37", 0 ],
+                                    "destination": [ "obj-33", 1 ],
                                     "source": [ "obj-32", 0 ]
                                 }
                             },
@@ -427,18 +402,6 @@
                                 "patchline": {
                                     "destination": [ "obj-41", 0 ],
                                     "source": [ "obj-33", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-33", 1 ],
-                                    "source": [ "obj-35", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-35", 0 ],
-                                    "source": [ "obj-37", 0 ]
                                 }
                             },
                             {
@@ -469,7 +432,36 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-30", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-32", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-33", 0 ],
+                                    "order": 2,
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-7", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-6", 0 ]
                                 }
                             },
@@ -503,7 +495,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 119.0, 517.0, 287.0 ],
+                        "rect": [ 53.0, 374.0, 517.0, 287.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -514,7 +506,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 50.0, 132.0, 381.0, 35.0 ],
+                                    "patching_rect": [ 50.0, 132.0, 382.0, 35.0 ],
                                     "text": "jit.fx.tr.vignettes ---BrainViz @invert 1 @wipe 0.4 @fade 0.5 @bypass 1",
                                     "textfile": {
                                         "filename": "tr.vignettes.jxs",
