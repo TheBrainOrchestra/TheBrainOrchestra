@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 623.0, 100.0, 1188.0, 690.0 ],
+        "rect": [ 290.0, 100.0, 1188.0, 690.0 ],
         "boxes": [
             {
                 "box": {
@@ -33,12 +33,23 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 85.0, 35.0, 151.0, 22.0 ],
+                                    "text": "r /TBO/3Dcam/blur_enable"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-5",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 329.0, 90.0, 92.0, 22.0 ],
+                                    "patching_rect": [ 223.0, 142.0, 92.0, 22.0 ],
                                     "text": "prepend enable"
                                 }
                             },
@@ -49,7 +60,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 191.0, 56.0, 29.5, 22.0 ],
+                                    "patching_rect": [ 85.0, 108.0, 29.5, 22.0 ],
                                     "text": "+ 1"
                                 }
                             },
@@ -61,7 +72,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 191.0, 23.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 85.0, 75.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -71,7 +82,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 191.0, 97.0, 52.0, 22.0 ],
+                                    "patching_rect": [ 85.0, 149.0, 52.0, 22.0 ],
                                     "text": "gate 2 1"
                                 }
                             },
@@ -321,7 +332,7 @@
                                             }
                                         ]
                                     },
-                                    "patching_rect": [ 224.0, 265.0, 89.0, 35.0 ],
+                                    "patching_rect": [ 118.0, 317.0, 89.0, 35.0 ],
                                     "text": "jit.gl.pix ---3DcamNode"
                                 }
                             },
@@ -333,7 +344,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 294.0, 168.0, 392.0, 22.0 ],
+                                    "patching_rect": [ 188.0, 220.0, 392.0, 22.0 ],
                                     "text": "jit.gl.slab ---3DcamNode @file cf.gaussian.2p.jxs @width 4 0 @enable 0",
                                     "textfile": {
                                         "filename": "cf.gaussian.2p.jxs",
@@ -351,7 +362,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 294.0, 138.0, 392.0, 22.0 ],
+                                    "patching_rect": [ 188.0, 190.0, 392.0, 22.0 ],
                                     "text": "jit.gl.slab ---3DcamNode @file cf.gaussian.2p.jxs @width 4 0 @enable 0",
                                     "textfile": {
                                         "filename": "cf.gaussian.2p.jxs",
@@ -370,7 +381,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 235.0, 52.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 129.0, 104.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -381,11 +392,43 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 191.0, 316.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 85.0, 368.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "width",
+                                    "id": "obj-2",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 318.0, 160.0, 150.0, 22.0 ]
                                 }
                             }
                         ],
                         "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-6", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-30", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-32", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
                             {
                                 "patchline": {
                                     "destination": [ "obj-32", 0 ],
@@ -495,19 +538,62 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 53.0, 374.0, 517.0, 287.0 ],
+                        "rect": [ 59.0, 576.0, 517.0, 287.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "toggle",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 99.0, 30.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 99.0, 92.0, 94.0, 22.0 ],
+                                    "text": "prepend bypass"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 99.0, 66.0, 33.0, 22.0 ],
+                                    "text": "== 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 99.0, 7.0, 173.0, 22.0 ],
+                                    "text": "r /TBO/3Dcam/vignette_enable"
+                                }
+                            },
                             {
                                 "box": {
                                     "filename": "tr.vignettes.jxs",
                                     "id": "obj-30",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 50.0, 132.0, 382.0, 35.0 ],
-                                    "text": "jit.fx.tr.vignettes ---BrainViz @invert 1 @wipe 0.4 @fade 0.5 @bypass 1",
+                                    "patching_rect": [ 50.0, 132.0, 388.0, 22.0 ],
+                                    "text": "jit.fx.tr.vignettes ---BrainViz @invert 1 @wipe 0.4 @fade 0.4 @bypass 1",
                                     "textfile": {
                                         "filename": "tr.vignettes.jxs",
                                         "flags": 0,
@@ -525,7 +611,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 148.0, 53.0, 92.0, 22.0 ],
+                                    "patching_rect": [ 252.0, 31.0, 92.0, 22.0 ],
                                     "text_width": 64.0
                                 }
                             },
@@ -592,6 +678,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-7", 0 ],
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-33", 0 ],
                                     "source": [ "obj-30", 0 ]
                                 }
@@ -606,6 +698,24 @@
                                 "patchline": {
                                     "destination": [ "obj-30", 0 ],
                                     "source": [ "obj-37", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-5", 0 ],
+                                    "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-30", 0 ],
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-7", 0 ]
                                 }
                             }
                         ]
@@ -1175,7 +1285,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 134.0, 172.0, 1001.0, 470.0 ],
+                                        "rect": [ 353.0, 505.0, 1001.0, 470.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -1294,7 +1404,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 23.0, 262.0, 107.0, 22.0 ],
-                                                    "text": "bo.list.interp.b 120"
+                                                    "text": "bo.list.interp.b 240"
                                                 }
                                             },
                                             {
@@ -1980,8 +2090,8 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 409.0, 198.0, 88.0, 22.0 ],
-                                                    "text": "moveto 0 0 1 6"
+                                                    "patching_rect": [ 409.0, 198.0, 95.0, 22.0 ],
+                                                    "text": "moveto 0 0 1 24"
                                                 }
                                             },
                                             {
@@ -2001,8 +2111,8 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 279.0, 268.0, 111.0, 22.0 ],
-                                                    "text": "moveto $1 $2 0.2 6"
+                                                    "patching_rect": [ 279.0, 268.0, 118.0, 22.0 ],
+                                                    "text": "moveto $1 $2 0.2 12"
                                                 }
                                             },
                                             {
