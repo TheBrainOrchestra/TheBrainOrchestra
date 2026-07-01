@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 258.0, 259.0, 1209.0, 610.0 ],
+        "rect": [ 257.0, 259.0, 1209.0, 610.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "boxes": [
@@ -929,9 +929,9 @@
                     "maxclass": "bpatcher",
                     "name": "mvc.GUI.ONnew.maxpat",
                     "numinlets": 2,
-                    "numoutlets": 1,
+                    "numoutlets": 2,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
+                    "outlettype": [ "int", "" ],
                     "patching_rect": [ 45.0, 12.5, 26.833333333333314, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 2.0, 4.0, 22.0, 18.0 ],
@@ -2554,9 +2554,9 @@
                     "presentation_rect": [ 927.0, 26.0, 110.6797708272934, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_enum": [ "Réseau Session 1", "MK-225C USB MIDI keyboard", "Arturia BeatStep", "to Max 1", "to Max 2", "No Input" ],
+                            "parameter_enum": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                             "parameter_longname": "live.menu[96]",
-                            "parameter_mmax": 5,
+                            "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
                             "parameter_type": 2
@@ -8991,7 +8991,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 1470,
+                                                    "cols": 3000,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -9006,7 +9006,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 1470,
+                                                    "cols": 3000,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -9475,7 +9475,7 @@
                                             },
                                             {
                                                 "box": {
-                                                    "cols": 1470,
+                                                    "cols": 3000,
                                                     "fontface": 0,
                                                     "fontname": "Arial",
                                                     "fontsize": 12.0,
@@ -15398,13 +15398,13 @@
                                     "patching_rect": [ 55.0, 234.0, 583.0, 85.0 ],
                                     "setminmax": [ 0.0, 60.0 ],
                                     "signed": 1,
-                                    "size": 1470,
+                                    "size": 3000,
                                     "spacing": 1
                                 }
                             },
                             {
                                 "box": {
-                                    "cols": 1470,
+                                    "cols": 3000,
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -16272,6 +16272,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-123", 0 ],
+                    "order": 1,
+                    "source": [ "obj-50", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-145", 0 ],
+                    "order": 0,
                     "source": [ "obj-50", 0 ]
                 }
             },
