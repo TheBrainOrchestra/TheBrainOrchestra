@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 104.0, 113.0, 1179.0, 760.0 ],
+        "rect": [ 102.0, 130.0, 1179.0, 760.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -20,6 +20,265 @@
         "toolbars_unpinned_last_save": 15,
         "enablehscroll": 0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-95",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 2,
+                            "revision": 0,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "box",
+                        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-102",
+                                    "linecount": 2,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 100.0, 181.0, 35.0 ],
+                                    "text": ";\rTBO_jit_world sendwindow front"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-94",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 40.0, 30.0, 30.0 ]
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-102", 0 ],
+                                    "source": [ "obj-94", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 367.0, 444.5, 109.0, 22.0 ],
+                    "text": "p bring-win-to-front"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.0, 0.933333, 1.0, 1.0 ],
+                    "activebgoncolor": [ 0.0, 0.6039215686274509, 0.6745098039215687, 1.0 ],
+                    "activetextcolor": [ 0.08979242029170251, 0.08979238513323604, 0.08979239425923322, 1.0 ],
+                    "annotation": "Toggle display the neurons",
+                    "annotation_name": "Enable neurons view",
+                    "bgcolor": [ 0.0, 0.933333, 1.0, 1.0 ],
+                    "fontname": "Ableton Sans Medium Regular",
+                    "fontsize": 12.0,
+                    "hint": "",
+                    "id": "obj-93",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 367.0, 392.5, 59.0, 44.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.live_control_selection_variant"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.live_modulation"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.live_contrast_frame"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.live_control_selection_variant"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_initial": [ 1 ],
+                            "parameter_invisible": 2,
+                            "parameter_longname": "3D view[35]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "3D view",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "windowFront",
+                    "texton": "QUIT",
+                    "varname": "live.text[17]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-109",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 291.0, 429.0, 33.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 72.66665650000004, 623.0, 50.0, 20.0 ],
+                    "text": "0%",
+                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ],
+                    "textjustification": 2
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-103",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 2,
+                            "revision": 0,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "box",
+                        "rect": [ 59.0, 119.0, 1000.0, 755.0 ],
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 271.0, 72.0, 22.0 ],
+                                    "text": "prepend set"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 50.0, 237.0, 78.0, 22.0 ],
+                                    "text": "combine 0 %"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-101",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 50.0, 132.0, 136.0, 23.0 ],
+                                    "text": "qmetro 200 @active 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-98",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "int" ],
+                                    "patching_rect": [ 50.0, 78.0, 84.0, 23.0 ],
+                                    "text": "adstatus cpu"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-96",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 50.0, 170.0, 20.0, 20.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontname": "Arial",
+                                    "fontsize": 13.0,
+                                    "id": "obj-97",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "int" ],
+                                    "patching_rect": [ 50.0, 201.0, 84.0, 23.0 ],
+                                    "text": "adstatus cpu"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-102",
+                                    "index": 1,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 50.0, 313.0, 30.0, 30.0 ]
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-96", 0 ],
+                                    "source": [ "obj-101", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-102", 0 ],
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-97", 0 ],
+                                    "source": [ "obj-96", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-97", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 291.0, 405.0, 44.0, 22.0 ],
+                    "text": "p CPU"
+                }
+            },
             {
                 "box": {
                     "fontsize": 14.0,
@@ -1228,7 +1487,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 227.0, 350.5, 45.0, 45.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 45.0, 598.0, 45.0, 45.0 ]
+                    "presentation_rect": [ 16.0, 598.0, 45.0, 45.0 ]
                 }
             },
             {
@@ -1461,33 +1720,24 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-25",
+                    "id": "obj-53",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "bo.GranularSynth.GUI.bp.maxpat",
-                    "numinlets": 0,
+                    "name": "bo.granular.model.maxpat",
+                    "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 0.0, 0.0 ],
-                    "patching_rect": [ 287.0, 240.0, 880.0, 135.0 ],
+                    "patching_rect": [ 283.0, 240.0, 1053.0, 125.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 132.0, 38.0, 1053.0, 125.0 ],
+                    "varname": "granular",
                     "viewvisibility": 1
                 }
             },
             {
                 "box": {
-                    "fontsize": 14.0,
-                    "id": "obj-53",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 457.0, 605.0, 121.0, 24.0 ],
-                    "text": "bo.granular.model",
-                    "varname": "granular"
-                }
-            },
-            {
-                "box": {
-                    "args": [ "TBO-viewUID" ],
+                    "args": [ "TBO" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -1890,6 +2140,7 @@
                     "annotation_name": "Pixel to neuron map",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-48",
                     "maxclass": "live.text",
@@ -1924,6 +2175,7 @@
                     "annotation_name": "Load 2D movie",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
+                    "hidden": 1,
                     "hint": "",
                     "id": "obj-40",
                     "maxclass": "live.text",
@@ -3282,7 +3534,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 287.0, 39.0, 1045.0, 190.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 132.0, 38.0, 1044.0, 719.0 ],
+                    "presentation_rect": [ 132.0, 156.0, 1044.0, 719.0 ],
                     "varname": "bo.16Channels.UI",
                     "viewvisibility": 1
                 }
@@ -3370,7 +3622,6 @@
                     "annotation_name": "Load 3D coordinates",
                     "fontname": "Ableton Sans Medium Regular",
                     "fontsize": 12.0,
-                    "hidden": 1,
                     "hint": "",
                     "id": "obj-9",
                     "maxclass": "live.text",
@@ -3605,6 +3856,12 @@
                 "patchline": {
                     "destination": [ "obj-79", 0 ],
                     "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-109", 0 ],
+                    "source": [ "obj-103", 0 ]
                 }
             },
             {
@@ -3933,6 +4190,12 @@
                     "destination": [ "obj-77", 0 ],
                     "source": [ "obj-9", 0 ]
                 }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-95", 0 ],
+                    "source": [ "obj-93", 0 ]
+                }
             }
         ],
         "parameters": {
@@ -3954,13 +4217,13 @@
             "obj-12::obj-10::obj-59": [ "Chord sustain[20]", "chordSustain", 0 ],
             "obj-12::obj-10::obj-61": [ "velocity range[4]", "velocityRange", 0 ],
             "obj-12::obj-10::obj-71": [ "Chord sustain[14]", "chordSustain", 0 ],
-            "obj-12::obj-10::obj-75::obj-8::obj-7": [ "live.toggle[33]", "live.toggle", 0 ],
             "obj-12::obj-10::obj-78": [ "1-MIDI-IN-Channel[4]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-10::obj-79": [ "poly pressure range[4]", "polyPressureRange", 0 ],
             "obj-12::obj-10::obj-8": [ "live.numbox[6]", "live.numbox", 0 ],
             "obj-12::obj-10::obj-80": [ "live.text[17]", "live.text[3]", 0 ],
             "obj-12::obj-10::obj-82": [ "1-MIDI-OUT-Channel[4]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-10::obj-89": [ "live.text[16]", "live.text[3]", 0 ],
+            "obj-12::obj-10::obj-9": [ "live.toggle[3]", "live.toggle", 0 ],
             "obj-12::obj-10::obj-91": [ "live.menu[33]", "live.menu", 0 ],
             "obj-12::obj-10::obj-97": [ "live.menu[14]", "live.menu", 0 ],
             "obj-12::obj-10::obj-98": [ "live.menu[23]", "live.menu", 0 ],
@@ -3981,13 +4244,13 @@
             "obj-12::obj-11::obj-59": [ "Chord sustain[56]", "chordSustain", 0 ],
             "obj-12::obj-11::obj-61": [ "velocity range[13]", "velocityRange", 0 ],
             "obj-12::obj-11::obj-71": [ "Chord sustain[55]", "chordSustain", 0 ],
-            "obj-12::obj-11::obj-75::obj-8::obj-7": [ "live.toggle[20]", "live.toggle", 0 ],
             "obj-12::obj-11::obj-78": [ "1-MIDI-IN-Channel[13]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-11::obj-79": [ "poly pressure range[13]", "polyPressureRange", 0 ],
             "obj-12::obj-11::obj-8": [ "live.numbox[15]", "live.numbox", 0 ],
             "obj-12::obj-11::obj-80": [ "live.text[44]", "live.text[3]", 0 ],
             "obj-12::obj-11::obj-82": [ "1-MIDI-OUT-Channel[13]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-11::obj-89": [ "live.text[43]", "live.text[3]", 0 ],
+            "obj-12::obj-11::obj-9": [ "live.toggle[15]", "live.toggle", 0 ],
             "obj-12::obj-11::obj-91": [ "live.menu[79]", "live.menu", 0 ],
             "obj-12::obj-11::obj-97": [ "live.menu[76]", "live.menu", 0 ],
             "obj-12::obj-11::obj-98": [ "live.menu[78]", "live.menu", 0 ],
@@ -4008,13 +4271,13 @@
             "obj-12::obj-12::obj-59": [ "Chord sustain[52]", "chordSustain", 0 ],
             "obj-12::obj-12::obj-61": [ "velocity range[12]", "velocityRange", 0 ],
             "obj-12::obj-12::obj-71": [ "Chord sustain[51]", "chordSustain", 0 ],
-            "obj-12::obj-12::obj-75::obj-8::obj-7": [ "live.toggle[24]", "live.toggle", 0 ],
             "obj-12::obj-12::obj-78": [ "1-MIDI-IN-Channel[12]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-12::obj-79": [ "poly pressure range[12]", "polyPressureRange", 0 ],
             "obj-12::obj-12::obj-8": [ "live.numbox[21]", "live.numbox", 0 ],
             "obj-12::obj-12::obj-80": [ "live.text[41]", "live.text[3]", 0 ],
             "obj-12::obj-12::obj-82": [ "1-MIDI-OUT-Channel[16]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-12::obj-89": [ "live.text[40]", "live.text[3]", 0 ],
+            "obj-12::obj-12::obj-9": [ "live.toggle[14]", "live.toggle", 0 ],
             "obj-12::obj-12::obj-91": [ "live.menu[56]", "live.menu", 0 ],
             "obj-12::obj-12::obj-97": [ "live.menu[72]", "live.menu", 0 ],
             "obj-12::obj-12::obj-98": [ "live.menu[75]", "live.menu", 0 ],
@@ -4035,13 +4298,13 @@
             "obj-12::obj-13::obj-59": [ "Chord sustain[47]", "chordSustain", 0 ],
             "obj-12::obj-13::obj-61": [ "velocity range[11]", "velocityRange", 0 ],
             "obj-12::obj-13::obj-71": [ "Chord sustain[45]", "chordSustain", 0 ],
-            "obj-12::obj-13::obj-75::obj-8::obj-7": [ "live.toggle[26]", "live.toggle", 0 ],
             "obj-12::obj-13::obj-78": [ "1-MIDI-IN-Channel[11]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-13::obj-79": [ "poly pressure range[11]", "polyPressureRange", 0 ],
             "obj-12::obj-13::obj-8": [ "live.numbox[13]", "live.numbox", 0 ],
             "obj-12::obj-13::obj-80": [ "live.text[37]", "live.text[3]", 0 ],
             "obj-12::obj-13::obj-82": [ "1-MIDI-OUT-Channel[11]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-13::obj-89": [ "live.text[38]", "live.text[3]", 0 ],
+            "obj-12::obj-13::obj-9": [ "live.toggle[13]", "live.toggle", 0 ],
             "obj-12::obj-13::obj-91": [ "live.menu[71]", "live.menu", 0 ],
             "obj-12::obj-13::obj-97": [ "live.menu[68]", "live.menu", 0 ],
             "obj-12::obj-13::obj-98": [ "live.menu[70]", "live.menu", 0 ],
@@ -4062,13 +4325,13 @@
             "obj-12::obj-14::obj-59": [ "Chord sustain[43]", "chordSustain", 0 ],
             "obj-12::obj-14::obj-61": [ "velocity range[10]", "velocityRange", 0 ],
             "obj-12::obj-14::obj-71": [ "Chord sustain[44]", "chordSustain", 0 ],
-            "obj-12::obj-14::obj-75::obj-8::obj-7": [ "live.toggle[27]", "live.toggle", 0 ],
             "obj-12::obj-14::obj-78": [ "1-MIDI-IN-Channel[10]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-14::obj-79": [ "poly pressure range[10]", "polyPressureRange", 0 ],
             "obj-12::obj-14::obj-8": [ "live.numbox[12]", "live.numbox", 0 ],
             "obj-12::obj-14::obj-80": [ "live.text[34]", "live.text[3]", 0 ],
             "obj-12::obj-14::obj-82": [ "1-MIDI-OUT-Channel[10]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-14::obj-89": [ "live.text[35]", "live.text[3]", 0 ],
+            "obj-12::obj-14::obj-9": [ "live.toggle[12]", "live.toggle", 0 ],
             "obj-12::obj-14::obj-91": [ "live.menu[65]", "live.menu", 0 ],
             "obj-12::obj-14::obj-97": [ "live.menu[92]", "live.menu", 0 ],
             "obj-12::obj-14::obj-98": [ "live.menu[62]", "live.menu", 0 ],
@@ -4089,13 +4352,13 @@
             "obj-12::obj-15::obj-59": [ "Chord sustain[39]", "chordSustain", 0 ],
             "obj-12::obj-15::obj-61": [ "velocity range[9]", "velocityRange", 0 ],
             "obj-12::obj-15::obj-71": [ "Chord sustain[40]", "chordSustain", 0 ],
-            "obj-12::obj-15::obj-75::obj-8::obj-7": [ "live.toggle[28]", "live.toggle", 0 ],
             "obj-12::obj-15::obj-78": [ "1-MIDI-IN-Channel[9]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-15::obj-79": [ "poly pressure range[9]", "polyPressureRange", 0 ],
             "obj-12::obj-15::obj-8": [ "live.numbox[11]", "live.numbox", 0 ],
             "obj-12::obj-15::obj-80": [ "live.text[32]", "live.text[3]", 0 ],
             "obj-12::obj-15::obj-82": [ "1-MIDI-OUT-Channel[9]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-15::obj-89": [ "live.text[31]", "live.text[3]", 0 ],
+            "obj-12::obj-15::obj-9": [ "live.toggle[11]", "live.toggle", 0 ],
             "obj-12::obj-15::obj-91": [ "live.menu[61]", "live.menu", 0 ],
             "obj-12::obj-15::obj-97": [ "live.menu[60]", "live.menu", 0 ],
             "obj-12::obj-15::obj-98": [ "live.menu[57]", "live.menu", 0 ],
@@ -4116,13 +4379,13 @@
             "obj-12::obj-16::obj-59": [ "Chord sustain[36]", "chordSustain", 0 ],
             "obj-12::obj-16::obj-61": [ "velocity range[8]", "velocityRange", 0 ],
             "obj-12::obj-16::obj-71": [ "Chord sustain[33]", "chordSustain", 0 ],
-            "obj-12::obj-16::obj-75::obj-8::obj-7": [ "live.toggle[29]", "live.toggle", 0 ],
             "obj-12::obj-16::obj-78": [ "1-MIDI-IN-Channel[8]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-16::obj-79": [ "poly pressure range[8]", "polyPressureRange", 0 ],
             "obj-12::obj-16::obj-8": [ "live.numbox[10]", "live.numbox", 0 ],
             "obj-12::obj-16::obj-80": [ "live.text[28]", "live.text[3]", 0 ],
             "obj-12::obj-16::obj-82": [ "1-MIDI-OUT-Channel[8]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-16::obj-89": [ "live.text[29]", "live.text[3]", 0 ],
+            "obj-12::obj-16::obj-9": [ "live.toggle[10]", "live.toggle", 0 ],
             "obj-12::obj-16::obj-91": [ "live.menu[54]", "live.menu", 0 ],
             "obj-12::obj-16::obj-97": [ "live.menu[24]", "live.menu", 0 ],
             "obj-12::obj-16::obj-98": [ "live.menu[55]", "live.menu", 0 ],
@@ -4143,13 +4406,13 @@
             "obj-12::obj-1::obj-59": [ "Chord sustain[2]", "chordSustain", 0 ],
             "obj-12::obj-1::obj-61": [ "velocity range", "velocityRange", 0 ],
             "obj-12::obj-1::obj-71": [ "Chord sustain[16]", "chordSustain", 0 ],
-            "obj-12::obj-1::obj-75::obj-8::obj-7": [ "live.toggle[36]", "live.toggle", 0 ],
             "obj-12::obj-1::obj-78": [ "1-MIDI-IN-Channel", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-1::obj-79": [ "poly pressure range", "polyPressureRange", 0 ],
             "obj-12::obj-1::obj-8": [ "live.numbox[33]", "live.numbox", 0 ],
             "obj-12::obj-1::obj-80": [ "live.text[4]", "live.text[3]", 0 ],
             "obj-12::obj-1::obj-82": [ "1-MIDI-OUT-Channel", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-1::obj-89": [ "live.text[2]", "live.text[3]", 0 ],
+            "obj-12::obj-1::obj-9": [ "live.toggle[6]", "live.toggle", 0 ],
             "obj-12::obj-1::obj-91": [ "live.menu[17]", "live.menu", 0 ],
             "obj-12::obj-1::obj-97": [ "live.menu[91]", "live.menu", 0 ],
             "obj-12::obj-1::obj-98": [ "live.menu", "live.menu", 0 ],
@@ -4170,13 +4433,13 @@
             "obj-12::obj-2::obj-59": [ "Chord sustain[3]", "chordSustain", 0 ],
             "obj-12::obj-2::obj-61": [ "velocity range[1]", "velocityRange", 0 ],
             "obj-12::obj-2::obj-71": [ "Chord sustain[5]", "chordSustain", 0 ],
-            "obj-12::obj-2::obj-75::obj-8::obj-7": [ "live.toggle[17]", "live.toggle", 0 ],
             "obj-12::obj-2::obj-78": [ "1-MIDI-IN-Channel[1]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-2::obj-79": [ "poly pressure range[1]", "polyPressureRange", 0 ],
             "obj-12::obj-2::obj-8": [ "live.numbox[3]", "live.numbox", 0 ],
             "obj-12::obj-2::obj-80": [ "live.text[5]", "live.text[3]", 0 ],
             "obj-12::obj-2::obj-82": [ "1-MIDI-OUT-Channel[1]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-2::obj-89": [ "live.text[8]", "live.text[3]", 0 ],
+            "obj-12::obj-2::obj-9": [ "live.toggle[1]", "live.toggle", 0 ],
             "obj-12::obj-2::obj-91": [ "live.menu[4]", "live.menu", 0 ],
             "obj-12::obj-2::obj-97": [ "live.menu[18]", "live.menu", 0 ],
             "obj-12::obj-2::obj-98": [ "live.menu[6]", "live.menu", 0 ],
@@ -4197,13 +4460,13 @@
             "obj-12::obj-3::obj-59": [ "Chord sustain[61]", "chordSustain", 0 ],
             "obj-12::obj-3::obj-61": [ "velocity range[15]", "velocityRange", 0 ],
             "obj-12::obj-3::obj-71": [ "Chord sustain[64]", "chordSustain", 0 ],
-            "obj-12::obj-3::obj-75::obj-8::obj-7": [ "live.toggle[16]", "live.toggle", 0 ],
             "obj-12::obj-3::obj-78": [ "1-MIDI-IN-Channel[15]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-3::obj-79": [ "poly pressure range[15]", "polyPressureRange", 0 ],
             "obj-12::obj-3::obj-8": [ "live.numbox[18]", "live.numbox", 0 ],
             "obj-12::obj-3::obj-80": [ "live.text[50]", "live.text[3]", 0 ],
             "obj-12::obj-3::obj-82": [ "1-MIDI-OUT-Channel[15]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-3::obj-89": [ "live.text[49]", "live.text[3]", 0 ],
+            "obj-12::obj-3::obj-9": [ "live.toggle[17]", "live.toggle", 0 ],
             "obj-12::obj-3::obj-91": [ "live.menu[90]", "live.menu", 0 ],
             "obj-12::obj-3::obj-97": [ "live.menu[94]", "live.menu", 0 ],
             "obj-12::obj-3::obj-98": [ "live.menu[89]", "live.menu", 0 ],
@@ -4224,13 +4487,13 @@
             "obj-12::obj-4::obj-59": [ "Chord sustain[60]", "chordSustain", 0 ],
             "obj-12::obj-4::obj-61": [ "velocity range[14]", "velocityRange", 0 ],
             "obj-12::obj-4::obj-71": [ "Chord sustain[59]", "chordSustain", 0 ],
-            "obj-12::obj-4::obj-75::obj-8::obj-7": [ "live.toggle[19]", "live.toggle", 0 ],
             "obj-12::obj-4::obj-78": [ "1-MIDI-IN-Channel[14]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-4::obj-79": [ "poly pressure range[14]", "polyPressureRange", 0 ],
             "obj-12::obj-4::obj-8": [ "live.numbox[16]", "live.numbox", 0 ],
             "obj-12::obj-4::obj-80": [ "live.text[47]", "live.text[3]", 0 ],
             "obj-12::obj-4::obj-82": [ "1-MIDI-OUT-Channel[14]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-4::obj-89": [ "live.text[46]", "live.text[3]", 0 ],
+            "obj-12::obj-4::obj-9": [ "live.toggle[16]", "live.toggle", 0 ],
             "obj-12::obj-4::obj-91": [ "live.menu[83]", "live.menu", 0 ],
             "obj-12::obj-4::obj-97": [ "live.menu[93]", "live.menu", 0 ],
             "obj-12::obj-4::obj-98": [ "live.menu[82]", "live.menu", 0 ],
@@ -4251,13 +4514,13 @@
             "obj-12::obj-5::obj-59": [ "Chord sustain[10]", "chordSustain", 0 ],
             "obj-12::obj-5::obj-61": [ "velocity range[3]", "velocityRange", 0 ],
             "obj-12::obj-5::obj-71": [ "Chord sustain[13]", "chordSustain", 0 ],
-            "obj-12::obj-5::obj-75::obj-8::obj-7": [ "live.toggle[34]", "live.toggle", 0 ],
             "obj-12::obj-5::obj-78": [ "1-MIDI-IN-Channel[3]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-5::obj-79": [ "poly pressure range[3]", "polyPressureRange", 0 ],
             "obj-12::obj-5::obj-8": [ "live.numbox[5]", "live.numbox", 0 ],
             "obj-12::obj-5::obj-80": [ "live.text[13]", "live.text[3]", 0 ],
             "obj-12::obj-5::obj-82": [ "1-MIDI-OUT-Channel[3]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-5::obj-89": [ "live.text[14]", "live.text[3]", 0 ],
+            "obj-12::obj-5::obj-9": [ "live.toggle[7]", "live.toggle", 0 ],
             "obj-12::obj-5::obj-91": [ "live.menu[11]", "live.menu", 0 ],
             "obj-12::obj-5::obj-97": [ "live.menu[22]", "live.menu", 0 ],
             "obj-12::obj-5::obj-98": [ "live.menu[13]", "live.menu", 0 ],
@@ -4278,13 +4541,13 @@
             "obj-12::obj-6::obj-59": [ "Chord sustain[7]", "chordSustain", 0 ],
             "obj-12::obj-6::obj-61": [ "velocity range[2]", "velocityRange", 0 ],
             "obj-12::obj-6::obj-71": [ "Chord sustain[6]", "chordSustain", 0 ],
-            "obj-12::obj-6::obj-75::obj-8::obj-7": [ "live.toggle[35]", "live.toggle", 0 ],
             "obj-12::obj-6::obj-78": [ "1-MIDI-IN-Channel[2]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-6::obj-79": [ "poly pressure range[2]", "polyPressureRange", 0 ],
             "obj-12::obj-6::obj-8": [ "live.numbox[4]", "live.numbox", 0 ],
             "obj-12::obj-6::obj-80": [ "live.text[10]", "live.text[3]", 0 ],
             "obj-12::obj-6::obj-82": [ "1-MIDI-OUT-Channel[2]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-6::obj-89": [ "live.text[11]", "live.text[3]", 0 ],
+            "obj-12::obj-6::obj-9": [ "live.toggle[2]", "live.toggle", 0 ],
             "obj-12::obj-6::obj-91": [ "live.menu[21]", "live.menu", 0 ],
             "obj-12::obj-6::obj-97": [ "live.menu[9]", "live.menu", 0 ],
             "obj-12::obj-6::obj-98": [ "live.menu[8]", "live.menu", 0 ],
@@ -4305,13 +4568,13 @@
             "obj-12::obj-7::obj-59": [ "Chord sustain[32]", "chordSustain", 0 ],
             "obj-12::obj-7::obj-61": [ "velocity range[7]", "velocityRange", 0 ],
             "obj-12::obj-7::obj-71": [ "Chord sustain[31]", "chordSustain", 0 ],
-            "obj-12::obj-7::obj-75::obj-8::obj-7": [ "live.toggle[30]", "live.toggle", 0 ],
             "obj-12::obj-7::obj-78": [ "1-MIDI-IN-Channel[7]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-7::obj-79": [ "poly pressure range[7]", "polyPressureRange", 0 ],
             "obj-12::obj-7::obj-8": [ "live.numbox[9]", "live.numbox", 0 ],
             "obj-12::obj-7::obj-80": [ "live.text[25]", "live.text[3]", 0 ],
             "obj-12::obj-7::obj-82": [ "1-MIDI-OUT-Channel[7]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-7::obj-89": [ "live.text[26]", "live.text[3]", 0 ],
+            "obj-12::obj-7::obj-9": [ "live.toggle[9]", "live.toggle", 0 ],
             "obj-12::obj-7::obj-91": [ "live.menu[47]", "live.menu", 0 ],
             "obj-12::obj-7::obj-97": [ "live.menu[46]", "live.menu", 0 ],
             "obj-12::obj-7::obj-98": [ "live.menu[50]", "live.menu", 0 ],
@@ -4332,13 +4595,13 @@
             "obj-12::obj-8::obj-59": [ "Chord sustain[28]", "chordSustain", 0 ],
             "obj-12::obj-8::obj-61": [ "velocity range[6]", "velocityRange", 0 ],
             "obj-12::obj-8::obj-71": [ "Chord sustain[25]", "chordSustain", 0 ],
-            "obj-12::obj-8::obj-75::obj-8::obj-7": [ "live.toggle[31]", "live.toggle", 0 ],
             "obj-12::obj-8::obj-78": [ "1-MIDI-IN-Channel[6]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-8::obj-79": [ "poly pressure range[6]", "polyPressureRange", 0 ],
             "obj-12::obj-8::obj-8": [ "live.numbox[8]", "live.numbox", 0 ],
             "obj-12::obj-8::obj-80": [ "live.text[23]", "live.text[3]", 0 ],
             "obj-12::obj-8::obj-82": [ "1-MIDI-OUT-Channel[6]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-8::obj-89": [ "live.text[22]", "live.text[3]", 0 ],
+            "obj-12::obj-8::obj-9": [ "live.toggle[8]", "live.toggle", 0 ],
             "obj-12::obj-8::obj-91": [ "live.menu[45]", "live.menu", 0 ],
             "obj-12::obj-8::obj-97": [ "live.menu[41]", "live.menu", 0 ],
             "obj-12::obj-8::obj-98": [ "live.menu[43]", "live.menu", 0 ],
@@ -4359,13 +4622,13 @@
             "obj-12::obj-9::obj-59": [ "Chord sustain[24]", "chordSustain", 0 ],
             "obj-12::obj-9::obj-61": [ "velocity range[5]", "velocityRange", 0 ],
             "obj-12::obj-9::obj-71": [ "Chord sustain[23]", "chordSustain", 0 ],
-            "obj-12::obj-9::obj-75::obj-8::obj-7": [ "live.toggle[32]", "live.toggle", 0 ],
             "obj-12::obj-9::obj-78": [ "1-MIDI-IN-Channel[5]", "1-MIDI-IN-Channel", 0 ],
             "obj-12::obj-9::obj-79": [ "poly pressure range[5]", "polyPressureRange", 0 ],
             "obj-12::obj-9::obj-8": [ "live.numbox[7]", "live.numbox", 0 ],
             "obj-12::obj-9::obj-80": [ "live.text[20]", "live.text[3]", 0 ],
             "obj-12::obj-9::obj-82": [ "1-MIDI-OUT-Channel[5]", "1-MIDI-OUT-Channel", 0 ],
             "obj-12::obj-9::obj-89": [ "live.text[19]", "live.text[3]", 0 ],
+            "obj-12::obj-9::obj-9": [ "live.toggle[4]", "live.toggle", 0 ],
             "obj-12::obj-9::obj-91": [ "live.menu[37]", "live.menu", 0 ],
             "obj-12::obj-9::obj-97": [ "live.menu[16]", "live.menu", 0 ],
             "obj-12::obj-9::obj-98": [ "live.menu[39]", "live.menu", 0 ],
@@ -4397,7 +4660,7 @@
             "obj-53::obj-20": [ "hold", "hold", 0 ],
             "obj-53::obj-42": [ "live.text[52]", "live.text[3]", 0 ],
             "obj-53::obj-48": [ "live.menu[97]", "live.menu[95]", 0 ],
-            "obj-53::obj-63::obj-7": [ "live.toggle[25]", "live.toggle", 0 ],
+            "obj-53::obj-63::obj-7": [ "live.toggle[20]", "live.toggle", 0 ],
             "obj-53::obj-78": [ "1-MIDI-IN-Channel[17]", "1-MIDI-IN-Channel", 0 ],
             "obj-53::obj-90::obj-154": [ "Abl.Compressor", "Abl.Compressor", 0 ],
             "obj-53::obj-90::obj-167": [ "ModOutB", "ModOutB", -1 ],
@@ -4419,12 +4682,13 @@
             "obj-59::obj-77::obj-63::obj-130": [ "live.menu[99]", "8439.clusterMenu", 0 ],
             "obj-63": [ "Timeline[21]", "Timeline", 0 ],
             "obj-65": [ "3D view[44]", "3D view", 0 ],
-            "obj-66::obj-27::obj-25::obj-61::obj-20.1::obj-12::obj-8::obj-7": [ "live.toggle[18]", "live.toggle", 0 ],
+            "obj-66::obj-27::obj-25::obj-61::obj-20.1::obj-12::obj-8::obj-7": [ "live.toggle[24]", "live.toggle", 0 ],
             "obj-68": [ "live.tab", "live.tab", 0 ],
             "obj-7": [ "3D view[43]", "3D view", 0 ],
             "obj-74": [ "Timeline[22]", "Timeline", 0 ],
             "obj-84": [ "Timeline[23]", "Timeline", 0 ],
             "obj-9": [ "Load clusters CSV file[2]", "Load clusters", 0 ],
+            "obj-93": [ "3D view[35]", "3D view", 0 ],
             "parameterbanks": {
                 "0": {
                     "index": 0,
@@ -4481,9 +4745,6 @@
                 "obj-12::obj-10::obj-71": {
                     "parameter_longname": "Chord sustain[14]"
                 },
-                "obj-12::obj-10::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[33]"
-                },
                 "obj-12::obj-10::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[4]"
                 },
@@ -4499,11 +4760,14 @@
                 "obj-12::obj-10::obj-89": {
                     "parameter_longname": "live.text[16]"
                 },
+                "obj-12::obj-10::obj-9": {
+                    "parameter_longname": "live.toggle[3]"
+                },
                 "obj-12::obj-10::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[33]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4514,7 +4778,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[23]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4565,9 +4829,6 @@
                 "obj-12::obj-11::obj-71": {
                     "parameter_longname": "Chord sustain[55]"
                 },
-                "obj-12::obj-11::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[20]"
-                },
                 "obj-12::obj-11::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[13]"
                 },
@@ -4583,11 +4844,14 @@
                 "obj-12::obj-11::obj-89": {
                     "parameter_longname": "live.text[43]"
                 },
+                "obj-12::obj-11::obj-9": {
+                    "parameter_longname": "live.toggle[15]"
+                },
                 "obj-12::obj-11::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[79]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4598,7 +4862,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[78]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4649,9 +4913,6 @@
                 "obj-12::obj-12::obj-71": {
                     "parameter_longname": "Chord sustain[51]"
                 },
-                "obj-12::obj-12::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[24]"
-                },
                 "obj-12::obj-12::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[12]"
                 },
@@ -4673,11 +4934,14 @@
                 "obj-12::obj-12::obj-89": {
                     "parameter_longname": "live.text[40]"
                 },
+                "obj-12::obj-12::obj-9": {
+                    "parameter_longname": "live.toggle[14]"
+                },
                 "obj-12::obj-12::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[56]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4688,7 +4952,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[75]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4739,9 +5003,6 @@
                 "obj-12::obj-13::obj-71": {
                     "parameter_longname": "Chord sustain[45]"
                 },
-                "obj-12::obj-13::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[26]"
-                },
                 "obj-12::obj-13::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[11]"
                 },
@@ -4757,11 +5018,14 @@
                 "obj-12::obj-13::obj-89": {
                     "parameter_longname": "live.text[38]"
                 },
+                "obj-12::obj-13::obj-9": {
+                    "parameter_longname": "live.toggle[13]"
+                },
                 "obj-12::obj-13::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[71]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4772,7 +5036,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[70]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4823,9 +5087,6 @@
                 "obj-12::obj-14::obj-71": {
                     "parameter_longname": "Chord sustain[44]"
                 },
-                "obj-12::obj-14::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[27]"
-                },
                 "obj-12::obj-14::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[10]"
                 },
@@ -4841,11 +5102,14 @@
                 "obj-12::obj-14::obj-89": {
                     "parameter_longname": "live.text[35]"
                 },
+                "obj-12::obj-14::obj-9": {
+                    "parameter_longname": "live.toggle[12]"
+                },
                 "obj-12::obj-14::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[65]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4856,7 +5120,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[62]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4907,9 +5171,6 @@
                 "obj-12::obj-15::obj-71": {
                     "parameter_longname": "Chord sustain[40]"
                 },
-                "obj-12::obj-15::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[28]"
-                },
                 "obj-12::obj-15::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[9]"
                 },
@@ -4925,11 +5186,14 @@
                 "obj-12::obj-15::obj-89": {
                     "parameter_longname": "live.text[31]"
                 },
+                "obj-12::obj-15::obj-9": {
+                    "parameter_longname": "live.toggle[11]"
+                },
                 "obj-12::obj-15::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[61]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4940,7 +5204,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[57]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -4991,9 +5255,6 @@
                 "obj-12::obj-16::obj-71": {
                     "parameter_longname": "Chord sustain[33]"
                 },
-                "obj-12::obj-16::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[29]"
-                },
                 "obj-12::obj-16::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[8]"
                 },
@@ -5009,11 +5270,14 @@
                 "obj-12::obj-16::obj-89": {
                     "parameter_longname": "live.text[29]"
                 },
+                "obj-12::obj-16::obj-9": {
+                    "parameter_longname": "live.toggle[10]"
+                },
                 "obj-12::obj-16::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[54]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5024,7 +5288,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[55]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5066,9 +5330,6 @@
                 "obj-12::obj-1::obj-57": {
                     "parameter_longname": "RemoveMapFile"
                 },
-                "obj-12::obj-1::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[36]"
-                },
                 "obj-12::obj-1::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel"
                 },
@@ -5089,7 +5350,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[17]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5100,7 +5361,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5137,7 +5398,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[19]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Empty menu", "Empty menu" ],
+                    "parameter_range": [ "No Cluster", "1 Diencephalon - [size: 1747]", "4 Diencephalon - Anterior pretectum cluster of vmat2 Neurons [size: 284]", "7 Diencephalon - Dopaminergic Cluster 1 - ventral thalamic and periventricular posterior tubercular DA neurons [size: 8]", "13 Diencephalon - Dorsal Thalamus [size: 297]", "14 Diencephalon - Eminentia Thalami [size: 4]", "15 Diencephalon - Habenula [size: 149]", "18 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 1 [size: 3]", "19 Diencephalon - Hypothalamus 6.7FRhcrtR-Gal4 cluster 2 [size: 1]", "36 Diencephalon - Isl1 cluster 1 [size: 1]", "39 Diencephalon - Left Habenula Vglut2 Cluster [size: 41]", "40 Diencephalon - Medial vglut2 cluster [size: 37]", "41 Diencephalon - Migrated Area of the Pretectum (M1) [size: 15]", "43 Diencephalon - Olig2 Band [size: 308]", "44 Diencephalon - Olig2 Band 2 [size: 140]", "50 Diencephalon - Oxtl Cluster 1 in Preoptic Area [size: 5]", "58 Diencephalon - Posterior Tuberculum [size: 86]", "60 Diencephalon - Preoptic Area [size: 32]", "64 Diencephalon - Pretectal Gad1b Cluster [size: 37]", "65 Diencephalon - Pretectal dopaminergic cluster [size: 152]", "66 Diencephalon - Pretectum [size: 419]", "70 Diencephalon - Retinal Arborization Field 4 (AF4) [size: 30]", "71 Diencephalon - Retinal Arborization Field 5 (AF5) [size: 4]", "73 Diencephalon - Right Habenula Vglut2 Cluster [size: 18]", "76 Diencephalon - Ventral Thalamus [size: 370]", "78 Ganglia - Eyes [size: 12]", "85 Ganglia - Lateral Line Neuromast OC1 [size: 7]", "88 Ganglia - Lateral Line Neuromast SO3 [size: 7]", "90 Ganglia - Posterior Lateral Line Ganglia [size: 1]", "94 Mesencephalon - [size: 6799]", "95 Mesencephalon - Isl1 cluster of the mesencephalic region [size: 68]", "96 Mesencephalon - Medial Tectal Band [size: 780]", "97 Mesencephalon - NucMLF (nucleus of the medial longitudinal fascicle) [size: 75]", "98 Mesencephalon - Oculomotor Nucleus nIII [size: 200]", "99 Mesencephalon - Otpb Cluster [size: 103]", "100 Mesencephalon - Oxtl Cluster Sparse [size: 25]", "101 Mesencephalon - Ptf1a Cluster [size: 42]", "102 Mesencephalon - Retinal Arborization Field 7 (AF7) [size: 5]", "103 Mesencephalon - Retinal Arborization Field 8 (AF8) [size: 5]", "104 Mesencephalon - Retinal Arborization Field 9 (AF9) [size: 59]", "105 Mesencephalon - Sparse 6.7FRhcrtR cluster [size: 14]", "106 Mesencephalon - Tectum Stratum Periventriculare [size: 3339]", "107 Mesencephalon - Tectum Neuropil [size: 212]", "108 Mesencephalon - Tegmentum [size: 2111]", "109 Mesencephalon - Torus Longitudinalis [size: 9]", "110 Mesencephalon - Torus Semicircularis [size: 212]", "111 Mesencephalon - Vglut2 cluster 1 [size: 310]", "114 Rhombencephalon - [size: 12906]", "115 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 1 [size: 34]", "116 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 2 Sparse [size: 22]", "118 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 4 [size: 3]", "119 Rhombencephalon - 6.7FDhcrtR-Gal4 Cluster 5 [size: 14]", "120 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 1 [size: 90]", "121 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 2 [size: 96]", "122 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 3 [size: 13]", "123 Rhombencephalon - 6.7FDhcrtR-Gal4 Stripe 4 [size: 36]", "124 Rhombencephalon - Anterior Cluster of nV Trigeminal Motorneurons [size: 22]", "125 Rhombencephalon - Area Postrema [size: 12]", "126 Rhombencephalon - CaD [size: 5]", "127 Rhombencephalon - CaV [size: 2]", "128 Rhombencephalon - Caudal Ventral Cluster Labelled by Spinal Backfills [size: 49]", "129 Rhombencephalon - Cerebellar Neuropil 1 [size: 100]", "130 Rhombencephalon - Cerebelluar-Vglut2 enriched areas [size: 856]", "131 Rhombencephalon - Cerebellum [size: 2952]", "132 Rhombencephalon - Cerebellum Gad1b Enriched Areas [size: 1038]", "133 Rhombencephalon - Corpus Cerebelli [size: 1772]", "134 Rhombencephalon - Eminentia Granularis [size: 205]", "135 Rhombencephalon - Gad1b Cluster 1 [size: 129]", "137 Rhombencephalon - Gad1b Cluster 11 [size: 1]", "139 Rhombencephalon - Gad1b Cluster 13 [size: 41]", "140 Rhombencephalon - Gad1b Cluster 14 [size: 36]", "141 Rhombencephalon - Gad1b Cluster 15 [size: 20]", "142 Rhombencephalon - Gad1b Cluster 16 [size: 28]", "143 Rhombencephalon - Gad1b Cluster 17 [size: 2]", "144 Rhombencephalon - Gad1b Cluster 18 [size: 41]", "145 Rhombencephalon - Gad1b Cluster 19 [size: 20]", "146 Rhombencephalon - Gad1b Cluster 2 [size: 159]", "147 Rhombencephalon - Gad1b Cluster 20 [size: 8]", "149 Rhombencephalon - Gad1b Cluster 4 [size: 157]", "150 Rhombencephalon - Gad1b Cluster 5 [size: 4]", "151 Rhombencephalon - Gad1b Cluster 6 [size: 6]", "152 Rhombencephalon - Gad1b Cluster 7 [size: 23]", "155 Rhombencephalon - Gad1b Stripe 1 [size: 650]", "156 Rhombencephalon - Gad1b Stripe 2 [size: 213]", "157 Rhombencephalon - Gad1b Stripe 3 [size: 418]", "158 Rhombencephalon - Glyt2 Cluster 1 [size: 228]", "160 Rhombencephalon - Glyt2 Cluster 11 [size: 4]", "161 Rhombencephalon - Glyt2 Cluster 12 [size: 2]", "162 Rhombencephalon - Glyt2 Cluster 13 [size: 58]", "163 Rhombencephalon - Glyt2 Cluster 14 [size: 28]", "164 Rhombencephalon - Glyt2 Cluster 2 [size: 5]", "165 Rhombencephalon - Glyt2 Cluster 3 [size: 6]", "166 Rhombencephalon - Glyt2 Cluster 4 [size: 3]", "167 Rhombencephalon - Glyt2 Cluster 5 [size: 3]", "168 Rhombencephalon - Glyt2 Cluster 6 [size: 16]", "172 Rhombencephalon - Glyt2 Stripe 1 [size: 57]", "173 Rhombencephalon - Glyt2 Stripe 2 [size: 181]", "174 Rhombencephalon - Glyt2 Stripe 3 [size: 254]", "175 Rhombencephalon - Inferior Olive [size: 55]", "177 Rhombencephalon - Isl1 Cluster 1 [size: 112]", "178 Rhombencephalon - Isl1 Cluster 2 [size: 5]", "179 Rhombencephalon - Isl1 Cluster 3 [size: 10]", "180 Rhombencephalon - Isl1 Stripe 1 [size: 27]", "182 Rhombencephalon - Lobus caudalis cerebelli [size: 90]", "184 Rhombencephalon - Mauthner [size: 2]", "186 Rhombencephalon - Medial Vestibular Nucleus [size: 67]", "187 Rhombencephalon - MiD2 [size: 1]", "188 Rhombencephalon - MiD3 [size: 16]", "195 Rhombencephalon - Neuropil Region 2 [size: 263]", "196 Rhombencephalon - Neuropil Region 3 [size: 237]", "197 Rhombencephalon - Neuropil Region 4 [size: 359]", "198 Rhombencephalon - Neuropil Region 5 [size: 149]", "200 Rhombencephalon - Noradrendergic neurons of the Interfascicular and Vagal areas [size: 46]", "201 Rhombencephalon - Oculomotor Nucleus nIV [size: 71]", "202 Rhombencephalon - Olig2 Cluster [size: 20]", "203 Rhombencephalon - Olig2 Stripe [size: 61]", "204 Rhombencephalon - Olig2 enriched areas in cerebellum [size: 382]", "207 Rhombencephalon - Otpb Cluster 3 [size: 3]", "208 Rhombencephalon - Otpb Cluster 4 [size: 21]", "209 Rhombencephalon - Otpb Cluster 5 [size: 4]", "210 Rhombencephalon - Otpb Cluster 6 [size: 73]", "211 Rhombencephalon - Oxtl Cluster 1 Sparse [size: 1]", "212 Rhombencephalon - Oxtl Cluster 2 Near MC axon cap [size: 1]", "214 Rhombencephalon - Ptf1a Cluster 1 [size: 255]", "215 Rhombencephalon - Ptf1a Stripe [size: 574]", "216 Rhombencephalon - Qrfp neuron cluster sparse [size: 126]", "217 Rhombencephalon - Raphe - Inferior [size: 5]", "219 Rhombencephalon - Rhombomere 1 [size: 3862]", "220 Rhombencephalon - Rhombomere 2 [size: 1754]", "221 Rhombencephalon - Rhombomere 3 [size: 577]", "222 Rhombencephalon - Rhombomere 4 [size: 364]", "223 Rhombencephalon - Rhombomere 5 [size: 381]", "224 Rhombencephalon - Rhombomere 6 [size: 970]", "225 Rhombencephalon - Rhombomere 7 [size: 3746]", "233 Rhombencephalon - S1181t Cluster [size: 379]", "234 Rhombencephalon - Small cluster of TH stained neurons [size: 13]", "235 Rhombencephalon - Spinal Backfill Vestibular Population [size: 14]", "238 Rhombencephalon - Tangential Vestibular Nucleus [size: 38]", "239 Rhombencephalon - VII Facial Motor and octavolateralis efferent neurons [size: 57]", "240 Rhombencephalon - VII' Facial Motor and octavolateralis efferent neurons [size: 6]", "241 Rhombencephalon - Valvula Cerebelli [size: 398]", "243 Rhombencephalon - Vglut2 Stripe 1 [size: 603]", "244 Rhombencephalon - Vglut2 Stripe 2 [size: 122]", "245 Rhombencephalon - Vglut2 Stripe 3 [size: 202]", "246 Rhombencephalon - Vglut2 Stripe 4 [size: 223]", "247 Rhombencephalon - Vglut2 cluster 1 [size: 40]", "248 Rhombencephalon - Vglut2 cluster 2 [size: 535]", "249 Rhombencephalon - Vglut2 cluster 3 [size: 5]", "250 Rhombencephalon - Vglut2 cluster 4 [size: 13]", "251 Rhombencephalon - Vmat2 Cluster 1 [size: 25]", "252 Rhombencephalon - Vmat2 Cluster 2 [size: 10]", "253 Rhombencephalon - Vmat2 Cluster 3 [size: 7]", "255 Rhombencephalon - Vmat2 Cluster 5 [size: 108]", "256 Rhombencephalon - Vmat2 Stripe1 [size: 520]", "257 Rhombencephalon - Vmat2 Stripe2 [size: 112]", "258 Rhombencephalon - Vmat2 Stripe3 [size: 20]", "259 Rhombencephalon - X Vagus motorneuron cluster [size: 351]", "260 Spinal Cord [size: 338]", "261 Spinal Cord - 6.7FDhcrtR-Gal4 Stripe [size: 107]", "262 Spinal Cord - Dorsal Sparse Isl1 cluster [size: 20]", "263 Spinal Cord - Gad1b Stripe 1 [size: 238]", "265 Spinal Cord - Glyt2 Stripe [size: 132]", "266 Spinal Cord - Isl1 stripe - motorneurons [size: 34]", "267 Spinal Cord - Neurons with descending projections labelled by spinal backfills [size: 37]", "268 Spinal Cord - Neuropil Region [size: 24]", "269 Spinal Cord - Olig2 Stripe [size: 18]", "270 Spinal Cord - Vglut2 Stripe 1 [size: 117]", "271 Spinal Cord - Vglut2 Stripe 2 [size: 139]", "272 Spinal Cord - Vglut2 Stripe 3 [size: 15]", "273 Spinal Cord - Vmat2 Stripe1 [size: 33]", "275 Telencephalon - [size: 690]", "277 Telencephalon - Isl1 cluster 1 [size: 3]", "279 Telencephalon - Olfactory Bulb [size: 38]", "280 Telencephalon - Olfactory bulb dopaminergic neuron areas [size: 6]", "283 Telencephalon - Pallium [size: 490]", "285 Telencephalon - S1181t Cluster [size: 9]", "286 Telencephalon - Subpallial Gad1b cluster [size: 94]", "287 Telencephalon - Subpallial Otpb Cluster 2 [size: 8]", "288 Telencephalon - Subpallial Otpb strip [size: 29]", "290 Telencephalon - Subpallial dopaminergic cluster [size: 10]", "291 Telencephalon - Subpallium [size: 98]", "293 Telencephalon - Vglut2 rind [size: 181]", "294 Telencephalon - Vmat2 cluster [size: 30]", "300 Anterior Rhombencephalic Turning Region - Left [size: 212]", "301 Anterior Rhombencephalic Turning Region - Right [size: 177]", "302 Full Brain [size: 23743]" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5156,9 +5417,6 @@
                 "obj-12::obj-2::obj-71": {
                     "parameter_longname": "Chord sustain[5]"
                 },
-                "obj-12::obj-2::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[17]"
-                },
                 "obj-12::obj-2::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[1]"
                 },
@@ -5175,11 +5433,14 @@
                 "obj-12::obj-2::obj-89": {
                     "parameter_longname": "live.text[8]"
                 },
+                "obj-12::obj-2::obj-9": {
+                    "parameter_longname": "live.toggle[1]"
+                },
                 "obj-12::obj-2::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[4]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5195,7 +5456,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[6]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5246,9 +5507,6 @@
                 "obj-12::obj-3::obj-71": {
                     "parameter_longname": "Chord sustain[64]"
                 },
-                "obj-12::obj-3::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[16]"
-                },
                 "obj-12::obj-3::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[15]"
                 },
@@ -5264,11 +5522,14 @@
                 "obj-12::obj-3::obj-89": {
                     "parameter_longname": "live.text[49]"
                 },
+                "obj-12::obj-3::obj-9": {
+                    "parameter_longname": "live.toggle[17]"
+                },
                 "obj-12::obj-3::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[90]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5279,7 +5540,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[89]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5330,9 +5591,6 @@
                 "obj-12::obj-4::obj-71": {
                     "parameter_longname": "Chord sustain[59]"
                 },
-                "obj-12::obj-4::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[19]"
-                },
                 "obj-12::obj-4::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[14]"
                 },
@@ -5348,11 +5606,14 @@
                 "obj-12::obj-4::obj-89": {
                     "parameter_longname": "live.text[46]"
                 },
+                "obj-12::obj-4::obj-9": {
+                    "parameter_longname": "live.toggle[16]"
+                },
                 "obj-12::obj-4::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[83]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5363,7 +5624,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[82]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5414,9 +5675,6 @@
                 "obj-12::obj-5::obj-71": {
                     "parameter_longname": "Chord sustain[13]"
                 },
-                "obj-12::obj-5::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[34]"
-                },
                 "obj-12::obj-5::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[3]"
                 },
@@ -5433,11 +5691,14 @@
                 "obj-12::obj-5::obj-89": {
                     "parameter_longname": "live.text[14]"
                 },
+                "obj-12::obj-5::obj-9": {
+                    "parameter_longname": "live.toggle[7]"
+                },
                 "obj-12::obj-5::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[11]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5448,7 +5709,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[13]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5499,9 +5760,6 @@
                 "obj-12::obj-6::obj-71": {
                     "parameter_longname": "Chord sustain[6]"
                 },
-                "obj-12::obj-6::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[35]"
-                },
                 "obj-12::obj-6::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[2]"
                 },
@@ -5518,11 +5776,14 @@
                 "obj-12::obj-6::obj-89": {
                     "parameter_longname": "live.text[11]"
                 },
+                "obj-12::obj-6::obj-9": {
+                    "parameter_longname": "live.toggle[2]"
+                },
                 "obj-12::obj-6::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[21]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5533,7 +5794,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[8]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5584,9 +5845,6 @@
                 "obj-12::obj-7::obj-71": {
                     "parameter_longname": "Chord sustain[31]"
                 },
-                "obj-12::obj-7::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[30]"
-                },
                 "obj-12::obj-7::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[7]"
                 },
@@ -5602,11 +5860,14 @@
                 "obj-12::obj-7::obj-89": {
                     "parameter_longname": "live.text[26]"
                 },
+                "obj-12::obj-7::obj-9": {
+                    "parameter_longname": "live.toggle[9]"
+                },
                 "obj-12::obj-7::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[47]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5617,7 +5878,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[50]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5668,9 +5929,6 @@
                 "obj-12::obj-8::obj-71": {
                     "parameter_longname": "Chord sustain[25]"
                 },
-                "obj-12::obj-8::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[31]"
-                },
                 "obj-12::obj-8::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[6]"
                 },
@@ -5686,11 +5944,14 @@
                 "obj-12::obj-8::obj-89": {
                     "parameter_longname": "live.text[22]"
                 },
+                "obj-12::obj-8::obj-9": {
+                    "parameter_longname": "live.toggle[8]"
+                },
                 "obj-12::obj-8::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[45]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5701,7 +5962,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[43]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5752,9 +6013,6 @@
                 "obj-12::obj-9::obj-71": {
                     "parameter_longname": "Chord sustain[23]"
                 },
-                "obj-12::obj-9::obj-75::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[32]"
-                },
                 "obj-12::obj-9::obj-78": {
                     "parameter_longname": "1-MIDI-IN-Channel[5]"
                 },
@@ -5771,11 +6029,14 @@
                 "obj-12::obj-9::obj-89": {
                     "parameter_longname": "live.text[19]"
                 },
+                "obj-12::obj-9::obj-9": {
+                    "parameter_longname": "live.toggle[4]"
+                },
                 "obj-12::obj-9::obj-91": {
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[37]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5786,7 +6047,7 @@
                     "parameter_invisible": 0,
                     "parameter_longname": "live.menu[39]",
                     "parameter_modmode": 0,
-                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "Arturia BeatStep", "No Output" ],
+                    "parameter_range": [ "AU DLS Synth 1", "Réseau Session 1", "Sampler", "from Max 1", "from Max 2", "No Output" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
@@ -5841,12 +6102,12 @@
                 "obj-53::obj-141": {
                     "parameter_invisible": 0,
                     "parameter_modmode": 0,
-                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "Arturia BeatStep", "No Input" ],
+                    "parameter_range": [ "Réseau Session 1", "to Max 1", "to Max 2", "No Input" ],
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
                 "obj-66::obj-27::obj-25::obj-61::obj-20.1::obj-12::obj-8::obj-7": {
-                    "parameter_longname": "live.toggle[18]"
+                    "parameter_longname": "live.toggle[24]"
                 }
             },
             "inherited_shortname": 1
