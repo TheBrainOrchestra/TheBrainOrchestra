@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 59.0, 119.0, 453.0, 440.0 ],
+        "rect": [ 564.0, 107.0, 453.0, 440.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -24,13 +24,42 @@
                 "box": {
                     "fontface": 1,
                     "fontsize": 14.0,
+                    "id": "obj-7",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 36.0, 166.0, 448.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 36.0, 166.0, 216.0, 22.0 ],
+                    "text": "Mouse control (in object mode)"
+                }
+            },
+            {
+                "box": {
+                    "fontsize": 12.0,
+                    "id": "obj-8",
+                    "linecount": 3,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 51.0, 190.0, 362.0, 47.0 ],
+                    "presentation": 1,
+                    "presentation_linecount": 3,
+                    "presentation_rect": [ 51.0, 190.0, 360.0, 47.0 ],
+                    "text": "     drag     : rotate\nalt+drag    : zooom\ncmd+drag : move"
+                }
+            },
+            {
+                "box": {
+                    "fontface": 1,
+                    "fontsize": 14.0,
                     "id": "obj-6",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 36.0, 149.0, 395.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 36.0, 178.0, 259.0, 22.0 ],
+                    "presentation_rect": [ 36.0, 275.0, 259.0, 22.0 ],
                     "text": "MIDI output from The Brain Orchestra"
                 }
             },
@@ -59,7 +88,7 @@
                     "patching_rect": [ 36.0, 170.0, 362.0, 74.0 ],
                     "presentation": 1,
                     "presentation_linecount": 5,
-                    "presentation_rect": [ 51.0, 202.0, 360.0, 74.0 ],
+                    "presentation_rect": [ 51.0, 299.0, 360.0, 74.0 ],
                     "text": "\"From Max 2\", channel 15 :\n\n    stop : MIDI note 0\n    play : MIDI note 1\n     rec : MIDI note 2"
                 }
             },
@@ -75,7 +104,7 @@
                     "presentation": 1,
                     "presentation_linecount": 3,
                     "presentation_rect": [ 51.0, 98.0, 360.0, 47.0 ],
-                    "text": "     esc : fullscreen data visualization window\n         s : sort the atlas labels based on cluster position\nshift+s : sort the atlas labels alphabetically"
+                    "text": "     esc : fullscreen data visualization window\n         L : sort the atlas labels based on cluster position\nshift+L : sort the atlas labels alphabetically"
                 }
             },
             {
