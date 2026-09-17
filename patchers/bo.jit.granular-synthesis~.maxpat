@@ -448,7 +448,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 243.0, 309.0, 30.0, 30.0 ]
+                    "patching_rect": [ 243.0, 357.0, 30.0, 30.0 ]
                 }
             },
             {
