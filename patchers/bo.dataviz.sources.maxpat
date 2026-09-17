@@ -63,7 +63,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "patching_rect": [ 60.0, 337.0, 35.0, 22.0 ],
-                    "text": "&& 0"
+                    "text": "&& 1"
                 }
             },
             {
