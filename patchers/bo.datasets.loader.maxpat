@@ -10776,8 +10776,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 23.0, 76.0, 55.0, 22.0 ],
-                                    "text": "dim $1 1"
+                                    "patching_rect": [ 23.0, 76.0, 99.0, 22.0 ],
+                                    "text": "dim $1 1, setall 1"
                                 }
                             },
                             {
