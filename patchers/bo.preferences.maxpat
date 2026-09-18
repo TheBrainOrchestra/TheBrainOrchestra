@@ -19,11 +19,44 @@
         "boxes": [
             {
                 "box": {
+                    "comment": "",
+                    "id": "obj-22",
+                    "index": 1,
+                    "maxclass": "outlet",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 175.0, 30.0, 30.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-28",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 5.0, 145.0, 67.0, 22.0 ],
+                    "text": "zl.reg set 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-37",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "patching_rect": [ 5.0, 117.0, 63.0, 22.0 ],
+                    "text": "closebang"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-30",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 67.5, 937.0, 72.0, 20.0 ],
+                    "patching_rect": [ 117.0, 934.0, 72.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 80.5, 432.0, 101.0, 20.0 ],
                     "text": "Link latency"
@@ -37,7 +70,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 66.0, 998.0, 206.0, 22.0 ],
+                    "patching_rect": [ 115.0, 995.0, 206.0, 22.0 ],
                     "text": "prepend store /TBO/transport/latency"
                 }
             },
@@ -51,7 +84,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 66.0, 965.0, 50.0, 22.0 ],
+                    "patching_rect": [ 115.0, 962.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 25.5, 431.0, 50.0, 22.0 ]
                 }
@@ -63,7 +96,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 126.0, 965.0, 195.0, 22.0 ],
+                    "patching_rect": [ 175.0, 962.0, 195.0, 22.0 ],
                     "text": "sw /TBO/transport/latency"
                 }
             },
@@ -75,7 +108,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 69.5, 897.0, 254.0, 22.0 ],
+                    "patching_rect": [ 119.0, 894.0, 254.0, 22.0 ],
                     "text": "prepend store /TBO/transport/link_autolatency"
                 }
             },
@@ -86,7 +119,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 67.5, 811.0, 147.0, 20.0 ],
+                    "patching_rect": [ 117.0, 808.0, 147.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 25.5, 379.0, 147.0, 20.0 ],
                     "text": "TRANSPORT SETTINGS"
@@ -98,7 +131,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 67.5, 836.0, 102.0, 20.0 ],
+                    "patching_rect": [ 117.0, 833.0, 102.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 80.5, 404.0, 102.0, 20.0 ],
                     "text": "Link auto_latency"
@@ -112,7 +145,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 69.5, 864.0, 29.0, 26.0 ],
+                    "patching_rect": [ 119.0, 861.0, 29.0, 26.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 46.5, 401.0, 29.0, 26.0 ],
                     "saved_attribute_attributes": {
@@ -135,7 +168,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 105.625, 866.0, 195.0, 22.0 ],
+                    "patching_rect": [ 155.0, 863.0, 195.0, 22.0 ],
                     "text": "sw /TBO/transport/link_autolatency"
                 }
             },
@@ -145,7 +178,7 @@
                     "maxclass": "live.line",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 72.0, 780.0, 378.0, 10.0 ],
+                    "patching_rect": [ 121.0, 777.0, 378.0, 10.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 25.5, 362.0, 456.0, 5.0 ]
                 }
@@ -156,7 +189,7 @@
                     "maxclass": "live.line",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 72.0, 341.0, 378.0, 10.0 ],
+                    "patching_rect": [ 121.0, 338.0, 378.0, 10.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 250.0, 456.0, 5.0 ]
                 }
@@ -168,7 +201,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 66.0, 731.0, 254.0, 22.0 ],
+                    "patching_rect": [ 115.0, 728.0, 254.0, 22.0 ],
                     "text": "prepend store /TBO/network/UDP/out/address"
                 }
             },
@@ -180,7 +213,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 66.0, 623.0, 223.0, 22.0 ],
+                    "patching_rect": [ 115.0, 620.0, 223.0, 22.0 ],
                     "text": "prepend store /TBO/network/TCP/in/port"
                 }
             },
@@ -192,7 +225,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 66.0, 539.0, 232.0, 22.0 ],
+                    "patching_rect": [ 115.0, 536.0, 232.0, 22.0 ],
                     "text": "prepend store /TBO/network/UDP/out/port"
                 }
             },
@@ -204,7 +237,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 66.0, 446.0, 225.0, 22.0 ],
+                    "patching_rect": [ 115.0, 443.0, 225.0, 22.0 ],
                     "text": "prepend store /TBO/network/UDP/in/port"
                 }
             },
@@ -215,7 +248,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.0, 360.0, 134.0, 20.0 ],
+                    "patching_rect": [ 113.0, 357.0, 134.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 261.0, 134.0, 20.0 ],
                     "text": "NETWORK SETTINGS"
@@ -227,7 +260,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 297.0, 666.0, 95.0, 20.0 ],
+                    "patching_rect": [ 346.0, 663.0, 95.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 400.0, 293.0, 90.0, 20.0 ],
                     "text": "TCP host port"
@@ -239,7 +272,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.0, 571.0, 95.0, 20.0 ],
+                    "patching_rect": [ 113.0, 568.0, 95.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 271.0, 316.0, 101.0, 20.0 ],
                     "text": "TCP input port"
@@ -251,7 +284,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.0, 479.0, 95.0, 20.0 ],
+                    "patching_rect": [ 113.0, 476.0, 95.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 79.0, 316.0, 101.0, 20.0 ],
                     "text": "UPD output port"
@@ -263,7 +296,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.0, 385.0, 87.0, 20.0 ],
+                    "patching_rect": [ 113.0, 382.0, 87.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 79.0, 292.0, 101.0, 20.0 ],
                     "text": "UPD input port"
@@ -703,7 +736,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 66.0, 698.0, 204.0, 22.0 ],
+                    "patching_rect": [ 115.0, 695.0, 204.0, 22.0 ],
                     "text": "p"
                 }
             },
@@ -717,7 +750,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 66.0, 506.0, 50.0, 22.0 ],
+                    "patching_rect": [ 115.0, 503.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 316.0, 50.0, 22.0 ]
                 }
@@ -729,7 +762,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 126.0, 506.0, 173.0, 22.0 ],
+                    "patching_rect": [ 175.0, 503.0, 173.0, 22.0 ],
                     "text": "sw /TBO/network/UDP/out/port"
                 }
             },
@@ -745,7 +778,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 227.875, 665.0, 43.0, 21.0 ],
+                    "patching_rect": [ 277.0, 662.0, 43.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 355.0, 292.0, 43.0, 21.0 ]
                 }
@@ -762,7 +795,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 181.625, 665.0, 43.0, 21.0 ],
+                    "patching_rect": [ 231.0, 662.0, 43.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 309.0, 292.0, 43.0, 21.0 ]
                 }
@@ -779,7 +812,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 135.375, 665.0, 43.0, 21.0 ],
+                    "patching_rect": [ 185.0, 662.0, 43.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 263.0, 292.0, 43.0, 21.0 ]
                 }
@@ -796,7 +829,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 89.125, 665.0, 43.0, 21.0 ],
+                    "patching_rect": [ 138.0, 662.0, 43.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 217.0, 292.0, 43.0, 21.0 ]
                 }
@@ -811,7 +844,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 66.0, 593.0, 50.0, 22.0 ],
+                    "patching_rect": [ 115.0, 590.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 217.0, 316.0, 50.0, 22.0 ]
                 }
@@ -826,7 +859,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 66.0, 413.0, 50.0, 22.0 ],
+                    "patching_rect": [ 115.0, 410.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 291.0, 50.0, 22.0 ]
                 }
@@ -838,7 +871,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 126.0, 413.0, 173.0, 22.0 ],
+                    "patching_rect": [ 175.0, 410.0, 173.0, 22.0 ],
                     "text": "sw /TBO/network/UDP/in/port"
                 }
             },
@@ -849,7 +882,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 116.0, 593.0, 164.0, 22.0 ],
+                    "patching_rect": [ 165.0, 590.0, 164.0, 22.0 ],
                     "text": "sw /TBO/network/TCP/in/port"
                 }
             },
@@ -859,7 +892,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.0, 241.0, 394.0, 20.0 ],
+                    "patching_rect": [ 113.0, 238.0, 394.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 79.0, 204.0, 394.0, 20.0 ],
                     "text": "Full screen monitor (0 = main screen, 1+ = other monitors)"
@@ -873,7 +906,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 65.5, 307.0, 211.0, 22.0 ],
+                    "patching_rect": [ 115.0, 304.0, 211.0, 22.0 ],
                     "text": "prepend store /TBO/render/FSmonitor"
                 }
             },
@@ -886,7 +919,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 65.5, 270.0, 50.0, 22.0 ],
+                    "patching_rect": [ 115.0, 267.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 203.0, 50.0, 22.0 ]
                 }
@@ -898,7 +931,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 122.5, 270.0, 151.0, 22.0 ],
+                    "patching_rect": [ 172.0, 267.0, 151.0, 22.0 ],
                     "text": "sw /TBO/render/FSmonitor"
                 }
             },
@@ -911,7 +944,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 20.0, 58.0, 30.0, 30.0 ]
+                    "patching_rect": [ 5.0, 55.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -920,7 +953,7 @@
                     "maxclass": "live.line",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 63.0, 106.0, 378.0, 10.0 ],
+                    "patching_rect": [ 112.0, 103.0, 378.0, 10.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 128.0, 456.0, 5.0 ]
                 }
@@ -1324,7 +1357,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 513.0, 194.0, 131.0, 24.0 ],
+                    "patching_rect": [ 562.0, 191.0, 131.0, 24.0 ],
                     "text": "p initial-pref-loading"
                 }
             },
@@ -1336,7 +1369,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 513.0, 161.0, 158.0, 18.0 ],
+                    "patching_rect": [ 562.0, 158.0, 158.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 325.0, 94.0, 155.0, 22.0 ],
                     "text": "Reset to default settings",
@@ -1350,7 +1383,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 65.0, 120.0, 394.0, 33.0 ],
+                    "patching_rect": [ 114.0, 117.0, 394.0, 33.0 ],
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 79.0, 145.0, 394.0, 33.0 ],
@@ -1363,7 +1396,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 63.0, 77.0, 343.0, 20.0 ],
+                    "patching_rect": [ 112.0, 74.0, 343.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 61.0, 343.0, 20.0 ],
                     "text": "(loaded at launch and saved in the file tbo.preferences.coll)"
@@ -1376,7 +1409,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 66.0, 50.0, 375.0, 33.0 ],
+                    "patching_rect": [ 115.0, 47.0, 375.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 26.0, 375.0, 33.0 ],
                     "text": "The Brain Orchestra - Preferences"
@@ -1390,7 +1423,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "writeagain", "" ],
-                    "patching_rect": [ 66.0, 1035.0, 83.0, 22.0 ],
+                    "patching_rect": [ 115.0, 1032.0, 83.0, 22.0 ],
                     "text": "t writeagain l"
                 }
             },
@@ -1402,7 +1435,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 66.0, 195.0, 336.0, 22.0 ],
+                    "patching_rect": [ 115.0, 192.0, 336.0, 22.0 ],
                     "text": "prepend store /TBO/subcluster-method/k-means/warning-size"
                 }
             },
@@ -1414,7 +1447,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 66.0, 1067.0, 135.0, 22.0 ],
+                    "patching_rect": [ 115.0, 1064.0, 135.0, 22.0 ],
                     "saved_object_attributes": {
                         "embed": 0,
                         "precision": 6
@@ -1431,7 +1464,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 66.0, 159.0, 50.0, 22.0 ],
+                    "patching_rect": [ 115.0, 156.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 151.0, 50.0, 22.0 ]
                 }
@@ -1443,7 +1476,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 123.0, 159.0, 277.0, 22.0 ],
+                    "patching_rect": [ 172.0, 156.0, 277.0, 22.0 ],
                     "text": "sw /TBO/subcluster-method/k-means/warning-size"
                 }
             }
@@ -1577,6 +1610,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-28", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-19", 0 ],
                     "source": [ "obj-29", 0 ]
                 }
@@ -1631,6 +1670,12 @@
                 "patchline": {
                     "destination": [ "obj-61", 7 ],
                     "source": [ "obj-33", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-28", 0 ],
+                    "source": [ "obj-37", 0 ]
                 }
             },
             {
