@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 167.0, 147.0, 1185.0, 751.0 ],
+        "rect": [ 119.0, 163.0, 1185.0, 751.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -1862,7 +1862,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 287.0, 39.0, 1045.0, 190.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 132.0, 156.0, 1044.0, 719.0 ],
+                    "presentation_rect": [ 132.0, 156.0, 1044.0, 595.0 ],
                     "varname": "bo.16Channels.UI",
                     "viewvisibility": 1
                 }
